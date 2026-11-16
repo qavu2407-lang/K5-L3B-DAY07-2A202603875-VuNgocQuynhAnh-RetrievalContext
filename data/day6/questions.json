@@ -1,0 +1,439 @@
+[
+ {
+  "id": "d01",
+  "split": "dev",
+  "type": "direct",
+  "question": "What is data science?",
+  "answerable": true,
+  "expected_answer": "A field of study that investigates how to collect, manage, and analyze data of all types to retrieve meaningful information.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 19,
+    "evidence": "Data science is a field of study that investigates how to collect, manage, and analyze data of all types in order to retrieve meaningful information."
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d02",
+  "split": "dev",
+  "type": "paraphrase",
+  "question": "Which steps of a data science project take up most of a data scientist's time?",
+  "answerable": true,
+  "expected_answer": "Data collection and cleaning, about half of the entire process.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 21,
+    "evidence": "data scientists spend about half of the entire process in data collection and cleaning"
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d03",
+  "split": "dev",
+  "type": "direct",
+  "question": "What is the difference between nominal and ordinal data?",
+  "answerable": true,
+  "expected_answer": "Ordinal data has an ordering among its possible values; nominal data does not.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 29,
+    "evidence": "For nominal data, the set of possible values does not include any ordering notion, whereas with ordinal data, the set of possible values includes an ordering notion."
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d04",
+  "split": "dev",
+  "type": "condition",
+  "question": "When can a semester attribute be treated as ordinal data?",
+  "answerable": true,
+  "expected_answer": "When the analysis values its chronological ordering (e.g. a time-series dataset).",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 29,
+    "evidence": "If you want to value that notion for your analysis, you could consider the semester data to be ordinal as well"
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d05",
+  "split": "dev",
+  "type": "direct",
+  "question": "Is a dataset of keywords searched on a web search engine structured or unstructured?",
+  "answerable": true,
+  "expected_answer": "Unstructured, because each entry can be freeform text.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 30,
+    "evidence": "The dataset is an unstructured dataset since each entry in the dataset can be a freeform text"
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d06",
+  "split": "dev",
+  "type": "direct",
+  "question": "How many items and attributes does the Jeopardy JSON dataset have?",
+  "answerable": true,
+  "expected_answer": "409 items, each with seven attributes.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 38,
+    "evidence": "There are 409 items in the dataset, and each item has seven attributes"
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d07",
+  "split": "dev",
+  "type": "condition",
+  "question": "What should you do after changing code in several Colab notebook cells?",
+  "answerable": true,
+  "expected_answer": "Use \"Run all\" or \"Run before\" so the cells run sequentially from the top.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 45,
+    "evidence": "it is recommended to use “Run all” or “Run before” after you make changes across multiple cells of code"
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d08",
+  "split": "dev",
+  "type": "direct",
+  "question": "What abbreviation is Pandas conventionally imported as?",
+  "answerable": true,
+  "expected_answer": "pd",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 45,
+    "evidence": "it is convention to abbreviate pandas to pd"
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d09",
+  "split": "dev",
+  "type": "paraphrase",
+  "question": "Why did the 1936 Literary Digest poll predict the wrong election winner?",
+  "answerable": true,
+  "expected_answer": "Its sample (telephone and automobile owners) was biased toward affluent people and therefore Republican voters.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 72,
+    "evidence": "This approach was considered biased toward affluent individuals and therefore favored Republican voters."
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d10",
+  "split": "dev",
+  "type": "paraphrase",
+  "question": "What is the sampling technique called when you split a population into groups by age, education and income and sample from each group?",
+  "answerable": true,
+  "expected_answer": "Stratified sampling.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 76,
+    "evidence": "The sampling technique used by Mark is called stratified sampling."
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d11",
+  "split": "dev",
+  "type": "direct",
+  "question": "What is MAR missing data?",
+  "answerable": true,
+  "expected_answer": "Missing data related to other observed variables but not to unknown or unmeasured variables.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 87,
+    "evidence": "MAR (missing at random) data is missing data related to other variables but not to any unknown or unmeasured variables."
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d12",
+  "split": "dev",
+  "type": "condition",
+  "question": "What is the drawback of simply removing missing data?",
+  "answerable": true,
+  "expected_answer": "It can lead to a loss of important information.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 87,
+    "evidence": "One option is to withdraw the missing data altogether, but this can lead to a loss of important information."
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "d13",
+  "split": "dev",
+  "type": "filter",
+  "question": "What cutoff value is typically used with the IQR to flag outliers?",
+  "answerable": true,
+  "expected_answer": "1.5",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 127,
+    "evidence": "These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset."
+   }
+  ],
+  "filter": {
+   "chapter": 3
+  }
+ },
+ {
+  "id": "d14",
+  "split": "dev",
+  "type": "filter",
+  "question": "How can an outlier that does not reflect real values be replaced in a time series?",
+  "answerable": true,
+  "expected_answer": "Replace it using the points before and after it (the book calls this 'median, calculated by taking the mean' of those points).",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 88,
+    "evidence": "A possible approach to addressing this outlier is to replace it with median, calculated by taking the mean of the points before and after the outlier."
+   }
+  ],
+  "filter": {
+   "chapter": 2
+  }
+ },
+ {
+  "id": "d15",
+  "split": "dev",
+  "type": "filter",
+  "question": "What makes a dataset structured?",
+  "answerable": true,
+  "expected_answer": "All entities have values for the same attributes, so the data fits a table.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 29,
+    "evidence": "all entities have values for the same four attributes, which makes them a structured dataset"
+   },
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 30,
+    "evidence": "every individual item is in the same structure with the same three attributes"
+   }
+  ],
+  "filter": {
+   "chapter": 1
+  }
+ },
+ {
+  "id": "t01",
+  "split": "test",
+  "type": "paraphrase",
+  "question": "Why does data chunking attach metadata such as the chunk number and total number of chunks?",
+  "answerable": true,
+  "expected_answer": "So the chunks can be reassembled into the original dataset.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 100,
+    "evidence": "This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately."
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "t02",
+  "split": "test",
+  "type": "condition",
+  "question": "When is snowball sampling useful, and what is its drawback?",
+  "answerable": true,
+  "expected_answer": "For hard-to-reach or sensitive populations; it may be biased and limit generalizability.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 74,
+    "evidence": "This type of sampling can be useful in studying hard-to-reach or sensitive populations, but it may also be biased and limit the generalizability of findings."
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "t03",
+  "split": "test",
+  "type": "condition",
+  "question": "How do you find the median when a dataset has an even number of values?",
+  "answerable": true,
+  "expected_answer": "Add the two middle values and divide by 2.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 118,
+    "evidence": "If there is an even number of data values in the dataset, then to find the median, add the two middle values together and divide by 2"
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "t04",
+  "split": "test",
+  "type": "direct",
+  "question": "What is the set of all possible outcomes of a probability experiment called?",
+  "answerable": true,
+  "expected_answer": "The sample space.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 130,
+    "evidence": "The sample space is the set of all possible outcomes in a probability experiment."
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "t05",
+  "split": "test",
+  "type": "filter",
+  "question": "Why would you transform data that is not normally distributed?",
+  "answerable": true,
+  "expected_answer": "To bring it closer to a normal distribution and improve the accuracy of the analysis.",
+  "gold": [
+   {
+    "source_id": "openstax-pds-2025",
+    "page": 92,
+    "evidence": "In such cases, transforming the data can help to make it closer to a normal distribution and improve the accuracy of the analysis."
+   }
+  ],
+  "filter": {
+   "chapter": 2
+  }
+ },
+ {
+  "id": "d16",
+  "split": "dev",
+  "type": "unanswerable",
+  "question": "How much does a Google Colab Pro subscription cost per month, and what GPU does it provide?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Section 1.5 (pp. 40-61) explains how to set up and use Colab but only calls it 'Google's free application' (p41:1). No chunk in the indexed chapters 1-3 mentions Colab Pro, a subscription, a price or a GPU; the full 569-page PDF has 0 hits for 'Colab Pro'. Saying only that the book describes Colab as free still counts as a correct abstention.",
+  "absence_checks": [
+   {
+    "terms": [
+     "Colab Pro",
+     "subscription",
+     "GPU"
+    ],
+    "pages": [
+     19,
+     148
+    ]
+   }
+  ]
+ },
+ {
+  "id": "d17",
+  "split": "dev",
+  "type": "unanswerable",
+  "question": "What minimum sample size does the book recommend for a survey to reach a 5% margin of error at 95% confidence?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Section 2.2 on sampling (pp. 71-76) only gives general advice: 'increase sample size' (p74:5) and 'sample size calculation may be more complex' for cluster sampling (p73:1). No number, formula or margin of error appears in the indexed chapters 1-3. Note: margin of error is covered in chapter 4 (PDF pp. 157-168), which is not indexed; this question would become answerable if the full book were indexed.",
+  "absence_checks": [
+   {
+    "terms": [
+     "margin of error",
+     "95% confidence",
+     "confidence level",
+     "minimum sample"
+    ],
+    "pages": [
+     19,
+     148
+    ]
+   }
+  ]
+ },
+ {
+  "id": "t06",
+  "split": "test",
+  "type": "unanswerable",
+  "question": "According to the book, is web scraping legal, and what does it say about robots.txt or a website's terms of service?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Section 2.3 on web scraping (pp. 76-86) covers scraping techniques (Table 2.2), APIs and Python parsing but never discusses legality, robots.txt or terms of service. The only 'legal' in the corpus is p68:2 (pharmaceutical legal teams). p71:0 points to the 'Ethics in Data Collection' section, which is outside the corpus (PDF pp. 387-401) and does not mention web scraping. The full PDF has 0 hits for 'robots' and 'terms of service'.",
+  "absence_checks": [
+   {
+    "terms": [
+     "robots",
+     "terms of service",
+     "legal",
+     "illegal",
+     "copyright"
+    ],
+    "pages": [
+     76,
+     86
+    ]
+   },
+   {
+    "terms": [
+     "robots",
+     "terms of service"
+    ],
+    "pages": [
+     19,
+     148
+    ]
+   }
+  ]
+ },
+ {
+  "id": "t07",
+  "split": "test",
+  "type": "unanswerable",
+  "question": "What is the probability formula for the hypergeometric distribution, and when should it be used instead of the binomial distribution?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Section 3.5 (pp. 137-148) states 'In this chapter, we present the binomial distribution and the Poisson distribution' (p139:2), and its Python list covers binom, poisson, expon and norm only (p146:4). No chunk mentions the hypergeometric distribution or sampling without replacement; the full PDF has 0 hits for 'hypergeometric'. Because formulas were lost during text extraction, PDF pages 139-146 were also checked by eye.",
+  "absence_checks": [
+   {
+    "terms": [
+     "hypergeometric",
+     "without replacement"
+    ],
+    "pages": [
+     19,
+     148
+    ]
+   }
+  ]
+ }
+]

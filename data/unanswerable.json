@@ -1,0 +1,47 @@
+[
+ {
+  "id": "d16",
+  "split": "dev",
+  "type": "unanswerable",
+  "question": "How much does a Google Colab Pro subscription cost per month, and what GPU does it provide?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Section 1.5 (pp. 40-61) explains how to set up and use Colab but only calls it 'Google's free application' (p41:1). No chunk in the indexed chapters 1-3 mentions Colab Pro, a subscription, a price or a GPU; the full 569-page PDF has 0 hits for 'Colab Pro'. Saying only that the book describes Colab as free still counts as a correct abstention.",
+  "absence_checks": [{"terms": ["Colab Pro", "subscription", "GPU"], "pages": [19, 148]}]
+ },
+ {
+  "id": "d17",
+  "split": "dev",
+  "type": "unanswerable",
+  "question": "What minimum sample size does the book recommend for a survey to reach a 5% margin of error at 95% confidence?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Section 2.2 on sampling (pp. 71-76) only gives general advice: 'increase sample size' (p74:5) and 'sample size calculation may be more complex' for cluster sampling (p73:1). No number, formula or margin of error appears in the indexed chapters 1-3. Note: margin of error is covered in chapter 4 (PDF pp. 157-168), which is not indexed; this question would become answerable if the full book were indexed.",
+  "absence_checks": [{"terms": ["margin of error", "95% confidence", "confidence level", "minimum sample"], "pages": [19, 148]}]
+ },
+ {
+  "id": "t06",
+  "split": "test",
+  "type": "unanswerable",
+  "question": "According to the book, is web scraping legal, and what does it say about robots.txt or a website's terms of service?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Section 2.3 on web scraping (pp. 76-86) covers scraping techniques (Table 2.2), APIs and Python parsing but never discusses legality, robots.txt or terms of service. The only 'legal' in the corpus is p68:2 (pharmaceutical legal teams). p71:0 points to the 'Ethics in Data Collection' section, which is outside the corpus (PDF pp. 387-401) and does not mention web scraping. The full PDF has 0 hits for 'robots' and 'terms of service'.",
+  "absence_checks": [{"terms": ["robots", "terms of service", "legal", "illegal", "copyright"], "pages": [76, 86]},
+                     {"terms": ["robots", "terms of service"], "pages": [19, 148]}]
+ },
+ {
+  "id": "t07",
+  "split": "test",
+  "type": "unanswerable",
+  "question": "What is the probability formula for the hypergeometric distribution, and when should it be used instead of the binomial distribution?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "filter": null,
+  "absence_reason": "Section 3.5 (pp. 137-148) states 'In this chapter, we present the binomial distribution and the Poisson distribution' (p139:2), and its Python list covers binom, poisson, expon and norm only (p146:4). No chunk mentions the hypergeometric distribution or sampling without replacement; the full PDF has 0 hits for 'hypergeometric'. Because formulas were lost during text extraction, PDF pages 139-146 were also checked by eye.",
+  "absence_checks": [{"terms": ["hypergeometric", "without replacement"], "pages": [19, 148]}]
+ }
+]

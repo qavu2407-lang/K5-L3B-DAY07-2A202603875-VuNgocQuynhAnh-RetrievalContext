@@ -1,0 +1,296 @@
+{
+ "day6_commit": "0581c6e",
+ "strategy": "B",
+ "embedding_model": "text-embedding-3-small",
+ "dimensions": 1536,
+ "store": "PostgreSQL 16.16 (Debian 16.16-1.pgdg12+1) + pgvector 0.8.7",
+ "psycopg": "3.3.8",
+ "chunks": 524,
+ "questions": 20,
+ "top3_match": "20/20",
+ "query_tokens": 262,
+ "cost_usd": 5e-06,
+ "search_seconds_total": 11.07,
+ "per_question": [
+  {
+   "id": "d01",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p26:5",
+    "B:openstax-pds-2025:p22:6",
+    "B:openstax-pds-2025:p20:0"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p26:5",
+    "B:openstax-pds-2025:p22:6",
+    "B:openstax-pds-2025:p20:0"
+   ]
+  },
+  {
+   "id": "d02",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p21:0",
+    "B:openstax-pds-2025:p68:3",
+    "B:openstax-pds-2025:p67:2"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p21:0",
+    "B:openstax-pds-2025:p68:3",
+    "B:openstax-pds-2025:p67:2"
+   ]
+  },
+  {
+   "id": "d03",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p29:0",
+    "B:openstax-pds-2025:p29:1",
+    "B:openstax-pds-2025:p28:4"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p29:0",
+    "B:openstax-pds-2025:p29:1",
+    "B:openstax-pds-2025:p28:4"
+   ]
+  },
+  {
+   "id": "d04",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p29:1",
+    "B:openstax-pds-2025:p34:1",
+    "B:openstax-pds-2025:p29:4"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p29:1",
+    "B:openstax-pds-2025:p34:1",
+    "B:openstax-pds-2025:p29:4"
+   ]
+  },
+  {
+   "id": "d05",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p30:4",
+    "B:openstax-pds-2025:p31:0",
+    "B:openstax-pds-2025:p31:1"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p30:4",
+    "B:openstax-pds-2025:p31:0",
+    "B:openstax-pds-2025:p31:1"
+   ]
+  },
+  {
+   "id": "d06",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p38:0",
+    "B:openstax-pds-2025:p38:1",
+    "B:openstax-pds-2025:p34:1"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p38:0",
+    "B:openstax-pds-2025:p38:1",
+    "B:openstax-pds-2025:p34:1"
+   ]
+  },
+  {
+   "id": "d07",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p43:1",
+    "B:openstax-pds-2025:p41:2",
+    "B:openstax-pds-2025:p42:0"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p43:1",
+    "B:openstax-pds-2025:p41:2",
+    "B:openstax-pds-2025:p42:0"
+   ]
+  },
+  {
+   "id": "d08",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p45:2",
+    "B:openstax-pds-2025:p45:1",
+    "B:openstax-pds-2025:p47:1"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p45:2",
+    "B:openstax-pds-2025:p45:1",
+    "B:openstax-pds-2025:p47:1"
+   ]
+  },
+  {
+   "id": "d09",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p72:1",
+    "B:openstax-pds-2025:p84:3",
+    "B:openstax-pds-2025:p85:0"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p72:1",
+    "B:openstax-pds-2025:p84:3",
+    "B:openstax-pds-2025:p85:0"
+   ]
+  },
+  {
+   "id": "d10",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p73:1",
+    "B:openstax-pds-2025:p76:1",
+    "B:openstax-pds-2025:p72:5"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p73:1",
+    "B:openstax-pds-2025:p76:1",
+    "B:openstax-pds-2025:p72:5"
+   ]
+  },
+  {
+   "id": "d11",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p87:1",
+    "B:openstax-pds-2025:p87:2",
+    "B:openstax-pds-2025:p86:3"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p87:1",
+    "B:openstax-pds-2025:p87:2",
+    "B:openstax-pds-2025:p86:3"
+   ]
+  },
+  {
+   "id": "d12",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p86:3",
+    "B:openstax-pds-2025:p87:5",
+    "B:openstax-pds-2025:p87:3"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p86:3",
+    "B:openstax-pds-2025:p87:5",
+    "B:openstax-pds-2025:p87:3"
+   ]
+  },
+  {
+   "id": "d13",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p127:2",
+    "B:openstax-pds-2025:p127:1",
+    "B:openstax-pds-2025:p127:0"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p127:2",
+    "B:openstax-pds-2025:p127:1",
+    "B:openstax-pds-2025:p127:0"
+   ]
+  },
+  {
+   "id": "d14",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p116:1",
+    "B:openstax-pds-2025:p86:4",
+    "B:openstax-pds-2025:p87:4"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p116:1",
+    "B:openstax-pds-2025:p86:4",
+    "B:openstax-pds-2025:p87:4"
+   ]
+  },
+  {
+   "id": "d15",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p31:1",
+    "B:openstax-pds-2025:p29:5",
+    "B:openstax-pds-2025:p30:2"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p31:1",
+    "B:openstax-pds-2025:p29:5",
+    "B:openstax-pds-2025:p30:2"
+   ]
+  },
+  {
+   "id": "t01",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p100:1",
+    "B:openstax-pds-2025:p100:0",
+    "B:openstax-pds-2025:p100:2"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p100:1",
+    "B:openstax-pds-2025:p100:0",
+    "B:openstax-pds-2025:p100:2"
+   ]
+  },
+  {
+   "id": "t02",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p74:2",
+    "B:openstax-pds-2025:p72:4",
+    "B:openstax-pds-2025:p73:3"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p74:2",
+    "B:openstax-pds-2025:p72:4",
+    "B:openstax-pds-2025:p73:3"
+   ]
+  },
+  {
+   "id": "t03",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p118:0",
+    "B:openstax-pds-2025:p118:2",
+    "B:openstax-pds-2025:p117:4"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p118:0",
+    "B:openstax-pds-2025:p118:2",
+    "B:openstax-pds-2025:p117:4"
+   ]
+  },
+  {
+   "id": "t04",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p131:1",
+    "B:openstax-pds-2025:p130:1",
+    "B:openstax-pds-2025:p139:3"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p131:1",
+    "B:openstax-pds-2025:p130:1",
+    "B:openstax-pds-2025:p139:3"
+   ]
+  },
+  {
+   "id": "t05",
+   "match": true,
+   "day7": [
+    "B:openstax-pds-2025:p92:1",
+    "B:openstax-pds-2025:p92:2",
+    "B:openstax-pds-2025:p92:3"
+   ],
+   "day6": [
+    "B:openstax-pds-2025:p92:1",
+    "B:openstax-pds-2025:p92:2",
+    "B:openstax-pds-2025:p92:3"
+   ]
+  }
+ ]
+}
