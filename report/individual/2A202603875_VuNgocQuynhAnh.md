@@ -96,26 +96,34 @@ Một cấu hình có thể đồng thời là phương pháp mới và cải th
 - **Từ chối đúng:** agent từ chối đúng cả 4 câu thiếu evidence (dev + test) và cấu hình chọn không từ chối nhầm câu nào.
 - **Cấu hình chọn (I3) trên test:** điểm 1,80 so với baseline 1,60; chi phí khoảng $0,0014 mỗi câu.
 - **Lỗi còn lại:** agent đôi khi thêm khẳng định không có trong chunk được trích (d12, t02). Đây là lỗi khi sinh câu trả lời, chưa sửa.
+- **Thử thách nâng cao:** test **27/30 (90,0%)** trên chương 5, 6, 9. Có ích nhất là đọc lại ảnh gốc của hình khi trả lời và gắn đoạn văn ngay sau bảng/hình vào kết quả tìm kiếm.
 - **Giới hạn:** test nhỏ (5 câu có đáp án), kết quả test Day 6 đã được xem trước, chỉ một người chấm, chỉ 3 chương của một cuốn sách, giá model lấy từ trang tổng hợp bên thứ ba.
 - **Nguồn:** nội dung sách từ *Principles of Data Science*, OpenStax, Rice University, CC BY-NC-SA 4.0 (Access for free at openstax.org). Khung code từ starter của khóa học (`starter/`).
 
 ## Thử thách nâng cao (nếu thực hiện)
 
-**Không thực hiện.** Các mục dưới đây để trống.
-
-- Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:
-- Cách xử lý text, bảng, ảnh, biểu đồ; phạm vi index và phần chưa xử lý:
-- Cách chia benchmark, schema evidence, model và cấu hình đã chốt trên dev:
+- Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản: cùng giáo trình OpenStax *Principles of Data Science* (2025, CC BY-NC-SA 4.0), chương 5, 6, 9: **168 trang** (152 trang nội dung; 16 trang cuối chương từ "Key Terms" bị loại, ghi trong `data/advanced/index_report.json`). PDF dùng chung với Day 6, không có trong repo.
+- Cách xử lý text, bảng, ảnh, biểu đồ; phạm vi index và phần chưa xử lý: `src/adv_index.py` tạo **506 chunk** (394 text, 26 bảng, 86 hình), embed bằng `text-embedding-3-small` vào pgvector Day 6 (strategy `ADV`).
+  - **Text:** chunk tối đa 1.000 ký tự. Công thức trong PDF là hình vector nên mất ký hiệu; 254/263 đoạn có công thức được `gpt-4.1-mini` chép lại từ ảnh, 9 đoạn bị loại vì model thêm nội dung không có trong sách.
+  - **Bảng:** PyMuPDF `find_tables` + text thô của vùng bảng; bảng mất ô công thức được chép lại từ ảnh.
+  - **Hình:** crop + bbox + mô tả bằng vision. Hình không có caption dùng đoạn văn xung quanh làm chú thích. Mỗi bảng/hình lưu thêm đoạn văn ngay sau nó (khoảng 800 ký tự).
+  - Chi phí vision khi xây index: $0,166.
+  - **Chưa xử lý:** hình nhỏ hơn 60 pt (icon); 9 đoạn công thức còn thiếu ký hiệu; mô tả hình do model tạo có thể sai, nên agent đọc lại ảnh gốc khi trả lời. OCR bằng Tesseract kém hơn vision (giữ làm kết quả âm).
+- Cách chia benchmark, schema evidence, model và cấu hình đã chốt trên dev: 48 câu, chia trước khi thử.
+  - **Dev 18** (mỗi nhóm 3 + 3 thiếu evidence); **test 30** (bảng 6, ảnh 5, biểu đồ 5, multi-hop 4, text 4, thiếu evidence 6).
+  - Mỗi câu có `evidence` = trang, loại, vị trí, giá trị (`data/advanced/benchmark.json`, bản đọc `benchmark_review.md`).
+  - Agent `gpt-4.1-mini` + hybrid, tối đa 3 lượt × top-3, 9.600 ký tự, thêm tool đọc hình (`gpt-6.1-terra`), tool tính toán và bước kiểm tra câu trả lời bằng `gpt-6.1-terra`.
+  - **Chọn F6** (dev 18/18, 17/18; `results/adv_frozen_config.json`). **Sai lệch:** F6 vượt mức chi phí $0,10/18 câu đã đặt ($0,110 và $0,112); theo tiêu chí ban đầu chỉ F4 đủ điều kiện. Ghi trong phụ lục `results/adv_selection_criteria.md` trước khi chạy test. So sánh 16 lần chạy dev: `results/adv_dev_comparison.md`.
 
 | Nhóm test | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
 |---|---|---|---|
-| Bảng | | | |
-| Ảnh, sơ đồ | | | |
-| Biểu đồ | | | |
-| Multi-hop | | | |
-| Text | | | |
-| Thiếu bằng chứng | | | |
-| **Toàn bộ** | | | |
+| Bảng | 6/6 | 100% | |
+| Ảnh, sơ đồ | 5/5 | 100% | |
+| Biểu đồ | 4/5 | 80% | AT12: đọc nhầm Hình 5.6 thay vì 5.5, từ chối |
+| Multi-hop | 3/4 | 75% | AT20: tìm được heatmap nhưng không đọc, từ chối |
+| Text | 3/4 | 75% | AT22: thêm một câu sách không viết |
+| Thiếu bằng chứng | 6/6 | 100% | |
+| **Toàn bộ** | **27/30** | **90,0%** | 0 lỗi hệ thống |
 
-- Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:
-- Giới hạn, cách tái lập và đường dẫn benchmark:
+- Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống: `results/adv-agent-test-F6/` (`traces.json`: lượt tìm, context, tool call, lần đọc hình, verify, citation; `labels.json`: nhãn và lý do, đối chiếu PDF). Test chạy **một lần**: 0 lỗi, $0,200 cho 30 câu, trung vị 8,6 s/câu.
+- Giới hạn, cách tái lập và đường dẫn benchmark: **vừa đúng ngưỡng 27/30**; trên dev cùng cấu hình lệch khoảng 1 câu giữa các lần chạy, nên chạy lại có thể dưới ngưỡng. Câu bẫy dạng AD17 chỉ chặn được 1/2 lần trên dev. Chi phí vượt mức tự đặt (tiêu chí tự đặt; đổi trước khi chạy test, commit a66744f). Tái lập: `adv_index.py extract` → `embed` → lệnh trong `adv_frozen_config.json` (chi tiết trong `src/README.md`).
