@@ -1,0 +1,97 @@
+{
+ "config": "F1",
+ "split": "dev",
+ "passed": "15/18",
+ "labels": [
+  {
+   "query_id": "AD01",
+   "pass": true,
+   "reason": "2023 Summer, $3849 (p235 tab0)."
+  },
+  {
+   "query_id": "AD02",
+   "pass": true,
+   "reason": "2.6 hours (p283 tab0)."
+  },
+  {
+   "query_id": "AD03",
+   "pass": true,
+   "reason": "5.2 (p464 tab0)."
+  },
+  {
+   "query_id": "AD04",
+   "pass": true,
+   "reason": "All five Trendline options; read_figure on p234 fig1 (gpt-6.1-terra) matches the screenshot."
+  },
+  {
+   "query_id": "AD05",
+   "pass": true,
+   "reason": "Rock; read_figure on p317 fig0 follows the No/No path correctly."
+  },
+  {
+   "query_id": "AD06",
+   "pass": true,
+   "reason": "Darker = more cases, legend max 50,000; read_figure on p454 fig0. No unsupported country claim (I6-I8 failure gone)."
+  },
+  {
+   "query_id": "AD07",
+   "pass": true,
+   "reason": "2022, negative, about -900 (true -927) from read_figure on p242 fig0; closer than I8's -1,000."
+  },
+  {
+   "query_id": "AD08",
+   "pass": true,
+   "reason": "0.17 from read_figure on p430 fig0."
+  },
+  {
+   "query_id": "AD09",
+   "pass": true,
+   "reason": "2 and 3, about 0.22 each, from read_figure on p447 fig0."
+  },
+  {
+   "query_id": "AD10",
+   "pass": true,
+   "reason": "Recursive EMA 4576.63 highest vs 4541 / 4349 (p256, p257 tab0). Citations appear twice ('[a, b]. [a][b]') because split_grouped was not enabled for prompt v5 (fixed after F1); ids and claims correct."
+  },
+  {
+   "query_id": "AD11",
+   "pass": false,
+   "reason": "Same wrong three categories -> 64.42%; Pareto chart (caption-less p436 fig0) not retrieved, so read_figure was never used."
+  },
+  {
+   "query_id": "AD12",
+   "pass": true,
+   "reason": "(3.5, 10.2) Blue -> Red; 2/3 -> 3/3 (p323, p325 tab0). Same duplicate-citation format issue as AD10."
+  },
+  {
+   "query_id": "AD13",
+   "pass": true,
+   "reason": "Low- vs high-quality photos, reason correct (p276 t5, p277 t0)."
+  },
+  {
+   "query_id": "AD14",
+   "pass": false,
+   "reason": "ADF reason correct, but again adds 'positive values of d did not change the accuracy' (p262 means q)."
+  },
+  {
+   "query_id": "AD15",
+   "pass": true,
+   "reason": "Square-root rule, ~22 bins (p430 t1)."
+  },
+  {
+   "query_id": "AD16",
+   "pass": true,
+   "reason": "Abstained."
+  },
+  {
+   "query_id": "AD17",
+   "pass": false,
+   "reason": "Trap: claims 0.77 for the 19-point example."
+  },
+  {
+   "query_id": "AD18",
+   "pass": true,
+   "reason": "Abstained; read_figure on p453 fig0 confirmed the heatmap ends at 1960."
+  }
+ ]
+}

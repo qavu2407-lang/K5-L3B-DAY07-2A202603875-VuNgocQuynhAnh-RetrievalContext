@@ -1,0 +1,43 @@
+{
+ "config": "F3b",
+ "corpus": "advanced",
+ "split": "dev",
+ "model": "gpt-4.1-mini",
+ "temperature": 0.01,
+ "retriever": "hybrid",
+ "max_searches": 3,
+ "top_k": 3,
+ "budget_chars": 9600,
+ "distinct_queries": true,
+ "skip_seen": true,
+ "prompt": "v6",
+ "typed_search": true,
+ "calculator": true,
+ "verify": true,
+ "append_citations": true,
+ "read_figure": true,
+ "figure_model": "gpt-6.1-terra",
+ "figure_nudge": true,
+ "figure_reads": 9,
+ "questions": 18,
+ "repairs": 24,
+ "status": {
+  "answered": 16,
+  "abstain": 2
+ },
+ "final_tool": {
+  "verify": 16,
+  "abstain": 2
+ },
+ "searches_distribution": {
+  "1": 14,
+  "2": 3,
+  "3": 1
+ },
+ "model_calls": 96,
+ "llm_tokens": 182234,
+ "llm_cost_usd": 0.084206,
+ "embedding_cost_usd": 6e-06,
+ "median_s_per_question": 7.890000000000001,
+ "total_s": 140.2
+}

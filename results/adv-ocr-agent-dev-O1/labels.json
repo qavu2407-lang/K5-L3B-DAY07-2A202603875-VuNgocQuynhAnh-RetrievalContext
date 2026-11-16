@@ -1,0 +1,98 @@
+{
+ "config": "O1",
+ "split": "dev",
+ "index": "ADVOCR (figures: Tesseract, vision only where OCR failed)",
+ "passed": "10/18",
+ "labels": [
+  {
+   "query_id": "AD01",
+   "pass": true,
+   "reason": "2023 Summer, $3849 (p235 tab0; tables unchanged in the OCR index)."
+  },
+  {
+   "query_id": "AD02",
+   "pass": true,
+   "reason": "2.6 hours (p283 tab0)."
+  },
+  {
+   "query_id": "AD03",
+   "pass": true,
+   "reason": "5.2 (p464 tab0)."
+  },
+  {
+   "query_id": "AD04",
+   "pass": false,
+   "reason": "Lists only Linear, Exponential, Linear Forecast: Tesseract text of p234 fig1 misses 'Two Period Moving Average' and 'More Options...' (vision description had all five)."
+  },
+  {
+   "query_id": "AD05",
+   "pass": false,
+   "reason": "Abstained: Tesseract text of p317 fig0 has the questions and Yes/No but no leaf names (Rock etc. not read); agent correctly saw the chunk was incomplete."
+  },
+  {
+   "query_id": "AD06",
+   "pass": false,
+   "reason": "Vision fallback (OCR mean conf 47): same unsupported US ~50,000 claim as I6-I8."
+  },
+  {
+   "query_id": "AD07",
+   "pass": false,
+   "reason": "Says 2020; correct is 2022. OCR keeps tick labels but not the line's shape, so the minimum cannot be read (p242 fig0)."
+  },
+  {
+   "query_id": "AD08",
+   "pass": true,
+   "reason": "0.17 from the vision fallback (OCR mean conf 69 < 70) p430 fig0."
+  },
+  {
+   "query_id": "AD09",
+   "pass": false,
+   "reason": "Says 2, 3 and 4; correct is 2 and 3 (~0.22 each, 4 is ~0.17). OCR text of p447 fig0 has only axis ticks, no bar heights."
+  },
+  {
+   "query_id": "AD10",
+   "pass": true,
+   "reason": "Recursive EMA 4576.63 highest vs 4541 / 4349 (p256, p257 tab0); no contradiction this run."
+  },
+  {
+   "query_id": "AD11",
+   "pass": false,
+   "reason": "Same wrong three categories -> 64.42% (Pareto chart not retrieved)."
+  },
+  {
+   "query_id": "AD12",
+   "pass": true,
+   "reason": "(3.5, 10.2) Blue -> Red; 2/3 -> 3/3 (p323, p325 tab0)."
+  },
+  {
+   "query_id": "AD13",
+   "pass": true,
+   "reason": "Low- vs high-quality photos, reason correct (p276 t5, p277 t0)."
+  },
+  {
+   "query_id": "AD14",
+   "pass": false,
+   "reason": "Worse than I8: gives 'positive values of d did not change the accuracy' as the reason for d = 2 (p262 means q); ADF reason missing."
+  },
+  {
+   "query_id": "AD15",
+   "pass": true,
+   "reason": "Square-root rule, ~22 bins (p430 t1)."
+  },
+  {
+   "query_id": "AD16",
+   "pass": true,
+   "reason": "Abstained."
+  },
+  {
+   "query_id": "AD17",
+   "pass": false,
+   "reason": "Trap: claims 0.77 for the 19-point example."
+  },
+  {
+   "query_id": "AD18",
+   "pass": true,
+   "reason": "Abstained."
+  }
+ ]
+}

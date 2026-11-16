@@ -1,0 +1,97 @@
+{
+ "config": "F2",
+ "split": "dev",
+ "passed": "15/18",
+ "labels": [
+  {
+   "query_id": "AD01",
+   "pass": true,
+   "reason": "2023 Summer, $3849 (p235 tab0)."
+  },
+  {
+   "query_id": "AD02",
+   "pass": true,
+   "reason": "2.6 hours (p283 tab0)."
+  },
+  {
+   "query_id": "AD03",
+   "pass": true,
+   "reason": "5.2 (p464 tab0)."
+  },
+  {
+   "query_id": "AD04",
+   "pass": true,
+   "reason": "All five Trendline options from read_figure on p234 fig1."
+  },
+  {
+   "query_id": "AD05",
+   "pass": true,
+   "reason": "Rock from read_figure on p317 fig0."
+  },
+  {
+   "query_id": "AD06",
+   "pass": true,
+   "reason": "Darker = more cases, legend max 50,000 (read_figure p454 fig0); no extra claims."
+  },
+  {
+   "query_id": "AD07",
+   "pass": true,
+   "reason": "2022, negative, about -900 (true -927) from read_figure p242 fig0."
+  },
+  {
+   "query_id": "AD08",
+   "pass": true,
+   "reason": "0.17 from read_figure p430 fig0."
+  },
+  {
+   "query_id": "AD09",
+   "pass": true,
+   "reason": "2 and 3, ~0.22 each, from read_figure p447 fig0."
+  },
+  {
+   "query_id": "AD10",
+   "pass": false,
+   "reason": "Self-contradictory: first names alpha = 0.7 (4541) as highest, then the recursive EMA 4576.63 (p256, p257 tab0)."
+  },
+  {
+   "query_id": "AD11",
+   "pass": false,
+   "reason": "Only searched the table (one table-typed search); the Pareto chart was never searched despite the v6 rule, so the wrong three categories -> 64.4%. Fallback caption on p436 fig0 not exercised."
+  },
+  {
+   "query_id": "AD12",
+   "pass": true,
+   "reason": "(3.5, 10.2) Blue -> Red; states one wrong before and all three correct after pruning (accuracy change conveyed, same rule as I5) (p323, p325 tab0)."
+  },
+  {
+   "query_id": "AD13",
+   "pass": true,
+   "reason": "Low- vs high-quality photos, reason correct (p276 t5, p277 t0)."
+  },
+  {
+   "query_id": "AD14",
+   "pass": true,
+   "reason": "ADF reason with p-values: d = 2 p = 7.85e-14, d = 0/1 not stationary (p260, p261 t0); no d/q gap claim (v6 rule worked this run)."
+  },
+  {
+   "query_id": "AD15",
+   "pass": true,
+   "reason": "Square-root rule, ~22 bins (p430 t1)."
+  },
+  {
+   "query_id": "AD16",
+   "pass": true,
+   "reason": "Answered rather than abstain, but only states the tables start at 2013 and give no 2012 value; no unsupported claim."
+  },
+  {
+   "query_id": "AD17",
+   "pass": false,
+   "reason": "Trap: claims 0.77 for the 19-point example; v6 same-example rule did not stop it."
+  },
+  {
+   "query_id": "AD18",
+   "pass": true,
+   "reason": "Abstained after read_figure on p453 fig0 showed the heatmap ends at 1960."
+  }
+ ]
+}
