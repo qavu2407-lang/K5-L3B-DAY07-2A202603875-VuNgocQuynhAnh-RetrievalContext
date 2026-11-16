@@ -1,0 +1,34 @@
+{
+ "config": "I3",
+ "corpus": "advanced",
+ "split": "dev",
+ "model": "gpt-4.1-mini",
+ "temperature": 0.01,
+ "retriever": "hybrid",
+ "max_searches": 3,
+ "top_k": 3,
+ "budget_chars": 9600,
+ "distinct_queries": true,
+ "skip_seen": true,
+ "questions": 18,
+ "repairs": 10,
+ "status": {
+  "answered": 17,
+  "abstain": 1
+ },
+ "final_tool": {
+  "answer": 17,
+  "abstain": 1
+ },
+ "searches_distribution": {
+  "1": 13,
+  "2": 4,
+  "3": 1
+ },
+ "model_calls": 52,
+ "llm_tokens": 57341,
+ "llm_cost_usd": 0.026656,
+ "embedding_cost_usd": 7e-06,
+ "median_s_per_question": 3.9000000000000004,
+ "total_s": 79.3
+}

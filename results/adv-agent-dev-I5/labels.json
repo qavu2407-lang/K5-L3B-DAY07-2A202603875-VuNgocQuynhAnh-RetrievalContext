@@ -1,0 +1,97 @@
+{
+ "config": "I5",
+ "split": "dev",
+ "passed": "13/18",
+ "labels": [
+  {
+   "query_id": "AD01",
+   "pass": true,
+   "reason": "2023 Summer, $3849 from Table 5.2 (p235 tab0)."
+  },
+  {
+   "query_id": "AD02",
+   "pass": true,
+   "reason": "2.6 hours from Table 6.4 (p283 tab0)."
+  },
+  {
+   "query_id": "AD03",
+   "pass": true,
+   "reason": "5.2 from Table 9.7 (p464 tab0)."
+  },
+  {
+   "query_id": "AD04",
+   "pass": true,
+   "reason": "All five Trendline options from Figure 5.7 description (p234 fig1); matches the screenshot."
+  },
+  {
+   "query_id": "AD05",
+   "pass": true,
+   "reason": "Rock via the correct path in Figure 6.18 (p317 fig0)."
+  },
+  {
+   "query_id": "AD06",
+   "pass": false,
+   "reason": "Same unsupported US claim (from the generated figure description)."
+  },
+  {
+   "query_id": "AD07",
+   "pass": true,
+   "reason": "2022, negative (~-1,000) from Figure 5.11 (p242 fig0); magnitude within accepted range."
+  },
+  {
+   "query_id": "AD08",
+   "pass": false,
+   "reason": "Hedges between 0.17 and 0.12; not a single correct answer."
+  },
+  {
+   "query_id": "AD09",
+   "pass": true,
+   "reason": "2 and 3, cites the figure chunk p447 fig0 (typed figure search)."
+  },
+  {
+   "query_id": "AD10",
+   "pass": false,
+   "reason": "Abstained: Table 5.5/5.6 cells are empty in the index (math cells missing from PDF text layer)."
+  },
+  {
+   "query_id": "AD11",
+   "pass": false,
+   "reason": "Reads ~77% from the chart instead of computing 76.3% from Table 9.2."
+  },
+  {
+   "query_id": "AD12",
+   "pass": true,
+   "reason": "(3.5, 10.2) Blue -> Red; all three correct after pruning (one misclassified before) - borderline: 2/3 not stated as a number."
+  },
+  {
+   "query_id": "AD13",
+   "pass": true,
+   "reason": "Correct, both chunks cited."
+  },
+  {
+   "query_id": "AD14",
+   "pass": true,
+   "reason": "Second-order difference stationary per ADF tests (p260 t0); p-values not given but reason correct."
+  },
+  {
+   "query_id": "AD15",
+   "pass": true,
+   "reason": "Square root rule, ~22 bins for 500 values (p430 t1)."
+  },
+  {
+   "query_id": "AD16",
+   "pass": true,
+   "reason": "States the 2012 value is not in the table (starts 2013); only supported facts added."
+  },
+  {
+   "query_id": "AD17",
+   "pass": false,
+   "reason": "Trap: claims 0.77 for the 19-point example."
+  },
+  {
+   "query_id": "AD18",
+   "pass": true,
+   "reason": "Abstained."
+  }
+ ]
+}

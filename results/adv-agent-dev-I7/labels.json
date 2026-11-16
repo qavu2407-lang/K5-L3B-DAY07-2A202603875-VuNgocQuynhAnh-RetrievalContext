@@ -1,0 +1,97 @@
+{
+ "config": "I7",
+ "split": "dev",
+ "passed": "13/18",
+ "labels": [
+  {
+   "query_id": "AD01",
+   "pass": true,
+   "reason": "2023 Summer, $3849 from Table 5.2 (p235 tab0)."
+  },
+  {
+   "query_id": "AD02",
+   "pass": true,
+   "reason": "2.6 hours from Table 6.4 (p283 tab0). (answer unchanged from I6)"
+  },
+  {
+   "query_id": "AD03",
+   "pass": true,
+   "reason": "5.2 from Table 9.7 (p464 tab0). (answer unchanged from I6)"
+  },
+  {
+   "query_id": "AD04",
+   "pass": false,
+   "reason": "Final output is abstain. Draft answer was correct (same five options as I6, cites p234 fig1, in context) but had no [id] in the text; the one repair also omitted it -> run_agent rejected it. Citation-format failure (run-to-run variance; I6 passed)."
+  },
+  {
+   "query_id": "AD05",
+   "pass": true,
+   "reason": "Rock via the correct path in Figure 6.18 (p317 fig0). (answer unchanged from I6)"
+  },
+  {
+   "query_id": "AD06",
+   "pass": false,
+   "reason": "Same as I6: adds 'United States ... close to or above 50,000' from the v2 description; crop shows the US in the 5,000-10,000 bin. Re-describing p454 with a stricter prompt (2 tries) still mis-assigned bins, so the v2 description was kept."
+  },
+  {
+   "query_id": "AD07",
+   "pass": true,
+   "reason": "2022, negative (~-1,000) from Figure 5.11 (p242 fig0); same rule as I5/I6."
+  },
+  {
+   "query_id": "AD08",
+   "pass": true,
+   "reason": "Single answer 0.17 (p430 fig0)."
+  },
+  {
+   "query_id": "AD09",
+   "pass": true,
+   "reason": "2 and 3, about 0.22 each, from the figure chunk p447 fig0. (answer unchanged from I6)"
+  },
+  {
+   "query_id": "AD10",
+   "pass": true,
+   "reason": "Recursive EMA alpha 0.75 = 4576.63 highest (vs 4541, 4349), from Table 5.5 (p256 tab0) and Table 5.6 (p257 tab0); grouped citation normalized to [a][b]. Fixed vs I6."
+  },
+  {
+   "query_id": "AD11",
+   "pass": false,
+   "reason": "Picked the wrong three categories (Cracked screen, Power button, Scratches) -> 64.42%; the Pareto chart's left three are Scratches, Does not charge, Cracked screen (76.3%). Pareto chart chunk not retrieved; calculator was used correctly on the wrong inputs. (answer unchanged from I6)"
+  },
+  {
+   "query_id": "AD12",
+   "pass": true,
+   "reason": "(3.5, 10.2) Blue -> Red; 2/3 -> 3/3 (66.7% -> 100%) (p323 tab0, p325 tab0)."
+  },
+  {
+   "query_id": "AD13",
+   "pass": true,
+   "reason": "Low- vs high-quality photos, reason correct; both chunks cited (p276 t5, p277 t0). (answer unchanged from I6)"
+  },
+  {
+   "query_id": "AD14",
+   "pass": false,
+   "reason": "Same as I6: adds 'positive values of d did not change the accuracy' (p262 says this about q)."
+  },
+  {
+   "query_id": "AD15",
+   "pass": true,
+   "reason": "Square-root rule, ~22 bins for 500 values; extra sentences are in p430 t1. (answer unchanged from I6)"
+  },
+  {
+   "query_id": "AD16",
+   "pass": true,
+   "reason": "Abstained; reason (tables cover 2013-2023 only) is supported by p225/p256/p257 in context. Note: repeated the same query 4 times. (answer unchanged from I6)"
+  },
+  {
+   "query_id": "AD17",
+   "pass": false,
+   "reason": "Trap: claims 0.77 for the 19-point example; 0.77 is the Python run on all 115 points (p295-296). (answer unchanged from I6)"
+  },
+  {
+   "query_id": "AD18",
+   "pass": true,
+   "reason": "Abstained; heatmap covers up to 1960 only (p453 fig0 in context). (answer unchanged from I6)"
+  }
+ ]
+}
