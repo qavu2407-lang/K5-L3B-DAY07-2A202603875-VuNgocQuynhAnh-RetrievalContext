@@ -1,0 +1,200 @@
+{
+ "config": "F6",
+ "split": "test",
+ "passed": "27/30",
+ "pass_rate": "90.0%",
+ "by_group": {
+  "table": "6/6",
+  "image": "5/5",
+  "chart": "4/5",
+  "multihop": "3/4",
+  "text": "3/4",
+  "unanswerable": "6/6"
+ },
+ "errors": 0,
+ "cost_usd": 0.1996,
+ "median_s": 8.6,
+ "total_s": 281.4,
+ "labels": [
+  {
+   "query_id": "AT01",
+   "group": "table",
+   "pass": true,
+   "reason": "2506.85 (p225 tab0)."
+  },
+  {
+   "query_id": "AT02",
+   "group": "table",
+   "pass": true,
+   "reason": "2021, 1185.97 (p265 tab0)."
+  },
+  {
+   "query_id": "AT03",
+   "group": "table",
+   "pass": true,
+   "reason": "Error 40; MAPE 1.917 = 191.7% from the bullet under Table 6.3, carried by the neighbouring text of p282 tab0."
+  },
+  {
+   "query_id": "AT04",
+   "group": "table",
+   "pass": true,
+   "reason": "AK (Alaska), 1053.48 (p461 tab1). Verifier's first objection (per insured vehicle) was fixed in the final answer."
+  },
+  {
+   "query_id": "AT05",
+   "group": "table",
+   "pass": true,
+   "reason": "Year 4, 9895 (p437 tab0)."
+  },
+  {
+   "query_id": "AT06",
+   "group": "table",
+   "pass": true,
+   "reason": "1261.92 and 2703.75 (p250, p251 tab0)."
+  },
+  {
+   "query_id": "AT07",
+   "group": "image",
+   "pass": true,
+   "reason": "=AVERAGE(B2:B14) from read_figure p244 fig0."
+  },
+  {
+   "query_id": "AT08",
+   "group": "image",
+   "pass": true,
+   "reason": "Steps, Train/Test repeated until desired accuracy, dashed arrow = adjustment on new data (read_figure p277 fig0). Closing clause 'feedback loop ...' restates the arrow label, no new fact."
+  },
+  {
+   "query_id": "AT09",
+   "group": "image",
+   "pass": true,
+   "reason": "y <= 13.75; right = Blue; left next x <= 14.55 (read_figure p321 fig0)."
+  },
+  {
+   "query_id": "AT10",
+   "group": "image",
+   "pass": true,
+   "reason": "Blue below / red above average, -11 to 11 F, vs 1991-2020 (read_figure p450 fig0)."
+  },
+  {
+   "query_id": "AT11",
+   "group": "image",
+   "pass": true,
+   "reason": "Red (read_figure p324 fig0)."
+  },
+  {
+   "query_id": "AT12",
+   "group": "chart",
+   "pass": false,
+   "reason": "Abstained. Agent read Figure 5.6 (p234 fig0, trend-curve version) although Figure 5.5 (p233 fig0) was also retrieved; terra verifier rightly flagged the figure mismatch and the agent abstained instead of reading p233."
+  },
+  {
+   "query_id": "AT13",
+   "group": "chart",
+   "pass": true,
+   "reason": "About 0.74 (read_figure p252 fig0)."
+  },
+  {
+   "query_id": "AT14",
+   "group": "chart",
+   "pass": true,
+   "reason": "9 (read_figure p316 fig0)."
+  },
+  {
+   "query_id": "AT15",
+   "group": "chart",
+   "pass": true,
+   "reason": "BioGoods Ltd., 6.2 tons/year (read_figure p451 fig0)."
+  },
+  {
+   "query_id": "AT16",
+   "group": "chart",
+   "pass": true,
+   "reason": "17 successes, left-skewed (read_figure p445 fig0); no probability value given but the question does not ask for it."
+  },
+  {
+   "query_id": "AT17",
+   "group": "multihop",
+   "pass": true,
+   "reason": "4892.5 - 4769.83 = 122.67 (p227 t1, p225 tab0)."
+  },
+  {
+   "query_id": "AT18",
+   "group": "multihop",
+   "pass": true,
+   "reason": "12 of 31 grass images; percentage given only as the book's 'almost 40%', not computed (38.7%); book's description and suggestion correct (neighbouring text of p300 tab0, from p301)."
+  },
+  {
+   "query_id": "AT19",
+   "group": "multihop",
+   "pass": true,
+   "reason": "Ages match Table 9.1; median (28.12 + 29.95)/2 = 29.035; boxplot line ~29 (p426 tab0, read_figure p427 fig0)."
+  },
+  {
+   "query_id": "AT20",
+   "group": "multihop",
+   "pass": false,
+   "reason": "Abstained. Table 9.5 identified no_previous, but the correlation heatmap (p463 fig0, retrieved in search 3) was never read."
+  },
+  {
+   "query_id": "AT21",
+   "group": "text",
+   "pass": true,
+   "reason": "Model Evaluation; confidence indication; forecasts checked against new observations and adjusted (p224 t3)."
+  },
+  {
+   "query_id": "AT22",
+   "group": "text",
+   "pass": false,
+   "reason": "Core correct (sum to 1; no hard-and-fast requirement, p255 t0) but adds 'ensures the weighted average is a proper average ... weights represent proportions of the total', which the book does not state; evidence does not support the whole answer. No verify call logged."
+  },
+  {
+   "query_id": "AT23",
+   "group": "text",
+   "pass": true,
+   "reason": "Depth-limiting, leaf-limiting, MDL; pre/post-pruning; added descriptions are in p325 t1/t2."
+  },
+  {
+   "query_id": "AT24",
+   "group": "text",
+   "pass": true,
+   "reason": "Avoid green + red; 3-5 colours (p440 t0, t1)."
+  },
+  {
+   "query_id": "AT25",
+   "group": "unanswerable",
+   "pass": true,
+   "reason": "Abstained."
+  },
+  {
+   "query_id": "AT26",
+   "group": "unanswerable",
+   "pass": true,
+   "reason": "Abstained."
+  },
+  {
+   "query_id": "AT27",
+   "group": "unanswerable",
+   "pass": true,
+   "reason": "Abstained (vision did not compute an information gain)."
+  },
+  {
+   "query_id": "AT28",
+   "group": "unanswerable",
+   "pass": true,
+   "reason": "States year 9 is not given; table/graph cover years 1-8; year 8 = 7743 is in p437 tab0. No unsupported claim."
+  },
+  {
+   "query_id": "AT29",
+   "group": "unanswerable",
+   "pass": true,
+   "reason": "Abstained."
+  },
+  {
+   "query_id": "AT30",
+   "group": "unanswerable",
+   "pass": true,
+   "reason": "Abstained."
+  }
+ ]
+}
