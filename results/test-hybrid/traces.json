@@ -1,0 +1,739 @@
+[
+ {
+  "query_id": "t01",
+  "split": "test",
+  "answerable": true,
+  "question": "Why does data chunking attach metadata such as the chunk number and total number of chunks?",
+  "query": "Why does data chunking attach metadata such as the chunk number and total number of chunks?",
+  "filter": null,
+  "method": "hybrid",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p100:1",
+    "page": 100,
+    "chapter": 2,
+    "score": 0.032787,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p100:0",
+    "page": 100,
+    "chapter": 2,
+    "score": 0.032002,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p100:2",
+    "page": 100,
+    "chapter": 2,
+    "score": 0.032002,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p36:2",
+    "page": 36,
+    "chapter": 1,
+    "score": 0.030777,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p36:1",
+    "page": 36,
+    "chapter": 1,
+    "score": 0.03009,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p99:2",
+    "page": 99,
+    "chapter": 2,
+    "score": 0.025658,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p140:4",
+    "page": 140,
+    "chapter": 3,
+    "score": 0.015625,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p140:0",
+    "page": 140,
+    "chapter": 3,
+    "score": 0.015385,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p99:4",
+    "page": 99,
+    "chapter": 2,
+    "score": 0.015152,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p142:0",
+    "page": 142,
+    "chapter": 3,
+    "score": 0.014925,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p100:1 | data/Principles-of-Data-Science-WEB.pdf | page 100]\nData chunking is used in data storage systems and data transmission over networks, and it is especially useful when working with large datasets that exceed the capacity of a single machine or when transferring data over a network with limited bandwidth. The divided data in data chunking is known as a chunk or block. The size of each chunk can vary depending on the requirements and range from a few kilobytes to several gigabytes. These chunks are typically organized sequentially, with each chunk containing a set of data from the larger dataset. The process of data chunking also involves adding metadata (data that provides information about other data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately. Data chunking has several advantages, including the following:\n\n[B:openstax-pds-2025:p100:0 | data/Principles-of-Data-Science-WEB.pdf | page 100]\nFigure 2.5 B-Tree Indexing Data Chunking Data chunking, also known as data segmentation or data partitioning, is a technique used to break down large datasets into smaller, more manageable chunks and make them easier to manage, process, analyze, and store. Chunking is particularly useful when datasets are too large to be processed or analyzed as a single unit. By dividing the data into smaller chunks, various processing tasks can be distributed across multiple computing nodes or processing units.\n\n[B:openstax-pds-2025:p100:2 | data/Principles-of-Data-Science-WEB.pdf | page 100]\n1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can be performed more quickly, reducing the overall processing time. 2. Better utilization of resources. Data chunking enables data to be distributed and processed across multiple machines, making better use of available computing resources. 3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of only the affected chunk rather than the entire dataset. 4. Flexibility. Data chunking allows for the transfer and processing of only the required chunks rather than the entire dataset, providing flexibility in managing large datasets.",
+  "context_ids": [
+   "B:openstax-pds-2025:p100:1",
+   "B:openstax-pds-2025:p100:0",
+   "B:openstax-pds-2025:p100:2"
+  ],
+  "context_chars": 2353,
+  "dropped_from_context": [],
+  "elapsed_ms": 451.8,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": false,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "t02",
+  "split": "test",
+  "answerable": true,
+  "question": "When is snowball sampling useful, and what is its drawback?",
+  "query": "When is snowball sampling useful, and what is its drawback?",
+  "filter": null,
+  "method": "hybrid",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p74:2",
+    "page": 74,
+    "chapter": 2,
+    "score": 0.032787,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p74:3",
+    "page": 74,
+    "chapter": 2,
+    "score": 0.030536,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p73:2",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.029911,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p73:4",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.029572,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p74:5",
+    "page": 74,
+    "chapter": 2,
+    "score": 0.029287,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p74:1",
+    "page": 74,
+    "chapter": 2,
+    "score": 0.029199,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p75:0",
+    "page": 75,
+    "chapter": 2,
+    "score": 0.029199,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p73:0",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.029139,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p74:4",
+    "page": 74,
+    "chapter": 2,
+    "score": 0.02901,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p73:1",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.028543,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p74:2 | data/Principles-of-Data-Science-WEB.pdf | page 74]\n7. Snowball sampling. Snowball sampling is typically used in situations where it is difficult to access a particular population; it relies on the assumption that people with similar characteristics or experiences tend to associate with each other and can provide valuable referrals. This type of sampling can be useful in studying hard-to-reach or sensitive populations, but it may also be biased and limit the generalizability of findings.\n\n[B:openstax-pds-2025:p74:3 | data/Principles-of-Data-Science-WEB.pdf | page 74]\n8. Quota sampling. Quota sampling is a non-probability sampling technique in which experimenters select participants based on predetermined quotas to guarantee that a certain number or percentage of the population of interest is represented in the sample. These quotas are based on specific demographic characteristics, such as age, gender, ethnicity, and occupation, which are believed to have a direct or indirect relationship with the research topic. Quota sampling is generally used in market research and opinion polls, as it allows for a fast and cost-effective way to gather data from a diverse range of individuals. However, it is important to note that the results of quota sampling may not accurately represent the entire population, as the sample is not randomly selected and may be biased toward certain characteristics. Therefore, the findings from studies using quota sampling should be interpreted with caution.\n\n[B:openstax-pds-2025:p73:2 | data/Principles-of-Data-Science-WEB.pdf | page 73]\nAn example of cluster sampling would be a study on the effectiveness of a new educational program in a state. The state is divided into clusters based on school districts. The researcher uses a random selection process to choose a sample of school districts and then collects data from all the schools within those districts. This method allows the researcher to obtain a representative sample of the state's student population without having to visit each individual school, saving time and resources. 4. Convenience sampling. Convenience sampling applies to selecting people or items for the sample based on their availability and convenience to the data science research. For example, a researcher may choose to survey students in their classroom or manipulate data from social media users. Convenience sampling is effortless to achieve, and it is useful for exploratory studies.",
+  "context_ids": [
+   "B:openstax-pds-2025:p74:2",
+   "B:openstax-pds-2025:p74:3",
+   "B:openstax-pds-2025:p73:2"
+  ],
+  "context_chars": 2492,
+  "dropped_from_context": [],
+  "elapsed_ms": 504.1,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": true,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "t03",
+  "split": "test",
+  "answerable": true,
+  "question": "How do you find the median when a dataset has an even number of values?",
+  "query": "How do you find the median when a dataset has an even number of values?",
+  "filter": null,
+  "method": "hybrid",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p118:0",
+    "page": 118,
+    "chapter": 3,
+    "score": 0.032787,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p118:2",
+    "page": 118,
+    "chapter": 3,
+    "score": 0.032258,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p117:4",
+    "page": 117,
+    "chapter": 3,
+    "score": 0.031746,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p127:3",
+    "page": 127,
+    "chapter": 3,
+    "score": 0.03101,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p119:2",
+    "page": 119,
+    "chapter": 3,
+    "score": 0.029324,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p116:2",
+    "page": 116,
+    "chapter": 3,
+    "score": 0.028778,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p117:3",
+    "page": 117,
+    "chapter": 3,
+    "score": 0.028169,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p126:2",
+    "page": 126,
+    "chapter": 3,
+    "score": 0.027826,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p118:1",
+    "page": 118,
+    "chapter": 3,
+    "score": 0.027652,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p126:1",
+    "page": 126,
+    "chapter": 3,
+    "score": 0.027619,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p118:0 | data/Principles-of-Data-Science-WEB.pdf | page 118]\nTo determine the median of a dataset, first order the data from smallest to largest, and then find the middle value in the ordered dataset. For example, to find the median value of 50 exam scores, find the score that splits the data into two equal parts. The exam scores for 25 students will be below the median, and 25 students will have exam scores above the median. If there is an odd number of data values in the dataset, then there will be one data value that represents the middle value, and this is the median. If there is an even number of data values in the dataset, then to find the median, add the two middle values together and divide by 2 (this is essentially finding the mean of the two middle values in the dataset).\n\n[B:openstax-pds-2025:p118:2 | data/Principles-of-Data-Science-WEB.pdf | page 118]\n51, 59, 65, 68, 72, 76, 83, 88, 92, 94 Since there is an even number of data values, add the two middle values together and divide by 2. The two middle values are 72 and 76. You can also quickly find the sample median of a dataset as follows. Let represent the number of data values in the sample. • If is odd, then the median is the data value in position . • If is even, the median is the mean of the observations in position and position . For example, let’s say a dataset has 25 data values. Since is odd, to identify the position of the median, calculate , which is , or 13. This indicates that the median is located in the 13th data position. As another example, let’s say a dataset has 100 data values. Since is even, to identify the position of the median, calculate , which is , which is 50, and also calculate , which is , which is 51. This indicates that the median is calculated as the mean of the 50th and 51st data values.\n\n[B:openstax-pds-2025:p117:4 | data/Principles-of-Data-Science-WEB.pdf | page 117]\nMedian The median provides another measure of central tendency for a dataset. The median is generally a better measure of the central tendency when there are outliers (extreme values) in the dataset. Since the median focuses on the middle value of the ordered dataset, the median is preferred when outliers are present because the median is not affected by the numerical values of the outliers.",
+  "context_ids": [
+   "B:openstax-pds-2025:p118:0",
+   "B:openstax-pds-2025:p118:2",
+   "B:openstax-pds-2025:p117:4"
+  ],
+  "context_chars": 2311,
+  "dropped_from_context": [],
+  "elapsed_ms": 440.3,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": false,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "t04",
+  "split": "test",
+  "answerable": true,
+  "question": "What is the set of all possible outcomes of a probability experiment called?",
+  "query": "What is the set of all possible outcomes of a probability experiment called?",
+  "filter": null,
+  "method": "hybrid",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p131:1",
+    "page": 131,
+    "chapter": 3,
+    "score": 0.032522,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p130:0",
+    "page": 130,
+    "chapter": 3,
+    "score": 0.032018,
+    "rank": 2,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p140:4",
+    "page": 140,
+    "chapter": 3,
+    "score": 0.031025,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p138:2",
+    "page": 138,
+    "chapter": 3,
+    "score": 0.03009,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p131:3",
+    "page": 131,
+    "chapter": 3,
+    "score": 0.029911,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p139:3",
+    "page": 139,
+    "chapter": 3,
+    "score": 0.029031,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p139:5",
+    "page": 139,
+    "chapter": 3,
+    "score": 0.02901,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p131:4",
+    "page": 131,
+    "chapter": 3,
+    "score": 0.028624,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p147:2",
+    "page": 147,
+    "chapter": 3,
+    "score": 0.028205,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p140:0",
+    "page": 140,
+    "chapter": 3,
+    "score": 0.028039,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p131:1 | data/Principles-of-Data-Science-WEB.pdf | page 131]\nTheoretical Probability Theoretical probability is the method used when the outcomes in a probability experiment are equally likely—that is, under theoretical conditions. The formula used for theoretical probability is similar to the formula used for empirical probability. Theoretical probability considers all the possible outcomes for an experiment that are known ahead of time so that past data is not needed in the calculation for theoretical probability. For example, the theoretical probability of rolling an even number when rolling a six-sided die is (which is , or 0.5). There are 3 outcomes corresponding to rolling an even number, and there are 6 outcomes total in the sample space. Notice this calculation can be done without conducting any experiments since the outcomes are equally likely.\n\n[B:openstax-pds-2025:p130:0 | data/Principles-of-Data-Science-WEB.pdf | page 130]\nwant to know the probability of rain. The probability of obtaining heads on one flip of a coin is one-half, or 0.5. A data scientist is in interested in expressing probability as a number between 0 and 1 (inclusive), where 0 indicates impossibility (the event will not occur) and 1 indicates certainty (the event will occur). The probability of an event falling between 0 and 1 reflects the degree of uncertainty associated with the event. Here is some terminology we will be using in probability-related analysis: • An outcome is the result of a single trial in a probability experiment. • The sample space is the set of all possible outcomes in a probability experiment.\n\n[B:openstax-pds-2025:p140:4 | data/Principles-of-Data-Science-WEB.pdf | page 140]\nis the number of trials in the experiment is the probability of success is the number of successes in the experiment refers to the number of ways to choose successes from",
+  "context_ids": [
+   "B:openstax-pds-2025:p131:1",
+   "B:openstax-pds-2025:p130:0",
+   "B:openstax-pds-2025:p140:4"
+  ],
+  "context_chars": 1896,
+  "dropped_from_context": [],
+  "elapsed_ms": 450.4,
+  "hit1": false,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": true,
+  "first_hit_rank": 2
+ },
+ {
+  "query_id": "t05",
+  "split": "test",
+  "answerable": true,
+  "question": "Why would you transform data that is not normally distributed?",
+  "query": "Why would you transform data that is not normally distributed?",
+  "filter": {
+   "chapter": 2
+  },
+  "method": "hybrid",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p92:1",
+    "page": 92,
+    "chapter": 2,
+    "score": 0.032787,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p92:2",
+    "page": 92,
+    "chapter": 2,
+    "score": 0.031514,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p91:0",
+    "page": 91,
+    "chapter": 2,
+    "score": 0.02971,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p91:1",
+    "page": 91,
+    "chapter": 2,
+    "score": 0.029437,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p86:4",
+    "page": 86,
+    "chapter": 2,
+    "score": 0.029206,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p93:2",
+    "page": 93,
+    "chapter": 2,
+    "score": 0.02901,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p86:0",
+    "page": 86,
+    "chapter": 2,
+    "score": 0.025,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p98:3",
+    "page": 98,
+    "chapter": 2,
+    "score": 0.016129,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p92:3",
+    "page": 92,
+    "chapter": 2,
+    "score": 0.015873,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p90:0",
+    "page": 90,
+    "chapter": 2,
+    "score": 0.015625,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p92:1 | data/Principles-of-Data-Science-WEB.pdf | page 92]\nData Transformation Data transformation is a statistical technique used to modify the original structure of the data in order to make it more suitable for analysis. Data transformation can involve various mathematical operations such as logarithmic, square root, or exponential transformations. One of the main reasons for transforming data is to address issues related to statistical assumptions. For example, some statistical models assume that the data is normally distributed. If the data is not distributed normally, this can lead to incorrect results and interpretations. In such cases, transforming the data can help to make it closer to a normal distribution and improve the accuracy of the analysis.\n\n[B:openstax-pds-2025:p92:2 | data/Principles-of-Data-Science-WEB.pdf | page 92]\nOne commonly used data transformation technique is the log transformation, which requires taking the logarithm of the data values. Log transformation is often used when the data is highly skewed, meaning most of the data points fall toward one end of the distribution. This can cause problems in data analysis as the data may not follow a normal distribution. By taking the logarithm of the values, the distribution can be shifted toward a more symmetrical shape, making it easier to analyze. Another common transformation technique is the square root transformation, which involves taking the square root of the data values. Similar to log transformation, square root transformation is often used to address issues with skewness and make the data more normally distributed. Square root transformation is also useful when the data contains values close to zero, as taking the square root of these values can bring them closer to the rest of the data and reduce the impact of extreme values.\n\n[B:openstax-pds-2025:p91:0 | data/Principles-of-Data-Science-WEB.pdf | page 91]\ndifficult to analyze. It is hard to draw meaningful insights from badly organized data. To normalize this data, the marketing team would go through multiple steps. First, they would identify the key data elements, such as customer name, product purchased, and transaction date. Then, they would ensure that these elements are consistently formatted in all data sources. For instance, they might employ the same date format across all data sources or standardize customer names to the first name and the last name fields. Subsequently, they would eliminate any redundant or irrelevant data elements. In this case, if the data is collected from both online and in-store purchases, they might choose one or the other to avoid duplication. The marketing team would ensure that the data is properly structured and organized. This could involve creating a data table with domains for each data element, such as a customer ID, product code, and purchase amount.",
+  "context_ids": [
+   "B:openstax-pds-2025:p92:1",
+   "B:openstax-pds-2025:p92:2",
+   "B:openstax-pds-2025:p91:0"
+  ],
+  "context_chars": 2896,
+  "dropped_from_context": [],
+  "elapsed_ms": 502.7,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": true,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "t06",
+  "split": "test",
+  "answerable": false,
+  "question": "According to the book, is web scraping legal, and what does it say about robots.txt or a website's terms of service?",
+  "query": "According to the book, is web scraping legal, and what does it say about robots.txt or a website's terms of service?",
+  "filter": null,
+  "method": "hybrid",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p76:4",
+    "page": 76,
+    "chapter": 2,
+    "score": 0.032266,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p76:2",
+    "page": 76,
+    "chapter": 2,
+    "score": 0.032018,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p77:1",
+    "page": 77,
+    "chapter": 2,
+    "score": 0.032002,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p77:0",
+    "page": 77,
+    "chapter": 2,
+    "score": 0.031514,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p78:1",
+    "page": 78,
+    "chapter": 2,
+    "score": 0.03101,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p77:5",
+    "page": 77,
+    "chapter": 2,
+    "score": 0.030077,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p77:2",
+    "page": 77,
+    "chapter": 2,
+    "score": 0.029437,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p77:3",
+    "page": 77,
+    "chapter": 2,
+    "score": 0.028577,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p19:1",
+    "page": 19,
+    "chapter": 1,
+    "score": 0.027364,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p58:0",
+    "page": 58,
+    "chapter": 1,
+    "score": 0.014925,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p76:4 | data/Principles-of-Data-Science-WEB.pdf | page 76]\nWeb Scraping There are several techniques and approaches for scraping data from websites. See Table 2.2 for some of the\n\n[B:openstax-pds-2025:p76:2 | data/Principles-of-Data-Science-WEB.pdf | page 76]\n2.3 Web Scraping and Social Media Data Collection Learning Outcomes: By the end of this section, you should be able to: • 2.3.1 Discuss the uses of web scraping for collecting and preparing data for analysis. • 2.3.2 Apply regular expressions for data manipulation and pattern matching. • 2.3.3 Write Python code to scrape data from the web. • 2.3.4 Apply various methods for parsing, extracting, processing, and storing data. Web scraping and social media data collection are two approaches used to gather data from the internet. Web scraping involves pulling information and data from websites using a web data extraction tool, often known as a web scraper. One example would be a travel company looking to gather information about hotel prices and availability from different booking websites. Web scraping can be used to automatically gather this data from the various websites and create a comprehensive list for the company to use in its business strategy without the need for manual work.\n\n[B:openstax-pds-2025:p77:1 | data/Principles-of-Data-Science-WEB.pdf | page 77]\ndata from a website.) Web Scraping Technique Details Web Crawling • Follows links on a web page to navigate to other pages and collect data from them • Useful for scraping data from multiple pages of a website XPath • Powerful query language • Navigates through the elements in an HTML document • Often used in combination with HTML parsing to select specific elements to",
+  "context_ids": [
+   "B:openstax-pds-2025:p76:4",
+   "B:openstax-pds-2025:p76:2",
+   "B:openstax-pds-2025:p77:1"
+  ],
+  "context_chars": 1729,
+  "dropped_from_context": [],
+  "elapsed_ms": 457.9,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": false,
+  "context_hit_at_800": false,
+  "first_hit_rank": null
+ },
+ {
+  "query_id": "t07",
+  "split": "test",
+  "answerable": false,
+  "question": "What is the probability formula for the hypergeometric distribution, and when should it be used instead of the binomial distribution?",
+  "query": "What is the probability formula for the hypergeometric distribution, and when should it be used instead of the binomial distribution?",
+  "filter": null,
+  "method": "hybrid",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p140:3",
+    "page": 140,
+    "chapter": 3,
+    "score": 0.032787,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p141:0",
+    "page": 141,
+    "chapter": 3,
+    "score": 0.031258,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p141:2",
+    "page": 141,
+    "chapter": 3,
+    "score": 0.030214,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p147:0",
+    "page": 147,
+    "chapter": 3,
+    "score": 0.030077,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p139:2",
+    "page": 139,
+    "chapter": 3,
+    "score": 0.029644,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p139:3",
+    "page": 139,
+    "chapter": 3,
+    "score": 0.029514,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p146:4",
+    "page": 146,
+    "chapter": 3,
+    "score": 0.02901,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p142:0",
+    "page": 142,
+    "chapter": 3,
+    "score": 0.02886,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p141:1",
+    "page": 141,
+    "chapter": 3,
+    "score": 0.028283,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p143:1",
+    "page": 143,
+    "chapter": 3,
+    "score": 0.027799,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p140:3 | data/Principles-of-Data-Science-WEB.pdf | page 140]\nWhen calculating the probability for successes in a binomial experiment, a binomial probability formula can be used, but in many cases technology is used instead to streamline the calculations. The probability mass function (PMF) for the binomial distribution describes the probability of getting exactly successes in independent Bernoulli trials, each with a probability of success. The PMF is given by the formula: Where: is the probability that the random variable takes on the value of exactly successes\n\n[B:openstax-pds-2025:p141:0 | data/Principles-of-Data-Science-WEB.pdf | page 141]\nNote: The notation is read as factorial and is a mathematical notation used to express the multiplication of . For example, . EXAMPLE 3.25 Problem For the binomial experiment discussed in Example 3.24, calculate the probability that 18 out of the 20 patients will respond to indicate that the surgery was successful. Also, show a graph of the binomial distribution to show the probability distribution for all values of the random variable .\n\n[B:openstax-pds-2025:p141:2 | data/Principles-of-Data-Science-WEB.pdf | page 141]\nFigure 3.5 Graph of the Binomial Distribution for and Since these computations tend to be complicated and time-consuming, most data scientists will use technology (such as Python, R, Excel, or others) to calculate binomial probabilities.",
+  "context_ids": [
+   "B:openstax-pds-2025:p140:3",
+   "B:openstax-pds-2025:p141:0",
+   "B:openstax-pds-2025:p141:2"
+  ],
+  "context_chars": 1435,
+  "dropped_from_context": [],
+  "elapsed_ms": 588.7,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": false,
+  "context_hit_at_800": false,
+  "first_hit_rank": null
+ }
+]

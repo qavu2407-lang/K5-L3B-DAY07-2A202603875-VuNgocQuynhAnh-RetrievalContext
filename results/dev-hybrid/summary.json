@@ -1,0 +1,26 @@
+{
+ "method": "hybrid",
+ "split": "dev",
+ "questions": 17,
+ "answerable_N": 15,
+ "hit@1": "8/15 (53.3%)",
+ "evidence_hit@3": "13/15 (86.7%)",
+ "context_evidence_rate": "13/15 (86.7%)",
+ "context_evidence_rate_if_budget_800": "6/15 (40.0%)",
+ "mrr@10": 0.715,
+ "context_budget": "3200 chars (incl. headers)",
+ "avg_context_chars": 2078,
+ "questions_with_dropped_chunks": 0,
+ "median_ms": 501.4,
+ "total_s": 9.53,
+ "embedding_tokens": 236,
+ "cost_usd": 5e-06,
+ "settings": {
+  "top_k": 3,
+  "trace_k": 10,
+  "rrf_pool": 20,
+  "rrf_k": 60,
+  "filter": "question-supplied chapter only",
+  "query": "original question"
+ }
+}

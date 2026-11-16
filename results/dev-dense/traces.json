@@ -1,0 +1,1793 @@
+[
+ {
+  "query_id": "d01",
+  "split": "dev",
+  "answerable": true,
+  "question": "What is data science?",
+  "query": "What is data science?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p26:5",
+    "page": 26,
+    "chapter": 1,
+    "score": 0.743871,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p22:6",
+    "page": 22,
+    "chapter": 1,
+    "score": 0.621433,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p20:0",
+    "page": 20,
+    "chapter": 1,
+    "score": 0.619046,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p19:1",
+    "page": 19,
+    "chapter": 1,
+    "score": 0.613239,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p19:2",
+    "page": 19,
+    "chapter": 1,
+    "score": 0.570018,
+    "rank": 5,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p20:1",
+    "page": 20,
+    "chapter": 1,
+    "score": 0.567445,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p20:4",
+    "page": 20,
+    "chapter": 1,
+    "score": 0.564799,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p22:0",
+    "page": 22,
+    "chapter": 1,
+    "score": 0.560391,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p67:2",
+    "page": 67,
+    "chapter": 2,
+    "score": 0.558319,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p23:4",
+    "page": 23,
+    "chapter": 1,
+    "score": 0.554331,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p26:5 | data/Principles-of-Data-Science-WEB.pdf | page 26]\nWhat Is Data Science? and Data Science in Practice introduced the many varieties of and uses for data science in today’s world. Data science allows us to extract insights and knowledge from data, driving decision-making and innovation in business, health care, entertainment, and so on. As we’ve seen, the field has roots in math, statistics, and computer science, but it only began to emerge as its own distinct field in the early 2000s with the proliferation of digital data and advances in computing power and technology. It gained significant momentum and recognition around the mid to late 2000s with the rise of big data and the need for sophisticated techniques to analyze and derive insights from large and complex datasets. Its evolution since then has been rapid, and as we can see from the previous discussion, it is quickly becoming a cornerstone of many industries and domains. Data, however, is not new! Humans have been collecting data and generating datasets from the beginning of\n\n[B:openstax-pds-2025:p22:6 | data/Principles-of-Data-Science-WEB.pdf | page 22]\nData Science in Business Data science plays a key role in many business operations. A variety of data related to customers, products, and sales can be collected and generated within a business. These include customer names and lists of products they have purchased as well as daily revenue. Business analytics investigate these data to launch new products and to maximize the business revenue/profit.\n\n[B:openstax-pds-2025:p20:0 | data/Principles-of-Data-Science-WEB.pdf | page 20]\nIn its earliest days, the work of data science was spread across multiple disciplines, including statistics, mathematics, computer science, and social science. It was commonly believed that the job of data collection, management, and analysis would be carried out by different types of experts, with each job independent of one another. To be more specific, data collection was considered to be the province of so-called domain experts (e.g., doctors for medical data, psychologists for psychological data, business analysts for sales, logistic, and marketing data, etc.) as they had a full context of the data; data management was for computer scientists/engineers as they knew how to store and process data in computing systems (e.g., a single computer, a server, a data warehouse); and data analysis was for statisticians and mathematicians as they knew how to derive some meaningful insights from data.",
+  "context_ids": [
+   "B:openstax-pds-2025:p26:5",
+   "B:openstax-pds-2025:p22:6",
+   "B:openstax-pds-2025:p20:0"
+  ],
+  "context_chars": 2546,
+  "dropped_from_context": [],
+  "elapsed_ms": 1546.6,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": false,
+  "context_hit_at_800": false,
+  "first_hit_rank": 5
+ },
+ {
+  "query_id": "d02",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which steps of a data science project take up most of a data scientist's time?",
+  "query": "Which steps of a data science project take up most of a data scientist's time?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p21:0",
+    "page": 21,
+    "chapter": 1,
+    "score": 0.69297,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p68:3",
+    "page": 68,
+    "chapter": 2,
+    "score": 0.596675,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p67:2",
+    "page": 67,
+    "chapter": 2,
+    "score": 0.575176,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p21:4",
+    "page": 21,
+    "chapter": 1,
+    "score": 0.567675,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p20:4",
+    "page": 20,
+    "chapter": 1,
+    "score": 0.567547,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p21:1",
+    "page": 21,
+    "chapter": 1,
+    "score": 0.557142,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p86:1",
+    "page": 86,
+    "chapter": 2,
+    "score": 0.546654,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p20:0",
+    "page": 20,
+    "chapter": 1,
+    "score": 0.512377,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p67:3",
+    "page": 67,
+    "chapter": 2,
+    "score": 0.497819,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p26:5",
+    "page": 26,
+    "chapter": 1,
+    "score": 0.477527,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p21:0 | data/Principles-of-Data-Science-WEB.pdf | page 21]\nFigure 1.3 The Data Science Cycle Although data collection and preparation may sound like simple tasks compared to the more important work of analysis, they are actually the most time- and effort-consuming steps in the data science cycle. According to a survey conducted by Anaconda (2020), data scientists spend about half of the entire process in data collection and cleaning, while data analysis and communication take about a quarter to a third of the time each, depending on the job.\n\n[B:openstax-pds-2025:p68:3 | data/Principles-of-Data-Science-WEB.pdf | page 68]\nBefore collecting data, it is essential for a data scientist to have a clear understanding of the project's objectives, which involves identifying the research question or problem and defining the target population or sample. If a survey or experiment is used, the design of the survey/experiment is also a critical step, requiring careful consideration of the type of questions, response options, and overall structure. A survey may be conducted online, via phone, or in person, while experimental research requires a controlled environment to ensure data validity and reliability.\n\n[B:openstax-pds-2025:p67:2 | data/Principles-of-Data-Science-WEB.pdf | page 67]\nData collection and preparation are the first steps in the data science cycle. They involve systematically gathering the necessary data to meet a project's objectives and ensuring its readiness for further analysis. Well-executed data collection and preparation serve as a solid foundation for effective, data-driven decision- making and aid in detecting patterns, trends, and insights that can drive business growth and efficiency. With today’s ever-increasing volume of data, a robust approach to data collection is crucial for ensuring accurate and meaningful results. This process requires following a comprehensive and systematic methodology designed to ensure the quality, reliability, and validity of data gathered for analysis. It involves identifying and sourcing relevant data from diverse sources, including internal databases, external repositories, websites, and user-generated information.",
+  "context_ids": [
+   "B:openstax-pds-2025:p21:0",
+   "B:openstax-pds-2025:p68:3",
+   "B:openstax-pds-2025:p67:2"
+  ],
+  "context_chars": 2217,
+  "dropped_from_context": [],
+  "elapsed_ms": 1139.3,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": true,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "d03",
+  "split": "dev",
+  "answerable": true,
+  "question": "What is the difference between nominal and ordinal data?",
+  "query": "What is the difference between nominal and ordinal data?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p29:0",
+    "page": 29,
+    "chapter": 1,
+    "score": 0.586851,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p29:1",
+    "page": 29,
+    "chapter": 1,
+    "score": 0.517725,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p28:4",
+    "page": 28,
+    "chapter": 1,
+    "score": 0.476199,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p29:3",
+    "page": 29,
+    "chapter": 1,
+    "score": 0.42278,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p68:4",
+    "page": 68,
+    "chapter": 2,
+    "score": 0.414901,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p27:1",
+    "page": 27,
+    "chapter": 1,
+    "score": 0.407188,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p28:2",
+    "page": 28,
+    "chapter": 1,
+    "score": 0.404362,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p119:0",
+    "page": 119,
+    "chapter": 3,
+    "score": 0.386728,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:2",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.36762,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p28:3",
+    "page": 28,
+    "chapter": 1,
+    "score": 0.363171,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p29:0 | data/Principles-of-Data-Science-WEB.pdf | page 29]\nCategorical data is represented in different forms such as words, symbols, and even numbers. A categorical value is chosen from a finite set of values, and the value does not necessarily indicate a measurable quantity. Categorical data can be divided into nominal data and ordinal data. For nominal data, the set of possible values does not include any ordering notion, whereas with ordinal data, the set of possible values includes an ordering notion.\n\n[B:openstax-pds-2025:p29:1 | data/Principles-of-Data-Science-WEB.pdf | page 29]\nThe rest—semester, instructor, and ratings—are categorical data. They are represented in symbols (e.g., “Fall 2020,” “A”) or words (e.g., “Highly recommended”), and these values are chosen from the finite set of those symbols and words (e.g., A vs. B). The former two data are nominal since the semester and instructor do not have orders to follow, while the latter is ordinal since there is a notion of degree (Not recommended at all ~ Highly recommended). You may argue that the semester could have chronological ordering: Fall 2020 comes before Spring 2021, Fall 2021 follows Fall 2020. If you want to value that notion for your analysis, you could consider the semester data to be ordinal as well—the chronological ordering is indeed critical when you are looking at a time-series dataset. You will learn more about that in Time Series and Forecasting.\n\n[B:openstax-pds-2025:p28:4 | data/Principles-of-Data-Science-WEB.pdf | page 28]\nThere are two primary types of quantitative data—numeric and categorical—and each of these can be divided into a few subtypes. Numeric data is represented in numbers that indicate measurable quantities. It may be followed by some symbols to indicate units. Numeric data is further divided into continuous data and discrete data. With continuous data, the values can be any number. In other words, a value is chosen from an infinite set of numbers. With discrete data, the values follow a specific precision, which makes the set of possible values finite.",
+  "context_ids": [
+   "B:openstax-pds-2025:p29:0",
+   "B:openstax-pds-2025:p29:1",
+   "B:openstax-pds-2025:p28:4"
+  ],
+  "context_chars": 2106,
+  "dropped_from_context": [],
+  "elapsed_ms": 616.7,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": true,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "d04",
+  "split": "dev",
+  "answerable": true,
+  "question": "When can a semester attribute be treated as ordinal data?",
+  "query": "When can a semester attribute be treated as ordinal data?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p29:1",
+    "page": 29,
+    "chapter": 1,
+    "score": 0.692587,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p34:1",
+    "page": 34,
+    "chapter": 1,
+    "score": 0.505405,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p29:4",
+    "page": 29,
+    "chapter": 1,
+    "score": 0.504705,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p28:3",
+    "page": 28,
+    "chapter": 1,
+    "score": 0.453166,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p29:0",
+    "page": 29,
+    "chapter": 1,
+    "score": 0.442057,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p34:0",
+    "page": 34,
+    "chapter": 1,
+    "score": 0.430411,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p30:1",
+    "page": 30,
+    "chapter": 1,
+    "score": 0.429873,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p27:2",
+    "page": 27,
+    "chapter": 1,
+    "score": 0.416087,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p38:1",
+    "page": 38,
+    "chapter": 1,
+    "score": 0.413125,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p30:2",
+    "page": 30,
+    "chapter": 1,
+    "score": 0.408724,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p29:1 | data/Principles-of-Data-Science-WEB.pdf | page 29]\nThe rest—semester, instructor, and ratings—are categorical data. They are represented in symbols (e.g., “Fall 2020,” “A”) or words (e.g., “Highly recommended”), and these values are chosen from the finite set of those symbols and words (e.g., A vs. B). The former two data are nominal since the semester and instructor do not have orders to follow, while the latter is ordinal since there is a notion of degree (Not recommended at all ~ Highly recommended). You may argue that the semester could have chronological ordering: Fall 2020 comes before Spring 2021, Fall 2021 follows Fall 2020. If you want to value that notion for your analysis, you could consider the semester data to be ordinal as well—the chronological ordering is indeed critical when you are looking at a time-series dataset. You will learn more about that in Time Series and Forecasting.\n\n[B:openstax-pds-2025:p34:1 | data/Principles-of-Data-Science-WEB.pdf | page 34]\nFor example, the first item in the JSON dataset above has four keys, each of which maps to each attribute—Semester, Instructor, Class Size, and Rating. Their values are \"Fall 2020\", \"A\", 100, and \"Not recommended at all\".\n\n[B:openstax-pds-2025:p29:4 | data/Principles-of-Data-Science-WEB.pdf | page 29]\nDatasets A dataset is a collection of observations or data entities organized for analysis and interpretation, as shown in Table 1.1. Many datasets can be represented as a table where each row indicates a unique data entity and each column defines the structure of the entities. Notice that the dataset we used in Table 1.1 has six entities (also referred to as items, entries, or instances), distinguished by semester. Each entity is defined by a combination of four attributes or characteristics (also known as features or variables)—Semester, Instructor, Class Size, and Rating. A combination of features characterizes an entry of a dataset. Although the actual values of the attributes are different across entities, note that all entities have values for the same four attributes, which makes them a structured dataset. As a structured dataset, these items can be listed as a table where each item is listed along the rows of the table.",
+  "context_ids": [
+   "B:openstax-pds-2025:p29:1",
+   "B:openstax-pds-2025:p34:1",
+   "B:openstax-pds-2025:p29:4"
+  ],
+  "context_chars": 2262,
+  "dropped_from_context": [],
+  "elapsed_ms": 601.3,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": false,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "d05",
+  "split": "dev",
+  "answerable": true,
+  "question": "Is a dataset of keywords searched on a web search engine structured or unstructured?",
+  "query": "Is a dataset of keywords searched on a web search engine structured or unstructured?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p30:4",
+    "page": 30,
+    "chapter": 1,
+    "score": 0.823393,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p31:0",
+    "page": 31,
+    "chapter": 1,
+    "score": 0.712898,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p31:1",
+    "page": 31,
+    "chapter": 1,
+    "score": 0.593965,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p29:5",
+    "page": 29,
+    "chapter": 1,
+    "score": 0.591158,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p30:0",
+    "page": 30,
+    "chapter": 1,
+    "score": 0.576567,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p21:3",
+    "page": 21,
+    "chapter": 1,
+    "score": 0.485517,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p31:2",
+    "page": 31,
+    "chapter": 1,
+    "score": 0.43353,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p21:2",
+    "page": 21,
+    "chapter": 1,
+    "score": 0.408702,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p29:4",
+    "page": 29,
+    "chapter": 1,
+    "score": 0.390384,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p30:2",
+    "page": 30,
+    "chapter": 1,
+    "score": 0.390133,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p30:4 | data/Principles-of-Data-Science-WEB.pdf | page 30]\nEXAMPLE 1.5 Problem A dataset has a list of keywords that were searched on a web search engine in the past week. Is this dataset structured or unstructured? Solution The dataset is an unstructured dataset since each entry in the dataset can be a freeform text: a single word, multiple words, or even multiple sentences.\n\n[B:openstax-pds-2025:p31:0 | data/Principles-of-Data-Science-WEB.pdf | page 31]\nEXAMPLE 1.6 Problem The dataset from the previous example is processed so that now each search record is summarized as up to three words, along with the timestamp (i.e., when the search occurred). Is this dataset structured or unstructured?\n\n[B:openstax-pds-2025:p31:1 | data/Principles-of-Data-Science-WEB.pdf | page 31]\nSolution It is a structured dataset since every entry of this dataset is in the same structure with two attributes: a short keyword along with the timestamp. Dataset Formats and Structures (CSV, JSON, XML)",
+  "context_ids": [
+   "B:openstax-pds-2025:p30:4",
+   "B:openstax-pds-2025:p31:0",
+   "B:openstax-pds-2025:p31:1"
+  ],
+  "context_chars": 1008,
+  "dropped_from_context": [],
+  "elapsed_ms": 633.6,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": true,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "d06",
+  "split": "dev",
+  "answerable": true,
+  "question": "How many items and attributes does the Jeopardy JSON dataset have?",
+  "query": "How many items and attributes does the Jeopardy JSON dataset have?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p38:0",
+    "page": 38,
+    "chapter": 1,
+    "score": 0.773744,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p38:1",
+    "page": 38,
+    "chapter": 1,
+    "score": 0.594445,
+    "rank": 2,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p34:1",
+    "page": 34,
+    "chapter": 1,
+    "score": 0.552914,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p30:3",
+    "page": 30,
+    "chapter": 1,
+    "score": 0.454437,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p31:1",
+    "page": 31,
+    "chapter": 1,
+    "score": 0.431726,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p30:2",
+    "page": 30,
+    "chapter": 1,
+    "score": 0.429407,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p33:3",
+    "page": 33,
+    "chapter": 1,
+    "score": 0.410148,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p36:1",
+    "page": 36,
+    "chapter": 1,
+    "score": 0.392286,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p34:0",
+    "page": 34,
+    "chapter": 1,
+    "score": 0.391496,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p38:2",
+    "page": 38,
+    "chapter": 1,
+    "score": 0.386218,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p38:0 | data/Principles-of-Data-Science-WEB.pdf | page 38]\nEXAMPLE 1.8 Problem The Jeopardy dataset (ch1-jeopardy.json (https://openstax.org/r/filed15)) is formatted in JSON. Download and open it with a code editor (e.g., Notepad, Sublime Text, Xcode, Visual Studio Code). • How many items are there in the dataset? • How many attributes are there in the dataset? • What is the third item in the dataset?\n\n[B:openstax-pds-2025:p38:1 | data/Principles-of-Data-Science-WEB.pdf | page 38]\nSolution There are 409 items in the dataset, and each item has seven attributes: “category”, “air_date”, “question”, “value”, “answer”, “round”, and “show_number”. The third item is located at index 2 of the first list as shown in Figure 1.14.\n\n[B:openstax-pds-2025:p34:1 | data/Principles-of-Data-Science-WEB.pdf | page 34]\nFor example, the first item in the JSON dataset above has four keys, each of which maps to each attribute—Semester, Instructor, Class Size, and Rating. Their values are \"Fall 2020\", \"A\", 100, and \"Not recommended at all\".",
+  "context_ids": [
+   "B:openstax-pds-2025:p38:0",
+   "B:openstax-pds-2025:p38:1",
+   "B:openstax-pds-2025:p34:1"
+  ],
+  "context_chars": 1053,
+  "dropped_from_context": [],
+  "elapsed_ms": 480.0,
+  "hit1": false,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": true,
+  "first_hit_rank": 2
+ },
+ {
+  "query_id": "d07",
+  "split": "dev",
+  "answerable": true,
+  "question": "What should you do after changing code in several Colab notebook cells?",
+  "query": "What should you do after changing code in several Colab notebook cells?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p43:1",
+    "page": 43,
+    "chapter": 1,
+    "score": 0.600052,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p41:2",
+    "page": 41,
+    "chapter": 1,
+    "score": 0.552576,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p42:0",
+    "page": 42,
+    "chapter": 1,
+    "score": 0.536407,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p41:1",
+    "page": 41,
+    "chapter": 1,
+    "score": 0.501811,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p43:0",
+    "page": 43,
+    "chapter": 1,
+    "score": 0.47412,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p46:1",
+    "page": 46,
+    "chapter": 1,
+    "score": 0.430867,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p46:0",
+    "page": 46,
+    "chapter": 1,
+    "score": 0.420267,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p45:0",
+    "page": 45,
+    "chapter": 1,
+    "score": 0.393875,
+    "rank": 8,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p33:2",
+    "page": 33,
+    "chapter": 1,
+    "score": 0.392639,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p44:0",
+    "page": 44,
+    "chapter": 1,
+    "score": 0.382272,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p43:1 | data/Principles-of-Data-Science-WEB.pdf | page 43]\nFigure 1.17 Multiple Ways of Running Cells on Colab One thing to keep in mind is that being able to split a long program into multiple blocks and run one block at a time raises chances of user error. Let’s look at a modified code from the previous example.\n\n[B:openstax-pds-2025:p41:2 | data/Principles-of-Data-Science-WEB.pdf | page 41]\nFigure 1.15 Install Google Colaboratory (Colab) Now click New > More > Google Laboratory. A new, empty Jupyter Notebook will show up as in Figure 1.16. Figure 1.16 Google Colaboratory Notebook The gray area with the play button is called a cell. A cell is a block where you can type either code or plain text. Notice that there are two buttons on top of the first cell—“+ Code” and “+ Text.” These two buttons add a code or text cell, respectively. A code cell is for the code you want to run; a text cell is to add any text description or note. Let’s run a Python program on Colab. Type the following code in a code cell.\n\n[B:openstax-pds-2025:p42:0 | data/Principles-of-Data-Science-WEB.pdf | page 42]\nprint (\"hello world!\") The resulting output will look like this: hello world! You can write a Python program across multiple cells and put text cells in between. Colab would treat all the code cells as part of a single program, running from the top to bottom of the current Jupyter Notebook. For example, the two code cells below run as if it is a single program. When running one cell at a time from the top, we see the following outputs under each cell.",
+  "context_ids": [
+   "B:openstax-pds-2025:p43:1",
+   "B:openstax-pds-2025:p41:2",
+   "B:openstax-pds-2025:p42:0"
+  ],
+  "context_chars": 1577,
+  "dropped_from_context": [],
+  "elapsed_ms": 766.9,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": false,
+  "context_hit_at_800": false,
+  "first_hit_rank": 8
+ },
+ {
+  "query_id": "d08",
+  "split": "dev",
+  "answerable": true,
+  "question": "What abbreviation is Pandas conventionally imported as?",
+  "query": "What abbreviation is Pandas conventionally imported as?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p45:2",
+    "page": 45,
+    "chapter": 1,
+    "score": 0.590505,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p45:1",
+    "page": 45,
+    "chapter": 1,
+    "score": 0.570563,
+    "rank": 2,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p47:1",
+    "page": 47,
+    "chapter": 1,
+    "score": 0.51818,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p48:0",
+    "page": 48,
+    "chapter": 1,
+    "score": 0.471823,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p47:2",
+    "page": 47,
+    "chapter": 1,
+    "score": 0.448832,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p78:4",
+    "page": 78,
+    "chapter": 2,
+    "score": 0.401707,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p45:3",
+    "page": 45,
+    "chapter": 1,
+    "score": 0.388398,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p49:1",
+    "page": 49,
+    "chapter": 1,
+    "score": 0.379619,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p50:0",
+    "page": 50,
+    "chapter": 1,
+    "score": 0.378226,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p78:1",
+    "page": 78,
+    "chapter": 2,
+    "score": 0.376388,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p45:2 | data/Principles-of-Data-Science-WEB.pdf | page 45]\n# import Pandas and assign an abbreviated identifier \"pd\" import pandas as pd EXPLORING FURTHER Installing Pandas on Your Computer If you wish to install Pandas on your own computer, refer to the installation page of the Pandas website (https://openstax.org/r/pyd).\n\n[B:openstax-pds-2025:p45:1 | data/Principles-of-Data-Science-WEB.pdf | page 45]\nPython Pandas One of the strengths of Python is that it includes a variety of free, open-source libraries. Libraries are a set of already-implemented methods that a programmer can refer to, allowing a programmer to avoid building common functions from scratch. Pandas is a Python library specialized for data manipulation and analysis, and it is very commonly used among data scientists. It offers a variety of methods, which allows data scientists to quickly use them for data analysis. You will learn how to analyze data using Pandas throughout this textbook. Colab already has Pandas installed, so you just need to import Pandas and you are set to use all the methods in Pandas. Note that it is convention to abbreviate pandas to pd so that when you call a method from Pandas, you can do so by using pd instead of having to type out Pandas every time. It offers a bit of convenience for a programmer!\n\n[B:openstax-pds-2025:p47:1 | data/Principles-of-Data-Science-WEB.pdf | page 47]\n# import Pandas and assign an abbreviated identifier \"pd\" import pandas as pd data = pd.read_csv(\"[Path]\") data The resulting output will look like this: The read_csv() method in Pandas loads a CSV file and stores it as a DataFrame. A DataFrame is a data type that Pandas uses to store multi-column tabular data. Therefore, the variable data holds the table in ch1-movieprofit.csv (https://openstax.org/r/movieprofit) in the form of a Pandas DataFrame.",
+  "context_ids": [
+   "B:openstax-pds-2025:p45:2",
+   "B:openstax-pds-2025:p45:1",
+   "B:openstax-pds-2025:p47:1"
+  ],
+  "context_chars": 1864,
+  "dropped_from_context": [],
+  "elapsed_ms": 751.7,
+  "hit1": false,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": false,
+  "first_hit_rank": 2
+ },
+ {
+  "query_id": "d09",
+  "split": "dev",
+  "answerable": true,
+  "question": "Why did the 1936 Literary Digest poll predict the wrong election winner?",
+  "query": "Why did the 1936 Literary Digest poll predict the wrong election winner?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p72:1",
+    "page": 72,
+    "chapter": 2,
+    "score": 0.613145,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p84:3",
+    "page": 84,
+    "chapter": 2,
+    "score": 0.286365,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p85:0",
+    "page": 85,
+    "chapter": 2,
+    "score": 0.27974,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p88:0",
+    "page": 88,
+    "chapter": 2,
+    "score": 0.246178,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p131:2",
+    "page": 131,
+    "chapter": 3,
+    "score": 0.236539,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p84:2",
+    "page": 84,
+    "chapter": 2,
+    "score": 0.225174,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p74:6",
+    "page": 74,
+    "chapter": 2,
+    "score": 0.21538,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p73:0",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.205729,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p97:0",
+    "page": 97,
+    "chapter": 2,
+    "score": 0.205314,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p94:4",
+    "page": 94,
+    "chapter": 2,
+    "score": 0.1994,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p72:1 | data/Principles-of-Data-Science-WEB.pdf | page 72]\nAvoiding Bias in Survey Questions Unbiased sampling and unbiased survey methodology are essential for ensuring accurate and reliable results. One well-known real-life instance of sampling bias leading to inaccurate findings is the 1936 Literary Digest poll. This survey aimed to forecast the results of the US presidential election and utilized a mailing list of telephone and automobile owners. This approach was considered biased toward affluent individuals and therefore favored Republican voters. As a consequence, the poll predicted a victory for Republican nominee Alf Landon. However, the actual outcome was a landslide win for Franklin D. Roosevelt (Lusinchi, 2012). This discrepancy can be attributed to the biased sampling method as well as the use of primarily closed-ended questions, which may not have accurately captured the opinions of all voters.\n\n[B:openstax-pds-2025:p84:3 | data/Principles-of-Data-Science-WEB.pdf | page 84]\n\"24\": [\"Grover Cleveland\", \"New Jersey\"], \"25\": [\"William McKinley\", \"Ohio\"],\n\n[B:openstax-pds-2025:p85:0 | data/Principles-of-Data-Science-WEB.pdf | page 85]\n\"26\": [\"Theodore Roosevelt\", \"New York\"], \"27\": [\"William Howard Taft\", \"Ohio\"], \"28\": [\"Woodrow Wilson\", \"Virginia\"], \"29\": [\"Warren G. Harding\", \"Ohio\"], \"30\": [\"Calvin Coolidge\", \"Vermont\"], \"31\": [\"Herbert Hoover\", \"Iowa\"], \"32\": [\"Franklin D. Roosevelt\", \"New York\"], \"33\": [\"Harry S. Truman\", \"Missouri\"], \"34\": [\"Dwight D. Eisenhower\", \"Texas\"], \"35\": [\"John F. Kennedy\", \"Massachusetts\"], \"36\": [\"Lyndon B. Johnson\", \"Texas\"], \"37\": [\"Richard Nixon\", \"California\"], \"38\": [\"Gerald Ford\", \"Nebraska\"], \"39\": [\"Jimmy Carter\", \"Georgia\"], \"40\": [\"Ronald Reagan\", \"Illinois\"], \"41\": [\"George H. W. Bush\", \"Massachusetts\"], \"42\": [\"Bill Clinton\", \"Arkansas\"], \"43\": [\"George W. Bush\", \"Connecticut\"], \"44\": [\"Barack Obama\", \"Hawaii\"], \"45\": [\"Donald Trump\", \"New York\"],",
+  "context_ids": [
+   "B:openstax-pds-2025:p72:1",
+   "B:openstax-pds-2025:p84:3",
+   "B:openstax-pds-2025:p85:0"
+  ],
+  "context_chars": 1956,
+  "dropped_from_context": [],
+  "elapsed_ms": 469.2,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": false,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "d10",
+  "split": "dev",
+  "answerable": true,
+  "question": "What is the sampling technique called when you split a population into groups by age, education and income and sample from each group?",
+  "query": "What is the sampling technique called when you split a population into groups by age, education and income and sample from each group?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p73:1",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.593419,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p76:1",
+    "page": 76,
+    "chapter": 2,
+    "score": 0.581704,
+    "rank": 2,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p72:5",
+    "page": 72,
+    "chapter": 2,
+    "score": 0.575572,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p72:4",
+    "page": 72,
+    "chapter": 2,
+    "score": 0.574574,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p73:0",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.572677,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p74:3",
+    "page": 74,
+    "chapter": 2,
+    "score": 0.571408,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p73:2",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.556571,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p76:0",
+    "page": 76,
+    "chapter": 2,
+    "score": 0.539294,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p73:5",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.533698,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p73:4",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.522575,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p73:1 | data/Principles-of-Data-Science-WEB.pdf | page 73]\n3. Cluster sampling. With cluster sampling, the population is divided into natural groups or clusters, such as schools, communities, or cities, with a random sample of these clusters picked and all members within the chosen clusters included in the sample. Cluster sampling is helpful to represent the entire population even if it is difficult or time-consuming due to challenges such as identifying clusters, sourcing a list of clusters, traveling to different clusters, and communicating with them. Additionally, data analysis and sample size calculation may be more complex, and there is a risk of bias in the sample. However, cluster sampling can be more cost-effective.\n\n[B:openstax-pds-2025:p76:1 | data/Principles-of-Data-Science-WEB.pdf | page 76]\nSolution The sampling technique used by Mark is called stratified sampling. This involves dividing the population into subgroups or strata based on certain characteristics and then randomly selecting participants from each subgroup. This ensures that each subgroup is represented in the sample, providing a more accurate representation of the entire population. This type of sampling is often used in market research studies to get a more comprehensive understanding of consumer behavior and preferences. By using stratified sampling, Mark can make more reliable conclusions and recommendations for the new product launch based on the data he collects.\n\n[B:openstax-pds-2025:p72:5 | data/Principles-of-Data-Science-WEB.pdf | page 72]\nA number of sampling techniques and their advantages are described below. The most frequently used among these are simple random selection, stratified sampling, cluster sampling, and convenience sampling. 1. Simple random selection. Simple random selection is a statistical technique used to pick a representative sample from a larger population. This process involves randomly choosing individuals or items from the population, ensuring that each selected member of the population has an identical chance of being contained in the sample. The main step in simple random selection is to define the population of interest and assign a unique identification number to each member. This could be done using a random number generator, a computer program designed to generate a sequence of random numbers, or a random number table, which lists numbers in a random sequence. The primary benefit of this technique is its ability to minimize bias and deliver a fair representation of the population.",
+  "context_ids": [
+   "B:openstax-pds-2025:p73:1",
+   "B:openstax-pds-2025:p76:1",
+   "B:openstax-pds-2025:p72:5"
+  ],
+  "context_chars": 2561,
+  "dropped_from_context": [],
+  "elapsed_ms": 387.9,
+  "hit1": false,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": false,
+  "first_hit_rank": 2
+ },
+ {
+  "query_id": "d11",
+  "split": "dev",
+  "answerable": true,
+  "question": "What is MAR missing data?",
+  "query": "What is MAR missing data?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p87:1",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.691876,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:2",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.605066,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p86:3",
+    "page": 86,
+    "chapter": 2,
+    "score": 0.555773,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:3",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.471489,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:5",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.446552,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:0",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.432105,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p94:4",
+    "page": 94,
+    "chapter": 2,
+    "score": 0.404956,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p91:0",
+    "page": 91,
+    "chapter": 2,
+    "score": 0.385568,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p75:1",
+    "page": 75,
+    "chapter": 2,
+    "score": 0.376538,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:4",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.365892,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p87:1 | data/Principles-of-Data-Science-WEB.pdf | page 87]\nIt is important to distinguish between different types of missing data. MCAR (missing completely at random) data is missing data not related to any other variables, with no underlying cause for its absence. Consider data collection with a survey asking about driving habits. One of the demographic questions asks for income level. Some respondents accidentally skip this question, and so there is missing data for income, but this is not related to the variables being collected related to driving habits. MAR (missing at random) data is missing data related to other variables but not to any unknown or unmeasured variables. As an example, during data collection, a survey is sent to respondents and the survey asks about loneliness. One of the questions asks about memory retention. Some older respondents might skip this question since they may be unwilling to share this type of information. The likelihood of missing data for loneliness factors is related to age (older respondents).\n\n[B:openstax-pds-2025:p87:2 | data/Principles-of-Data-Science-WEB.pdf | page 87]\nThus, the missing data is related to an observed variable of age but not directly related to loneliness measurements. MNAR (missing not at random) data refers to a situation in which the absence of data depends on observed data but not on unobserved data. For example, during data collection, a survey is sent to respondents and the survey asks about debt levels. One of the questions asks about outstanding debt that the customers have such as credit card debt. Some respondents with high credit card debt are less likely to respond to certain questions. Here the missing credit card information is related to the unobserved debt levels.\n\n[B:openstax-pds-2025:p86:3 | data/Principles-of-Data-Science-WEB.pdf | page 86]\nHandling Missing Data and Outliers Missing data refers to any data points or values that are not present in a dataset. This could be due to data collection errors, data corruption, or nonresponse from participants in a study. Missing data can impact the accuracy and validity of an analysis, as it reduces the sample size and potentially introduces bias. Some specific examples of missing data include the following: 1. A survey participant forgetting to answer a question 2. A malfunction in data collection equipment resulting in missing values 3. A participant choosing not to answer a question due to sensitivity or discomfort",
+  "context_ids": [
+   "B:openstax-pds-2025:p87:1",
+   "B:openstax-pds-2025:p87:2",
+   "B:openstax-pds-2025:p86:3"
+  ],
+  "context_chars": 2500,
+  "dropped_from_context": [],
+  "elapsed_ms": 748.2,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": false,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "d12",
+  "split": "dev",
+  "answerable": true,
+  "question": "What is the drawback of simply removing missing data?",
+  "query": "What is the drawback of simply removing missing data?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p86:3",
+    "page": 86,
+    "chapter": 2,
+    "score": 0.589978,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:5",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.568507,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:3",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.55925,
+    "rank": 3,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:4",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.487978,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:0",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.478728,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:1",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.47799,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p93:0",
+    "page": 93,
+    "chapter": 2,
+    "score": 0.460736,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p93:1",
+    "page": 93,
+    "chapter": 2,
+    "score": 0.454433,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:2",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.4499,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p92:4",
+    "page": 92,
+    "chapter": 2,
+    "score": 0.438424,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p86:3 | data/Principles-of-Data-Science-WEB.pdf | page 86]\nHandling Missing Data and Outliers Missing data refers to any data points or values that are not present in a dataset. This could be due to data collection errors, data corruption, or nonresponse from participants in a study. Missing data can impact the accuracy and validity of an analysis, as it reduces the sample size and potentially introduces bias. Some specific examples of missing data include the following: 1. A survey participant forgetting to answer a question 2. A malfunction in data collection equipment resulting in missing values 3. A participant choosing not to answer a question due to sensitivity or discomfort\n\n[B:openstax-pds-2025:p87:5 | data/Principles-of-Data-Science-WEB.pdf | page 87]\nHandling missing data and outliers in a data science task requires careful consideration and appropriate methods. It is important to understand the reasons behind these issues and to carefully document the process to ensure the validity of the results.\n\n[B:openstax-pds-2025:p87:3 | data/Principles-of-Data-Science-WEB.pdf | page 87]\n2. Determine the reasons behind missing data and outliers. It is helpful to understand the reasons behind the missing data and outliers. Some expected reasons for missing data include measurement errors, human error, or data not being collected for a particular variable. Similarly, outliers can be caused by incorrect data entry, measurement errors, or genuine extreme values in the data. 3. Determine how to solve missing data issues. Several approaches can be utilized to handle missing data. One option is to withdraw the missing data altogether, but this can lead to a loss of important information. Other methods include imputation, where the absent values are replaced with estimated values based on the remaining data or using predictive models to fill in the missing values.",
+  "context_ids": [
+   "B:openstax-pds-2025:p86:3",
+   "B:openstax-pds-2025:p87:5",
+   "B:openstax-pds-2025:p87:3"
+  ],
+  "context_chars": 1909,
+  "dropped_from_context": [],
+  "elapsed_ms": 753.1,
+  "hit1": false,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": false,
+  "first_hit_rank": 3
+ },
+ {
+  "query_id": "d13",
+  "split": "dev",
+  "answerable": true,
+  "question": "What cutoff value is typically used with the IQR to flag outliers?",
+  "query": "What cutoff value is typically used with the IQR to flag outliers?",
+  "filter": {
+   "chapter": 3
+  },
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p127:2",
+    "page": 127,
+    "chapter": 3,
+    "score": 0.710221,
+    "rank": 1,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p127:1",
+    "page": 127,
+    "chapter": 3,
+    "score": 0.633962,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p127:0",
+    "page": 127,
+    "chapter": 3,
+    "score": 0.630103,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p128:0",
+    "page": 128,
+    "chapter": 3,
+    "score": 0.578084,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p126:3",
+    "page": 126,
+    "chapter": 3,
+    "score": 0.500943,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p126:1",
+    "page": 126,
+    "chapter": 3,
+    "score": 0.474235,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p116:1",
+    "page": 116,
+    "chapter": 3,
+    "score": 0.448453,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p125:3",
+    "page": 125,
+    "chapter": 3,
+    "score": 0.419732,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p119:2",
+    "page": 119,
+    "chapter": 3,
+    "score": 0.416078,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p117:0",
+    "page": 117,
+    "chapter": 3,
+    "score": 0.401592,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p127:2 | data/Principles-of-Data-Science-WEB.pdf | page 127]\nThese formulas typically use 1.5 as a cutoff value to identify outliers in a dataset. EXAMPLE 3.12 Problem Calculate the IQR for the following 13 home prices and determine if any of the home prices values are potential outliers. Data values are in US dollars. 389950, 230500, 158000, 479000, 639000, 114950, 5500000, 387000, 659000, 529000, 575000, 488800,\n\n[B:openstax-pds-2025:p127:1 | data/Principles-of-Data-Science-WEB.pdf | page 127]\nQuartiles and the IQR can be used to flag possible outliers in a dataset. For example, if most employees at a company earn about $50,000 and the CEO of the company earns $2.5 million, then we consider the CEO’s salary to be an outlier data value because this salary is significantly different from all the other salaries in the dataset. An outlier data value can also be a value much lower than the other data values in a dataset, so if one employee only makes $15,000, then this employee’s low salary might also be considered an outlier. To detect outliers, you can use the quartiles and the IQR to calculate a lower and an upper bound for outliers. Then any data values below the lower bound or above the upper bound will be flagged as outliers. These data values should be further investigated to determine the nature of the outlier condition and whether the data values are valid or not. To calculate the lower and upper bounds for outliers, use the following formulas:\n\n[B:openstax-pds-2025:p127:0 | data/Principles-of-Data-Science-WEB.pdf | page 127]\nThe interquartile range (IQR) is a number that indicates the spread of the middle half, or the middle 50%, of the data. It is the difference between the third quartile, , and the first quartile, . Note that the IQR provides a measure of variability that excludes outliers. In Example 3.11, the IQR can be calculated as:",
+  "context_ids": [
+   "B:openstax-pds-2025:p127:2",
+   "B:openstax-pds-2025:p127:1",
+   "B:openstax-pds-2025:p127:0"
+  ],
+  "context_chars": 1898,
+  "dropped_from_context": [],
+  "elapsed_ms": 450.3,
+  "hit1": true,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": true,
+  "first_hit_rank": 1
+ },
+ {
+  "query_id": "d14",
+  "split": "dev",
+  "answerable": true,
+  "question": "How can an outlier that does not reflect real values be replaced in a time series?",
+  "query": "How can an outlier that does not reflect real values be replaced in a time series?",
+  "filter": {
+   "chapter": 2
+  },
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p86:4",
+    "page": 86,
+    "chapter": 2,
+    "score": 0.545951,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:4",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.527027,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:0",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.525509,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p88:2",
+    "page": 88,
+    "chapter": 2,
+    "score": 0.519617,
+    "rank": 4,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:3",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.500597,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p87:5",
+    "page": 87,
+    "chapter": 2,
+    "score": 0.484466,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p86:3",
+    "page": 86,
+    "chapter": 2,
+    "score": 0.463952,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p93:1",
+    "page": 93,
+    "chapter": 2,
+    "score": 0.445062,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p88:0",
+    "page": 88,
+    "chapter": 2,
+    "score": 0.39388,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p93:0",
+    "page": 93,
+    "chapter": 2,
+    "score": 0.378984,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p86:4 | data/Principles-of-Data-Science-WEB.pdf | page 86]\nAn outlier is a data point that differs significantly from other data points in a given dataset. This can be due to human error, measurement error, or a true outlier value in the data. Outliers can skew statistical analysis and bias results, which is why it is important to identify and handle them properly before analysis. Missing data and outliers are common problems that can affect the accuracy and reliability of results. It is important to identify and handle these issues properly to ensure the integrity of the data and the validity of the analysis. You will find more details about outliers in Measures of Center, but here we summarize the\n\n[B:openstax-pds-2025:p87:4 | data/Principles-of-Data-Science-WEB.pdf | page 87]\n4. Consider the influence of outliers. Outliers can greatly affect the results of the analysis, so it is important to carefully consider their impact. One approach is to delete the outliers from the dataset, but this can also lead to a loss of valuable information. Another option is to deal with the outliers as an individual group and analyze them separately from the rest of the data. 5. Use robust statistical methods. When dealing with outliers, it is important to use statistical methods that are not affected by extreme values. This includes using median instead of mean and using nonparametric tests instead of parametric tests, as explained in Statistical Inference and Confidence Intervals. 6. Validate the results. After handling the missing data and outliers, it is important to validate the results to ensure that they are robust and accurate. This can be done through various methods, such as cross- validation or comparing the results to external data sources.\n\n[B:openstax-pds-2025:p87:0 | data/Principles-of-Data-Science-WEB.pdf | page 87]\nmeasures typically used to handle missing data and outliers in a data science project: 1. Identify the missing data and outliers. The first stage is to identify which data points are missing or appear to be outliers. This can be done through visualization techniques, such as scatterplots, box plots, IQR (interquartile range), or histograms, or through statistical methods, such as calculating the mean, median, and standard deviation (see Measures of Center and Measures of Variation as well as Encoding Univariate Data).",
+  "context_ids": [
+   "B:openstax-pds-2025:p86:4",
+   "B:openstax-pds-2025:p87:4",
+   "B:openstax-pds-2025:p87:0"
+  ],
+  "context_chars": 2391,
+  "dropped_from_context": [],
+  "elapsed_ms": 722.3,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": false,
+  "context_hit_at_800": false,
+  "first_hit_rank": 4
+ },
+ {
+  "query_id": "d15",
+  "split": "dev",
+  "answerable": true,
+  "question": "What makes a dataset structured?",
+  "query": "What makes a dataset structured?",
+  "filter": {
+   "chapter": 1
+  },
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p31:1",
+    "page": 31,
+    "chapter": 1,
+    "score": 0.705767,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p29:5",
+    "page": 29,
+    "chapter": 1,
+    "score": 0.662417,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p30:2",
+    "page": 30,
+    "chapter": 1,
+    "score": 0.635404,
+    "rank": 3,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p29:4",
+    "page": 29,
+    "chapter": 1,
+    "score": 0.619903,
+    "rank": 4,
+    "hit": true
+   },
+   {
+    "id": "B:openstax-pds-2025:p31:0",
+    "page": 31,
+    "chapter": 1,
+    "score": 0.617298,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p31:2",
+    "page": 31,
+    "chapter": 1,
+    "score": 0.613956,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p30:0",
+    "page": 30,
+    "chapter": 1,
+    "score": 0.591306,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p30:4",
+    "page": 30,
+    "chapter": 1,
+    "score": 0.589722,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p26:4",
+    "page": 26,
+    "chapter": 1,
+    "score": 0.510053,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p32:2",
+    "page": 32,
+    "chapter": 1,
+    "score": 0.496042,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p31:1 | data/Principles-of-Data-Science-WEB.pdf | page 31]\nSolution It is a structured dataset since every entry of this dataset is in the same structure with two attributes: a short keyword along with the timestamp. Dataset Formats and Structures (CSV, JSON, XML)\n\n[B:openstax-pds-2025:p29:5 | data/Principles-of-Data-Science-WEB.pdf | page 29]\nBy contrast, an unstructured dataset is one that lacks a predefined or organized data model. While structured datasets are organized in a tabular format with clearly defined fields and relationships, unstructured data lacks a fixed schema. Unstructured data is often in the form of text, images, videos, audio recordings, or other content where the information doesn't fit neatly into rows and columns.\n\n[B:openstax-pds-2025:p30:2 | data/Principles-of-Data-Science-WEB.pdf | page 30]\nSolution It is a structured dataset since 1) every individual item is in the same structure with the same three attributes—Date, Temperature, and Needed a Jacket—and 2) each value strictly fits into a cell of a table.",
+  "context_ids": [
+   "B:openstax-pds-2025:p31:1",
+   "B:openstax-pds-2025:p29:5",
+   "B:openstax-pds-2025:p30:2"
+  ],
+  "context_chars": 1068,
+  "dropped_from_context": [],
+  "elapsed_ms": 921.6,
+  "hit1": false,
+  "hit3": true,
+  "context_hit": true,
+  "context_hit_at_800": false,
+  "first_hit_rank": 3
+ },
+ {
+  "query_id": "d16",
+  "split": "dev",
+  "answerable": false,
+  "question": "How much does a Google Colab Pro subscription cost per month, and what GPU does it provide?",
+  "query": "How much does a Google Colab Pro subscription cost per month, and what GPU does it provide?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p41:1",
+    "page": 41,
+    "chapter": 1,
+    "score": 0.508986,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p41:2",
+    "page": 41,
+    "chapter": 1,
+    "score": 0.460562,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p46:0",
+    "page": 46,
+    "chapter": 1,
+    "score": 0.428225,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p46:1",
+    "page": 46,
+    "chapter": 1,
+    "score": 0.427092,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p22:4",
+    "page": 22,
+    "chapter": 1,
+    "score": 0.342508,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p101:3",
+    "page": 101,
+    "chapter": 2,
+    "score": 0.341011,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p43:1",
+    "page": 43,
+    "chapter": 1,
+    "score": 0.324301,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p39:0",
+    "page": 39,
+    "chapter": 1,
+    "score": 0.289428,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p40:4",
+    "page": 40,
+    "chapter": 1,
+    "score": 0.283379,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p39:1",
+    "page": 39,
+    "chapter": 1,
+    "score": 0.277578,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p41:1 | data/Principles-of-Data-Science-WEB.pdf | page 41]\nJupyter Notebook on Google Colaboratory Jupyter Notebook is a web-based environment that allows you to run a Python program more interactively, using programming code, math equations, visualizations, and plain texts. There are multiple web applications or software you could use to edit a Jupyter Notebook, but in this textbook we will use Google’s free application named Google Colaboratory (Colab) (https://openstax.org/r/colab1), often abbreviated as Colab. It is a cloud- based platform, which means that you can open, edit, run, and save a Jupyter Notebook on your Google Drive. Setting up Colab is simple. On your Google Drive, click New > More. If your Google Drive has already installed Colab before, you will see Colaboratory under More. If not, click “Connect more apps” and install Colab by searching “Colaboratory” on the app store (Figure 1.15). For further information, see the Google Colaboratory Ecosystem (https://openstax.org/r/1pp) animation.\n\n[B:openstax-pds-2025:p41:2 | data/Principles-of-Data-Science-WEB.pdf | page 41]\nFigure 1.15 Install Google Colaboratory (Colab) Now click New > More > Google Laboratory. A new, empty Jupyter Notebook will show up as in Figure 1.16. Figure 1.16 Google Colaboratory Notebook The gray area with the play button is called a cell. A cell is a block where you can type either code or plain text. Notice that there are two buttons on top of the first cell—“+ Code” and “+ Text.” These two buttons add a code or text cell, respectively. A code cell is for the code you want to run; a text cell is to add any text description or note. Let’s run a Python program on Colab. Type the following code in a code cell.\n\n[B:openstax-pds-2025:p46:0 | data/Principles-of-Data-Science-WEB.pdf | page 46]\npublic dataset, ch1-movieprofit.csv (https://openstax.org/r/movieprofit), and store it in a Google Drive folder. Then open a new Notebook in that folder by entering that folder and clicking New > More > Google Colaboratory. Open the Notebook and allow it to access files in your Google Drive by following these steps: First, click the Files icon on the side tab (Figure 1.18).",
+  "context_ids": [
+   "B:openstax-pds-2025:p41:1",
+   "B:openstax-pds-2025:p41:2",
+   "B:openstax-pds-2025:p46:0"
+  ],
+  "context_chars": 2203,
+  "dropped_from_context": [],
+  "elapsed_ms": 444.8,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": false,
+  "context_hit_at_800": false,
+  "first_hit_rank": null
+ },
+ {
+  "query_id": "d17",
+  "split": "dev",
+  "answerable": false,
+  "question": "What minimum sample size does the book recommend for a survey to reach a 5% margin of error at 95% confidence?",
+  "query": "What minimum sample size does the book recommend for a survey to reach a 5% margin of error at 95% confidence?",
+  "filter": null,
+  "method": "dense",
+  "results": [
+   {
+    "id": "B:openstax-pds-2025:p140:1",
+    "page": 140,
+    "chapter": 3,
+    "score": 0.455366,
+    "rank": 1,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p72:4",
+    "page": 72,
+    "chapter": 2,
+    "score": 0.442374,
+    "rank": 2,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p76:0",
+    "page": 76,
+    "chapter": 2,
+    "score": 0.441062,
+    "rank": 3,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p94:4",
+    "page": 94,
+    "chapter": 2,
+    "score": 0.436908,
+    "rank": 4,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p73:5",
+    "page": 73,
+    "chapter": 2,
+    "score": 0.436127,
+    "rank": 5,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p74:5",
+    "page": 74,
+    "chapter": 2,
+    "score": 0.428282,
+    "rank": 6,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p130:3",
+    "page": 130,
+    "chapter": 3,
+    "score": 0.427515,
+    "rank": 7,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p140:2",
+    "page": 140,
+    "chapter": 3,
+    "score": 0.419824,
+    "rank": 8,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p131:2",
+    "page": 131,
+    "chapter": 3,
+    "score": 0.409411,
+    "rank": 9,
+    "hit": false
+   },
+   {
+    "id": "B:openstax-pds-2025:p75:5",
+    "page": 75,
+    "chapter": 2,
+    "score": 0.407291,
+    "rank": 10,
+    "hit": false
+   }
+  ],
+  "context": "[B:openstax-pds-2025:p140:1 | data/Principles-of-Data-Science-WEB.pdf | page 140]\nEXAMPLE 3.24 Problem A medical researcher is conducting a study related to a certain type of shoulder surgery. A sample of 20 patients who have recently undergone the surgery is selected, and the researcher wants to determine the probability that 18 of the 20 patients had a successful result from the surgery. From past data, the researcher knows that the probability of success for this type of surgery is 92%. 1. Does this experiment meet the requirements for a binomial experiment? 2. If so, identify the values of , , and in the experiment.\n\n[B:openstax-pds-2025:p72:4 | data/Principles-of-Data-Science-WEB.pdf | page 72]\nSampling is necessary in a wide range of data science projects to make data collection more manageable and cost-effective while still drawing meaningful conclusions. A variety of techniques can be employed to determine a subset of data from a larger population to perform research or construct hypotheses about the entire population. The choice of a sampling technique depends upon the nature and features of the population being studied as well as the objectives of the research. When using a survey, researchers must also consider the tool(s) that will be used for distributing the survey, such as through email, social media, or physically distributing questionnaires at the restaurant. It's crucial to make the survey easily accessible to the chosen sample to achieve a higher response rate.\n\n[B:openstax-pds-2025:p76:0 | data/Principles-of-Data-Science-WEB.pdf | page 76]\nResearchers need to be aware of these potential errors and take steps to minimize them when designing and conducting their studies. EXAMPLE 2.3 Problem Mark is a data scientist who works for a marketing research company. He has been tasked to lead a study to understand consumer behavior toward a new product that is about to be launched in the market. As data scientists, they know the importance of using the right sampling technique to collect accurate and reliable data. Mark divided the population into different groups based on factors such as age, education, and income. This ensures that he gets a representative sample from each group, providing a more accurate understanding of consumer behavior. What is the name of the sampling technique used by Mark to ensure a representative sample from different groups of consumers for his study on consumer behavior toward a new product?",
+  "context_ids": [
+   "B:openstax-pds-2025:p140:1",
+   "B:openstax-pds-2025:p72:4",
+   "B:openstax-pds-2025:p76:0"
+  ],
+  "context_chars": 2474,
+  "dropped_from_context": [],
+  "elapsed_ms": 508.8,
+  "hit1": false,
+  "hit3": false,
+  "context_hit": false,
+  "context_hit_at_800": false,
+  "first_hit_rank": null
+ }
+]
