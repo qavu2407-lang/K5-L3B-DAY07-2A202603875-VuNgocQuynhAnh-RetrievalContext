@@ -1,6 +1,6 @@
 # Code và cách chạy
 
-Agent tìm bằng chứng trong giáo trình *Principles of Data Science* (chương 1-3), trả lời có trích nguồn hoặc từ chối khi không đủ bằng chứng. Dùng lại vector store và embedding của Day 6.
+Agent tìm bằng chứng trong giáo trình *Principles of Data Science* (chương 1-3; chương 5, 6, 9 cho thử thách nâng cao), trả lời có trích nguồn hoặc từ chối khi không đủ bằng chứng. Dùng lại vector store và embedding của Day 6.
 
 ## Cần có
 
@@ -53,6 +53,20 @@ Kiểm tra code (không cần mạng): `.venv/bin/python -m unittest discover -s
 | I2 | I1 + `--budget 9600` | context lớn hơn cho nhiều lượt tìm |
 | I3 (đã chọn) | I2 + `--skip-seen` | lượt tìm sau bỏ qua chunk đã thấy |
 
+## Thử thách nâng cao (chương 5, 6, 9)
+
+Cần PDF của Day 6 (`$DAY6_DIR/data/Principles-of-Data-Science-WEB.pdf`). Mô tả hình và đoạn công thức đã lưu sẵn trong `data/advanced/figures.json`, nên chạy lại `extract` không gọi model.
+
+| Bước | Lệnh | Kết quả |
+|---|---|---|
+| 1. Trích text, bảng, hình | `.venv/bin/python src/adv_index.py extract` | `data/advanced/chunks.json`, `index_report.json`, `crops/` |
+| 2. Embed vào pgvector | `.venv/bin/python src/adv_index.py embed` | strategy `ADV` trong database Day 6 |
+| 3. Kiểm tra benchmark | `.venv/bin/python src/adv_check.py` | đủ số câu theo nhóm, evidence trỏ đúng trang |
+| 4. Agent (dev) | `.venv/bin/python src/agent.py --corpus advanced --split dev --retriever hybrid --budget 9600 --distinct-queries --skip-seen --typed-search --calculator --verify --append-citations --read-figure --figure-nudge --prompt v7 --neighbours --verify-model gpt-6.1-terra --name F6` | `results/adv-agent-dev-F6/` |
+| 5. Test (sau khi chốt) | lệnh trong `results/adv_frozen_config.json` (cần `--confirm-frozen`) | `results/adv-agent-test-F6/` |
+
+Các cấu hình dev và thay đổi từng bước: `results/adv_dev_comparison.md`.
+
 ## File
 
 | File | Công dụng |
@@ -62,6 +76,7 @@ Kiểm tra code (không cần mạng): `.venv/bin/python -m unittest discover -s
 | `check_benchmark.py`, `check_connection.py` | Kiểm tra benchmark và kết nối |
 | `retrieval.py` | 3 phương pháp (dense, TF-IDF, hybrid) và chấm Hit@1 / Hit@3 / Context Evidence Rate |
 | `agent.py` | Agent `gpt-4.1-mini` dùng `run_agent` của starter |
+| `adv_index.py`, `adv_check.py` | Index tài liệu nâng cao (text, bảng, hình) và kiểm tra benchmark nâng cao |
 | `compare.py`, `agent_compare.py` | Bảng so sánh |
 
 ## Demo (đã có sẵn trong `results/`)
