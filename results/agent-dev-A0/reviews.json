@@ -1,0 +1,19 @@
+[
+ {"query_id": "d01", "answer_grade": 1, "citation_support": [true, true], "reason": "Gives the chapter-summary description (p26:5: 'extract insights and knowledge from data') and the cycle (p20:4), both supported, but not the book's definition on p19 (collect, manage and analyze data of all types to retrieve meaningful information). Definition chunk p19:2 was never in context (dense rank 5)."},
+ {"query_id": "d02", "answer_grade": 2, "citation_support": [true], "reason": "Collection and cleaning, about half of the process; quoted from p21:0."},
+ {"query_id": "d03", "answer_grade": 2, "citation_support": [true, true], "reason": "Ordering notion: nominal none, ordinal yes (p29:0); semester/rating example from p29:1."},
+ {"query_id": "d04", "answer_grade": 2, "citation_support": [true], "reason": "When chronological ordering matters, e.g. time series; p29:1."},
+ {"query_id": "d05", "answer_grade": 2, "citation_support": [true], "reason": "Unstructured, freeform text; p30:4."},
+ {"query_id": "d06", "answer_grade": 2, "citation_support": [true], "reason": "409 items, seven attributes (names listed); p38:1."},
+ {"query_id": "d07", "answer_grade": 1, "borderline": true, "citation_support": [true, true], "reason": "Says to run the cells in order from the top, which is the gist, but never names 'Run all' / 'Run before' and adds an unsupported claim that running one cell at a time keeps outputs consistent. p42:0 (cells are one program, top to bottom) and p43:1 (one block at a time raises errors) support parts. Gold chunk p45:0 never retrieved (known Day 6 cross-page chunk). Same query sent 3 times."},
+ {"query_id": "d08", "answer_grade": 2, "citation_support": [true, true, true], "reason": "pd; p45:1 states the convention, p45:2 and p47:1 show 'import pandas as pd'."},
+ {"query_id": "d09", "answer_grade": 2, "citation_support": [true], "reason": "Mailing list of telephone/automobile owners biased toward affluent, Republican voters; closed-ended questions also from p72:1."},
+ {"query_id": "d10", "answer_grade": 0, "citation_support": [false, true], "reason": "Contradictory: names 'stratified sampling' while saying the context does not mention it, then concludes the technique is most similar to quota sampling (wrong). p73:1 (cluster sampling) supports no claim; p74:3 does support the quota-sampling description. The stratified chunks (p73:0, p76:1) were never in context; the same query was sent 3 times."},
+ {"query_id": "d11", "answer_grade": 2, "citation_support": [true], "reason": "Definition and loneliness/age example from p87:1."},
+ {"query_id": "d12", "answer_grade": 1, "borderline": true, "citation_support": [false, true], "reason": "Core answer 'loss of important information' from p87:3. Extra claim that removing data reduces sample size and introduces bias is copied from p86:3, which says this about missing data itself, not about removing it, so p86:3 is marked unsupported. Author decision (strict): an unsupported extra claim makes the answer only partly grounded, so 1."},
+ {"query_id": "d13", "answer_grade": 2, "citation_support": [true, true], "reason": "1.5 (p127:2); p128:0 shows the 1.5 x IQR bound calculation."},
+ {"query_id": "d14", "answer_grade": 0, "citation_support": [], "reason": "False abstention: dense never brought p88:2 into context (rank 4 in retrieval); the same query was sent 3 times."},
+ {"query_id": "d15", "answer_grade": 2, "citation_support": [true, true, true], "reason": "Same attributes for all entities, fits a table: p29:4 and p30:2 (both gold), p31:1 also says 'same structure'."},
+ {"query_id": "d16", "abstention_correct": true, "citation_support": [], "reason": "Abstained: context has no Colab Pro price or GPU. No claims added."},
+ {"query_id": "d17", "abstention_correct": true, "citation_support": [], "reason": "Abstained: no sample size / margin of error in context. No claims added."}
+]

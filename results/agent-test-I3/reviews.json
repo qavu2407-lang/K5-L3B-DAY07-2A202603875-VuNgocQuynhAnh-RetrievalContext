@@ -1,0 +1,57 @@
+[
+ {
+  "query_id": "t01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Same as A0; p100:1 (gold)."
+ },
+ {
+  "query_id": "t02",
+  "answer_grade": 1,
+  "borderline": true,
+  "citation_support": [
+   true
+  ],
+  "reason": "Core answer correct and from p74:2 (gold): hard-to-reach / sensitive populations; may be biased and limit generalizability. Adds a cause for the bias ('because the sample is not randomly selected and may not represent the entire population' - wording from the quota-sampling chunk p74:3, in context but not cited and about a different method) that p74:2 does not state. Author's strict rule (as d12): unsupported extra claim, so 1."
+ },
+ {
+  "query_id": "t03",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "p118:0 (gold) rule; p118:2 example; (72+76)/2 = 74 is arithmetic on the cited numbers; 'splits into two equal halves' from p118:0."
+ },
+ {
+  "query_id": "t04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Sample space; p130:0 (gold), found by the 2nd search 'sample space definition' with seen chunks skipped."
+ },
+ {
+  "query_id": "t05",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "p92:1 (gold); skewness / extreme values from p92:2."
+ },
+ {
+  "query_id": "t06",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Abstained; context (section 2.3 scraping chunks) says nothing on legality, robots.txt or terms of service; no claims added."
+ },
+ {
+  "query_id": "t07",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Abstained; context has binomial/Poisson only, no hypergeometric formula; no claims added."
+ }
+]

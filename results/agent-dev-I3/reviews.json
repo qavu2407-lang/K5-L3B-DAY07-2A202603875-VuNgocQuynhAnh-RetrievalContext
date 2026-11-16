@@ -1,0 +1,148 @@
+[
+ {
+  "query_id": "d01",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Book definition p19:2 (gold) plus p26:5, p20:4; all supported."
+ },
+ {
+  "query_id": "d02",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "About half in collection and cleaning, p21:0 (gold); p20:4 (cycle) and p67:2 (what collection involves) support the extra sentences."
+ },
+ {
+  "query_id": "d03",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Ordering notion (p29:0, gold); semester/rating example p29:1."
+ },
+ {
+  "query_id": "d04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Chronological ordering valued for analysis / time series, p29:1 (gold)."
+ },
+ {
+  "query_id": "d05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Unstructured, freeform text, p30:4 (gold)."
+ },
+ {
+  "query_id": "d06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "409 items, seven attributes, p38:1 (gold)."
+ },
+ {
+  "query_id": "d07",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Exact book recommendation 'Run all' or 'Run before' after changes, from p45:0 (gold), reached via a later search that skipped already-seen chunks. The extra description of what 'Run before' does comes from p43:0 (in context, not cited) - correct per the book but not supported by the cited chunk. Graded 2.",
+  "borderline": true
+ },
+ {
+  "query_id": "d08",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "pd; p45:1 states the convention, p45:2 / p47:1 show 'import pandas as pd'."
+ },
+ {
+  "query_id": "d09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Biased mailing list toward affluent, Republican voters; closed-ended questions; p72:1 (gold)."
+ },
+ {
+  "query_id": "d10",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Stratified sampling; p73:0 definition and p76:1 (gold)."
+ },
+ {
+  "query_id": "d11",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Same as I2: definition from p87:1 (gold) plus a consistent paraphrase. Graded 2.",
+  "borderline": true
+ },
+ {
+  "query_id": "d12",
+  "answer_grade": 1,
+  "citation_support": [
+   true
+  ],
+  "reason": "Core answer 'loss of important information' from p87:3, but adds that removing data reduces sample size / introduces bias, which the book says about missing data itself (p86:3), not about removing it. Author rule (strict, same as A0/A1): unsupported extra claim, so 1.",
+  "borderline": true
+ },
+ {
+  "query_id": "d13",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "1.5, p127:2 (gold)."
+ },
+ {
+  "query_id": "d14",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Mean of the points before and after (book: 'median, calculated by taking the mean'), p88:2 (gold)."
+ },
+ {
+  "query_id": "d15",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "reason": "p29:4, p30:2 (gold); unstructured contrast from p29:5; CSV/JSON/XML formats from p31:2. All supported."
+ },
+ {
+  "query_id": "d16",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Abstained; no Colab Pro price/GPU in context; no claims added."
+ },
+ {
+  "query_id": "d17",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Abstained; no sample size / margin of error in context; no claims added."
+ }
+]

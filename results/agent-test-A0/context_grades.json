@@ -1,0 +1,27 @@
+[
+ {
+  "query_id": "t01",
+  "context_grade": 2,
+  "reason": "p100:1 has the full reason."
+ },
+ {
+  "query_id": "t02",
+  "context_grade": 2,
+  "reason": "p74:2 has use + drawback."
+ },
+ {
+  "query_id": "t03",
+  "context_grade": 2,
+  "reason": "p118:0 has the rule."
+ },
+ {
+  "query_id": "t04",
+  "context_grade": 0,
+  "reason": "Final context p140:4, p131:1, p130:1, p131:4, p138:2: none defines the sample space."
+ },
+ {
+  "query_id": "t05",
+  "context_grade": 2,
+  "reason": "p92:1 has the reason."
+ }
+]

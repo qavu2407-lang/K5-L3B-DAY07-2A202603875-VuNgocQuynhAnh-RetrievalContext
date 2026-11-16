@@ -1,0 +1,58 @@
+[
+ {
+  "query_id": "t01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Reassemble the chunks into the original dataset; p100:1 (gold)."
+ },
+ {
+  "query_id": "t02",
+  "answer_grade": 1,
+  "borderline": true,
+  "citation_support": [
+   true
+  ],
+  "reason": "Core answer correct and from p74:2 (gold): hard-to-reach / sensitive populations; may be biased and limit generalizability. Adds a cause for the bias ('due to the non-random nature of the sampling process') that p74:2 does not state. Author's strict rule (as d12): unsupported extra claim, so 1."
+ },
+ {
+  "query_id": "t03",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Add the two middle values and divide by 2; p118:0 (gold), 100-value example from p118:2."
+ },
+ {
+  "query_id": "t04",
+  "answer_grade": 1,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Says 'sample space' (correct), but neither cited chunk defines it: p130:1 says an event is a subset of the sample space, p131:4 defines the complement. The definition (p130:0, gold) was never in context (dense rank 4). Correct but key claim unsupported, so 1; both citations do support the extra claims they are attached to."
+ },
+ {
+  "query_id": "t05",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Closer to a normal distribution, more accurate analysis; p92:1 (gold); log / square-root details from p92:2."
+ },
+ {
+  "query_id": "t06",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Abstained; context (section 2.3 scraping chunks) says nothing on legality, robots.txt or terms of service; no claims added."
+ },
+ {
+  "query_id": "t07",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Abstained; context has binomial/Poisson only, no hypergeometric formula; no claims added."
+ }
+]

@@ -1,0 +1,143 @@
+[
+ {
+  "query_id": "d01",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Book definition from p19:2 (gold) plus p26:5 description; all supported."
+ },
+ {
+  "query_id": "d02",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "About half of the process in collection and cleaning, p21:0 (gold); other cited chunks support the extra description."
+ },
+ {
+  "query_id": "d03",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Ordering notion (p29:0, gold); semester/rating example p29:1."
+ },
+ {
+  "query_id": "d04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Chronological ordering valued for analysis / time series, p29:1 (gold)."
+ },
+ {
+  "query_id": "d05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Unstructured, freeform text, p30:4 (gold)."
+ },
+ {
+  "query_id": "d06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "409 items, seven attributes, p38:1 (gold)."
+ },
+ {
+  "query_id": "d07",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Recommends 'Run all' from the top; cited p43:0 explains Run all. The explicit recommendation after changing cells is on p45:0 (gold), not retrieved. Author decision (same as A1): 2.",
+  "borderline": true
+ },
+ {
+  "query_id": "d08",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "pd; p45:1 states the convention, p45:2 / p47:1 show 'import pandas as pd'."
+ },
+ {
+  "query_id": "d09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Biased mailing list toward affluent, Republican voters; closed-ended questions; p72:1 (gold)."
+ },
+ {
+  "query_id": "d10",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Stratified sampling; p73:0 definition and p76:1 (gold)."
+ },
+ {
+  "query_id": "d11",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "MAR definition and age example, p87:1 (gold)."
+ },
+ {
+  "query_id": "d12",
+  "answer_grade": 1,
+  "citation_support": [
+   false,
+   true
+  ],
+  "reason": "Core answer 'loss of important information' from p87:3, but adds that removing data reduces sample size / introduces bias, which the book says about missing data itself (p86:3), not about removing it. Author rule (strict, same as A0/A1): unsupported extra claim, so 1. p86:3 cited for the misattributed claim, so unsupported.",
+  "borderline": true
+ },
+ {
+  "query_id": "d13",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "1.5, p127:2 (gold)."
+ },
+ {
+  "query_id": "d14",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Mean of the points before and after (book: 'median, calculated by taking the mean'), p88:2 (gold)."
+ },
+ {
+  "query_id": "d15",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Same attributes for all entities, fits a table: p29:4, p30:2 (gold), p31:1."
+ },
+ {
+  "query_id": "d16",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Abstained; no Colab Pro price/GPU in context; no claims added."
+ },
+ {
+  "query_id": "d17",
+  "abstention_correct": true,
+  "citation_support": [],
+  "reason": "Abstained; no sample size / margin of error in context; no claims added."
+ }
+]

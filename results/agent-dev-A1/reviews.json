@@ -1,0 +1,19 @@
+[
+ {"query_id": "d01", "answer_grade": 2, "citation_support": [true, true, true], "reason": "Exact book definition from p19:2 (gold); extra context from p26:5 and p20:4, all supported."},
+ {"query_id": "d02", "answer_grade": 2, "citation_support": [true, true], "reason": "About half the process in collection and cleaning (p21:0); last sentence on what collection/preparation involve from p67:2."},
+ {"query_id": "d03", "answer_grade": 2, "citation_support": [true, true], "reason": "Same as A0: p29:0 definition, p29:1 example."},
+ {"query_id": "d04", "answer_grade": 2, "citation_support": [true], "reason": "Chronological ordering valued for analysis, time series; p29:1."},
+ {"query_id": "d05", "answer_grade": 2, "citation_support": [true], "reason": "Unstructured, freeform text; p30:4."},
+ {"query_id": "d06", "answer_grade": 2, "citation_support": [true], "reason": "409 items, seven attributes; p38:1."},
+ {"query_id": "d07", "answer_grade": 2, "borderline": true, "citation_support": [true], "reason": "Recommends 'Run all' from the top, matching the expected answer; p43:0 supports what Run all does. The explicit recommendation to use it after changing several cells is on p45:0 (gold), which was never retrieved. Author decision: 2, since the answer matches and the cited chunk supports the action."},
+ {"query_id": "d08", "answer_grade": 2, "citation_support": [true, true, true], "reason": "pd; p45:1, p45:2, p47:1."},
+ {"query_id": "d09", "answer_grade": 2, "citation_support": [true], "reason": "Biased mailing list toward affluent, Republican voters; p72:1."},
+ {"query_id": "d10", "answer_grade": 2, "citation_support": [true, true], "reason": "Stratified sampling; definition from p73:0 and the example solution p76:1 (gold)."},
+ {"query_id": "d11", "answer_grade": 2, "citation_support": [true], "reason": "Definition and example from p87:1."},
+ {"query_id": "d12", "answer_grade": 1, "borderline": true, "citation_support": [true], "reason": "Core answer 'loss of important information' from p87:3. Adds 'reduce the sample size and introduce bias', which p87:3 does not say (p86:3 says it about missing data itself, not about removing it). Author decision (strict): an unsupported extra claim makes the answer only partly grounded, so 1."},
+ {"query_id": "d13", "answer_grade": 2, "citation_support": [true], "reason": "1.5; p127:2."},
+ {"query_id": "d14", "answer_grade": 2, "citation_support": [true], "reason": "Replace with the mean of the points before and after (the book's 'median, calculated by taking the mean'); p88:2 (gold)."},
+ {"query_id": "d15", "answer_grade": 2, "citation_support": [true, true, true], "reason": "p29:4 and p30:2 (gold) plus p31:1."},
+ {"query_id": "d16", "abstention_correct": true, "citation_support": [], "reason": "Abstained: no Colab Pro price or GPU in context. No claims added."},
+ {"query_id": "d17", "abstention_correct": true, "citation_support": [], "reason": "Abstained: no sample size / margin of error in context. No claims added."}
+]

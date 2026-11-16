@@ -1,0 +1,1332 @@
+[
+ {
+  "query_id": "t01",
+  "split": "test",
+  "question": "Why does data chunking attach metadata such as the chunk number and total number of chunks?",
+  "filter": null,
+  "status": "answered",
+  "answer": "Data chunking attaches metadata such as the chunk number and the total number of chunks to each chunk to allow the chunks to be reassembled into the original dataset after being transmitted or stored separately. This metadata provides information about the order and total count of the chunks, which is essential for correctly reconstructing the entire dataset from its parts [B:openstax-pds-2025:p100:1].",
+  "citations": [
+   "B:openstax-pds-2025:p100:1"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "query": "data chunking attach metadata chunk number total number of chunks",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p100:1",
+      "text": "Data chunking is used in data storage systems and data transmission over networks, and it is especially useful when working with large datasets that exceed the capacity of a single machine or when transferring data over a network with limited bandwidth. The divided data in data chunking is known as a chunk or block. The size of each chunk can vary depending on the requirements and range from a few kilobytes to several gigabytes. These chunks are typically organized sequentially, with each chunk containing a set of data from the larger dataset. The process of data chunking also involves adding metadata (data that provides information about other data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately. Data chunking has several advantages, including the following:",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 100,
+      "metadata": {
+       "end": 1418,
+       "start": 502,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p100",
+       "sections": [
+        "2.5"
+       ],
+       "book_page": 90
+      },
+      "score": 0.03278688524590164,
+      "rank": 1
+     },
+     {
+      "id": "B:openstax-pds-2025:p100:0",
+      "text": "Figure 2.5 B-Tree Indexing Data Chunking Data chunking, also known as data segmentation or data partitioning, is a technique used to break down large datasets into smaller, more manageable chunks and make them easier to manage, process, analyze, and store. Chunking is particularly useful when datasets are too large to be processed or analyzed as a single unit. By dividing the data into smaller chunks, various processing tasks can be distributed across multiple computing nodes or processing units.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 100,
+      "metadata": {
+       "end": 501,
+       "start": 0,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p100",
+       "sections": [
+        "2.5"
+       ],
+       "book_page": 90
+      },
+      "score": 0.03200204813108039,
+      "rank": 2
+     },
+     {
+      "id": "B:openstax-pds-2025:p100:2",
+      "text": "1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can be performed more quickly, reducing the overall processing time. 2. Better utilization of resources. Data chunking enables data to be distributed and processed across multiple machines, making better use of available computing resources. 3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of only the affected chunk rather than the entire dataset. 4. Flexibility. Data chunking allows for the transfer and processing of only the required chunks rather than the entire dataset, providing flexibility in managing large datasets.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 100,
+      "metadata": {
+       "end": 2105,
+       "start": 1419,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p100",
+       "sections": [
+        "2.5"
+       ],
+       "book_page": 90
+      },
+      "score": 0.03200204813108039,
+      "rank": 3
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p100:1 | data/Principles-of-Data-Science-WEB.pdf | page 100]\nData chunking is used in data storage systems and data transmission over networks, and it is especially useful when working with large datasets that exceed the capacity of a single machine or when transferring data over a network with limited bandwidth. The divided data in data chunking is known as a chunk or block. The size of each chunk can vary depending on the requirements and range from a few kilobytes to several gigabytes. These chunks are typically organized sequentially, with each chunk containing a set of data from the larger dataset. The process of data chunking also involves adding metadata (data that provides information about other data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows the chunks to be reassembled into the original dataset after being transmitted or stored separately. Data chunking has several advantages, including the following:\n\n[B:openstax-pds-2025:p100:0 | data/Principles-of-Data-Science-WEB.pdf | page 100]\nFigure 2.5 B-Tree Indexing Data Chunking Data chunking, also known as data segmentation or data partitioning, is a technique used to break down large datasets into smaller, more manageable chunks and make them easier to manage, process, analyze, and store. Chunking is particularly useful when datasets are too large to be processed or analyzed as a single unit. By dividing the data into smaller chunks, various processing tasks can be distributed across multiple computing nodes or processing units.\n\n[B:openstax-pds-2025:p100:2 | data/Principles-of-Data-Science-WEB.pdf | page 100]\n1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can be performed more quickly, reducing the overall processing time. 2. Better utilization of resources. Data chunking enables data to be distributed and processed across multiple machines, making better use of available computing resources. 3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of only the affected chunk rather than the entire dataset. 4. Flexibility. Data chunking allows for the transfer and processing of only the required chunks rather than the entire dataset, providing flexibility in managing large datasets.",
+    "context_ids": [
+     "B:openstax-pds-2025:p100:1",
+     "B:openstax-pds-2025:p100:0",
+     "B:openstax-pds-2025:p100:2"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "final_tool": "answer",
+  "controller_calls": [
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "data chunking attach metadata chunk number total number of chunks"
+    },
+    "latency_ms": 1005,
+    "prompt_tokens": 363,
+    "completion_tokens": 23,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00018200000000000003
+   },
+   {
+    "tool": "answer",
+    "repair": false,
+    "args": {
+     "answer": "Data chunking attaches metadata such as the chunk number and the total number of chunks to each chunk to allow the chunks to be reassembled into the original dataset after being transmitted or stored separately. This metadata provides information about the order and total count of the chunks, which is essential for correctly reconstructing the entire dataset from its parts.",
+     "citations": [
+      "B:openstax-pds-2025:p100:1"
+     ]
+    },
+    "latency_ms": 1300,
+    "prompt_tokens": 882,
+    "completion_tokens": 96,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0005064000000000001
+   },
+   {
+    "tool": "answer",
+    "repair": true,
+    "args": {
+     "answer": "Data chunking attaches metadata such as the chunk number and the total number of chunks to each chunk to allow the chunks to be reassembled into the original dataset after being transmitted or stored separately. This metadata provides information about the order and total count of the chunks, which is essential for correctly reconstructing the entire dataset from its parts [B:openstax-pds-2025:p100:1].",
+     "citations": [
+      "B:openstax-pds-2025:p100:1"
+     ]
+    },
+    "latency_ms": 1542,
+    "prompt_tokens": 1013,
+    "completion_tokens": 112,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0005844000000000001
+   }
+  ],
+  "error": null,
+  "searches": 1,
+  "elapsed_s": 4.36,
+  "tokens": 2489,
+  "cost_usd": 0.0012728000000000001
+ },
+ {
+  "query_id": "t02",
+  "split": "test",
+  "question": "When is snowball sampling useful, and what is its drawback?",
+  "filter": null,
+  "status": "answered",
+  "answer": "Snowball sampling is useful in situations where it is difficult to access a particular population, especially hard-to-reach or sensitive populations. It relies on the assumption that people with similar characteristics or experiences tend to associate with each other and can provide valuable referrals. However, its drawback is that it may be biased and limit the generalizability of findings because the sample is not randomly selected and may not represent the entire population accurately [B:openstax-pds-2025:p74:2].",
+  "citations": [
+   "B:openstax-pds-2025:p74:2"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "query": "snowball sampling usefulness drawback",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p74:2",
+      "text": "7. Snowball sampling. Snowball sampling is typically used in situations where it is difficult to access a particular population; it relies on the assumption that people with similar characteristics or experiences tend to associate with each other and can provide valuable referrals. This type of sampling can be useful in studying hard-to-reach or sensitive populations, but it may also be biased and limit the generalizability of findings.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 74,
+      "metadata": {
+       "end": 1585,
+       "start": 1145,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p74",
+       "sections": [
+        "2.2"
+       ],
+       "book_page": 64
+      },
+      "score": 0.03278688524590164,
+      "rank": 1
+     },
+     {
+      "id": "B:openstax-pds-2025:p74:3",
+      "text": "8. Quota sampling. Quota sampling is a non-probability sampling technique in which experimenters select participants based on predetermined quotas to guarantee that a certain number or percentage of the population of interest is represented in the sample. These quotas are based on specific demographic characteristics, such as age, gender, ethnicity, and occupation, which are believed to have a direct or indirect relationship with the research topic. Quota sampling is generally used in market research and opinion polls, as it allows for a fast and cost-effective way to gather data from a diverse range of individuals. However, it is important to note that the results of quota sampling may not accurately represent the entire population, as the sample is not randomly selected and may be biased toward certain characteristics. Therefore, the findings from studies using quota sampling should be interpreted with caution.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 74,
+      "metadata": {
+       "end": 2512,
+       "start": 1586,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p74",
+       "sections": [
+        "2.2"
+       ],
+       "book_page": 64
+      },
+      "score": 0.031024531024531024,
+      "rank": 2
+     },
+     {
+      "id": "B:openstax-pds-2025:p74:4",
+      "text": "9. Volunteer sampling. Volunteer sampling refers to the fact that the participants are not picked at random by the researcher, but instead volunteer themselves to be a part of the study. This type of sampling is commonly used in studies that involve recruiting participants from a specific population, such as a specific community or organization. It is also often used in studies where convenience and accessibility are important factors, as participants may be more likely to volunteer if the study is easily accessible to them. Volunteer sampling is not considered a random or representative sampling technique, as the participants may not accurately represent the larger population. Therefore, the results obtained from volunteer sampling may not be generalizable to the entire population.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 74,
+      "metadata": {
+       "end": 3306,
+       "start": 2513,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p74",
+       "sections": [
+        "2.2"
+       ],
+       "book_page": 64
+      },
+      "score": 0.029910714285714284,
+      "rank": 3
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p74:2 | data/Principles-of-Data-Science-WEB.pdf | page 74]\n7. Snowball sampling. Snowball sampling is typically used in situations where it is difficult to access a particular population; it relies on the assumption that people with similar characteristics or experiences tend to associate with each other and can provide valuable referrals. This type of sampling can be useful in studying hard-to-reach or sensitive populations, but it may also be biased and limit the generalizability of findings.\n\n[B:openstax-pds-2025:p74:3 | data/Principles-of-Data-Science-WEB.pdf | page 74]\n8. Quota sampling. Quota sampling is a non-probability sampling technique in which experimenters select participants based on predetermined quotas to guarantee that a certain number or percentage of the population of interest is represented in the sample. These quotas are based on specific demographic characteristics, such as age, gender, ethnicity, and occupation, which are believed to have a direct or indirect relationship with the research topic. Quota sampling is generally used in market research and opinion polls, as it allows for a fast and cost-effective way to gather data from a diverse range of individuals. However, it is important to note that the results of quota sampling may not accurately represent the entire population, as the sample is not randomly selected and may be biased toward certain characteristics. Therefore, the findings from studies using quota sampling should be interpreted with caution.\n\n[B:openstax-pds-2025:p74:4 | data/Principles-of-Data-Science-WEB.pdf | page 74]\n9. Volunteer sampling. Volunteer sampling refers to the fact that the participants are not picked at random by the researcher, but instead volunteer themselves to be a part of the study. This type of sampling is commonly used in studies that involve recruiting participants from a specific population, such as a specific community or organization. It is also often used in studies where convenience and accessibility are important factors, as participants may be more likely to volunteer if the study is easily accessible to them. Volunteer sampling is not considered a random or representative sampling technique, as the participants may not accurately represent the larger population. Therefore, the results obtained from volunteer sampling may not be generalizable to the entire population.",
+    "context_ids": [
+     "B:openstax-pds-2025:p74:2",
+     "B:openstax-pds-2025:p74:3",
+     "B:openstax-pds-2025:p74:4"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "final_tool": "answer",
+  "controller_calls": [
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "snowball sampling usefulness drawback"
+    },
+    "latency_ms": 935,
+    "prompt_tokens": 358,
+    "completion_tokens": 17,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00017040000000000002
+   },
+   {
+    "tool": "answer",
+    "repair": false,
+    "args": {
+     "answer": "Snowball sampling is useful in situations where it is difficult to access a particular population, especially hard-to-reach or sensitive populations. It relies on the assumption that people with similar characteristics or experiences tend to associate with each other and can provide valuable referrals. However, its drawback is that it may be biased and limit the generalizability of findings because the sample is not randomly selected and may not represent the entire population accurately [B:openstax-pds-2025:p74:2].",
+     "citations": [
+      "B:openstax-pds-2025:p74:2"
+     ]
+    },
+    "latency_ms": 1692,
+    "prompt_tokens": 856,
+    "completion_tokens": 130,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0005504
+   }
+  ],
+  "error": null,
+  "searches": 1,
+  "elapsed_s": 3.04,
+  "tokens": 1361,
+  "cost_usd": 0.0007208000000000001
+ },
+ {
+  "query_id": "t03",
+  "split": "test",
+  "question": "How do you find the median when a dataset has an even number of values?",
+  "filter": null,
+  "status": "answered",
+  "answer": "To find the median when a dataset has an even number of values, first order the data from smallest to largest. Then identify the two middle values in the ordered dataset. The median is calculated by adding these two middle values together and dividing by 2, which is essentially finding the mean of the two middle values. For example, if the dataset has 100 data values, the median is the mean of the 50th and 51st data values in the ordered list. This method ensures the median splits the dataset into two equal halves. This explanation is supported by the example where the two middle values are 72 and 76, and the median is (72 + 76) / 2 = 74 [B:openstax-pds-2025:p118:2][B:openstax-pds-2025:p118:0].",
+  "citations": [
+   "B:openstax-pds-2025:p118:2",
+   "B:openstax-pds-2025:p118:0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "query": "median even number of values",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p118:2",
+      "text": "51, 59, 65, 68, 72, 76, 83, 88, 92, 94 Since there is an even number of data values, add the two middle values together and divide by 2. The two middle values are 72 and 76. You can also quickly find the sample median of a dataset as follows. Let represent the number of data values in the sample. • If is odd, then the median is the data value in position . • If is even, the median is the mean of the observations in position and position . For example, let’s say a dataset has 25 data values. Since is odd, to identify the position of the median, calculate , which is , or 13. This indicates that the median is located in the 13th data position. As another example, let’s say a dataset has 100 data values. Since is even, to identify the position of the median, calculate , which is , which is 50, and also calculate , which is , which is 51. This indicates that the median is calculated as the mean of the 50th and 51st data values.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 118,
+      "metadata": {
+       "end": 1970,
+       "start": 1034,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p118",
+       "sections": [
+        "3.1"
+       ],
+       "book_page": 108
+      },
+      "score": 0.03278688524590164,
+      "rank": 1
+     },
+     {
+      "id": "B:openstax-pds-2025:p127:3",
+      "text": "1095000 Solution Order the data from smallest to largest. 114950, 158000, 230500, 387000, 389950, 479000, 488800, 529000, 575000, 639000, 659000, 1095000, 5500000 First, determine the median of the dataset. There are 13 data values, so the median is the middle data value, which is 488,800. Next, calculate the and . For the first quartile, look at the data values below the median. The two middle data values in this lower half of the data are 230,500 and 387,000. To determine the first quartile, find the mean of these two data values. For the third quartile, look at the data values above the median. The two middle data values in this upper half of the data are 639,000 and 659,000. To determine the third quartile, find the mean of these two data values.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 127,
+      "metadata": {
+       "end": 2411,
+       "start": 1651,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p127",
+       "sections": [
+        "3.3"
+       ],
+       "book_page": 117
+      },
+      "score": 0.031754032258064516,
+      "rank": 2
+     },
+     {
+      "id": "B:openstax-pds-2025:p118:0",
+      "text": "To determine the median of a dataset, first order the data from smallest to largest, and then find the middle value in the ordered dataset. For example, to find the median value of 50 exam scores, find the score that splits the data into two equal parts. The exam scores for 25 students will be below the median, and 25 students will have exam scores above the median. If there is an odd number of data values in the dataset, then there will be one data value that represents the middle value, and this is the median. If there is an even number of data values in the dataset, then to find the median, add the two middle values together and divide by 2 (this is essentially finding the mean of the two middle values in the dataset).",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 118,
+      "metadata": {
+       "end": 731,
+       "start": 0,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p118",
+       "sections": [
+        "3.1"
+       ],
+       "book_page": 108
+      },
+      "score": 0.031746031746031744,
+      "rank": 3
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p118:2 | data/Principles-of-Data-Science-WEB.pdf | page 118]\n51, 59, 65, 68, 72, 76, 83, 88, 92, 94 Since there is an even number of data values, add the two middle values together and divide by 2. The two middle values are 72 and 76. You can also quickly find the sample median of a dataset as follows. Let represent the number of data values in the sample. • If is odd, then the median is the data value in position . • If is even, the median is the mean of the observations in position and position . For example, let’s say a dataset has 25 data values. Since is odd, to identify the position of the median, calculate , which is , or 13. This indicates that the median is located in the 13th data position. As another example, let’s say a dataset has 100 data values. Since is even, to identify the position of the median, calculate , which is , which is 50, and also calculate , which is , which is 51. This indicates that the median is calculated as the mean of the 50th and 51st data values.\n\n[B:openstax-pds-2025:p127:3 | data/Principles-of-Data-Science-WEB.pdf | page 127]\n1095000 Solution Order the data from smallest to largest. 114950, 158000, 230500, 387000, 389950, 479000, 488800, 529000, 575000, 639000, 659000, 1095000, 5500000 First, determine the median of the dataset. There are 13 data values, so the median is the middle data value, which is 488,800. Next, calculate the and . For the first quartile, look at the data values below the median. The two middle data values in this lower half of the data are 230,500 and 387,000. To determine the first quartile, find the mean of these two data values. For the third quartile, look at the data values above the median. The two middle data values in this upper half of the data are 639,000 and 659,000. To determine the third quartile, find the mean of these two data values.\n\n[B:openstax-pds-2025:p118:0 | data/Principles-of-Data-Science-WEB.pdf | page 118]\nTo determine the median of a dataset, first order the data from smallest to largest, and then find the middle value in the ordered dataset. For example, to find the median value of 50 exam scores, find the score that splits the data into two equal parts. The exam scores for 25 students will be below the median, and 25 students will have exam scores above the median. If there is an odd number of data values in the dataset, then there will be one data value that represents the middle value, and this is the median. If there is an even number of data values in the dataset, then to find the median, add the two middle values together and divide by 2 (this is essentially finding the mean of the two middle values in the dataset).",
+    "context_ids": [
+     "B:openstax-pds-2025:p118:2",
+     "B:openstax-pds-2025:p127:3",
+     "B:openstax-pds-2025:p118:0"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "final_tool": "answer",
+  "controller_calls": [
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "median even number of values"
+    },
+    "latency_ms": 1053,
+    "prompt_tokens": 361,
+    "completion_tokens": 17,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00017160000000000002
+   },
+   {
+    "tool": "answer",
+    "repair": false,
+    "args": {
+     "answer": "To find the median when a dataset has an even number of values, first order the data from smallest to largest. Then identify the two middle values in the ordered dataset. The median is calculated by adding these two middle values together and dividing by 2, which is essentially finding the mean of the two middle values. For example, if the dataset has 100 data values, the median is the mean of the 50th and 51st data values in the ordered list. This method ensures the median splits the dataset into two equal halves. This explanation is supported by the example where the two middle values are 72 and 76, and the median is (72 + 76) / 2 = 74 [B:openstax-pds-2025:p118:2][B:openstax-pds-2025:p118:0].",
+     "citations": [
+      "B:openstax-pds-2025:p118:2",
+      "B:openstax-pds-2025:p118:0"
+     ]
+    },
+    "latency_ms": 2098,
+    "prompt_tokens": 1088,
+    "completion_tokens": 221,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0007888000000000001
+   }
+  ],
+  "error": null,
+  "searches": 1,
+  "elapsed_s": 3.59,
+  "tokens": 1687,
+  "cost_usd": 0.0009604000000000001
+ },
+ {
+  "query_id": "t04",
+  "split": "test",
+  "question": "What is the set of all possible outcomes of a probability experiment called?",
+  "filter": null,
+  "status": "answered",
+  "answer": "The set of all possible outcomes of a probability experiment is called the sample space [B:openstax-pds-2025:p130:0].",
+  "citations": [
+   "B:openstax-pds-2025:p130:0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "query": "set of all possible outcomes of a probability experiment",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p131:1",
+      "text": "Theoretical Probability Theoretical probability is the method used when the outcomes in a probability experiment are equally likely—that is, under theoretical conditions. The formula used for theoretical probability is similar to the formula used for empirical probability. Theoretical probability considers all the possible outcomes for an experiment that are known ahead of time so that past data is not needed in the calculation for theoretical probability. For example, the theoretical probability of rolling an even number when rolling a six-sided die is (which is , or 0.5). There are 3 outcomes corresponding to rolling an even number, and there are 6 outcomes total in the sample space. Notice this calculation can be done without conducting any experiments since the outcomes are equally likely.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 131,
+      "metadata": {
+       "end": 1061,
+       "start": 257,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p131",
+       "sections": [
+        "3.4"
+       ],
+       "book_page": 121
+      },
+      "score": 0.03225806451612903,
+      "rank": 1
+     },
+     {
+      "id": "B:openstax-pds-2025:p140:4",
+      "text": "is the number of trials in the experiment is the probability of success is the number of successes in the experiment refers to the number of ways to choose successes from",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 140,
+      "metadata": {
+       "end": 2740,
+       "start": 2570,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p140",
+       "sections": [
+        "3.5"
+       ],
+       "book_page": 130
+      },
+      "score": 0.032018442622950824,
+      "rank": 2
+     },
+     {
+      "id": "B:openstax-pds-2025:p130:0",
+      "text": "want to know the probability of rain. The probability of obtaining heads on one flip of a coin is one-half, or 0.5. A data scientist is in interested in expressing probability as a number between 0 and 1 (inclusive), where 0 indicates impossibility (the event will not occur) and 1 indicates certainty (the event will occur). The probability of an event falling between 0 and 1 reflects the degree of uncertainty associated with the event. Here is some terminology we will be using in probability-related analysis: • An outcome is the result of a single trial in a probability experiment. • The sample space is the set of all possible outcomes in a probability experiment.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 130,
+      "metadata": {
+       "end": 672,
+       "start": 0,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p130",
+       "sections": [
+        "3.4"
+       ],
+       "book_page": 120
+      },
+      "score": 0.03177805800756621,
+      "rank": 3
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p131:1 | data/Principles-of-Data-Science-WEB.pdf | page 131]\nTheoretical Probability Theoretical probability is the method used when the outcomes in a probability experiment are equally likely—that is, under theoretical conditions. The formula used for theoretical probability is similar to the formula used for empirical probability. Theoretical probability considers all the possible outcomes for an experiment that are known ahead of time so that past data is not needed in the calculation for theoretical probability. For example, the theoretical probability of rolling an even number when rolling a six-sided die is (which is , or 0.5). There are 3 outcomes corresponding to rolling an even number, and there are 6 outcomes total in the sample space. Notice this calculation can be done without conducting any experiments since the outcomes are equally likely.\n\n[B:openstax-pds-2025:p140:4 | data/Principles-of-Data-Science-WEB.pdf | page 140]\nis the number of trials in the experiment is the probability of success is the number of successes in the experiment refers to the number of ways to choose successes from\n\n[B:openstax-pds-2025:p130:0 | data/Principles-of-Data-Science-WEB.pdf | page 130]\nwant to know the probability of rain. The probability of obtaining heads on one flip of a coin is one-half, or 0.5. A data scientist is in interested in expressing probability as a number between 0 and 1 (inclusive), where 0 indicates impossibility (the event will not occur) and 1 indicates certainty (the event will occur). The probability of an event falling between 0 and 1 reflects the degree of uncertainty associated with the event. Here is some terminology we will be using in probability-related analysis: • An outcome is the result of a single trial in a probability experiment. • The sample space is the set of all possible outcomes in a probability experiment.",
+    "context_ids": [
+     "B:openstax-pds-2025:p131:1",
+     "B:openstax-pds-2025:p140:4",
+     "B:openstax-pds-2025:p130:0"
+    ]
+   },
+   {
+    "event": "search",
+    "query": "sample space definition",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p130:1",
+      "text": "• An event is some subset of the sample space. For example, an event could be rolling an even number on a six-sided die. This event corresponds to three outcomes, namely rolling a 2, 4, or 6 on the die. To calculate probabilities, we can use several approaches, including relative frequency probability, which is based on actual data, and theoretical probability, which is based on theoretical conditions.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 130,
+      "metadata": {
+       "end": 1078,
+       "start": 673,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p130",
+       "sections": [
+        "3.4"
+       ],
+       "book_page": 120
+      },
+      "score": 0.030679156908665108,
+      "rank": 1
+     },
+     {
+      "id": "B:openstax-pds-2025:p115:1",
+      "text": "The notation is used to indicate the sample mean, where the mean is calculated based on data taken from a sample. The notation is used to denote the sum of the data values, and is used to indicate the number of data values in the sample, also known as the sample size. The sample mean can be calculated using the following formula:",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 115,
+      "metadata": {
+       "end": 1240,
+       "start": 909,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p115",
+       "sections": [
+        "3.1"
+       ],
+       "book_page": 105
+      },
+      "score": 0.03047794966520434,
+      "rank": 2
+     },
+     {
+      "id": "B:openstax-pds-2025:p131:4",
+      "text": "Complement of an Event The complement of an event is the set of all outcomes in the sample space that are not included in the event. The complement of Event is usually denoted by (A prime). To find the probability of the complement of Event , subtract the probability of Event from 1.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 131,
+      "metadata": {
+       "end": 2191,
+       "start": 1907,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p131",
+       "sections": [
+        "3.4"
+       ],
+       "book_page": 121
+      },
+      "score": 0.02976190476190476,
+      "rank": 3
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p131:1 | data/Principles-of-Data-Science-WEB.pdf | page 131]\nTheoretical Probability Theoretical probability is the method used when the outcomes in a probability experiment are equally likely—that is, under theoretical conditions. The formula used for theoretical probability is similar to the formula used for empirical probability. Theoretical probability considers all the possible outcomes for an experiment that are known ahead of time so that past data is not needed in the calculation for theoretical probability. For example, the theoretical probability of rolling an even number when rolling a six-sided die is (which is , or 0.5). There are 3 outcomes corresponding to rolling an even number, and there are 6 outcomes total in the sample space. Notice this calculation can be done without conducting any experiments since the outcomes are equally likely.\n\n[B:openstax-pds-2025:p140:4 | data/Principles-of-Data-Science-WEB.pdf | page 140]\nis the number of trials in the experiment is the probability of success is the number of successes in the experiment refers to the number of ways to choose successes from\n\n[B:openstax-pds-2025:p130:0 | data/Principles-of-Data-Science-WEB.pdf | page 130]\nwant to know the probability of rain. The probability of obtaining heads on one flip of a coin is one-half, or 0.5. A data scientist is in interested in expressing probability as a number between 0 and 1 (inclusive), where 0 indicates impossibility (the event will not occur) and 1 indicates certainty (the event will occur). The probability of an event falling between 0 and 1 reflects the degree of uncertainty associated with the event. Here is some terminology we will be using in probability-related analysis: • An outcome is the result of a single trial in a probability experiment. • The sample space is the set of all possible outcomes in a probability experiment.\n\n[B:openstax-pds-2025:p130:1 | data/Principles-of-Data-Science-WEB.pdf | page 130]\n• An event is some subset of the sample space. For example, an event could be rolling an even number on a six-sided die. This event corresponds to three outcomes, namely rolling a 2, 4, or 6 on the die. To calculate probabilities, we can use several approaches, including relative frequency probability, which is based on actual data, and theoretical probability, which is based on theoretical conditions.\n\n[B:openstax-pds-2025:p115:1 | data/Principles-of-Data-Science-WEB.pdf | page 115]\nThe notation is used to indicate the sample mean, where the mean is calculated based on data taken from a sample. The notation is used to denote the sum of the data values, and is used to indicate the number of data values in the sample, also known as the sample size. The sample mean can be calculated using the following formula:\n\n[B:openstax-pds-2025:p131:4 | data/Principles-of-Data-Science-WEB.pdf | page 131]\nComplement of an Event The complement of an event is the set of all outcomes in the sample space that are not included in the event. The complement of Event is usually denoted by (A prime). To find the probability of the complement of Event , subtract the probability of Event from 1.",
+    "context_ids": [
+     "B:openstax-pds-2025:p131:1",
+     "B:openstax-pds-2025:p140:4",
+     "B:openstax-pds-2025:p130:0",
+     "B:openstax-pds-2025:p130:1",
+     "B:openstax-pds-2025:p115:1",
+     "B:openstax-pds-2025:p131:4"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "final_tool": "answer",
+  "controller_calls": [
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "set of all possible outcomes of a probability experiment"
+    },
+    "latency_ms": 877,
+    "prompt_tokens": 359,
+    "completion_tokens": 21,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0001772
+   },
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "sample space definition"
+    },
+    "latency_ms": 1170,
+    "prompt_tokens": 797,
+    "completion_tokens": 15,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00034280000000000004
+   },
+   {
+    "tool": "answer",
+    "repair": false,
+    "args": {
+     "answer": "The set of all possible outcomes of a probability experiment is called the sample space [B:openstax-pds-2025:p130:0].",
+     "citations": [
+      "B:openstax-pds-2025:p130:0"
+     ]
+    },
+    "latency_ms": 1275,
+    "prompt_tokens": 1109,
+    "completion_tokens": 62,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0005428000000000001
+   }
+  ],
+  "error": null,
+  "searches": 2,
+  "elapsed_s": 4.21,
+  "tokens": 2363,
+  "cost_usd": 0.0010628
+ },
+ {
+  "query_id": "t05",
+  "split": "test",
+  "question": "Why would you transform data that is not normally distributed?",
+  "filter": {
+   "chapter": 2
+  },
+  "status": "answered",
+  "answer": "Data transformation is used to modify the original structure of data to make it more suitable for analysis, especially when the data is not normally distributed. Many statistical models assume normality, and if the data is not normally distributed, it can lead to incorrect results and interpretations. Transforming the data, such as using logarithmic or square root transformations, can help make the data distribution closer to normal. This improves the accuracy of the analysis by addressing issues like skewness and extreme values, making the data easier to analyze and more appropriate for statistical modeling [B:openstax-pds-2025:p92:1][B:openstax-pds-2025:p92:2].",
+  "citations": [
+   "B:openstax-pds-2025:p92:1",
+   "B:openstax-pds-2025:p92:2"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "query": "transform data not normally distributed",
+    "filter": {
+     "chapter": 2
+    },
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p92:1",
+      "text": "Data Transformation Data transformation is a statistical technique used to modify the original structure of the data in order to make it more suitable for analysis. Data transformation can involve various mathematical operations such as logarithmic, square root, or exponential transformations. One of the main reasons for transforming data is to address issues related to statistical assumptions. For example, some statistical models assume that the data is normally distributed. If the data is not distributed normally, this can lead to incorrect results and interpretations. In such cases, transforming the data can help to make it closer to a normal distribution and improve the accuracy of the analysis.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 92,
+      "metadata": {
+       "end": 1600,
+       "start": 892,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p92",
+       "sections": [
+        "2.4"
+       ],
+       "book_page": 82
+      },
+      "score": 0.03278688524590164,
+      "rank": 1
+     },
+     {
+      "id": "B:openstax-pds-2025:p92:2",
+      "text": "One commonly used data transformation technique is the log transformation, which requires taking the logarithm of the data values. Log transformation is often used when the data is highly skewed, meaning most of the data points fall toward one end of the distribution. This can cause problems in data analysis as the data may not follow a normal distribution. By taking the logarithm of the values, the distribution can be shifted toward a more symmetrical shape, making it easier to analyze. Another common transformation technique is the square root transformation, which involves taking the square root of the data values. Similar to log transformation, square root transformation is often used to address issues with skewness and make the data more normally distributed. Square root transformation is also useful when the data contains values close to zero, as taking the square root of these values can bring them closer to the rest of the data and reduce the impact of extreme values.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 92,
+      "metadata": {
+       "end": 2591,
+       "start": 1601,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p92",
+       "sections": [
+        "2.4"
+       ],
+       "book_page": 82
+      },
+      "score": 0.03200204813108039,
+      "rank": 2
+     },
+     {
+      "id": "B:openstax-pds-2025:p93:2",
+      "text": "Binning A researcher is studying the age demographics of a population in a city. Instead of looking at individual ages, the researcher decides to bin the data into age groups of 10 years (e.g., 0–10, 10–20, 20–30, etc.). This allows for a more comprehensive and easier analysis of the data. Data transformation Consider the following dataset that shows the number of COVID-19 cases recorded in a country at different points in time—01/01/2020, 02/02/2020, 03/ 01/2020—are 1000, 10000, 100000, respectively. To transform this data using log, we can take the log base 10 of the number of cases column. This would result in a transformed data as follows: 01/01/2020, 02/02/2020, 03/01/2020 are 3, 4, 5, respectively.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 93,
+      "metadata": {
+       "end": 2272,
+       "start": 1559,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p93",
+       "sections": [
+        "2.4"
+       ],
+       "book_page": 83
+      },
+      "score": 0.028790389395194696,
+      "rank": 3
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p92:1 | data/Principles-of-Data-Science-WEB.pdf | page 92]\nData Transformation Data transformation is a statistical technique used to modify the original structure of the data in order to make it more suitable for analysis. Data transformation can involve various mathematical operations such as logarithmic, square root, or exponential transformations. One of the main reasons for transforming data is to address issues related to statistical assumptions. For example, some statistical models assume that the data is normally distributed. If the data is not distributed normally, this can lead to incorrect results and interpretations. In such cases, transforming the data can help to make it closer to a normal distribution and improve the accuracy of the analysis.\n\n[B:openstax-pds-2025:p92:2 | data/Principles-of-Data-Science-WEB.pdf | page 92]\nOne commonly used data transformation technique is the log transformation, which requires taking the logarithm of the data values. Log transformation is often used when the data is highly skewed, meaning most of the data points fall toward one end of the distribution. This can cause problems in data analysis as the data may not follow a normal distribution. By taking the logarithm of the values, the distribution can be shifted toward a more symmetrical shape, making it easier to analyze. Another common transformation technique is the square root transformation, which involves taking the square root of the data values. Similar to log transformation, square root transformation is often used to address issues with skewness and make the data more normally distributed. Square root transformation is also useful when the data contains values close to zero, as taking the square root of these values can bring them closer to the rest of the data and reduce the impact of extreme values.\n\n[B:openstax-pds-2025:p93:2 | data/Principles-of-Data-Science-WEB.pdf | page 93]\nBinning A researcher is studying the age demographics of a population in a city. Instead of looking at individual ages, the researcher decides to bin the data into age groups of 10 years (e.g., 0–10, 10–20, 20–30, etc.). This allows for a more comprehensive and easier analysis of the data. Data transformation Consider the following dataset that shows the number of COVID-19 cases recorded in a country at different points in time—01/01/2020, 02/02/2020, 03/ 01/2020—are 1000, 10000, 100000, respectively. To transform this data using log, we can take the log base 10 of the number of cases column. This would result in a transformed data as follows: 01/01/2020, 02/02/2020, 03/01/2020 are 3, 4, 5, respectively.",
+    "context_ids": [
+     "B:openstax-pds-2025:p92:1",
+     "B:openstax-pds-2025:p92:2",
+     "B:openstax-pds-2025:p93:2"
+    ]
+   },
+   {
+    "event": "answer"
+   }
+  ],
+  "final_tool": "answer",
+  "controller_calls": [
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "transform data not normally distributed"
+    },
+    "latency_ms": 931,
+    "prompt_tokens": 356,
+    "completion_tokens": 17,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00016960000000000003
+   },
+   {
+    "tool": "answer",
+    "repair": false,
+    "args": {
+     "answer": "Data transformation is used to modify the original structure of data to make it more suitable for analysis, especially when the data is not normally distributed. Many statistical models assume normality, and if the data is not normally distributed, it can lead to incorrect results and interpretations. Transforming the data, such as using logarithmic or square root transformations, can help make the data distribution closer to normal. This improves the accuracy of the analysis by addressing issues like skewness and extreme values, making the data easier to analyze and more appropriate for statistical modeling [B:openstax-pds-2025:p92:1][B:openstax-pds-2025:p92:2].",
+     "citations": [
+      "B:openstax-pds-2025:p92:1",
+      "B:openstax-pds-2025:p92:2"
+     ]
+    },
+    "latency_ms": 4048,
+    "prompt_tokens": 975,
+    "completion_tokens": 184,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0006844
+   }
+  ],
+  "error": null,
+  "searches": 1,
+  "elapsed_s": 5.62,
+  "tokens": 1532,
+  "cost_usd": 0.000854
+ },
+ {
+  "query_id": "t06",
+  "split": "test",
+  "question": "According to the book, is web scraping legal, and what does it say about robots.txt or a website's terms of service?",
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "query": "web scraping legal robots.txt terms of service",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p76:4",
+      "text": "Web Scraping There are several techniques and approaches for scraping data from websites. See Table 2.2 for some of the",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 76,
+      "metadata": {
+       "end": 3283,
+       "start": 3164,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p76",
+       "sections": [
+        "2.2",
+        "2.3"
+       ],
+       "book_page": 66
+      },
+      "score": 0.03278688524590164,
+      "rank": 1
+     },
+     {
+      "id": "B:openstax-pds-2025:p77:1",
+      "text": "data from a website.) Web Scraping Technique Details Web Crawling • Follows links on a web page to navigate to other pages and collect data from them • Useful for scraping data from multiple pages of a website XPath • Powerful query language • Navigates through the elements in an HTML document • Often used in combination with HTML parsing to select specific elements to",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 77,
+      "metadata": {
+       "end": 587,
+       "start": 216,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p77",
+       "sections": [
+        "2.3"
+       ],
+       "book_page": 67
+      },
+      "score": 0.03149801587301587,
+      "rank": 2
+     },
+     {
+      "id": "B:openstax-pds-2025:p76:2",
+      "text": "2.3 Web Scraping and Social Media Data Collection Learning Outcomes: By the end of this section, you should be able to: • 2.3.1 Discuss the uses of web scraping for collecting and preparing data for analysis. • 2.3.2 Apply regular expressions for data manipulation and pattern matching. • 2.3.3 Write Python code to scrape data from the web. • 2.3.4 Apply various methods for parsing, extracting, processing, and storing data. Web scraping and social media data collection are two approaches used to gather data from the internet. Web scraping involves pulling information and data from websites using a web data extraction tool, often known as a web scraper. One example would be a travel company looking to gather information about hotel prices and availability from different booking websites. Web scraping can be used to automatically gather this data from the various websites and create a comprehensive list for the company to use in its business strategy without the need for manual work.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 76,
+      "metadata": {
+       "end": 2537,
+       "start": 1542,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p76",
+       "sections": [
+        "2.2",
+        "2.3"
+       ],
+       "book_page": 66
+      },
+      "score": 0.03128054740957967,
+      "rank": 3
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p76:4 | data/Principles-of-Data-Science-WEB.pdf | page 76]\nWeb Scraping There are several techniques and approaches for scraping data from websites. See Table 2.2 for some of the\n\n[B:openstax-pds-2025:p77:1 | data/Principles-of-Data-Science-WEB.pdf | page 77]\ndata from a website.) Web Scraping Technique Details Web Crawling • Follows links on a web page to navigate to other pages and collect data from them • Useful for scraping data from multiple pages of a website XPath • Powerful query language • Navigates through the elements in an HTML document • Often used in combination with HTML parsing to select specific elements to\n\n[B:openstax-pds-2025:p76:2 | data/Principles-of-Data-Science-WEB.pdf | page 76]\n2.3 Web Scraping and Social Media Data Collection Learning Outcomes: By the end of this section, you should be able to: • 2.3.1 Discuss the uses of web scraping for collecting and preparing data for analysis. • 2.3.2 Apply regular expressions for data manipulation and pattern matching. • 2.3.3 Write Python code to scrape data from the web. • 2.3.4 Apply various methods for parsing, extracting, processing, and storing data. Web scraping and social media data collection are two approaches used to gather data from the internet. Web scraping involves pulling information and data from websites using a web data extraction tool, often known as a web scraper. One example would be a travel company looking to gather information about hotel prices and availability from different booking websites. Web scraping can be used to automatically gather this data from the various websites and create a comprehensive list for the company to use in its business strategy without the need for manual work.",
+    "context_ids": [
+     "B:openstax-pds-2025:p76:4",
+     "B:openstax-pds-2025:p77:1",
+     "B:openstax-pds-2025:p76:2"
+    ]
+   },
+   {
+    "event": "search",
+    "query": "web scraping legality robots.txt terms of service",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p77:5",
+      "text": "web applications • Many websites provide APIs in the form of JSON, making it another efficient method for scraping data Table 2.2 Techniques and Approaches for Scraping Data from Websites Social Media Data Collection",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 77,
+      "metadata": {
+       "end": 1841,
+       "start": 1625,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p77",
+       "sections": [
+        "2.3"
+       ],
+       "book_page": 67
+      },
+      "score": 0.03125763125763126,
+      "rank": 4
+     },
+     {
+      "id": "B:openstax-pds-2025:p77:2",
+      "text": "scrape Regular Expressions • Search for and extract specific patterns of text from a web page • Useful for scraping data that follows a particular format, such as dates, phone numbers, or email addresses HTML Parsing • Analyzes the HTML (HyperText Markup Language) structure of a web page and identifies the specific tags and elements that contain the desired data",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 77,
+      "metadata": {
+       "end": 952,
+       "start": 588,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p77",
+       "sections": [
+        "2.3"
+       ],
+       "book_page": 67
+      },
+      "score": 0.03057889822595705,
+      "rank": 5
+     },
+     {
+      "id": "B:openstax-pds-2025:p77:0",
+      "text": "common techniques used. (Note: The techniques used for web scraping will vary depending on the website and the type of data being collected. It may require a combination of different techniques to effectively scrape",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 77,
+      "metadata": {
+       "end": 215,
+       "start": 0,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p77",
+       "sections": [
+        "2.3"
+       ],
+       "book_page": 67
+      },
+      "score": 0.03055037313432836,
+      "rank": 6
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p76:4 | data/Principles-of-Data-Science-WEB.pdf | page 76]\nWeb Scraping There are several techniques and approaches for scraping data from websites. See Table 2.2 for some of the\n\n[B:openstax-pds-2025:p77:1 | data/Principles-of-Data-Science-WEB.pdf | page 77]\ndata from a website.) Web Scraping Technique Details Web Crawling • Follows links on a web page to navigate to other pages and collect data from them • Useful for scraping data from multiple pages of a website XPath • Powerful query language • Navigates through the elements in an HTML document • Often used in combination with HTML parsing to select specific elements to\n\n[B:openstax-pds-2025:p76:2 | data/Principles-of-Data-Science-WEB.pdf | page 76]\n2.3 Web Scraping and Social Media Data Collection Learning Outcomes: By the end of this section, you should be able to: • 2.3.1 Discuss the uses of web scraping for collecting and preparing data for analysis. • 2.3.2 Apply regular expressions for data manipulation and pattern matching. • 2.3.3 Write Python code to scrape data from the web. • 2.3.4 Apply various methods for parsing, extracting, processing, and storing data. Web scraping and social media data collection are two approaches used to gather data from the internet. Web scraping involves pulling information and data from websites using a web data extraction tool, often known as a web scraper. One example would be a travel company looking to gather information about hotel prices and availability from different booking websites. Web scraping can be used to automatically gather this data from the various websites and create a comprehensive list for the company to use in its business strategy without the need for manual work.\n\n[B:openstax-pds-2025:p77:5 | data/Principles-of-Data-Science-WEB.pdf | page 77]\nweb applications • Many websites provide APIs in the form of JSON, making it another efficient method for scraping data Table 2.2 Techniques and Approaches for Scraping Data from Websites Social Media Data Collection\n\n[B:openstax-pds-2025:p77:2 | data/Principles-of-Data-Science-WEB.pdf | page 77]\nscrape Regular Expressions • Search for and extract specific patterns of text from a web page • Useful for scraping data that follows a particular format, such as dates, phone numbers, or email addresses HTML Parsing • Analyzes the HTML (HyperText Markup Language) structure of a web page and identifies the specific tags and elements that contain the desired data\n\n[B:openstax-pds-2025:p77:0 | data/Principles-of-Data-Science-WEB.pdf | page 77]\ncommon techniques used. (Note: The techniques used for web scraping will vary depending on the website and the type of data being collected. It may require a combination of different techniques to effectively scrape",
+    "context_ids": [
+     "B:openstax-pds-2025:p76:4",
+     "B:openstax-pds-2025:p77:1",
+     "B:openstax-pds-2025:p76:2",
+     "B:openstax-pds-2025:p77:5",
+     "B:openstax-pds-2025:p77:2",
+     "B:openstax-pds-2025:p77:0"
+    ]
+   },
+   {
+    "event": "search",
+    "query": "web scraping legality terms of service robots.txt",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p78:1",
+      "text": "Using Python to Scrape Data from the Web As noted previously, web scraping is a strategy of gathering data from the internet using automated mechanisms or programs. Python is one of the popular programming languages used for web scraping due to its various libraries and frameworks that make it easy to pull and process data from websites. To scrape data such as a table from a website using Python, we follow these steps: 1. Import the pandaspandas library. The first step is to import the pandas library (https://openstax.org/r/pandas), which is a popular Python library for data analysis and manipulation.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 78,
+      "metadata": {
+       "end": 1287,
+       "start": 679,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p78",
+       "sections": [
+        "2.3"
+       ],
+       "book_page": 68
+      },
+      "score": 0.030309988518943745,
+      "rank": 7
+     },
+     {
+      "id": "B:openstax-pds-2025:p77:3",
+      "text": "• Often used for simple scraping tasks Application Programming Interfaces (APIs) • Authorize developers to access and retrieve data instantly without the need for web scraping • Often a more efficient and reliable method for data collection (XML) API Subset • XML (Extensible Markup Language) is another markup language used",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 77,
+      "metadata": {
+       "end": 1277,
+       "start": 953,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p77",
+       "sections": [
+        "2.3"
+       ],
+       "book_page": 67
+      },
+      "score": 0.029857397504456328,
+      "rank": 8
+     },
+     {
+      "id": "B:openstax-pds-2025:p67:1",
+      "text": "Chapter Outline 2.1 Overview of Data Collection Methods 2.2 Survey Design and Implementation 2.3 Web Scraping and Social Media Data Collection 2.4 Data Cleaning and Preprocessing 2.5 Handling Large Datasets Introduction",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 67,
+      "metadata": {
+       "end": 424,
+       "start": 205,
+       "chapter": 2,
+       "page_id": "openstax-pds-2025:p67",
+       "sections": [
+        "intro"
+       ],
+       "book_page": 57
+      },
+      "score": 0.028577260665441927,
+      "rank": 9
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p76:4 | data/Principles-of-Data-Science-WEB.pdf | page 76]\nWeb Scraping There are several techniques and approaches for scraping data from websites. See Table 2.2 for some of the\n\n[B:openstax-pds-2025:p77:1 | data/Principles-of-Data-Science-WEB.pdf | page 77]\ndata from a website.) Web Scraping Technique Details Web Crawling • Follows links on a web page to navigate to other pages and collect data from them • Useful for scraping data from multiple pages of a website XPath • Powerful query language • Navigates through the elements in an HTML document • Often used in combination with HTML parsing to select specific elements to\n\n[B:openstax-pds-2025:p76:2 | data/Principles-of-Data-Science-WEB.pdf | page 76]\n2.3 Web Scraping and Social Media Data Collection Learning Outcomes: By the end of this section, you should be able to: • 2.3.1 Discuss the uses of web scraping for collecting and preparing data for analysis. • 2.3.2 Apply regular expressions for data manipulation and pattern matching. • 2.3.3 Write Python code to scrape data from the web. • 2.3.4 Apply various methods for parsing, extracting, processing, and storing data. Web scraping and social media data collection are two approaches used to gather data from the internet. Web scraping involves pulling information and data from websites using a web data extraction tool, often known as a web scraper. One example would be a travel company looking to gather information about hotel prices and availability from different booking websites. Web scraping can be used to automatically gather this data from the various websites and create a comprehensive list for the company to use in its business strategy without the need for manual work.\n\n[B:openstax-pds-2025:p77:5 | data/Principles-of-Data-Science-WEB.pdf | page 77]\nweb applications • Many websites provide APIs in the form of JSON, making it another efficient method for scraping data Table 2.2 Techniques and Approaches for Scraping Data from Websites Social Media Data Collection\n\n[B:openstax-pds-2025:p77:2 | data/Principles-of-Data-Science-WEB.pdf | page 77]\nscrape Regular Expressions • Search for and extract specific patterns of text from a web page • Useful for scraping data that follows a particular format, such as dates, phone numbers, or email addresses HTML Parsing • Analyzes the HTML (HyperText Markup Language) structure of a web page and identifies the specific tags and elements that contain the desired data\n\n[B:openstax-pds-2025:p77:0 | data/Principles-of-Data-Science-WEB.pdf | page 77]\ncommon techniques used. (Note: The techniques used for web scraping will vary depending on the website and the type of data being collected. It may require a combination of different techniques to effectively scrape\n\n[B:openstax-pds-2025:p78:1 | data/Principles-of-Data-Science-WEB.pdf | page 78]\nUsing Python to Scrape Data from the Web As noted previously, web scraping is a strategy of gathering data from the internet using automated mechanisms or programs. Python is one of the popular programming languages used for web scraping due to its various libraries and frameworks that make it easy to pull and process data from websites. To scrape data such as a table from a website using Python, we follow these steps: 1. Import the pandaspandas library. The first step is to import the pandas library (https://openstax.org/r/pandas), which is a popular Python library for data analysis and manipulation.\n\n[B:openstax-pds-2025:p77:3 | data/Principles-of-Data-Science-WEB.pdf | page 77]\n• Often used for simple scraping tasks Application Programming Interfaces (APIs) • Authorize developers to access and retrieve data instantly without the need for web scraping • Often a more efficient and reliable method for data collection (XML) API Subset • XML (Extensible Markup Language) is another markup language used\n\n[B:openstax-pds-2025:p67:1 | data/Principles-of-Data-Science-WEB.pdf | page 67]\nChapter Outline 2.1 Overview of Data Collection Methods 2.2 Survey Design and Implementation 2.3 Web Scraping and Social Media Data Collection 2.4 Data Cleaning and Preprocessing 2.5 Handling Large Datasets Introduction",
+    "context_ids": [
+     "B:openstax-pds-2025:p76:4",
+     "B:openstax-pds-2025:p77:1",
+     "B:openstax-pds-2025:p76:2",
+     "B:openstax-pds-2025:p77:5",
+     "B:openstax-pds-2025:p77:2",
+     "B:openstax-pds-2025:p77:0",
+     "B:openstax-pds-2025:p78:1",
+     "B:openstax-pds-2025:p77:3",
+     "B:openstax-pds-2025:p67:1"
+    ]
+   },
+   {
+    "event": "invalid_or_missing_citations"
+   }
+  ],
+  "final_tool": "abstain",
+  "controller_calls": [
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "web scraping legal robots.txt terms of service"
+    },
+    "latency_ms": 1255,
+    "prompt_tokens": 371,
+    "completion_tokens": 20,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0001804
+   },
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "web scraping legal robots.txt terms of service"
+    },
+    "latency_ms": 1024,
+    "prompt_tokens": 790,
+    "completion_tokens": 20,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.000348
+   },
+   {
+    "tool": "search",
+    "repair": true,
+    "args": {
+     "query": "web scraping legality robots.txt terms of service"
+    },
+    "latency_ms": 1100,
+    "prompt_tokens": 846,
+    "completion_tokens": 20,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00037040000000000006
+   },
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "web scraping legal robots.txt terms of service"
+    },
+    "latency_ms": 905,
+    "prompt_tokens": 1047,
+    "completion_tokens": 20,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0004508
+   },
+   {
+    "tool": "search",
+    "repair": true,
+    "args": {
+     "query": "web scraping legality terms of service robots.txt"
+    },
+    "latency_ms": 1288,
+    "prompt_tokens": 1103,
+    "completion_tokens": 20,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00047320000000000006
+   },
+   {
+    "tool": "abstain",
+    "repair": false,
+    "args": {
+     "reason": "The provided context discusses web scraping techniques and Python usage but does not address the legality of web scraping or mention robots.txt or terms of service."
+    },
+    "latency_ms": 1021,
+    "prompt_tokens": 1368,
+    "completion_tokens": 42,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0006144000000000001
+   }
+  ],
+  "error": null,
+  "searches": 3,
+  "elapsed_s": 8.28,
+  "tokens": 5667,
+  "cost_usd": 0.0024372000000000005
+ },
+ {
+  "query_id": "t07",
+  "split": "test",
+  "question": "What is the probability formula for the hypergeometric distribution, and when should it be used instead of the binomial distribution?",
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "query": "hypergeometric distribution probability formula and usage",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p140:3",
+      "text": "When calculating the probability for successes in a binomial experiment, a binomial probability formula can be used, but in many cases technology is used instead to streamline the calculations. The probability mass function (PMF) for the binomial distribution describes the probability of getting exactly successes in independent Bernoulli trials, each with a probability of success. The PMF is given by the formula: Where: is the probability that the random variable takes on the value of exactly successes",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 140,
+      "metadata": {
+       "end": 2569,
+       "start": 2062,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p140",
+       "sections": [
+        "3.5"
+       ],
+       "book_page": 130
+      },
+      "score": 0.03177805800756621,
+      "rank": 1
+     },
+     {
+      "id": "B:openstax-pds-2025:p144:0",
+      "text": "In this section, we will examine an important continuous probability distribution that relies on the probability density function, namely the normal distribution. Many variables, such as heights, weights, salaries, and blood pressure measurements, follow a normal distribution, making it especially important in statistical analysis. In addition, the normal distribution forms the basis for more advanced statistical analysis such as confidence intervals and hypothesis testing, which are discussed in Inferential Statistics and Regression Analysis. The normal distribution is a continuous probability distribution that is symmetrical and bell-shaped. It is used when the frequency of data values decreases with data values above and below the mean. The normal distribution has applications in many fields including engineering, science, finance, medicine, marketing, and psychology.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 144,
+      "metadata": {
+       "end": 883,
+       "start": 0,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p144",
+       "sections": [
+        "3.5"
+       ],
+       "book_page": 134
+      },
+      "score": 0.031054405392392875,
+      "rank": 2
+     },
+     {
+      "id": "B:openstax-pds-2025:p137:2",
+      "text": "• 3.5.2 Apply discrete probability distributions including binomial and Poisson distributions. • 3.5.3 Apply continuous probability distributions including exponential and normal distributions. • 3.5.4 Use Python to apply various probability distributions for probability applications. Probability distributions are used to model various scenarios to help with probability analysis and predictions, and they are used extensively to help formulate probability-based decisions. For example, if a doctor knows that the weights of newborn infants follow a normal (bell-shaped) distribution, the doctor can use this information to help identify potentially underweight newborn infants, which might indicate a medical condition warranting further investigation. Using a normal distribution, the doctor can calculate that only a small percentage of babies have weights below a certain threshold, which might prompt the doctor to further investigate the cause of the low weight.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 137,
+      "metadata": {
+       "end": 1680,
+       "start": 710,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p137",
+       "sections": [
+        "3.4",
+        "3.5"
+       ],
+       "book_page": 127
+      },
+      "score": 0.03047794966520434,
+      "rank": 3
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p140:3 | data/Principles-of-Data-Science-WEB.pdf | page 140]\nWhen calculating the probability for successes in a binomial experiment, a binomial probability formula can be used, but in many cases technology is used instead to streamline the calculations. The probability mass function (PMF) for the binomial distribution describes the probability of getting exactly successes in independent Bernoulli trials, each with a probability of success. The PMF is given by the formula: Where: is the probability that the random variable takes on the value of exactly successes\n\n[B:openstax-pds-2025:p144:0 | data/Principles-of-Data-Science-WEB.pdf | page 144]\nIn this section, we will examine an important continuous probability distribution that relies on the probability density function, namely the normal distribution. Many variables, such as heights, weights, salaries, and blood pressure measurements, follow a normal distribution, making it especially important in statistical analysis. In addition, the normal distribution forms the basis for more advanced statistical analysis such as confidence intervals and hypothesis testing, which are discussed in Inferential Statistics and Regression Analysis. The normal distribution is a continuous probability distribution that is symmetrical and bell-shaped. It is used when the frequency of data values decreases with data values above and below the mean. The normal distribution has applications in many fields including engineering, science, finance, medicine, marketing, and psychology.\n\n[B:openstax-pds-2025:p137:2 | data/Principles-of-Data-Science-WEB.pdf | page 137]\n• 3.5.2 Apply discrete probability distributions including binomial and Poisson distributions. • 3.5.3 Apply continuous probability distributions including exponential and normal distributions. • 3.5.4 Use Python to apply various probability distributions for probability applications. Probability distributions are used to model various scenarios to help with probability analysis and predictions, and they are used extensively to help formulate probability-based decisions. For example, if a doctor knows that the weights of newborn infants follow a normal (bell-shaped) distribution, the doctor can use this information to help identify potentially underweight newborn infants, which might indicate a medical condition warranting further investigation. Using a normal distribution, the doctor can calculate that only a small percentage of babies have weights below a certain threshold, which might prompt the doctor to further investigate the cause of the low weight.",
+    "context_ids": [
+     "B:openstax-pds-2025:p140:3",
+     "B:openstax-pds-2025:p144:0",
+     "B:openstax-pds-2025:p137:2"
+    ]
+   },
+   {
+    "event": "search",
+    "query": "hypergeometric distribution probability formula and when to use instead of binomial distribution",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p147:0",
+      "text": "from scipy.stats import binom Using Python with the Binomial Distribution The binom() function in Python allows calculations of binomial probabilities. The probability mass function for the binomial distribution within Python is referred to as binom.pmf().",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 147,
+      "metadata": {
+       "end": 256,
+       "start": 0,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p147",
+       "sections": [
+        "3.5"
+       ],
+       "book_page": 137
+      },
+      "score": 0.031024531024531024,
+      "rank": 2
+     },
+     {
+      "id": "B:openstax-pds-2025:p141:2",
+      "text": "Figure 3.5 Graph of the Binomial Distribution for and Since these computations tend to be complicated and time-consuming, most data scientists will use technology (such as Python, R, Excel, or others) to calculate binomial probabilities.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 141,
+      "metadata": {
+       "end": 1354,
+       "start": 1117,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p141",
+       "sections": [
+        "3.5"
+       ],
+       "book_page": 131
+      },
+      "score": 0.030834914611005692,
+      "rank": 3
+     },
+     {
+      "id": "B:openstax-pds-2025:p139:2",
+      "text": "Discrete Probability Distributions: Binomial and Poisson Discrete random variables are of interest in many data science applications, and there are several probability distributions that apply to discrete random variables. In this chapter, we present the binomial distribution and the Poisson distribution, which are two commonly used probability distributions used to model discrete random variables for different types of events.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 139,
+      "metadata": {
+       "end": 1498,
+       "start": 1067,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p139",
+       "sections": [
+        "3.5"
+       ],
+       "book_page": 129
+      },
+      "score": 0.029877369007803793,
+      "rank": 4
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p140:3 | data/Principles-of-Data-Science-WEB.pdf | page 140]\nWhen calculating the probability for successes in a binomial experiment, a binomial probability formula can be used, but in many cases technology is used instead to streamline the calculations. The probability mass function (PMF) for the binomial distribution describes the probability of getting exactly successes in independent Bernoulli trials, each with a probability of success. The PMF is given by the formula: Where: is the probability that the random variable takes on the value of exactly successes\n\n[B:openstax-pds-2025:p144:0 | data/Principles-of-Data-Science-WEB.pdf | page 144]\nIn this section, we will examine an important continuous probability distribution that relies on the probability density function, namely the normal distribution. Many variables, such as heights, weights, salaries, and blood pressure measurements, follow a normal distribution, making it especially important in statistical analysis. In addition, the normal distribution forms the basis for more advanced statistical analysis such as confidence intervals and hypothesis testing, which are discussed in Inferential Statistics and Regression Analysis. The normal distribution is a continuous probability distribution that is symmetrical and bell-shaped. It is used when the frequency of data values decreases with data values above and below the mean. The normal distribution has applications in many fields including engineering, science, finance, medicine, marketing, and psychology.\n\n[B:openstax-pds-2025:p137:2 | data/Principles-of-Data-Science-WEB.pdf | page 137]\n• 3.5.2 Apply discrete probability distributions including binomial and Poisson distributions. • 3.5.3 Apply continuous probability distributions including exponential and normal distributions. • 3.5.4 Use Python to apply various probability distributions for probability applications. Probability distributions are used to model various scenarios to help with probability analysis and predictions, and they are used extensively to help formulate probability-based decisions. For example, if a doctor knows that the weights of newborn infants follow a normal (bell-shaped) distribution, the doctor can use this information to help identify potentially underweight newborn infants, which might indicate a medical condition warranting further investigation. Using a normal distribution, the doctor can calculate that only a small percentage of babies have weights below a certain threshold, which might prompt the doctor to further investigate the cause of the low weight.\n\n[B:openstax-pds-2025:p147:0 | data/Principles-of-Data-Science-WEB.pdf | page 147]\nfrom scipy.stats import binom Using Python with the Binomial Distribution The binom() function in Python allows calculations of binomial probabilities. The probability mass function for the binomial distribution within Python is referred to as binom.pmf().\n\n[B:openstax-pds-2025:p141:2 | data/Principles-of-Data-Science-WEB.pdf | page 141]\nFigure 3.5 Graph of the Binomial Distribution for and Since these computations tend to be complicated and time-consuming, most data scientists will use technology (such as Python, R, Excel, or others) to calculate binomial probabilities.\n\n[B:openstax-pds-2025:p139:2 | data/Principles-of-Data-Science-WEB.pdf | page 139]\nDiscrete Probability Distributions: Binomial and Poisson Discrete random variables are of interest in many data science applications, and there are several probability distributions that apply to discrete random variables. In this chapter, we present the binomial distribution and the Poisson distribution, which are two commonly used probability distributions used to model discrete random variables for different types of events.",
+    "context_ids": [
+     "B:openstax-pds-2025:p140:3",
+     "B:openstax-pds-2025:p144:0",
+     "B:openstax-pds-2025:p137:2",
+     "B:openstax-pds-2025:p147:0",
+     "B:openstax-pds-2025:p141:2",
+     "B:openstax-pds-2025:p139:2"
+    ]
+   },
+   {
+    "event": "search",
+    "query": "hypergeometric distribution formula",
+    "filter": null,
+    "results": [
+     {
+      "id": "B:openstax-pds-2025:p144:1",
+      "text": "The normal distribution has two parameters: the mean, , and the standard deviation, . The mean represents the center of the distribution, and the standard deviation measures the spread, or dispersion, of the distribution. The variable represents the realization, or observed value, of the random variable that follows a normal distribution. The typical notation used to indicate that a random variable follows a normal distribution is as follows: (see Figure 3.7). For example, the notation indicates that the random variable follows a normal distribution with mean of 5.2 and standard deviation of 3.7. A normal distribution with mean of 0 and standard deviation of 1 is called the standard normal distribution and can be notated as . Any normal distribution can be standardized by converting its values to -scores. Recall that a -score tells you how many standard deviations from the mean there are for a given measurement.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 144,
+      "metadata": {
+       "end": 1809,
+       "start": 884,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p144",
+       "sections": [
+        "3.5"
+       ],
+       "book_page": 134
+      },
+      "score": 0.029827662395050816,
+      "rank": 2
+     },
+     {
+      "id": "B:openstax-pds-2025:p143:1",
+      "text": "Figure 3.6 Poisson Distribution for As with calculations involving the binomial distribution, data scientists will typically use technology to solve problems involving the Poisson distribution. Normal Continuous Probability Distributions Recall that a random variable is considered continuous if the value of the random variable can take on any of infinitely many values. We used the example about that if the random variable represents the weight of a bag of apples, then can take on any value such as pounds of apples.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 143,
+      "metadata": {
+       "end": 1181,
+       "start": 661,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p143",
+       "sections": [
+        "3.5"
+       ],
+       "book_page": 133
+      },
+      "score": 0.02919863597612958,
+      "rank": 4
+     },
+     {
+      "id": "B:openstax-pds-2025:p142:1",
+      "text": "A common application for the Poisson distribution is to model arrivals of customers for a queue, such as when there might be 6 customers per minute arriving at a checkout lane in the grocery store and the store manager wants to ensure that customers are serviced within a certain amount of time. The Poisson distribution is a discrete probability distribution used in these types of situations where the interest is in a specific certain number of occurrences for a random variable in a certain interval such as time or area. The Poisson distribution is used where the following conditions are met: • The experiment is based on counting the number of occurrences in a specific interval where the interval could represent time, area, volume, etc. • The number of occurrences in one specific interval is independent of the number of occurrences in a different interval.",
+      "source_id": "openstax-pds-2025",
+      "source": "data/Principles-of-Data-Science-WEB.pdf",
+      "page": 142,
+      "metadata": {
+       "end": 1686,
+       "start": 819,
+       "chapter": 3,
+       "page_id": "openstax-pds-2025:p142",
+       "sections": [
+        "3.5"
+       ],
+       "book_page": 132
+      },
+      "score": 0.02857142857142857,
+      "rank": 6
+     }
+    ],
+    "context": "[B:openstax-pds-2025:p140:3 | data/Principles-of-Data-Science-WEB.pdf | page 140]\nWhen calculating the probability for successes in a binomial experiment, a binomial probability formula can be used, but in many cases technology is used instead to streamline the calculations. The probability mass function (PMF) for the binomial distribution describes the probability of getting exactly successes in independent Bernoulli trials, each with a probability of success. The PMF is given by the formula: Where: is the probability that the random variable takes on the value of exactly successes\n\n[B:openstax-pds-2025:p144:0 | data/Principles-of-Data-Science-WEB.pdf | page 144]\nIn this section, we will examine an important continuous probability distribution that relies on the probability density function, namely the normal distribution. Many variables, such as heights, weights, salaries, and blood pressure measurements, follow a normal distribution, making it especially important in statistical analysis. In addition, the normal distribution forms the basis for more advanced statistical analysis such as confidence intervals and hypothesis testing, which are discussed in Inferential Statistics and Regression Analysis. The normal distribution is a continuous probability distribution that is symmetrical and bell-shaped. It is used when the frequency of data values decreases with data values above and below the mean. The normal distribution has applications in many fields including engineering, science, finance, medicine, marketing, and psychology.\n\n[B:openstax-pds-2025:p137:2 | data/Principles-of-Data-Science-WEB.pdf | page 137]\n• 3.5.2 Apply discrete probability distributions including binomial and Poisson distributions. • 3.5.3 Apply continuous probability distributions including exponential and normal distributions. • 3.5.4 Use Python to apply various probability distributions for probability applications. Probability distributions are used to model various scenarios to help with probability analysis and predictions, and they are used extensively to help formulate probability-based decisions. For example, if a doctor knows that the weights of newborn infants follow a normal (bell-shaped) distribution, the doctor can use this information to help identify potentially underweight newborn infants, which might indicate a medical condition warranting further investigation. Using a normal distribution, the doctor can calculate that only a small percentage of babies have weights below a certain threshold, which might prompt the doctor to further investigate the cause of the low weight.\n\n[B:openstax-pds-2025:p147:0 | data/Principles-of-Data-Science-WEB.pdf | page 147]\nfrom scipy.stats import binom Using Python with the Binomial Distribution The binom() function in Python allows calculations of binomial probabilities. The probability mass function for the binomial distribution within Python is referred to as binom.pmf().\n\n[B:openstax-pds-2025:p141:2 | data/Principles-of-Data-Science-WEB.pdf | page 141]\nFigure 3.5 Graph of the Binomial Distribution for and Since these computations tend to be complicated and time-consuming, most data scientists will use technology (such as Python, R, Excel, or others) to calculate binomial probabilities.\n\n[B:openstax-pds-2025:p139:2 | data/Principles-of-Data-Science-WEB.pdf | page 139]\nDiscrete Probability Distributions: Binomial and Poisson Discrete random variables are of interest in many data science applications, and there are several probability distributions that apply to discrete random variables. In this chapter, we present the binomial distribution and the Poisson distribution, which are two commonly used probability distributions used to model discrete random variables for different types of events.\n\n[B:openstax-pds-2025:p144:1 | data/Principles-of-Data-Science-WEB.pdf | page 144]\nThe normal distribution has two parameters: the mean, , and the standard deviation, . The mean represents the center of the distribution, and the standard deviation measures the spread, or dispersion, of the distribution. The variable represents the realization, or observed value, of the random variable that follows a normal distribution. The typical notation used to indicate that a random variable follows a normal distribution is as follows: (see Figure 3.7). For example, the notation indicates that the random variable follows a normal distribution with mean of 5.2 and standard deviation of 3.7. A normal distribution with mean of 0 and standard deviation of 1 is called the standard normal distribution and can be notated as . Any normal distribution can be standardized by converting its values to -scores. Recall that a -score tells you how many standard deviations from the mean there are for a given measurement.\n\n[B:openstax-pds-2025:p143:1 | data/Principles-of-Data-Science-WEB.pdf | page 143]\nFigure 3.6 Poisson Distribution for As with calculations involving the binomial distribution, data scientists will typically use technology to solve problems involving the Poisson distribution. Normal Continuous Probability Distributions Recall that a random variable is considered continuous if the value of the random variable can take on any of infinitely many values. We used the example about that if the random variable represents the weight of a bag of apples, then can take on any value such as pounds of apples.\n\n[B:openstax-pds-2025:p142:1 | data/Principles-of-Data-Science-WEB.pdf | page 142]\nA common application for the Poisson distribution is to model arrivals of customers for a queue, such as when there might be 6 customers per minute arriving at a checkout lane in the grocery store and the store manager wants to ensure that customers are serviced within a certain amount of time. The Poisson distribution is a discrete probability distribution used in these types of situations where the interest is in a specific certain number of occurrences for a random variable in a certain interval such as time or area. The Poisson distribution is used where the following conditions are met: • The experiment is based on counting the number of occurrences in a specific interval where the interval could represent time, area, volume, etc. • The number of occurrences in one specific interval is independent of the number of occurrences in a different interval.",
+    "context_ids": [
+     "B:openstax-pds-2025:p140:3",
+     "B:openstax-pds-2025:p144:0",
+     "B:openstax-pds-2025:p137:2",
+     "B:openstax-pds-2025:p147:0",
+     "B:openstax-pds-2025:p141:2",
+     "B:openstax-pds-2025:p139:2",
+     "B:openstax-pds-2025:p144:1",
+     "B:openstax-pds-2025:p143:1",
+     "B:openstax-pds-2025:p142:1"
+    ]
+   },
+   {
+    "event": "invalid_or_missing_citations"
+   }
+  ],
+  "final_tool": "abstain",
+  "controller_calls": [
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "hypergeometric distribution probability formula and usage"
+    },
+    "latency_ms": 886,
+    "prompt_tokens": 370,
+    "completion_tokens": 20,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.00018
+   },
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "hypergeometric distribution probability formula and when to use instead of binomial distribution"
+    },
+    "latency_ms": 970,
+    "prompt_tokens": 897,
+    "completion_tokens": 27,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.000402
+   },
+   {
+    "tool": "search",
+    "repair": false,
+    "args": {
+     "query": "hypergeometric distribution probability formula and usage"
+    },
+    "latency_ms": 1138,
+    "prompt_tokens": 1177,
+    "completion_tokens": 20,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0005028
+   },
+   {
+    "tool": "search",
+    "repair": true,
+    "args": {
+     "query": "hypergeometric distribution formula"
+    },
+    "latency_ms": 894,
+    "prompt_tokens": 1233,
+    "completion_tokens": 17,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0005204000000000001
+   },
+   {
+    "tool": "abstain",
+    "repair": false,
+    "args": {
+     "reason": "The provided context does not contain the probability formula for the hypergeometric distribution nor the conditions for when it should be used instead of the binomial distribution."
+    },
+    "latency_ms": 1136,
+    "prompt_tokens": 1692,
+    "completion_tokens": 45,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0007488000000000001
+   }
+  ],
+  "error": null,
+  "searches": 3,
+  "elapsed_s": 6.49,
+  "tokens": 5498,
+  "cost_usd": 0.002354
+ }
+]

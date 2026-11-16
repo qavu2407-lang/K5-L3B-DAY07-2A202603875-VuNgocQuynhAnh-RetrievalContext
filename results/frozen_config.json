@@ -1,0 +1,25 @@
+{
+ "frozen_at": "2026-11-16",
+ "chosen": "I3",
+ "baseline_for_test": "A0",
+ "chosen_config": {
+  "model": "gpt-4.1-mini", "temperature": 0.01, "retriever": "hybrid (RRF k=60 of dense top-20 + TF-IDF top-20)",
+  "top_k": 3, "max_searches": 3, "budget_chars": 9600, "distinct_queries": true, "skip_seen": true,
+  "filter": "question-supplied chapter only",
+  "command": ".venv/bin/python src/agent.py --retriever hybrid --distinct-queries --budget 9600 --skip-seen --split test --name I3 --confirm-frozen"
+ },
+ "baseline_config": {
+  "model": "gpt-4.1-mini", "temperature": 0.01, "retriever": "dense (Day 6 pgvector)", "top_k": 3, "max_searches": 3,
+  "budget_chars": 3200,
+  "command": ".venv/bin/python src/agent.py --retriever dense --split test --name A0 --confirm-frozen"
+ },
+ "selection": {
+  "criteria": "results/selection_criteria.md (written before I1/I2/I3 were run)",
+  "dev_grounded_mean": {"A0": 1.53, "A1": 1.93, "I1": 1.93, "I2": 1.93, "I3": 1.93},
+  "step_2_primary": "A1, I1, I2, I3 tie (difference < 0.10); all beat A0 by 0.40",
+  "tie_break_1_false_abstention": "0/15 for A1, I1, I2, I3 - tie",
+  "tie_break_2_citation_validity": "A1 24/24, I1 21/22, I2 24/24, I3 26/26 - I1 drops out",
+  "tie_break_3_agent_CER": "A1 14/15, I2 14/15, I3 15/15 - I3 selected",
+  "cost_note": "I3 costs $0.00127 per question vs $0.00104 for A1 (+22%); cost is tie-break 4, after CER"
+ }
+}
