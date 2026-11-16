@@ -31,7 +31,7 @@
   {
    "query_id": "AD06",
    "pass": false,
-   "reason": "Same as I6: adds 'United States ... close to or above 50,000' from the v2 description; crop shows the US in the 5,000-10,000 bin. Re-describing p454 with a stricter prompt (2 tries) still mis-assigned bins, so the v2 description was kept."
+   "reason": "Same as I6: adds 'United States ... close to or above 50,000' from the v2 description; the US is in the 1,000-5,000 band (pixel colour matches that legend swatch). Re-describing p454 with a stricter prompt (2 tries) still mis-assigned bins, so the v2 description was kept."
   },
   {
    "query_id": "AD07",
