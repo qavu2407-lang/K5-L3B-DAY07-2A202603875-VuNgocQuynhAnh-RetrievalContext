@@ -1,0 +1,130 @@
+{
+ "pdf": "data/Principles-of-Data-Science-WEB.pdf",
+ "chapters": {
+  "5": {
+   "content_pages": [
+    223,
+    267
+   ],
+   "chapter_pages": [
+    223,
+    274
+   ]
+  },
+  "6": {
+   "content_pages": [
+    275,
+    335
+   ],
+   "chapter_pages": [
+    275,
+    340
+   ]
+  },
+  "9": {
+   "content_pages": [
+    421,
+    466
+   ],
+   "chapter_pages": [
+    421,
+    470
+   ]
+  }
+ },
+ "content_pages": 152,
+ "document_pages": 168,
+ "chunks": 502,
+ "by_type": {
+  "text": 390,
+  "table": 26,
+  "figure": 86
+ },
+ "excluded_pages": [
+  {
+   "page": 268,
+   "chapter": 5,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 269,
+   "chapter": 5,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 270,
+   "chapter": 5,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 271,
+   "chapter": 5,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 272,
+   "chapter": 5,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 273,
+   "chapter": 5,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 274,
+   "chapter": 5,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 336,
+   "chapter": 6,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 337,
+   "chapter": 6,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 338,
+   "chapter": 6,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 339,
+   "chapter": 6,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 340,
+   "chapter": 6,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 467,
+   "chapter": 9,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 468,
+   "chapter": 9,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 469,
+   "chapter": 9,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  },
+  {
+   "page": 470,
+   "chapter": 9,
+   "reason": "end-of-chapter material (Key Terms onward)"
+  }
+ ],
+ "failures": [],
+ "vision_calls": 91,
+ "vision_cost_usd": 0.103,
+ "min_figure_size_pt": 60,
+ "text_chunk_max_chars": 1000
+}

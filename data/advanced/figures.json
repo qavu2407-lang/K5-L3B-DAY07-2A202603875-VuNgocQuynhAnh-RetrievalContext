@@ -1,0 +1,745 @@
+{
+ "p223_fig0": {
+  "description": "1. Type: The image is a composite visual combining a stylized line chart with a photo-like depiction of stacked gold coins and digital elements.\n\n2. Title, axis labels, units, ranges, legend: There is no visible title, axis labels, units, axis ranges, tick values, or legend entries in the image.\n\n3. Numbers or labels printed in the figure: There are vertical numeric sequences visible in the background, but they are not clearly readable or labeled with axis titles. The numbers appear to be part of a digital or matrix-style background and include sequences like \"0 1 0 1 0\" and other digits, but no clear numeric scale or units.\n\n4. Key values, trends, comparisons: The image shows a green glowing arrow line trending upward from left to right, symbolizing growth or increase. The arrow overlays a series of stacked gold coins arranged in ascending height from left to right, reinforcing the theme of increasing value or wealth. The background includes digital and binary code elements, as well as faint outlines of a world map, suggesting a global or digital financial context. No specific numeric data points or exact values can be read from the image. The overall trend depicted is a positive upward growth.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 2294,
+  "completion_tokens": 247,
+  "cost_usd": 0.0013128000000000003,
+  "latency_s": 12.7
+ },
+ "p225_fig0": {
+  "description": "1. Type: Line chart (time series chart).\n2. Title: \"S&P Index at End of Year 2013–2023\".\n   X-axis label: Not explicitly labeled, but shows years from 2013 to 2023.\n   X-axis range and tick values: Years 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.\n   Y-axis label: Not explicitly labeled, but represents S&P index values.\n   Y-axis range: 0 to 6,000.\n   Y-axis tick values: 0, 1,000, 2,000, 3,000, 4,000, 5,000, 6,000.\n   Legend: None.\n3. Numbers or labels printed in the figure: Title as above; X-axis years 2013 through 2023; Y-axis values as above.\n4. Key values and trends:\n   - The line starts slightly below 2,000 in 2013.\n   - The index rises gradually from 2013 to 2017, reaching approximately 2,700.\n   - A slight dip occurs around 2018, dropping to about 2,500.\n   - From 2018 onward, the index rises steadily, reaching about 3,200 in 2019 and about 3,800 in 2020.\n   - A sharp increase occurs from 2020 to 2021, peaking near 4,800.\n   - A noticeable drop happens in 2022, falling to roughly 3,900.\n   - The index recovers in 2023, rising back to near 4,800.\n   - Overall, the trend over the decade is upward with some fluctuations, especially a peak in 2021 and a dip in 2022.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 950,
+  "completion_tokens": 398,
+  "cost_usd": 0.0010168,
+  "latency_s": 4.4
+ },
+ "p227_fig0": {
+  "description": "1. Type: Line chart.\n\n2. Title: \"S&P Index at End of Year 2013–2023\". \n   X-axis label: Not explicitly labeled, but represents years from 2013 to 2023.\n   X-axis range and tick values: Years 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.\n   Y-axis label: Not explicitly labeled, but represents S&P index values.\n   Y-axis range: 0 to 6,000.\n   Y-axis tick values: 0, 1,000, 2,000, 3,000, 4,000, 5,000, 6,000.\n   Legend entries / series names and colors: No explicit legend visible, but two series are shown:\n     - Blue line representing actual S&P 500 index values at the end of each year.\n     - Orange line representing the linear regression fit to the data.\n\n3. Numbers or labels printed in the figure: \n   - Title: \"S&P Index at End of Year 2013–2023\".\n   - X-axis years: 2013 through 2023.\n   - Y-axis values: 0, 1,000, 2,000, 3,000, 4,000, 5,000, 6,000.\n\n4. Key values and trends:\n   - The blue line (actual S&P index) starts just below 2,000 in 2013.\n   - It rises slightly above 2,000 in 2014 and 2015.\n   - Gradually increases to around 2,700 in 2017.\n   - Slight dip in 2018 to about 2,500.\n   - Steady increase from 2019 to 2021, peaking near 4,800 in 2021.\n   - Decline in 2022 to about 3,900.\n   - Rise again in 2023 to just below 5,000.\n   - The orange line (linear regression) starts near 1,500 in 2013 and rises steadily and linearly to about 4,600 in 2023.\n   - The linear regression line smooths out the fluctuations seen in the actual data.\n   - Around 2020 and 2021, the actual index is above the regression line.\n   - In 2022, the actual index falls below the regression line.\n   - By 2023, the actual index and regression line values are close, with the actual slightly above the regression line.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 848,
+  "completion_tokens": 556,
+  "cost_usd": 0.0012288000000000002,
+  "latency_s": 6.0
+ },
+ "p229_fig0": {
+  "description": "1. Type: Screenshot of an Excel window showing a data table and the \"Insert Chart\" dialog box with chart options, including a line chart preview.\n\n2. Title, axis labels, legend entries, colors:\n- The line chart preview in the dialog box is titled \"S&P Index at End of Year.\"\n- X-axis labels: years from 2013 to 2023.\n- Y-axis labels: numeric values from 0 to 6000, with ticks approximately at 1000, 2000, 3000, 4000, 5000, 6000.\n- The line chart series is a single blue line.\n- No legend entries visible.\n\n3. Numbers or labels printed in the figure:\n- Data table columns: \"Year\" and \"S&P index at the end of the year.\"\n- Data values in the table:\n  2013: 1848.36\n  2014: 2058.9\n  2015: 2043.94\n  2016: 2238.83\n  2017: 2673.61\n  2018: 2506.85\n  2019: 3230.78\n  2020: 3756.07\n  2021: 4766.18\n  2022: 3839.5\n  2023: 4769.83\n- Excel ribbon tabs visible: File, Home, Insert (selected), Draw, Page Layout, Formulas, Data, Review, View, Automate, Help.\n- Insert tab groups visible: Tables, Illustrations, Charts, Tours, Sparklines, Filters, Links, Comments.\n- \"Recommended Charts\" button is highlighted with a red box.\n- Chart types visible in the dialog box: Line, Column, Win/Loss, Slicer, Timeline.\n- Buttons in dialog box: OK, Cancel.\n- Text below the line chart preview: \"A line chart is used to display trends over time (years, months, and days) or categories when the order is important. Use it when there are many data points and the order is important.\"\n\n4. Key values and trends in the line chart preview:\n- The line chart shows an overall upward trend in the S&P index from 2013 to 2023.\n- The index starts just below 2000 in 2013.\n- It rises steadily with a slight dip around 2015.\n- There is a noticeable peak around 2021 near 4800.\n- A dip occurs around 2022, dropping to about 3800.\n- The index rises again in 2023 to near 4800.\n- The trend line is smooth and continuous, representing yearly data points.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1982,
+  "completion_tokens": 570,
+  "cost_usd": 0.0017048000000000002,
+  "latency_s": 5.7
+ },
+ "p230_fig0": {
+  "description": "1. Type: Line chart.\n2. Title: None visible.\n   Axis labels: None visible.\n   Axis ranges and tick values:\n   - X-axis ranges from 0 to approximately 2600 with tick marks at 0, 500, 1000, 1500, 2000, and 2500.\n   - Y-axis ranges from 1500 to 5500 with tick marks at 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, and 5500.\n   Legend entries: One series labeled \"SP500\" in blue.\n3. Numbers or labels printed in the figure: X-axis ticks: 0, 500, 1000, 1500, 2000, 2500; Y-axis ticks: 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500; Legend: \"SP500\".\n4. Key values and trends:\n   - The line starts just below 2000 on the y-axis at x=0.\n   - The series shows an overall upward trend with fluctuations.\n   - Around x=1500, there is a sharp drop to below 2000.\n   - After this drop, the line recovers and continues to rise, reaching above 5000 near x=2600.\n   - The highest point is near the end of the x-axis, slightly above 5000.\n   - The lowest point is around x=1500, just below 2000.\n   - The line is continuous and jagged, indicating frequent small fluctuations.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1788,
+  "completion_tokens": 354,
+  "cost_usd": 0.0012816,
+  "latency_s": 4.0
+ },
+ "p231_fig0": {
+  "description": "1. Type: Line chart.\n2. Title: \"S&P 500 Time Series\".\n   X-axis label: \"Date\".\n   Y-axis label: \"S&P 500 Value\".\n   X-axis range: From 2014 to 2024.\n   X-axis tick values: 2014, 2016, 2018, 2020, 2022, 2024.\n   Y-axis range: Approximately 1,800 to 5,200.\n   Y-axis tick values: 1,500; 2,000; 2,500; 3,000; 3,500; 4,000; 4,500; 5,000.\n   Legend/series: One series in blue color, no marker, solid line.\n3. Numbers/labels printed in the figure: The years on the X-axis as above; Y-axis values as above.\n4. Key values and trends:\n   - The S&P 500 value starts just below 2,000 in 2014.\n   - The value shows a general upward trend from 2014 to early 2020, reaching around 3,300.\n   - There is a sharp drop around early 2020, falling below 2,500.\n   - After the drop, the index recovers and rises steadily, peaking above 4,700 in late 2021.\n   - A decline follows in 2022, dropping to around 3,700.\n   - From 2022 onward, the index rises again, reaching its highest point above 5,000 by early 2024.\n   - Overall, the chart shows volatility with significant dips around 2016, early 2020, and 2022, but a strong upward trend over the full period.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1947,
+  "completion_tokens": 369,
+  "cost_usd": 0.0013692,
+  "latency_s": 4.2
+ },
+ "p233_fig0": {
+  "description": "1. Type: Line chart.\n\n2. Title: \"Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022\".\n\n   X-axis label: Not explicitly labeled, but shows time in months and years from January 2016 to May 2022.\n\n   X-axis tick values: January 2016, May 2016, September 2016, January 2017, May 2017, September 2017, January 2018, May 2018, September 2018, January 2019, May 2019, September 2019, January 2020, May 2020, September 2020, January 2021, May 2021, September 2021, January 2022, May 2022.\n\n   Y-axis label: Not explicitly labeled, but units are \"1000s of Tons\" as per caption.\n\n   Y-axis range: 0 to 80,000.\n\n   Y-axis tick values: 0, 10,000, 20,000, 30,000, 40,000, 50,000, 60,000, 70,000, 80,000.\n\n3. Numbers or labels printed in the figure: The x-axis dates as above, y-axis values as above, no other numbers or labels visible.\n\n4. Key values and trends:\n\n   - The line shows monthly coal consumption values fluctuating between about 23,000 and 74,000 thousand tons.\n\n   - Highest peak is approximately 74,000 thousand tons around mid-2016.\n\n   - Lowest point is approximately 23,000 thousand tons around early 2020.\n\n   - General trend shows a decline in coal consumption from 2016 to 2022, with seasonal fluctuations.\n\n   - There are repeated peaks roughly once per year, indicating seasonal variation.\n\n   - After 2020, the values appear lower and more variable, with peaks around 50,000 to 57,000 thousand tons and troughs around 30,000 thousand tons.\n\n   - No legend or multiple series; only one data series shown in blue line.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 2032,
+  "completion_tokens": 443,
+  "cost_usd": 0.0015216000000000001,
+  "latency_s": 5.3
+ },
+ "p234_fig0": {
+  "description": "1. Type: Line chart with two lines (one for monthly coal consumption, one trend curve).\n\n2. Title: \"Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022\"\n\n   X-axis label: Not explicitly labeled, but shows time from January 2016 to May 2022 with tick labels for months and years.\n\n   X-axis tick values: January 2016, May 2016, September 2016, January 2017, May 2017, September 2017, January 2018, May 2018, September 2018, January 2019, May 2019, September 2019, January 2020, May 2020, September 2020, January 2021, May 2021, September 2021, January 2022, May 2022.\n\n   Y-axis label: Not explicitly labeled, but units are \"1000s of Tons\" (from caption).\n\n   Y-axis range: 0 to 80,000.\n\n   Y-axis tick values: 0, 10,000, 20,000, 30,000, 40,000, 50,000, 60,000, 70,000, 80,000.\n\n3. Numbers or labels printed in the figure: The x-axis dates as above; y-axis values as above; no other numeric labels visible.\n\n4. Key values and trends:\n\n   - The blue line represents monthly coal consumption values, fluctuating between about 23,000 and 74,000 thousand tons.\n\n   - The highest peaks of the blue line occur around early 2016 (about 62,000), early 2017 (about 70,000), early 2018 (about 65,000), and early 2021 (about 57,000).\n\n   - The lowest points of the blue line occur around early 2020 (about 23,000) and mid-2021 (about 30,000).\n\n   - The orange line is a smoother trend curve showing a general decline in coal consumption from 2016 to about 2020, then a slight leveling off or mild increase from 2020 to 2022, ending near 40,000 thousand tons.\n\n   - The blue line shows seasonal or monthly fluctuations with peaks roughly once per year, while the orange trend line smooths these fluctuations.\n\n   - Overall, coal consumption for electricity generation in the US decreased from 2016 to 2020, then stabilized somewhat through 2022.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 2078,
+  "completion_tokens": 529,
+  "cost_usd": 0.0016776000000000002,
+  "latency_s": 6.0
+ },
+ "p234_fig1": {
+  "description": "1. Type: Line chart with an overlaid trendline, shown within an Excel interface screenshot including chart element options.\n\n2. Title: \"Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022\"\n\n   X-axis labels: Dates ranging from \"1/1/2016\" to \"5/1/2022\" at roughly two-month intervals, displayed vertically.\n\n   Y-axis labels: Numeric values from 0 to 80000 in increments of 10000.\n\n   Legend/series: No explicit legend visible, but two lines are shown: a blue jagged line representing monthly coal consumption data, and an orange smoother line representing the trendline.\n\n3. Numbers/labels in the figure:\n\n   - Y-axis: 0, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000\n\n   - X-axis: 1/1/2016, 5/1/2016, 9/1/2016, 1/1/2017, 5/1/2017, 9/1/2017, 1/1/2018, 5/1/2018, 9/1/2018, 1/1/2019, 5/1/2019, 9/1/2019, 1/1/2020, 5/1/2020, 9/1/2020, 1/1/2021, 5/1/2021, 9/1/2021, 1/1/2022, 5/1/2022\n\n   - Chart Elements menu items visible with checkboxes: Axes (checked), Axis Titles (unchecked), Chart Title (checked), Data Labels (unchecked), Data Table (unchecked), Error Bars (unchecked), Gridlines (checked), Legend (unchecked), Trendline (checked), Up/Down Bars (unchecked)\n\n   - Trendline submenu options visible: Linear, Exponential, Linear Forecast, Two Period Moving Average, More Options... (highlighted)\n\n4. Chart details:\n\n   - The blue line shows monthly coal consumption fluctuating between approximately 20000 and 75000 thousand tons.\n\n   - The orange trendline shows a general downward trend in coal consumption from 2016 to 2022.\n\n   - The highest peaks of the blue line are near 70000 to 75000 around early 2017 and mid-2018.\n\n   - The lowest points are near 20000 to 25000 around early 2020.\n\n   - The trendline smooths out fluctuations, indicating a gradual decline over the period.\n\n   - The screenshot highlights the Excel interface for adding a trendline to the chart, with the \"Chart Elements\" button and the \"Trendline\" option checked and expanded.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1388,
+  "completion_tokens": 598,
+  "cost_usd": 0.001512,
+  "latency_s": 6.4
+ },
+ "p236_fig0": {
+  "description": "1. Type: Line chart.\n2. Title: Revenues.\n   X-axis labels: 2021 Spring, 2021 Summer, 2021 Fall, 2021 Winter, 2022 Spring, 2022 Summer, 2022 Fall, 2022 Winter, 2023 Spring, 2023 Summer, 2023 Fall, 2023 Winter.\n   Y-axis label: Not explicitly labeled, but values represent revenue in dollars.\n   Y-axis units: Dollars ($).\n   Y-axis range: 0 to $4,500.\n   Y-axis tick values: $0, $500, $1,000, $1,500, $2,000, $2,500, $3,000, $3,500, $4,000, $4,500.\n   Legend entries / series names: None visible.\n3. Numbers or labels printed in the figure: The x-axis labels as above, y-axis dollar values as above.\n4. Key values and trends:\n   - 2021 Spring revenue is approximately $1,800.\n   - 2021 Summer revenue peaks near $3,300.\n   - 2021 Fall revenue drops to about $1,300.\n   - 2021 Winter revenue is about $1,000, the lowest point so far.\n   - 2022 Spring revenue rises to about $2,300.\n   - 2022 Summer revenue peaks again near $3,450.\n   - 2022 Fall revenue drops to about $2,000.\n   - 2022 Winter revenue dips to about $1,600.\n   - 2023 Spring revenue rises to about $2,700.\n   - 2023 Summer revenue reaches the highest point on the chart, near $3,850.\n   - 2023 Fall revenue drops to about $2,100.\n   - 2023 Winter revenue slightly decreases to about $1,950.\n   Overall, the revenue shows a seasonal pattern with peaks in Summer quarters and lower revenues in Winter quarters, with some variation in the exact values.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1684,
+  "completion_tokens": 428,
+  "cost_usd": 0.0013584,
+  "latency_s": 4.9
+ },
+ "p237_fig0": {
+  "description": "1. Type: Line chart.\n2. Title: None visible.\n   X-axis label: None visible.\n   X-axis range: 0 to 250.\n   X-axis tick values: 0, 50, 100, 150, 200, 250.\n   Y-axis label: None visible.\n   Y-axis range: -3 to 3.\n   Y-axis tick values: -3, -2, -1, 0, 1, 2, 3.\n   Legend entries / series names and colors: None visible.\n3. Numbers or labels printed in the figure: X-axis ticks 0, 50, 100, 150, 200, 250; Y-axis ticks -3, -2, -1, 0, 1, 2, 3.\n4. Key values and trends: The line fluctuates randomly around zero on the Y-axis, with values mostly between approximately -2.5 and 2.5. There is no visible repeating pattern or trend. The variance appears roughly constant across the X-axis range. The highest peak is close to 2.8 and the lowest trough is close to -2.8.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 968,
+  "completion_tokens": 246,
+  "cost_usd": 0.0007808000000000001,
+  "latency_s": 3.0
+ },
+ "p240_fig0": {
+  "description": "1. Type: Line chart.\n\n2. Title: \"S&P Index at End of Year 2013–2023\". \n   X-axis label: Not explicitly labeled, but shows years from 2013 to 2023.\n   X-axis range and tick values: Years 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.\n   Y-axis label: Not explicitly labeled, but values represent the S&P 500 index level.\n   Y-axis range and tick values: From 0 to 6,000 in increments of 1,000 (0, 1,000, 2,000, 3,000, 4,000, 5,000, 6,000).\n   Legend entries and colors: \"SP 500\" in blue, \"SMA (3)\" in orange.\n\n3. Numbers or labels printed in the figure: Years 2013 through 2023 on the x-axis; y-axis values 0, 1,000, 2,000, 3,000, 4,000, 5,000, 6,000; legend labels \"SP 500\" and \"SMA (3)\".\n\n4. Key values and trends:\n   - The blue line (SP 500) starts just below 2,000 in 2013.\n   - It remains around 2,000 through 2015.\n   - It rises steadily from 2016 to 2017, reaching approximately 2,700.\n   - Slight dip or plateau around 2018 near 2,500.\n   - Then a steady increase from 2019 to 2021, peaking near 4,800 in 2021.\n   - A noticeable drop in 2022 to about 3,900.\n   - Recovery in 2023 to just below 5,000.\n   - The orange line (SMA (3)) follows a smoother trend, starting near 2,000 in 2015.\n   - It gradually increases each year, reaching about 4,500 in 2023.\n   - The SMA line lags slightly behind the SP 500 line, smoothing out short-term fluctuations.\n   - The SMA line is below the SP 500 line during the peak in 2021 and below the dip in 2022, then converges near 2023.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 869,
+  "completion_tokens": 515,
+  "cost_usd": 0.0011715999999999999,
+  "latency_s": 4.7
+ },
+ "p242_fig0": {
+  "description": "1. Type: Line chart.\n\n2. Title: \"S&P Index at End of Year 2013–2023\". \n   X-axis label: Not explicitly labeled, but shows years from 2013 to 2023.\n   X-axis range: 2013 to 2023, with tick values for each year.\n   Y-axis label: Not explicitly labeled, but values correspond to index values and difference values.\n   Y-axis range: from -2,000 to 6,000, with tick values at -2,000, -1,000, 0, 1,000, 2,000, 3,000, 4,000, 5,000, 6,000.\n   Legend entries: \"SP 500\" in blue, \"First-Order Difference\" in orange.\n\n3. Numbers or labels printed in the figure: \n   - X-axis years: 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.\n   - Y-axis values as above.\n   - Legend labels: \"SP 500\" and \"First-Order Difference\".\n\n4. Key values and trends:\n   - The blue line (SP 500) starts just below 2,000 in 2013, rises gradually to about 2,700 in 2017, dips slightly in 2018, then rises steadily to a peak near 4,800 in 2021, drops to about 3,800 in 2022, and rises again to near 4,800 in 2023.\n   - The orange line (First-Order Difference) starts at 0 in 2013, rises to about 200 in 2014, drops near 0 in 2015, rises to about 400 in 2017, dips below zero (around -200) in 2018, rises sharply to about 800 in 2019, fluctuates between 500 and 1,000 from 2020 to 2021, drops sharply to about -1,000 in 2022, and rises again to near 1,000 in 2023.\n   - The SP 500 series shows an overall upward trend with some fluctuations.\n   - The First-Order Difference series shows more volatility with positive and negative spikes, indicating changes in the year-to-year increments of the SP 500 index.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 984,
+  "completion_tokens": 515,
+  "cost_usd": 0.0012175999999999999,
+  "latency_s": 4.9
+ },
+ "p244_fig0": {
+  "description": "1. Type: Screenshot of an Excel spreadsheet window.\n2. Title: None visible in the figure.\n   Axis labels, units, ranges, tick values: Not applicable (spreadsheet view).\n   Legend entries / series names and colors: Not applicable.\n3. Numbers and labels printed in the figure:\n   - Column A header: \"Month\"\n   - Column A values from A2 to A14: \n     1/1/2016, 2/1/2016, 3/1/2016, 4/1/2016, 5/1/2016, 6/1/2016, 7/1/2016, 8/1/2016, 9/1/2016, 10/1/2016, 11/1/2016, 12/1/2016, 1/1/2017, 2/1/2017\n   - Column B header: \"Value\"\n   - Column B values from B2 to B14:\n     61983.5, 50515.64, 39863.96, 39064.74, 45032.13, 63185.83, 74132.47, 73797.91, 62334.62, 54537.36, 48075.88, 64847.11, 63459.87, 47985.03\n   - Cell C8 contains the formula: \"=AVERAGE(B2:B14)\"\n4. No charts or diagrams present, only a data table with dates and numeric values, and a formula in one cell calculating the average of the values in B2 through B14.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1361,
+  "completion_tokens": 356,
+  "cost_usd": 0.001114,
+  "latency_s": 3.7
+ },
+ "p244_fig1": {
+  "description": "Type: Screenshot of an Excel spreadsheet.\n\nTitle: None visible in the figure itself.\n\nAxis labels, units, axis ranges, tick values: Not applicable (spreadsheet view).\n\nLegend entries / series names and colors: Column headers are \"Month\" in column A, \"Value\" in column B, and \"SMA\" in column C.\n\nNumbers and labels printed in the figure:\n\n- Column A (Month):\n  1/1/2016, 2/1/2016, 3/1/2016, 4/1/2016, 5/1/2016, 6/1/2016, 7/1/2016, 8/1/2016, 9/1/2016, 10/1/2016, 11/1/2016, 12/1/2016, 1/1/2017, 2/1/2017, 3/1/2017, 4/1/2017, 5/1/2017, 6/1/2017.\n\n- Column B (Value):\n  61983.5, 50515.64, 39863.96, 39064.74, 45032.13, 63185.83, 74132.47, 73797.91, 62334.62, 54537.36, 48075.88, 64847.11, 63459.87, 47985.03, 48839.87, 44278.92, 50897.5, 58852.12.\n\n- Column C (SMA):\n  56987, 55910.2, 55781.29, 56120.9, 57031.12, 58094.19, 58600.56, 57956.64, 56488.58, 55540.93, 55259.73, 56058.3.\n\nThe SMA values start from row 8 (7/1/2016) and continue down to row 19 (6/1/2017). The SMA column cells have a small green triangle in the upper left corner, indicating a formula or note.\n\nNo chart or graphical plot is visible, only tabular data in the spreadsheet cells.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 939,
+  "completion_tokens": 490,
+  "cost_usd": 0.0011596,
+  "latency_s": 5.7
+ },
+ "p245_fig0": {
+  "description": "1. Type: Line chart.\n\n2. Title: \"Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022.\"\n\n   X-axis label: Not explicitly labeled, but shows time from January 2016 to May 2022 with tick marks approximately every four months: January 2016, May 2016, September 2016, January 2017, May 2017, September 2017, January 2018, May 2018, September 2018, January 2019, May 2019, September 2019, January 2020, May 2020, September 2020, January 2021, May 2021, September 2021, January 2022, May 2022.\n\n   Y-axis label: Not explicitly labeled, but values represent monthly coal consumption for electricity generation, presumably in thousands of units (not specified).\n\n   Y-axis range: 0 to 80,000 with tick marks at 0, 10,000, 20,000, 30,000, 40,000, 50,000, 60,000, 70,000, 80,000.\n\n3. Legend entries / series names and colors: \n\n   - Blue line: Monthly coal consumption data points.\n\n   - Orange line: SMA (Simple Moving Average) with window length 13.\n\n4. Numbers or labels printed in the figure:\n\n   - X-axis dates as above.\n\n   - Y-axis values as above.\n\n5. Key values and trends:\n\n   - The blue line shows monthly coal consumption fluctuating with a clear seasonal pattern, with peaks and troughs roughly every year.\n\n   - The highest peaks of the blue line reach approximately 70,000 to 75,000 units, occurring around early 2016 and mid-2017.\n\n   - The lowest troughs drop to about 25,000 to 30,000 units, notably around early 2020.\n\n   - The orange SMA line smooths the fluctuations, showing a general downward trend from about 57,000 units in early 2016 to about 40,000 units by mid-2022.\n\n   - The SMA line is smoother and less volatile, following the overall decline in coal consumption over the period.\n\n   - The blue line oscillates above and below the orange SMA line throughout the timeline.\n\nNo other labels or annotations are visible.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1048,
+  "completion_tokens": 497,
+  "cost_usd": 0.0012144,
+  "latency_s": 5.4
+ },
+ "p245_fig1": {
+  "description": "1. Type: Screenshot of an Excel spreadsheet showing a formula in the formula bar and data in cells.\n2. Title: None visible.\n   Axis labels: None (spreadsheet columns labeled A, B, C, D).\n   Legend entries / series names and colors: Column headers are \"Month\" (column A), \"Value\" (column B), \"SMA\" (column C), and \"Difference\" (column D).\n3. Numbers and labels printed in the figure:\n   - Cell A1: \"Month\"\n   - Cell B1: \"Value\"\n   - Cell C1: \"SMA\"\n   - Cell D1: \"Difference\"\n   - Cell A2: \"1/1/2016\"\n   - Cell B2: \"61983.5\"\n   - Cell A3: \"2/1/2016\"\n   - Cell B3: \"50515.64\"\n   - Cell A4: \"3/1/2016\"\n   - Cell B4: \"39863.96\"\n   - Cell A5: \"4/1/2016\"\n   - Cell B5: \"39064.74\"\n   - Cell A6: \"5/1/2016\"\n   - Cell B6: \"45032.13\"\n   - Cell A7: \"6/1/2016\"\n   - Cell B7: \"62185.82\"\n   - Formula bar shows: \"=B3-B2\"\n   - Cell D3 is selected and contains the formula \"=B3-B2\"\n4. No chart or graph visible, only tabular data and formula. The formula in cell D3 calculates the difference between the values in cells B3 and B2.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 817,
+  "completion_tokens": 355,
+  "cost_usd": 0.0008948,
+  "latency_s": 3.7
+ },
+ "p246_fig0": {
+  "description": "1. Type: Screenshot of an Excel spreadsheet.\n2. Title: None visible within the figure itself.\n   Columns and headers:\n   - Column A: \"Month\"\n   - Column B: \"Value\"\n   - Column C: \"SMA\"\n   - Column D: \"Difference\"\n3. Numbers and labels printed in the figure:\n   - Column A (Month): Dates from 1/1/2016 to 7/1/2017 in monthly increments.\n   - Column B (Value): Numeric values ranging approximately from 39064.74 to 74132.47.\n   - Column C (SMA): Numeric values starting from row 8, ranging approximately from 55259.73 to 58600.56.\n   - Column D (Difference): Numeric values including positive and negative numbers, ranging approximately from -15474.84 to 18153.7.\n4. Additional details:\n   - The SMA column has some cells with a small green triangle in the top-left corner, indicating a possible Excel warning or note.\n   - The \"Difference\" column shows the difference between consecutive \"Value\" entries, with both positive and negative values.\n   - The \"SMA\" column values appear starting from row 8, suggesting a moving average calculation with a window size that excludes the first several rows.\n   - No axis, legend, or chart elements are present since this is a spreadsheet screenshot.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1166,
+  "completion_tokens": 289,
+  "cost_usd": 0.0009288,
+  "latency_s": 3.6
+ },
+ "p248_fig0": {
+  "description": "1. Type: Line chart.\n\n2. Title: \"Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022\".\n\n   X-axis label: \"Month\".\n\n   X-axis range: From approximately mid-2016 to early 2022.\n\n   X-axis tick values: Dates shown approximately as 07/18/2016, 02/03/2017, 08/22/2017, 03/10/2018, 09/26/2018, 04/14/2019, 10/31/2019, 05/18/2020, 12/04/2020, 06/22/2021, 01/08/2022.\n\n   Y-axis: No label, but values range from approximately -20,000 to 70,000.\n\n   Y-axis tick values: -20,000; 0; 20,000; 40,000; 60,000.\n\n3. Legend entries and colors:\n\n   - \"Value\" in blue.\n\n   - \"SMA\" in red.\n\n   - \"Diff\" in green.\n\n4. Chart details:\n\n   - The blue \"Value\" line shows monthly coal consumption values fluctuating between about 25,000 and 70,000, with a general downward trend from 2016 to 2022.\n\n   - The red \"SMA\" line (likely Simple Moving Average) smooths the blue line, starting near 55,000 in early 2017, gradually declining to about 40,000 by 2022.\n\n   - The green \"Diff\" line oscillates around zero, with peaks near +18,000 and troughs near -20,000, showing differences or changes over time.\n\n   - The blue \"Value\" line has multiple peaks and troughs, with highest points around 70,000 and lowest points near 25,000.\n\n   - The red \"SMA\" line remains smoother and less volatile than the blue line.\n\n   - The green \"Diff\" line crosses zero multiple times, indicating positive and negative differences.\n\nNo other labels or numbers are visible on the figure.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1630,
+  "completion_tokens": 447,
+  "cost_usd": 0.0013672,
+  "latency_s": 4.9
+ },
+ "p248_fig1": {
+  "description": "1. Type: Line chart.\n\n2. Title: None visible on the figure itself. Axis labels: None visible. Units: None visible. \n\n   X-axis range: from 1 to 225, with tick values at intervals of 8 (1, 9, 17, 25, 33, 41, 49, 57, 65, 73, 81, 89, 97, 105, 113, 121, 129, 137, 145, 153, 161, 169, 177, 185, 193, 201, 209, 217, 225).\n\n   Y-axis range: from -5 to 5, with tick values at -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5.\n\n3. Numbers or labels printed in the figure: X-axis tick values as above; Y-axis tick values as above.\n\n4. Key values and trends: The line oscillates in a repeating wave pattern with peaks approximately at y=4 and troughs approximately at y=-4. The pattern repeats roughly every 64 time steps along the x-axis. The waveform shows multiple cycles within the x-axis range, with three full cycles visible. The line crosses the y=0 axis multiple times, indicating periodic oscillation. The amplitude appears consistent throughout the chart.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 820,
+  "completion_tokens": 297,
+  "cost_usd": 0.0008032,
+  "latency_s": 3.7
+ },
+ "p251_fig0": {
+  "description": "1. Type: Line chart.\n\n2. Title: Quarterly Revenues for Kayak and Canoe Rentals.\n   X-axis labels: Time periods by quarter and year, listed as 2021 Spring, 2021 Summer, 2021 Fall, 2021 Winter, 2022 Spring, 2022 Summer, 2022 Fall, 2022 Winter, 2023 Spring, 2023 Summer, 2023 Fall, 2023 Winter.\n   Y-axis label: Not explicitly labeled, but values are in dollars ($).\n   Y-axis range: From -$1,000 to $5,000.\n   Y-axis tick values: -$1,000, $0, $1,000, $2,000, $3,000, $4,000, $5,000.\n   Legend entries and colors:\n     - Revenues (blue line)\n     - Seas. Comp. (Seasonal Component, green line)\n     - Seas. Adj. (Seasonally Adjusted, orange line)\n\n3. Numbers or labels printed in the figure:\n   - X-axis: The quarterly time periods as above.\n   - Y-axis: Dollar values as above.\n   - Legend: \"Revenues,\" \"Seas. Comp.,\" \"Seas. Adj.\"\n\n4. Key values and trends:\n   - Revenues (blue line) fluctuate seasonally with peaks around Summer quarters (2021 Summer approx. $3,300; 2022 Summer approx. $3,500; 2023 Summer approx. $3,900) and lows in Winter quarters (2021 Winter approx. $1,000; 2022 Winter approx. $1,600; 2023 Winter approx. $1,900).\n   - Seasonal Component (green line) shows a repeating pattern with peaks near Summer quarters (around $1,300) and troughs near Winter quarters (around -$800 to -$900).\n   - Seasonally Adjusted (orange line) shows a smoother upward trend from about $1,800 in 2021 Spring to about $2,700 in 2023 Winter, with minor fluctuations.\n   - The seasonal component oscillates around zero, indicating seasonal effects.\n   - Revenues are highest in Summer quarters and lowest in Winter quarters.\n   - Seasonally adjusted revenues remove the seasonal fluctuations, showing a steady increase over time.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1740,
+  "completion_tokens": 488,
+  "cost_usd": 0.0014768000000000001,
+  "latency_s": 5.6
+ },
+ "p252_fig0": {
+  "description": "1. Type: Stem plot (a type of line chart showing autocorrelation function values at discrete lags).\n2. Title: \"ACF\". \n   X-axis label: not labeled, but represents lag values from 0 to 20.\n   X-axis range: 0 to 20 with tick marks at every integer from 0 to 20.\n   Y-axis label: not labeled, but represents autocorrelation values.\n   Y-axis range: -1.00 to 1.00 with tick marks at -1.00, -0.75, -0.50, -0.25, 0.00, 0.25, 0.50, 0.75, and 1.00.\n   Legend: none.\n3. Numbers or labels printed in the figure: Title \"ACF\" at top center; X-axis ticks labeled 0 through 20; Y-axis ticks labeled from -1.00 to 1.00 in increments of 0.25.\n4. Key values and trends:\n   - At lag 0, autocorrelation is exactly 1.00 (highest point).\n   - At lag 1, autocorrelation is approximately 0.74.\n   - At lag 6, autocorrelation is approximately 0.51.\n   - At lag 12, autocorrelation is approximately 0.62 (a local peak).\n   - Other lags show varying autocorrelation values mostly between 0 and 0.5, with some near zero or slightly negative values around lags 14, 15, and 20.\n   - The blue shaded area around zero represents confidence intervals; points within this area are statistically insignificant.\n   - Lags 0, 1, 6, and 12 have autocorrelation values clearly outside the shaded area, indicating statistical significance.\n   - The autocorrelation values generally decrease with increasing lag but show some periodic peaks at lag 6 and 12.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1712,
+  "completion_tokens": 400,
+  "cost_usd": 0.0013248000000000001,
+  "latency_s": 4.0
+ },
+ "p253_fig0": {
+  "description": "1. Type: Four-panel line and scatter plot chart showing time series decomposition components.\n\n2. Titles and axis labels:\n- Top panel: Title \"Value\" (no axis labels visible).\n- Second panel: Y-axis label \"Trend\" (no X-axis label visible).\n- Third panel: Y-axis label \"Season\" (no X-axis label visible).\n- Bottom panel: Y-axis label \"Resid\" (no X-axis label visible).\n- X-axis for all panels ranges from 0 to 80 with ticks approximately at 0, 10, 20, 30, 40, 50, 60, 70, 80.\n- Y-axis ranges and tick values:\n  - Top panel (Value): from 40,000 to 70,000 with ticks at 40,000, 50,000, 60,000, 70,000.\n  - Second panel (Trend): from 35,000 to 55,000 with ticks at 40,000, 45,000, 50,000, 55,000.\n  - Third panel (Season): from -15,000 to 15,000 with ticks at -10,000, 0, 10,000.\n  - Bottom panel (Resid): from -5,000 to 5,000 with ticks at -5,000, 0, 5,000.\n\n3. Numbers or labels printed in the figure: Only axis tick values as described above.\n\n4. Key values and trends:\n- Top panel (Value): Line chart showing fluctuating values mostly between 40,000 and 70,000, with peaks around 65,000 and troughs near 40,000, showing a repeating pattern.\n- Second panel (Trend): Smooth line showing a gradual decline from about 55,000 at the start to about 40,000 near the end, with a slight rise around the 60 mark.\n- Third panel (Season): Line chart oscillating regularly between approximately +12,000 and -12,000, showing a clear seasonal pattern with multiple peaks and troughs.\n- Bottom panel (Resid): Scatter plot of residuals scattered around zero, ranging roughly between -5,000 and +5,000, with no obvious trend, points fairly evenly distributed above and below zero.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1885,
+  "completion_tokens": 475,
+  "cost_usd": 0.001514,
+  "latency_s": 5.9
+ },
+ "p254_fig0": {
+  "description": "1. Type: Line chart.\n2. Title: None visible.\n   X-axis: No label, range from 0 to 80 with ticks approximately every 10 units (0, 10, 20, 30, 40, 50, 60, 70, 80).\n   Y-axis: No label or units, range from approximately -10,000 to 70,000 with ticks at 0, 20,000, 40,000, 60,000.\n   Legend entries and colors: \"Original Data\" in blue, \"Trend\" in orange, \"Seasonal\" in green.\n3. Numbers or labels printed in the figure: X-axis ticks 0, 10, 20, 30, 40, 50, 60, 70, 80; Y-axis ticks 0, 20,000, 40,000, 60,000.\n4. Key values and trends:\n   - The blue \"Original Data\" line fluctuates between about 25,000 and 70,000, showing a generally decreasing trend with high variability.\n   - The orange \"Trend\" line is smoother, starting near 55,000 at x=0, slightly increasing then gradually decreasing to about 40,000 by x=80.\n   - The green \"Seasonal\" line oscillates regularly between approximately -10,000 and 15,000, showing a repeating seasonal pattern around zero.\n   - The \"Original Data\" line appears to be the sum of the \"Trend\" and \"Seasonal\" components.\n   - No title or axis labels are visible, only the legend and axis ticks.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1827,
+  "completion_tokens": 342,
+  "cost_usd": 0.001278,
+  "latency_s": 4.7
+ },
+ "p257_fig0": {
+  "description": "1. Type: Line chart.\n\n2. Title: \"S&P Index at End of Year 2013–2023\".\n   X-axis label: Not explicitly labeled, but shows years from 2013 to 2024.\n   X-axis range and tick values: Years from 2013 to 2024, labeled at each year.\n   Y-axis label: Not explicitly labeled, but values correspond to S&P Index levels.\n   Y-axis range: 0 to 6,000.\n   Y-axis tick values: 0, 1,000, 2,000, 3,000, 4,000, 5,000, 6,000.\n   Legend entries and colors: \"SP 500\" in blue, \"EMA\" in orange.\n\n3. Numbers or labels printed in the figure:\n   - Years on x-axis: 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.\n   - Y-axis values: 0, 1,000, 2,000, 3,000, 4,000, 5,000, 6,000.\n   - Legend: \"SP 500\" and \"EMA\".\n\n4. Key values and trends:\n   - Both series start near 1,800 in 2013.\n   - The SP 500 line generally trends upward from 2013 to 2023, with some fluctuations.\n   - The EMA line also trends upward but is smoother.\n   - Around 2018, the EMA and SP 500 lines cross, with EMA slightly below SP 500 before that and slightly above after.\n   - The SP 500 peaks near 4,800 around 2021, dips near 3,800 in 2022, then rises again near 4,800 in 2023.\n   - The EMA line rises steadily, reaching about 4,600 by 2024.\n   - The EMA line is smoother and less volatile than the SP 500 line.\n   - The chart ends with the EMA line slightly below the SP 500 line in 2023 but projected to be near 4,600 in 2024.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1176,
+  "completion_tokens": 475,
+  "cost_usd": 0.0012304,
+  "latency_s": 5.4
+ },
+ "p261_fig0": {
+  "description": "1. Type: Line chart with vertical lines and dots (ACF plot).\n2. Title: \"ACF for d = 2 Difference\". \n   X-axis label: not explicitly labeled, but represents lag values from 0 to 20.\n   X-axis range: 0 to 20 with tick marks at every integer.\n   Y-axis label: not explicitly labeled, but represents autocorrelation values.\n   Y-axis range: -1.00 to 1.00 with tick marks at -1.00, -0.75, -0.50, -0.25, 0.00, 0.25, 0.50, 0.75, 1.00.\n   Legend: none.\n3. Numbers/labels printed in the figure: \n   - X-axis ticks: 0, 5, 10, 15, 20.\n   - Y-axis ticks: -1.00, -0.75, -0.50, -0.25, 0.00, 0.25, 0.50, 0.75, 1.00.\n4. Key values and trends:\n   - At lag 0, autocorrelation is exactly 1.00.\n   - At lag 1, autocorrelation is approximately -0.15.\n   - At lag 2, autocorrelation is approximately -0.45 (lowest point).\n   - At lag 3, autocorrelation is approximately -0.05.\n   - At lag 4, autocorrelation is approximately 0.10.\n   - At lag 5, autocorrelation is approximately 0.35.\n   - At lag 6, autocorrelation is approximately 0.15.\n   - At lag 7, autocorrelation is approximately -0.10.\n   - At lag 8, autocorrelation is approximately -0.40.\n   - At lag 9, autocorrelation is approximately -0.15.\n   - At lag 10, autocorrelation is approximately 0.10.\n   - At lag 11, autocorrelation is approximately 0.45 (second highest point).\n   - At lag 12, autocorrelation is approximately 0.15.\n   - At lag 13, autocorrelation is approximately -0.20.\n   - At lag 14, autocorrelation is approximately -0.20.\n   - At lag 15, autocorrelation is approximately -0.20.\n   - At lag 16, autocorrelation is approximately 0.15.\n   - At lag 17, autocorrelation is approximately 0.20.\n   - At lag 18, autocorrelation is approximately 0.15.\n   - At lag 19, autocorrelation is approximately -0.10.\n   - At lag 20, autocorrelation is approximately 0.00.\n   - The shaded blue area represents confidence intervals around zero autocorrelation, widening slightly as lag increases.\n   - Most autocorrelation values fall within the confidence interval except for lag 0 and lag 11 which are clearly above it.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1886,
+  "completion_tokens": 630,
+  "cost_usd": 0.0017624000000000001,
+  "latency_s": 6.2
+ },
+ "p263_fig0": {
+  "description": "1. Type: Line chart.\n2. Title: \"Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022\".\n   X-axis label: \"Months\".\n   X-axis range: 0 to 100, with tick values approximately at 0, 20, 40, 60, 80, 100.\n   Y-axis label: Not explicitly labeled, but values represent coal consumption (units not specified).\n   Y-axis range: 0 to 110,000, with tick values at 0, 20,000, 40,000, 60,000, 80,000, 100,000.\n   Legend entries: \"Original Time Series\" (blue solid line), \"Fitted Values\" (red solid line), \"Forecasted Values\" (red dashed line).\n3. Numbers or labels printed in the figure: X-axis ticks at 0, 20, 40, 60, 80, 100; Y-axis ticks at 0, 20,000, 40,000, 60,000, 80,000, 100,000.\n4. Key values and trends:\n   - The blue line (Original Time Series) fluctuates between about 25,000 and 75,000 for most of the period, with some peaks and troughs.\n   - The red solid line (Fitted Values) closely follows the blue line, with some deviations especially near the start.\n   - The red dashed line (Forecasted Values) begins around month 75 and shows a generally decreasing trend with oscillations between approximately 25,000 and 50,000.\n   - The highest peak in the red solid line occurs near month 1, reaching just above 100,000.\n   - Both series show a general downward trend over time.\n   - The forecasted values continue the downward trend with periodic fluctuations.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1936,
+  "completion_tokens": 391,
+  "cost_usd": 0.0014,
+  "latency_s": 4.5
+ },
+ "p267_fig0": {
+  "description": "1. Type: Line chart with shaded confidence interval region.\n2. Title: \"Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022\"\n   X-axis label: \"Months\"\n   X-axis range: 0 to 105 (ticks at 0, 20, 40, 60, 80, 100)\n   Y-axis label: Not explicitly labeled but represents coal consumption (units not specified)\n   Y-axis range: -60,000 to 125,000 (ticks at -50,000, 0, 25,000, 50,000, 75,000, 100,000, 125,000)\n   Legend entries:\n     - \"Original Time Series\" (blue solid line)\n     - \"Fitted Values\" (red solid line)\n     - \"Forecasted Values\" (red dashed line)\n     - \"80% Confidence Interval\" (pink shaded region)\n3. Numbers/labels printed in the figure:\n   - X-axis ticks: 0, 20, 40, 60, 80, 100\n   - Y-axis ticks: -50,000, 0, 25,000, 50,000, 75,000, 100,000, 125,000\n4. Key values and trends:\n   - The blue line (Original Time Series) fluctuates between approximately 25,000 and 75,000 units for months 0 to about 80.\n   - The red solid line (Fitted Values) closely follows the blue line with some deviations, especially early on.\n   - The red dashed line (Forecasted Values) starts around month 80 and shows a generally decreasing trend with oscillations between about 25,000 and 40,000 units.\n   - The pink shaded region (80% Confidence Interval) widens as months increase beyond 80, indicating increasing uncertainty in forecasts. The upper bound reaches above 100,000 units, and the lower bound drops below -50,000 units by month 100.\n   - The original and fitted values show seasonal or cyclical patterns with peaks and troughs roughly every 10 months.\n   - The forecasted values continue a similar cyclical pattern but with lower magnitude and increasing uncertainty.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1899,
+  "completion_tokens": 469,
+  "cost_usd": 0.00151,
+  "latency_s": 5.7
+ },
+ "p275_fig0": {
+  "description": "1. Type: Photo.\n2. Title, axis labels, legend entries: None visible in the photo.\n3. Numbers or labels printed in the figure: On the tablecloth in the background, the text \"The longevity research\" is visible. There is a QR code on a stand, but the content is not readable. The lanyards worn by the man and the robot have text, but it is not readable.\n4. Description: The photo shows a man on the left side facing a humanoid robot on the right side. The man is smiling and wearing a blue striped shirt with a blue lanyard. The humanoid robot has a metallic and white exterior with visible mechanical parts and a circular component on its chest. The robot is pointing with its right hand. The background includes a conference or exhibition setting with black curtains, a table with a white tablecloth, chairs, a microphone stand, and several display boards or posters. One person is seated in the background, facing away from the camera.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 2302,
+  "completion_tokens": 204,
+  "cost_usd": 0.0012472,
+  "latency_s": 7.1
+ },
+ "p277_fig0": {
+  "description": "1. Type: Diagram/flowchart.\n2. Title: Not visible in the figure itself.\n3. Labels and nodes in the figure:\n   - A green rectangular box labeled \"Gather Data\".\n   - An orange rectangular box labeled \"Train\".\n   - Another orange rectangular box labeled \"Test\".\n   - A blue rectangular box labeled \"Deploy Model\".\n4. Arrows and text:\n   - A solid arrow from \"Gather Data\" to \"Train\".\n   - A solid arrow from \"Train\" to \"Test\".\n   - A solid arrow from \"Test\" to \"Deploy Model\".\n   - A solid arrow from \"Deploy Model\" back to \"Gather Data\" (dashed line).\n   - A solid arrow from \"Test\" back to \"Gather Data\" (dashed line).\n   - A solid arrow from \"Train\" back to \"Gather Data\" (solid line).\n   - Text near the arrow from \"Train\" to \"Test\": \"Repeat Train/Test until desired accuracy is achieved.\"\n   - Text near the dashed arrow from \"Deploy Model\" to \"Gather Data\": \"Model may need adjustment based on its performance on new data.\"\n5. No axis, units, or numerical values are present.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1062,
+  "completion_tokens": 246,
+  "cost_usd": 0.0008184,
+  "latency_s": 3.2
+ },
+ "p282_fig0": {
+  "description": "1. Type: Line chart with data points (scatterplot overlaid on line chart).\n2. Title: \"Cubic and Linear Models for a Set of Points\"\n   X-axis label: \"x\"\n   X-axis range: 0 to 14, with tick marks at 0, 2, 4, 6, 8, 10, 12, 14\n   Y-axis label: \"y\"\n   Y-axis range: 0 to 20, with tick marks at 0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20\n   Legend entries / series names and colors: Not explicitly labeled, but two lines are visible:\n     - A blue straight line (linear model)\n     - A red curved line (cubic model)\n3. Numbers or labels printed in the figure:\n   - Data points labeled with coordinates:\n     (2, 10), (4, 9), (6, 6), (8, 7), (10, 4), (12, 5)\n4. Key values and trends:\n   - The blue linear line starts near y=11 at x=0 and decreases steadily to about y=3.5 at x=14.\n   - The red cubic curve passes exactly through the points (2,10), (4,9), (6,6), and (8,7), showing a non-linear shape with a dip near x=6 and a sharp rise after x=8 going above y=20 near x=12.\n   - The data points (10,4) and (12,5) lie closer to the linear line than the cubic curve, indicating the cubic curve fits the initial four points exactly but deviates strongly for higher x values.\n   - The cubic curve shows overfitting to the initial points, while the linear model provides a smoother, less exact fit but better generalization for points beyond x=8.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1093,
+  "completion_tokens": 415,
+  "cost_usd": 0.0011012,
+  "latency_s": 4.8
+ },
+ "p283_fig0": {
+  "description": "1. Type: Scatterplot with a linear regression line.\n\n2. Title: \"Time Spent on HW Problem Sets\"\n   X-axis label: \"Problem Set\"\n   X-axis range: 0 to 8\n   X-axis tick values: 0, 1, 2, 3, 4, 5, 6, 7, 8\n   Y-axis label: \"Time Spent (Hours)\"\n   Y-axis range: -2 to 12\n   Y-axis tick values: -2, 0, 2, 4, 6, 8, 10, 12\n   Legend entries/series names and colors: No explicit legend, but the scatter points are black dots and the linear model line is a blue line. There is one orange dot at (7, -1) on the line.\n\n3. Numbers or labels printed in the figure:\n   - Data points approximately at (1, 9.8), (2, 5.3), (3, 3.5), (4, 2.6), (5, 2.0), (6, 1.7)\n   - Orange dot labeled \"(7, -1)\" at the coordinate (7, -1) on the line.\n\n4. Key values and trends:\n   - The scatter points show a downward trend in time spent as the problem set number increases.\n   - The highest point is near (1, 9.8) hours.\n   - The lowest visible data point is near (6, 1.7) hours.\n   - The linear regression line slopes downward from about 9 hours at problem set 0 to below zero at problem set 7.\n   - The orange dot at (7, -1) lies on the regression line, indicating the model predicts negative time spent for problem set 7, which is not realistic.\n   - The scatter points do not all lie close to the line, indicating some deviation from the linear model.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1006,
+  "completion_tokens": 412,
+  "cost_usd": 0.0010616000000000002,
+  "latency_s": 4.4
+ },
+ "p284_fig0": {
+  "description": "1. Type: Scatterplot with an exponential model line.\n\n2. Title: \"Time Spent on HW Problem Sets (Exponential Model)\". \n   X-axis label: \"Problem Set\", with tick values at 0, 1, 2, 3, 4, 5, 6, 7, 8.\n   Y-axis label: \"Time Spent (Hours)\", with tick values at -2, 0, 2, 4, 6, 8, 10, 12.\n\n3. Numbers/labels in the figure:\n   - Data points at approximately (1, 9.8), (2, 5.3), (3, 3.5), (4, 2.6), (5, 2.0), (6, 1.7).\n   - A red data point labeled \"(7, 1)\".\n   - The exponential model line starts near 11.5 hours at problem set 0 and decreases smoothly to about 1 hour at problem set 7.\n\n4. Key values and trends:\n   - The scatterplot shows six black data points decreasing in time spent as the problem set number increases.\n   - The exponential model line fits these points closely, showing a decreasing trend in time spent on homework problem sets.\n   - The red point at (7, 1) lies on the model line, indicating a predicted value.\n   - The highest time spent is just above 11 hours at problem set 0 (extrapolated).\n   - The lowest time spent is about 1 hour at problem set 7.\n   - The model suggests an exponential decay in time spent as problem set number increases.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1030,
+  "completion_tokens": 350,
+  "cost_usd": 0.000972,
+  "latency_s": 3.9
+ },
+ "p285_fig0": {
+  "description": "1. Type: Line chart.\n2. Title: None visible on the figure itself.\n   X-axis: No label or units visible; range from -1 to 1 with tick values at -1, -0.5, 0, 0.5, and 1.\n   Y-axis: No label or units visible; range from 0 to 1 with tick values at 0, 0.5, and 1.\n   No legend or series names visible.\n3. Numbers or labels printed in the figure: X-axis ticks -1, -0.5, 0, 0.5, 1; Y-axis ticks 0, 0.5, 1.\n4. Key values and trends: The curve starts near 0 at x = -1, rises gradually, passes through approximately y = 0.5 at x = 0, and approaches 1 as x approaches 1. The shape is an S-curve typical of a sigmoid function, increasing monotonically from 0 to 1 over the x range. No multiple series to compare.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 899,
+  "completion_tokens": 226,
+  "cost_usd": 0.0007212000000000001,
+  "latency_s": 2.8
+ },
+ "p288_fig0": {
+  "description": "1. Type: Scatterplot.\n\n2. Title: Not visible in the figure itself.\n   X-axis label: Not visible in the figure itself.\n   Y-axis label: Not visible in the figure itself.\n   X-axis range: 0 to 4, with tick values at 0, 1, 2, 3, 4.\n   Y-axis range: 0 to 1, with tick values at 0 and 1.\n   Legend: Not visible in the figure itself.\n\n3. Numbers or labels printed in the figure:\n   X-axis ticks: 0, 1, 2, 3, 4.\n   Y-axis ticks: 0, 1.\n\n4. Key values and trends:\n   - Data points are plotted at various GPA values along the x-axis between 0 and 4.\n   - Y-values are binary, either 0 or 1.\n   - At GPA values near 0.5, 1.5, and 2.8, points are at y=0.\n   - At GPA values near 2.2, 2.3, 2.4, 3.5, 3.8, and 4.0, points are at y=1.\n   - The trend suggests that higher GPA values tend to correspond to y=1 (completion), while lower GPA values correspond to y=0 (non-completion).",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 692,
+  "completion_tokens": 292,
+  "cost_usd": 0.000744,
+  "latency_s": 3.4
+ },
+ "p288_fig1": {
+  "description": "1. Type: Scatterplot with a logistic regression curve (line).\n\n2. Title: Not visible in the figure itself, but context indicates it is \"Figure 6.8 Logistic Regression Model Fitting the Data in Table 6.5.\"\n\n   X-axis label: Not visible in the figure itself, but context indicates it is \"GPA.\"\n\n   X-axis units: Not specified.\n\n   X-axis range: 0 to 4.\n\n   X-axis tick values: 0, 1, 2, 3, 4.\n\n   Y-axis label: Not visible in the figure itself, but context indicates it is \"College Completion\" with values 0 and 1.\n\n   Y-axis units: Binary (0 for non-completion, 1 for completion).\n\n   Y-axis range: 0 to 1.\n\n   Y-axis tick values: 0, 1.\n\n   Legend entries / series names and colors: No legend visible, but points are colored green and red. Context states green points represent predicted completion (1), red points represent predicted non-completion (0).\n\n3. Numbers or labels printed in the figure: X-axis ticks 0, 1, 2, 3, 4; Y-axis ticks 0, 1.\n\n4. Key values and trends:\n\n   - The logistic regression curve starts near 0 on the Y-axis at GPA 0 and rises smoothly to near 1 on the Y-axis at GPA 4.\n\n   - Green points (predicted completion) are mostly clustered at higher GPA values (around 2 to 4) near Y=1.\n\n   - Red points (predicted non-completion) are mostly clustered at lower GPA values (below about 2.2) near Y=0.\n\n   - One green point is near GPA 2.8 at Y=0, indicating a predicted completion point at a low completion value.\n\n   - The curve shows an increasing trend, indicating higher GPA values correspond to higher predicted probability of college completion.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 662,
+  "completion_tokens": 410,
+  "cost_usd": 0.0009207999999999999,
+  "latency_s": 3.8
+ },
+ "p291_fig0": {
+  "description": "Type: Scatterplot.\n\nTitle: None visible on the figure itself.\n\nX-axis label: \"East\"\nX-axis units: feet\nX-axis range: 20 to 160\nX-axis tick values: 20, 40, 60, 80, 100, 120, 140, 160\n\nY-axis label: \"North\"\nY-axis units: feet\nY-axis range: 20 to 90\nY-axis tick values: 20, 30, 40, 50, 60, 70, 80, 90\n\nLegend: None visible.\n\nData points: 19 black circular points scattered on the plot.\n\nClusters: Three apparent clusters of points visible:\n- One cluster roughly between East 20 to 40 and North 30 to 55.\n- One cluster roughly between East 60 to 80 and North 70 to 85.\n- One cluster roughly between East 100 to 120 and North 40 to 75.\n\nNo other numbers or labels are printed on the figure. No grid lines other than the major grid lines aligned with axis ticks.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1404,
+  "completion_tokens": 227,
+  "cost_usd": 0.0009248,
+  "latency_s": 2.6
+ },
+ "p292_fig0": {
+  "description": "Type: Scatterplot.\n\nTitle: None visible.\n\nAxis labels: \n- X-axis labeled \"East\" with no units.\n- Y-axis labeled \"North\" with no units.\n\nAxis ranges and tick values:\n- X-axis ranges from 20 to 160, with tick marks approximately at 20, 40, 60, 80, 100, 120, 140, 160.\n- Y-axis ranges from 20 to 90, with tick marks approximately at 20, 30, 40, 50, 60, 70, 80, 90.\n\nLegend entries / series names and colors: None explicitly labeled, but data points are colored in three distinct colors:\n- Blue points\n- Green points\n- Red points\n\nData points:\n- Blue points are clustered mostly between East 20 to 70 and North 30 to 85.\n- Green points are between East 75 to 120 and North 66 to 83.\n- Red points are between East 100 to 120 and North 42 to 51.\n\nLarge dots indicate initial centroid choices:\n- One large blue dot near (35, 54).\n- One large green dot near (99, 67).\n- One large red dot near (105, 51).\n\nNo other numbers or labels are printed on the figure.\n\nNo trends or lines, just clusters of colored points with large dots marking centroids.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1324,
+  "completion_tokens": 289,
+  "cost_usd": 0.000992,
+  "latency_s": 3.2
+ },
+ "p293_fig0": {
+  "description": "1. Type: Scatterplot.\n2. Title: None visible in the figure itself.\n   Axis labels: X-axis labeled \"East\", Y-axis labeled \"North\".\n   Axis ranges: X-axis from 20 to 160, Y-axis from 20 to 90.\n   Tick values: X-axis ticks at 20, 40, 60, 80, 100, 120, 140, 160; Y-axis ticks at 20, 30, 40, 50, 60, 70, 80, 90.\n   Legend entries / series names and colors: No legend visible, but points are colored in three distinct colors: blue, green, and red. Larger points in each color likely represent centroids.\n3. Numbers or labels printed in the figure: Only axis tick values as above.\n4. Key values and trends:\n   - Blue points cluster roughly between East 20 to 60 and North 30 to 85.\n   - Green points cluster roughly between East 70 to 120 and North 65 to 83.\n   - Red points cluster roughly between East 100 to 120 and North 40 to 50.\n   - Each color group has one larger point (centroid) positioned near the center of its cluster.\n   - The centroids have moved closer to the centers of their respective clusters compared to an earlier iteration (not shown).\n   - No points appear to have changed cluster membership in this iteration.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1291,
+  "completion_tokens": 301,
+  "cost_usd": 0.000998,
+  "latency_s": 3.6
+ },
+ "p294_fig0": {
+  "description": "1. Type: Scatterplot.\n\n2. Title: None visible on the figure itself.\n\n   Axis labels: \n   - X-axis labeled \"East\"\n   - Y-axis labeled \"North\"\n   \n   Axis ranges and tick values:\n   - X-axis ranges from 20 to 160 with ticks at 20, 40, 60, 80, 100, 120, 140, 160.\n   - Y-axis ranges from 20 to 90 with ticks at 20, 30, 40, 50, 60, 70, 80, 90.\n\n3. Numbers or labels printed in the figure:\n   - X-axis tick labels: 20, 40, 60, 80, 100, 120, 140, 160.\n   - Y-axis tick labels: 20, 30, 40, 50, 60, 70, 80, 90.\n\n4. Key values and observations:\n   - There are three distinct clusters of points, each cluster represented by a different color: blue, green, and red.\n   - Blue cluster points are roughly between East 20 to 40 and North 30 to 55.\n   - Green cluster points are roughly between East 55 to 80 and North 70 to 85.\n   - Red cluster points are roughly between East 100 to 120 and North 40 to 72.\n   - Point sizes vary within clusters, with some points larger than others.\n   - The clusters are spatially separated, with no overlap.\n   - No legend or series names are visible on the figure itself.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1363,
+  "completion_tokens": 335,
+  "cost_usd": 0.0010812,
+  "latency_s": 3.6
+ },
+ "p296_fig0": {
+  "description": "1. Type: Scatterplot.\n2. Title: \"k-Means Clustering Result\". X-axis label: \"East\". Y-axis label: \"North\". No units specified. X-axis range approximately from 20 to 120 with tick values at 20, 40, 60, 80, 100, 120. Y-axis range approximately from 30 to 90 with tick values at 30, 40, 50, 60, 70, 80, 90. No legend entries or series names visible.\n3. Numbers or labels printed in the figure: Title \"k-Means Clustering Result\", axis labels \"East\" and \"North\", axis tick values as described.\n4. Key values and trends: The scatterplot shows three distinct clusters of points. One cluster is located roughly between East 25 to 45 and North 35 to 55, with points colored yellow. Another cluster is around East 55 to 75 and North 65 to 85, with points colored dark purple. The third cluster is roughly between East 100 to 120 and North 40 to 70, with points colored teal. The clusters are well separated with no overlap. The cluster near East 60 and North 75 appears the most compact vertically. The cluster near East 30 and North 45 is more spread out horizontally. The cluster near East 110 and North 55 is moderately spread.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1670,
+  "completion_tokens": 292,
+  "cost_usd": 0.0011352,
+  "latency_s": 3.5
+ },
+ "p297_fig0": {
+  "description": "Type: Scatterplot.\n\nTitle: Not visible in the figure itself.\n\nAxis labels: None visible.\n\nX-axis range: From -15 to 15, with tick values at -15, -10, -5, 0, 5, 10, 15.\n\nY-axis range: From -15 to 15, with tick values at -15, -10, -5, 0, 5, 10, 15.\n\nLegend entries / series names: None visible.\n\nNumbers or labels printed in the figure: Only the axis tick values as described above.\n\nKey values and trends: The scatterplot shows two distinct clusters of points forming two rings centered roughly at the origin (0,0). One smaller inner ring is concentrated near the center, approximately within a radius of 2 to 3 units. The outer ring is larger, roughly between radius 7 to 11 units from the center. Points are distributed somewhat evenly along these rings, with some noise or scatter around the rings. There is a clear gap between the inner and outer ring clusters.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1001,
+  "completion_tokens": 217,
+  "cost_usd": 0.0007476000000000002,
+  "latency_s": 3.5
+ },
+ "p298_fig0": {
+  "description": "1. Type: Scatterplot.\n\n2. Title: None visible in the figure itself.\n\n   Axis labels: None visible.\n\n   Axis ranges and tick values: \n   - X-axis ranges from 0 to 16 with ticks at every integer from 0 to 16.\n   - Y-axis ranges from 0 to 8 with ticks at every integer from 0 to 8.\n\n   Legend entries / series names and colors: None visible.\n\n3. Numbers or labels printed in the figure:\n   - Points labeled with capital letters: A, B, C, D, E, F, G, H, J, K, L.\n   - Coordinates approximate from grid:\n     - A at (3, 6)\n     - B at (4.5, 3.5)\n     - C at (4, 5)\n     - D at (6, 6)\n     - E at (5.5, 3)\n     - F at (7, 5)\n     - G at (9, 4)\n     - H at (11, 6)\n     - J at (12, 4)\n     - K at (12.5, 5.5)\n     - L at (13, 2.5)\n\n4. Key values and trends:\n   - Points are scattered mostly between x=3 and x=13, y=2.5 and y=6.\n   - No lines or trends shown, just discrete points.\n   - Points are labeled individually with letters for identification.\n   - No legend or color coding; all points are black dots.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 912,
+  "completion_tokens": 329,
+  "cost_usd": 0.0008912000000000001,
+  "latency_s": 3.4
+ },
+ "p298_fig1": {
+  "description": "1. Type: Scatterplot with circles drawn around each point.\n2. Title: None visible on the figure itself.\n   Axis labels: None visible.\n   Axis ranges: X-axis from 0 to 16, Y-axis from 0 to 8.\n   Tick values: X-axis ticks at 0, 2, 4, 6, 8, 10, 12, 14, 16; Y-axis ticks at 0, 1, 2, 3, 4, 5, 6, 7, 8.\n   Legend: None visible.\n3. Numbers or labels printed in the figure: Points labeled with letters A, B, C, D, E, F, G, H, I, J, K, L.\n4. Key values and details:\n   - There are 12 black data points scattered across the plot.\n   - Each point has a circle of equal radius drawn around it.\n   - Points are roughly positioned as follows (approximate coordinates):\n     A near (3.5, 6)\n     B near (4, 3.5)\n     C near (4.5, 5)\n     D near (6.5, 6)\n     E near (6, 3)\n     F near (6.5, 4.5)\n     G near (9.5, 4)\n     H near (11, 5.5)\n     I near (12, 4)\n     J near (12.5, 4)\n     K near (13, 5.5)\n     L near (14, 2.5)\n   - Circles overlap in various places, showing neighborhood relationships.\n   - The circles are all the same size, indicating a fixed radius around each point.\n   - The grid lines are visible, aiding in estimating point positions.\nNo trends or series comparisons apply as this is a spatial distribution visualization.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 936,
+  "completion_tokens": 400,
+  "cost_usd": 0.0010144000000000002,
+  "latency_s": 4.8
+ },
+ "p299_fig0": {
+  "description": "1. Type: Scatterplot.\n\n2. Title: Not explicitly shown in the figure but referenced as \"Graph Showing Results of DBScan Clustering.\"\n\n   Axis labels: None visible.\n\n   Axis ranges and tick values:\n   - X-axis: from 0 to 16, with ticks at 0, 2, 4, 6, 8, 10, 12, 14, 16.\n   - Y-axis: from 0 to 8, with ticks at 0, 2, 4, 6, 8.\n\n   Legend entries / series names and colors:\n   - Cluster 1: blue points.\n   - Cluster 2: red points.\n   - Noise point: black point.\n\n3. Numbers or labels printed in the figure:\n   - Points labeled with letters:\n     - Blue cluster: A, B, C, D, E, F.\n     - Red cluster: H, J, K, L.\n     - Black point: G.\n\n4. Key values and trends:\n   - Blue cluster points (A-F) are located roughly between x=3.5 to 7 and y=3 to 6.\n   - Red cluster points (H, J, K, L) are located roughly between x=11 to 13.5 and y=2.5 to 5.5.\n   - One black point (G) is located at approximately x=9, y=4, isolated from the clusters.\n   - The blue cluster points are grouped on the left side of the plot, the red cluster points on the right side, with the black point in between, indicating it is considered noise or an outlier by DBScan.\n   - No axis labels or units are provided.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 934,
+  "completion_tokens": 359,
+  "cost_usd": 0.000948,
+  "latency_s": 3.7
+ },
+ "p300_fig0": {
+  "description": "1. Type: Scatterplot.\n2. Title: None visible.\n   Axis labels: None visible.\n   Axis ranges: X-axis approximately from -13 to 13, Y-axis approximately from -13 to 13.\n   Tick values: X-axis ticks at approximately -10, -5, 0, 5, 10; Y-axis ticks at approximately -10, -5, 0, 5, 10.\n   Legend entries / series names and colors: No legend visible. Points are colored in three distinct colors: yellow, teal, and dark purple.\n3. Numbers or labels printed in the figure: None.\n4. Key values and trends: \n   - There is a dense cluster of teal points centered near the origin (0,0).\n   - Surrounding the teal cluster is a ring-shaped cluster of yellow points forming a roughly elliptical shape.\n   - Scattered dark purple points are located mostly outside the yellow ring, appearing as outliers or noise.\n   - The plot shows three distinct groups of points differentiated by color, suggesting clustering results with core clusters and noise points.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1728,
+  "completion_tokens": 224,
+  "cost_usd": 0.0010496000000000001,
+  "latency_s": 4.0
+ },
+ "p301_fig0": {
+  "description": "1. Type: Heatmap  \n2. Title: None visible within the figure itself (caption outside figure: \"Figure 6.17 Heatmap for Flower/Tree/Grass Example\")  \n   Axis labels:  \n   - Horizontal axis (top): Flower, Tree, Grass  \n   - Vertical axis (left): Flower, Tree, Grass  \n   No units or axis ranges, no tick values beyond category labels.  \n3. Numbers/labels inside the heatmap cells:  \n   - Row Flower: 23 (under Flower), 3 (under Tree), 9 (under Grass)  \n   - Row Tree: 2 (under Flower), 32 (under Tree), 0 (under Grass)  \n   - Row Grass: 12 (under Flower), 1 (under Tree), 18 (under Grass)  \n4. The heatmap shows a 3x3 confusion matrix with categories Flower, Tree, Grass on both axes. The diagonal cells (23, 32, 18) are shaded darker, indicating correct classifications. Off-diagonal cells have lighter shading or no shading, indicating misclassifications. The highest value is 32 (Tree correctly classified as Tree). The lowest value is 0 (Tree misclassified as Grass). Misclassifications are notably 9 (Flower as Grass) and 12 (Grass as Flower).",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 567,
+  "completion_tokens": 275,
+  "cost_usd": 0.0006667999999999999,
+  "latency_s": 3.3
+ },
+ "p303_fig0": {
+  "description": "1. Type: Confusion matrix heatmap.\n2. Title: \"Confusion Matrix\".\n   X-axis label: \"Predicted\" with tick values 0 and 1.\n   Y-axis label: \"True\" with tick values 0 and 1.\n   Color bar on the right side with a gradient from light blue to dark blue, labeled with numeric values ranging from 8 to 24.\n3. Numbers inside the matrix cells:\n   - Top-left cell (True=0, Predicted=0): 20 (medium blue shade).\n   - Top-right cell (True=0, Predicted=1): 10 (lighter blue shade).\n   - Bottom-left cell (True=1, Predicted=0): 8 (very light blue shade).\n   - Bottom-right cell (True=1, Predicted=1): 24 (darkest blue shade).\n4. The matrix shows counts of classification results:\n   - True negatives: 20\n   - False positives: 10\n   - False negatives: 8\n   - True positives: 24\n   The color intensity corresponds to the count values, with the highest count (24) in the bottom-right cell and the lowest count (8) in the bottom-left cell.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1575,
+  "completion_tokens": 258,
+  "cost_usd": 0.0010428,
+  "latency_s": 3.4
+ },
+ "p305_fig0": {
+  "description": "1. Type: Scatterplot with a linear regression line.\n2. Title: None visible.\n   X-axis label: Not visible.\n   X-axis range: 0.0 to 1.0, with tick values approximately at 0.0, 0.2, 0.4, 0.6, 0.8, 1.0.\n   Y-axis label: Not visible.\n   Y-axis range: 0 to 30, with tick values approximately at 0, 5, 10, 15, 20, 25, 30.\n   Legend entries / series names: None visible.\n   Series colors: Scatter points in blue, regression line in red.\n3. Numbers or labels printed in the figure: \"Linear model: y = 4.820 + 14.682 x\" printed below the plot.\n4. Key values and trends:\n   - The scatterplot shows data points spread mostly between x=0 and x=1, and y=0 to about 27.\n   - The red regression line starts near y=5 at x=0 and rises linearly to about y=19 at x=1.\n   - The data points show a positive linear trend with some scatter around the regression line.\n   - No other labels, gridlines, or annotations are visible.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1858,
+  "completion_tokens": 274,
+  "cost_usd": 0.0011816,
+  "latency_s": 4.2
+ },
+ "p307_fig0": {
+  "description": "1. Type: Scatterplot with multiple red lines overlaid.\n2. Title: None visible.\n   X-axis label: \"BARTHAG\"\n   X-axis range: 0.0 to 1.0, with tick marks approximately at 0.0, 0.2, 0.4, 0.6, 0.8, 1.0.\n   Y-axis label: \"W\"\n   Y-axis range: 0 to 27, with tick marks approximately at 0, 5, 10, 15, 20, 25.\n   Legend: None visible.\n3. Numbers or labels printed in the figure: None besides axis labels and ticks.\n4. Key values and trends:\n   - The scatterplot shows blue dots scattered roughly in an upward trend from lower left (near 0,0) to upper right (near 1, 25).\n   - The red lines are closely spaced and mostly parallel, slanting upward, indicating multiple linear fits or regression lines with some variation in slope and intercept.\n   - The points are spread with some vertical variation around the red lines.\n   - The highest points reach just above 25 on the y-axis.\n   - The lowest points are near 0 on the y-axis.\n   - The x-axis values are distributed across the full range from 0 to 1.\n   - The red lines cluster tightly, showing small variation in slope and intercept among them.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1743,
+  "completion_tokens": 300,
+  "cost_usd": 0.0011772,
+  "latency_s": 4.2
+ },
+ "p311_fig0": {
+  "description": "1. Type: 3D scatterplot.\n2. Title: \"Actual Values\".\n   Axis labels: \n   - X-axis: \"BARTHAG\" with values ranging approximately from 0.0 to 1.0.\n   - Y-axis: \"WAB\" with values ranging approximately from -15 to 10.\n   - Z-axis: \"W\" with values ranging approximately from 0 to 25.\n3. Numbers or labels printed in the figure: \n   - X-axis ticks: 0.0, 0.2, 0.4, 0.6, 0.8, 1.0.\n   - Y-axis ticks: -15, -10, -5, 0, 5, 10.\n   - Z-axis ticks: 0, 5, 10, 15, 20, 25.\n4. Key values and trends:\n   - The scatterplot shows a cloud of blue points distributed in 3D space.\n   - Points tend to increase in the Z-axis (W) as the X-axis (BARTHAG) increases.\n   - The Y-axis (WAB) values are spread from about -15 to 10, with no clear linear trend visible from this angle.\n   - The highest points on the Z-axis reach about 25.\n   - The lowest points on the Z-axis are near 0.\n   - Overall, there is a positive correlation between BARTHAG and W, with W increasing as BARTHAG increases.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1414,
+  "completion_tokens": 314,
+  "cost_usd": 0.001068,
+  "latency_s": 4.1
+ },
+ "p312_fig0": {
+  "description": "1. Type: 3D scatterplot with a regression plane surface.\n\n2. Title: \"Multiple Linear Regression Plane and Predicted Values\"\n   Axis labels:\n   - X-axis: \"BARTHAG\" with range approximately 0.0 to 1.0, ticks at 0.0, 0.2, 0.4, 0.6, 0.8, 1.0\n   - Y-axis: \"WAB\" with range approximately -15 to 10, ticks at -15, -10, -5, 0, 5, 10\n   - Z-axis: \"W\" with range approximately 2.5 to 22.5, ticks at 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5\n\n3. Numbers or labels printed in the figure: Axis tick values as above; no other numeric labels visible.\n\n4. Key values and trends:\n   - The red \"x\" markers represent predicted values scattered in 3D space.\n   - The regression plane is a semi-transparent surface colored with a plasma colormap, spanning the ranges of BARTHAG and WAB.\n   - The scatter points generally follow the plane, indicating a linear relationship modeled by the regression.\n   - The plane rises in the Z-axis (W) as BARTHAG increases from 0 to 1 and as WAB increases from about -15 to 10.\n   - The scatter points show some spread around the plane but mostly cluster near it, suggesting the regression fits the data reasonably well.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1553,
+  "completion_tokens": 342,
+  "cost_usd": 0.0011684,
+  "latency_s": 5.2
+ },
+ "p313_fig0": {
+  "description": "1. Type: 3D scatterplot with a regression plane and vertical line segments connecting data points to the plane.\n\n2. Title: \"Multiple Linear Regression\"\n   Axis labels:\n   - X-axis: \"BARTHAG\" with values approximately from 0.0 to 1.0\n   - Y-axis: \"WAB\" with values approximately from -15 to 10, rotated 45 degrees\n   - Z-axis: \"W\" with values approximately from 0 to 25\n\n3. Numbers or labels printed in the figure:\n   - X-axis ticks: 0.0, 0.2, 0.4, 0.6, 0.8, 1.0\n   - Y-axis ticks: -15, -10, -5, 0, 5, 10\n   - Z-axis ticks: 0, 5, 10, 15, 20, 25\n\n4. Key values and trends:\n   - Blue circular markers represent actual data points scattered in 3D space.\n   - A semi-transparent regression plane colored with a plasma colormap overlays the scatter points.\n   - Green vertical line segments connect each actual data point to its predicted value on the regression plane, indicating residuals.\n   - The data points generally increase in the Z-axis (W) as BARTHAG and WAB values increase, showing a positive trend captured by the regression plane.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1516,
+  "completion_tokens": 296,
+  "cost_usd": 0.00108,
+  "latency_s": 5.0
+ },
+ "p316_fig0": {
+  "description": "1. Type: Heatmap (confusion matrix).\n2. Title: \"Confusion Matrix\". X-axis label: \"Predicted\" with tick values 0 and 1. Y-axis label: \"True\" with tick values 0 and 1. Color bar on the right with a gradient from light blue to dark blue, labeled with numeric values from 5.0 to 25.0.\n3. Numbers inside the matrix cells: Top-left cell (True=0, Predicted=0) = 25, Top-right cell (True=0, Predicted=1) = 5, Bottom-left cell (True=1, Predicted=0) = 9, Bottom-right cell (True=1, Predicted=1) = 23.\n4. The darkest cell is the top-left with value 25, indicating the highest count. The bottom-right cell is also dark blue with value 23. The top-right cell is lightest with value 5, and the bottom-left cell is a lighter blue with value 9. The matrix shows counts of true negatives, false positives, false negatives, and true positives arranged by actual (rows) and predicted (columns) labels.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1597,
+  "completion_tokens": 247,
+  "cost_usd": 0.001034,
+  "latency_s": 3.1
+ },
+ "p317_fig0": {
+  "description": "1. Type: diagram/flowchart (decision tree).\n2. Title: not visible in the figure itself.\n3. Every number or label printed in the figure:\n- Root node: \"Is it living?\"\n- From root node, two branches labeled \"Yes\" and \"No\".\n- Left branch from root leads to node: \"Is it an animal?\"\n- From \"Is it an animal?\" node, two branches labeled \"Yes\" and \"No\".\n- \"Yes\" branch leads to node: \"Does it walk on two legs?\"\n- From \"Does it walk on two legs?\" node, two branches labeled \"Yes\" and \"No\".\n- \"Yes\" branch leads to leaf node: \"Human\"\n- \"No\" branch leads to leaf node: \"Dog\"\n- \"No\" branch from \"Is it an animal?\" leads to leaf node: \"Tree\"\n- Right branch from root node (\"No\") leads to node: \"Is it worth a lot of money?\"\n- From \"Is it worth a lot of money?\" node, two branches labeled \"Yes\" and \"No\".\n- \"Yes\" branch leads to leaf node: \"Diamond\"\n- \"No\" branch leads to leaf node: \"Rock\"\n4. No axis, units, or legend. The flowchart shows a simple decision tree with questions at rectangular nodes and outcomes at oval nodes, connected by arrows labeled with \"Yes\" or \"No\" indicating decision paths.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1376,
+  "completion_tokens": 294,
+  "cost_usd": 0.0010207999999999999,
+  "latency_s": 3.6
+ },
+ "p319_fig0": {
+  "description": "1. Type: Scatterplot.\n\n2. Title: None visible on the figure itself.\n\n   Axis labels: \n   - x-axis labeled \"x\"\n   - y-axis labeled \"y\"\n   \n   Axis ranges and tick values:\n   - x-axis ranges from 0 to 20 with ticks at 0, 5, 10, 15, 20\n   - y-axis ranges from 0 to 20 with ticks at 0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20\n\n   Legend entries / series names and colors: No legend visible, but points are colored red and blue.\n\n3. Numbers or labels printed in the figure: Only axis tick values as above.\n\n4. Key values and trends:\n   - Blue points are scattered across the plot, with some clustering around higher y-values (above 10) and some spread at lower y-values.\n   - Red points appear in two rough clusters: one cluster around x values approximately 1.9 to 8.6 and y values around 1.3 to 13, and another cluster around x values approximately 16.9 to 19.5 and y values around 1.3 to 5.\n   - The red clusters are bordered by blue points.\n   - No linear or logistic regression pattern is apparent from the scatter.\n   - Highest blue point approximately at (7.6, 18.3).\n   - Lowest red point approximately at (19.5, 4).\n   - The scatterplot shows a non-linear pattern of red and blue points.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1438,
+  "completion_tokens": 338,
+  "cost_usd": 0.001116,
+  "latency_s": 3.7
+ },
+ "p321_fig0": {
+  "description": "1. Type: Diagram/flowchart.\n2. Title: None visible within the figure.\n3. Numbers and labels printed in the figure:\n\n- Root node (top): \"y ≤ 13.75\"\n- From root node, two branches:\n  - Left branch to node: \"x ≤ 14.55\"\n  - Right branch to leaf node: \"Blue\"\n- From \"x ≤ 14.55\" node, two branches:\n  - Left branch to node: \"y ≤ 8.45\"\n  - Right branch to leaf node: \"Red\"\n- From \"y ≤ 8.45\" node, two branches:\n  - Left branch to leaf node: \"Blue\"\n  - Right branch to node: \"x ≤ 8.65\"\n- From \"x ≤ 8.65\" node, two branches:\n  - Left branch to node: \"x ≤ 4.2\"\n  - Right branch to leaf node: \"Blue\"\n- From \"x ≤ 4.2\" node, two branches:\n  - Left branch to node: \"x ≤ 2.55\"\n  - Right branch to leaf node: \"Red\"\n- From \"x ≤ 2.55\" node, two branches:\n  - Left branch to leaf node: \"Red\"\n  - Right branch to leaf node: \"Blue\"\n\n4. Structure: The flowchart starts at the root node with a condition on y, then branches down through internal nodes with conditions on x or y, routing left or right depending on the condition. Leaf nodes are labeled with either \"Red\" or \"Blue,\" indicating the classification label for the data at that point. Arrows connect nodes in a top-down manner, showing the decision path.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1953,
+  "completion_tokens": 357,
+  "cost_usd": 0.0013524000000000001,
+  "latency_s": 4.1
+ },
+ "p321_fig1": {
+  "description": "1. Type: Scatterplot with regions separated by lines.\n2. Title: None visible in the figure itself.\n   Axis labels: x-axis labeled \"x\", y-axis labeled \"y\".\n   Axis ranges: Both axes range from 0 to 20.\n   Axis ticks: x-axis ticks at 0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20; y-axis ticks at 0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20.\n   Legend entries/series names and colors: Points labeled \"Red\" are red dots; points labeled \"Blue\" are blue dots.\n3. Numbers or labels printed in the figure:\n   - Lines labeled with inequalities: x = 2.55, x = 4.2, x = 8.65, x = 14.55, y = 8.45, y = 13.75.\n   - Region labels: \"Red\" and \"Blue\" appear inside different regions of the plot.\n4. Description of figure content:\n   - The scatterplot shows red and blue points distributed across the plane.\n   - Purple vertical and horizontal lines segment the plane into regions.\n   - The lines correspond to the inequalities listed above, forming boundaries.\n   - Regions are labeled as either \"Red\" or \"Blue\" indicating pure node classification.\n   - Red points cluster mostly in the left and right regions labeled \"Red\".\n   - Blue points cluster in the central and lower regions labeled \"Blue\".\n   - The lines create rectangular regions separating red and blue points.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1317,
+  "completion_tokens": 353,
+  "cost_usd": 0.0010916,
+  "latency_s": 4.2
+ },
+ "p324_fig0": {
+  "description": "1. Type: Diagram/flowchart.\n\n2. Title: None visible within the figure itself.\n\n3. Every number or label printed in the figure:\n- Top node: \"y ≤ 13.75\"\n- Left child of top node: \"x ≤ 14.55\"\n- Left child of \"x ≤ 14.55\": \"y ≤ 8.45\"\n- Right child of \"x ≤ 14.55\": \"Red\" (inside an oval)\n- Right child of \"y ≤ 13.75\": \"Blue\" (inside an oval)\n- Left child of \"y ≤ 8.45\": \"Blue\" (inside an oval)\n- Right child of \"y ≤ 8.45\": \"Red\" (inside an oval)\n\n4. Diagram structure and flow:\n- The root node is a decision node with condition \"y ≤ 13.75\".\n- From this root, two arrows branch out:\n  - Left arrow leads to a decision node \"x ≤ 14.55\".\n  - Right arrow leads to a terminal node labeled \"Blue\".\n- From \"x ≤ 14.55\":\n  - Left arrow leads to decision node \"y ≤ 8.45\".\n  - Right arrow leads to terminal node \"Red\".\n- From \"y ≤ 8.45\":\n  - Left arrow leads to terminal node \"Blue\".\n  - Right arrow leads to terminal node \"Red\".\n\nAll terminal nodes are ovals labeled with class names \"Blue\" or \"Red\". All decision nodes are rectangles with inequality conditions on variables x or y. Arrows indicate the flow from parent node to child nodes based on the condition being true (left) or false (right).",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1126,
+  "completion_tokens": 348,
+  "cost_usd": 0.0010072,
+  "latency_s": 3.7
+ },
+ "p324_fig1": {
+  "description": "1. Type: Scatterplot with decision boundary lines.\n2. Title: Not present in the figure itself.\n   Axis labels: x (horizontal axis), y (vertical axis).\n   Axis ranges: Both x and y axes range from 0 to 20.\n   Axis tick values: x-axis ticks at 0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20; y-axis ticks at 0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20.\n   Legend entries/series names and colors: Points labeled \"Red\" are red dots; points labeled \"Blue\" are blue dots.\n3. Numbers or labels printed in the figure:\n   - Horizontal purple lines labeled y = 13.75 (near top) and y = 8.45 (near middle).\n   - Vertical purple line labeled x = 14.55 (near right side).\n   - Text labels \"Blue\" and \"Red\" placed inside regions formed by the purple lines indicating classification regions.\n4. Key values and trends:\n   - The scatterplot shows red and blue points distributed in the plane.\n   - The purple lines divide the plane into four regions.\n   - Top region above y=13.75 is labeled \"Blue\".\n   - Middle-left region between y=8.45 and y=13.75 and left of x=14.55 is labeled \"Red\".\n   - Middle-right region right of x=14.55 and between y=8.45 and y=13.75 is labeled \"Red\".\n   - Bottom region below y=8.45 is labeled \"Blue\".\n   - The purple lines represent decision boundaries of a pruned decision tree, separating the plane into fewer regions corresponding to pure nodes.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1297,
+  "completion_tokens": 390,
+  "cost_usd": 0.0011428000000000002,
+  "latency_s": 4.2
+ },
+ "p326_fig0": {
+  "description": "1. Type: Diagram/flowchart (Decision Tree).\n2. Title, axis labels, legend: None visible.\n3. Every number or label printed in the figure:\n\n- Root node: \n  x[1] <= 13.75\n  gini = 0.499\n  samples = 19\n  value = [10, 9]\n\n- Left child of root (True branch):\n  x[0] <= 14.55\n  gini = 0.48\n  samples = 15\n  value = [6, 9]\n\n- Right child of root (False branch):\n  gini = 0.0\n  samples = 4\n  value = [4, 0]\n\n- Left child of node x[0] <= 14.55 (True branch):\n  x[0] <= 8.65\n  gini = 0.48\n  samples = 10\n  value = [6, 4]\n\n- Right child of node x[0] <= 14.55 (False branch):\n  gini = 0.0\n  samples = 5\n  value = [0, 5]\n\n- Left child of node x[0] <= 8.65 (True branch):\n  gini = 0.444\n  samples = 6\n  value = [2, 4]\n\n- Right child of node x[0] <= 8.65 (False branch):\n  gini = 0.0\n  samples = 4\n  value = [4, 0]\n\n4. Diagram structure and flow:\n\n- The root node splits on feature x[1] with threshold 13.75.\n- If True (x[1] <= 13.75), next split is on x[0] <= 14.55.\n  - If True (x[0] <= 14.55), next split is on x[0] <= 8.65.\n    - If True (x[0] <= 8.65), leaf node with gini 0.444, samples 6, value [2,4].\n    - If False, leaf node with gini 0.0, samples 4, value [4,0].\n  - If False, leaf node with gini 0.0, samples 5, value [0,5].\n- If False (x[1] > 13.75), leaf node with gini 0.0, samples 4, value [4,0].\n\nNo axis labels, units, or legend entries are present. The figure is a decision tree visualization showing splits, gini impurity, sample counts, and class value distributions at each node.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1312,
+  "completion_tokens": 570,
+  "cost_usd": 0.0014368000000000002,
+  "latency_s": 5.8
+ },
+ "p421_fig0": {
+  "description": "1. Type: Photo\n2. Title, axis labels, legend entries: None visible\n3. Numbers or labels printed in the figure: None visible\n4. Description: The photo shows a close-up view of a specialized wheeled device with a large, muddy tire and attached equipment, positioned on a forest trail. In the background, there are three people, two of whom are seated on adaptive bicycles or trikes, and one standing behind the wheeled device. The setting is a wooded area with green foliage and trees. The image appears to depict field data collection related to trail assessment.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 2293,
+  "completion_tokens": 120,
+  "cost_usd": 0.0011092,
+  "latency_s": 8.2
+ },
+ "p425_fig0": {
+  "description": "1. Type: Boxplot (horizontal orientation).\n2. Title: \"Boxplot Showing Distribution of Salaries ($)\".\n   X-axis label: \"Salaries of Employees at ABC Corporation\".\n   Y-axis label: \"Salaries\".\n   X-axis range: from 40,000 to 140,000 with tick marks at 40,000; 60,000; 80,000; 100,000; 120,000; 140,000.\n   No legend entries or series names; only one boxplot labeled \"Salaries\" on the y-axis.\n3. Numbers and labels printed in the figure:\n   - Min (minimum) with arrow pointing to the left whisker at 42,000.\n   - Q1 (first quartile) with arrow pointing to the left edge of the box at 54,000.\n   - Median with arrow pointing to the orange vertical line inside the box at 65,000.\n   - Q3 (third quartile) with arrow pointing to the right edge of the box at 92,000.\n   - Max (maximum) with arrow pointing to the right whisker at 140,000.\n4. Key values read from the boxplot:\n   - Minimum salary approximately 42,000.\n   - First quartile approximately 54,000.\n   - Median salary approximately 65,000.\n   - Third quartile approximately 92,000.\n   - Maximum salary approximately 140,000.\n   The boxplot shows the interquartile range (IQR) from 54,000 to 92,000, with the median closer to the lower quartile, indicating a right-skewed distribution of salaries. The whiskers extend to the minimum and maximum values without outliers shown.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1540,
+  "completion_tokens": 364,
+  "cost_usd": 0.0011984,
+  "latency_s": 4.3
+ },
+ "p427_fig0": {
+  "description": "1. Type: Vertical boxplot.\n2. Title: \"Vertical Boxplot for Ages of Major League Baseball Players\".\n   Y-axis label: \"Ages\".\n   Y-axis range: 26 to 40.\n   Y-axis tick values: 26, 28, 30, 32, 34, 36, 38, 40.\n   No legend or series names.\n3. Numbers or labels printed in the figure: Title as above, Y-axis label \"Ages\", Y-axis ticks as above.\n4. Key values from the boxplot:\n   - Minimum (bottom whisker): approximately 25.75 (not explicitly labeled but inferred from data).\n   - Lower quartile (bottom of the box): approximately 27.\n   - Median (orange horizontal line inside the box): approximately 29.\n   - Upper quartile (top of the box): approximately 33.\n   - Maximum (top whisker): approximately 41.\n   The median line is closer to the lower quartile than the upper quartile, indicating a skewed distribution. The whiskers extend from about 26 to 41.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1422,
+  "completion_tokens": 231,
+  "cost_usd": 0.0009384,
+  "latency_s": 2.8
+ },
+ "p429_fig0": {
+  "description": "1. Type: Boxplot (side-by-side comparison)\n2. Title: \"Side-by-Side Boxplots Comparing Housing Prices for San Francisco and San Jose\"\n   Y-axis label: \"Home Prices (in Thousands)\"\n   Y-axis range: $600 to $1,600, with tick marks at $600, $800, $1,000, $1,200, $1,400, and $1,600\n   X-axis categories: \"San Francisco Home Prices\" and \"San Jose Home Prices\"\n3. Numbers/labels in figure: Y-axis tick labels as above; no other numeric labels visible\n4. Key values and trends:\n   - San Francisco boxplot median is approximately $1,250 (orange line inside the box)\n   - San Francisco interquartile range (IQR) roughly from $1,050 to $1,480\n   - San Francisco whiskers extend from about $970 to $1,550\n   - San Jose boxplot median is approximately $1,300\n   - San Jose IQR roughly from $900 to $1,420\n   - San Jose whiskers extend from about $620 to $1,630\n   - San Jose shows greater dispersion (wider range and whiskers) compared to San Francisco\n   - Both distributions appear roughly symmetric based on box and whisker shapes",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1688,
+  "completion_tokens": 277,
+  "cost_usd": 0.0011184,
+  "latency_s": 3.3
+ },
+ "p439_fig0": {
+  "description": "1. Type: Line chart with data points marked by blue circles.\n2. Title: \"Enrollment at a Community College\"\n   X-axis label: \"Year\"\n   X-axis range: 1 to 8, with tick values at each integer year from 1 to 8.\n   Y-axis label: \"Enrollment\"\n   Y-axis range: 6,000 to 12,000, with tick values at 6,000; 7,000; 8,000; 9,000; 10,000; 11,000; 12,000.\n   No legend entries or series names visible.\n3. Numbers/labels printed in the figure: Years 1 through 8 on the x-axis; enrollment values from 6,000 to 12,000 on the y-axis in increments of 1,000.\n4. Key values and trends:\n   - Year 1 enrollment is approximately 8,600.\n   - Enrollment increases gradually from year 1 to year 4, reaching a peak near 9,900 at year 4.\n   - After year 4, enrollment declines steadily through year 8.\n   - Year 8 enrollment is approximately 7,700.\n   - Overall trend: enrollment rises from year 1 to 4, then decreases from year 4 to 8.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1513,
+  "completion_tokens": 274,
+  "cost_usd": 0.0010436000000000002,
+  "latency_s": 3.3
+ },
+ "p449_fig0": {
+  "description": "1. Type: Line chart.\n2. Title: \"Normal Distribution for Blood Pressure\". X-axis label: \"Blood Pressure\" (units not specified). X-axis range: 60 to 180, with tick values at 60, 80, 100, 120, 140, 160, 180. Y-axis label: \"Probability Density\". Y-axis range: 0.0000 to 0.0200, with tick values at 0.0000, 0.0025, 0.0050, 0.0075, 0.0100, 0.0125, 0.0150, 0.0175, 0.0200. No legend entries or series names.\n3. Numbers or labels printed in the figure: Title and axis labels as above; tick values on x-axis and y-axis as above.\n4. The line shows a bell-shaped curve typical of a normal distribution, peaking at approximately blood pressure 120 with a maximum probability density of about 0.0200. The curve is symmetric, decreasing smoothly on both sides from the peak, approaching near zero probability density at blood pressure values near 60 and 180.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1527,
+  "completion_tokens": 249,
+  "cost_usd": 0.0010092,
+  "latency_s": 3.2
+ },
+ "p450_fig0": {
+  "description": "1. Type: Heatmap (geographic map showing temperature differences).\n2. Title: \"January 2024\" (centered above the map).\n   Axis labels: None (map of the United States with state boundaries faintly visible).\n   Legend: Horizontal color bar below the map labeled \"Difference from Average Temperature (°F)\".\n   Legend color scale ranges from dark blue on the left to dark red on the right.\n   Legend numeric values: -11 (dark blue), 0 (white), 11 (dark red).\n3. Numbers/labels in the figure:\n   - On the legend: -11, 0, 11.\n   - Below the legend: \"January 2024 Compared to 1991–2020\".\n4. Key values and trends:\n   - The map shows temperature differences from the average for January 2024 compared to the 1991–2020 baseline.\n   - Large central and southern parts of the U.S. are shaded in blue tones, indicating temperatures below average, with some areas showing differences approaching -11°F.\n   - Northern Midwest and Northeast regions are shaded in red tones, indicating temperatures above average, with some areas approaching +11°F.\n   - The West Coast and parts of the Southwest show mixed colors, mostly light blue or near zero difference.\n   - The color gradient smoothly transitions from blue (colder than average) through white (near average) to red (warmer than average).",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1148,
+  "completion_tokens": 296,
+  "cost_usd": 0.0009328000000000001,
+  "latency_s": 4.0
+ },
+ "p451_fig0": {
+  "description": "1. Type: Heatmap.\n\n2. Title: \"Harvest of Local Farmers (in Tons/Year)\".\n\n   X-axis labels (local farmers, rotated diagonally): Farmer Joe, Upland Bros., Smith Gardening, Agrifun, Organiculture, BioGoods Ltd., Cornylee Corp.\n\n   Y-axis labels (types of crops): Cucumber, Tomato, Lettuce, Asparagus, Potato, Wheat, Barley.\n\n   No explicit axis ranges or tick values beyond the categorical labels.\n\n   No legend entries or series names; color intensity represents harvest values in tons per year.\n\n3. Numbers printed inside each cell (harvest values in tons/year):\n\n   - Cucumber: 0.8, 2.4, 2.5, 3.9, 0.0, 4.0, 0.0\n\n   - Tomato: 2.4, 0.0, 4.0, 1.0, 2.7, 0.0, 0.0\n\n   - Lettuce: 1.1, 2.4, 0.8, 4.3, 1.9, 4.4, 0.0\n\n   - Asparagus: 0.6, 0.0, 0.3, 0.0, 3.1, 0.0, 0.0\n\n   - Potato: 0.7, 1.7, 0.6, 2.6, 2.2, 6.2, 0.0\n\n   - Wheat: 1.3, 1.2, 0.0, 0.0, 0.0, 3.2, 5.1\n\n   - Barley: 0.1, 2.0, 0.0, 1.4, 0.0, 1.9, 6.3\n\n4. Key values and trends:\n\n   - Highest harvest values are 6.3 tons/year for Barley at Cornylee Corp., and 6.2 tons/year for Potato at BioGoods Ltd.\n\n   - Other relatively high values include 5.1 tons/year Wheat at Cornylee Corp., 4.4 tons/year Lettuce at BioGoods Ltd., 4.3 tons/year Lettuce at Agrifun, and 4.0 tons/year Tomato at Smith Gardening.\n\n   - Many zero values indicate no harvest for certain crop-farmer combinations.\n\n   - Color intensity varies from dark (low or zero) to bright yellow (highest values), with intermediate values in shades of blue and green.\n\n   - The heatmap cells are uniform in size, arranged in a 7 (crops) by 7 (farmers) grid.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1366,
+  "completion_tokens": 583,
+  "cost_usd": 0.0014792,
+  "latency_s": 6.2
+ },
+ "p453_fig0": {
+  "description": "1. Type: Heatmap.\n2. Title: \"Heatmap of Number of Passengers\".\n   X-axis label: \"Month\".\n   X-axis tick values: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec.\n   Y-axis label: \"Year\".\n   Y-axis tick values: 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960.\n   Legend: Color bar on the right side with a gradient from blue to red.\n3. Numbers or labels printed in the figure: Years on the y-axis from 1949 to 1960; months on the x-axis from Jan to Dec.\n4. Key values and trends:\n   - The color gradient ranges from blue (lower values) to red (higher values).\n   - The number of passengers increases from 1949 to 1960, indicated by the color shifting from blue to red as years progress.\n   - The highest values (deep red) appear in July and August of 1960.\n   - Summer months (July and August) consistently show higher passenger numbers across all years.\n   - Winter months (January, February, November, December) show lower passenger numbers, indicated by blue and light blue colors.\n   - The heatmap shows a clear seasonal pattern with peaks in mid-year and troughs at the beginning and end of each year.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1479,
+  "completion_tokens": 315,
+  "cost_usd": 0.0010956,
+  "latency_s": 4.0
+ },
+ "p457_fig0": {
+  "description": "1. Type: Scatterplot.\n2. Title: \"Revenue versus Advertising for a Company\".\n   X-axis label: \"Advertising $000\".\n   Y-axis label: \"Revenue $000\".\n   X-axis range: approximately 45 to 155, with tick values at 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150.\n   Y-axis range: approximately 11,500 to 19,500, with tick values at 12,000, 13,000, 14,000, 15,000, 16,000, 17,000, 18,000, 19,000.\n3. Numbers or labels printed in the figure: See axis tick values as above.\n4. Key values and trends: \n   - Data points show a positive trend, with revenue increasing as advertising spending increases.\n   - Lowest point approximately at Advertising 50, Revenue 12,200.\n   - Highest point approximately at Advertising 155, Revenue 19,200.\n   - Points are scattered but generally follow an upward linear trend.\n   - No legend or color scale is visible in this figure.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1514,
+  "completion_tokens": 248,
+  "cost_usd": 0.0010024,
+  "latency_s": 3.3
+ },
+ "p459_fig0": {
+  "description": "1. Type: Scatterplot.\n2. Title: \"Revenue versus Advertising for a Company\".\n   X-axis label: \"Advertising $000\".\n   X-axis range: approximately 50 to 155.\n   X-axis tick values: 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150.\n   Y-axis label: \"Revenue $000\".\n   Y-axis range: approximately 12,000 to 19,500.\n   Y-axis tick values: 12,000, 13,000, 14,000, 15,000, 16,000, 17,000, 18,000, 19,000.\n   Legend: Color bar on the right side with a gradient from blue to red.\n   Color bar tick values: 12,000 (blue), 13,000, 14,000, 15,000, 16,000, 17,000, 18,000, 19,000 (red).\n3. Numbers or labels printed in the figure: See axis tick values and color bar values above.\n4. Key values and trends:\n   - Points range from about 50 to 150 on the advertising axis and from about 12,000 to 19,000 on the revenue axis.\n   - The color of points transitions from blue at lower revenue values (~12,000) to red at higher revenue values (~19,000).\n   - The scatterplot shows a positive trend: as advertising spending increases, revenue tends to increase.\n   - The highest revenue point is near 150 on advertising and just above 19,000 in revenue, colored dark red.\n   - The lowest revenue point is near 50 on advertising and about 12,000 in revenue, colored dark blue.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1514,
+  "completion_tokens": 378,
+  "cost_usd": 0.0012104000000000001,
+  "latency_s": 4.4
+ },
+ "p460_fig0": {
+  "description": "1. Type: Scatterplot.\n\n2. Title: \"Home Price versus Square Footage (Color = Miles from Center City)\".\n\n   X-axis label: \"Square Footage\", with tick values approximately 1,250; 1,500; 1,750; 2,000; 2,250; 2,500; 2,750; 3,000.\n\n   Y-axis label: \"Home Price $000\", with tick values approximately 250; 300; 350; 400; 450; 500; 550.\n\n   Color bar on the right side representing \"Miles from Center City\" with a gradient from black (lowest value near 0.1) through red, orange, yellow to light yellow (highest value near 4.5).\n\n3. Numbers and labels visible in the figure:\n\n   - X-axis tick labels: 1,250; 1,500; 1,750; 2,000; 2,250; 2,500; 2,750; 3,000.\n\n   - Y-axis tick labels: 250; 300; 350; 400; 450; 500; 550.\n\n   - Color bar numeric labels: approximately 0.1 at bottom, 1, 2, 3, 4, and 4.5 at top.\n\n4. Data points:\n\n   - There are 10 data points plotted.\n\n   - Square Footage ranges from about 1,200 to 3,000.\n\n   - Home Price ranges from about 250,000 to 520,000.\n\n   - Points with larger square footage generally have higher home prices, showing an upward trend.\n\n   - Color indicates distance from center city: points closer to center city (black/dark colors) are scattered mostly in the mid-range of square footage and price; points farther away (yellow colors) appear at both lower and higher square footage and price.\n\n   - The highest home price (~520,000) corresponds to the largest square footage (~3,000) and a yellow color indicating about 4.5 miles from center city.\n\n   - The lowest home price (~250,000) corresponds to the smallest square footage (~1,200) and an orange color indicating about 3 miles from center city.\n\n   - The color gradient shows a range of distances from about 0.1 miles (black) to 4.5 miles (yellow).",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1522,
+  "completion_tokens": 503,
+  "cost_usd": 0.0014136,
+  "latency_s": 5.9
+ },
+ "p463_fig0": {
+  "description": "1. Type: Heatmap  \n2. Title: \"Correlation Heatmap for Variables in Car Crashes Dataset\"  \n   Axis labels:  \n   - X-axis: total, speeding, alcohol, not_distracted, no_previous, ins_premium, ins_losses  \n   - Y-axis: total, speeding, alcohol, not_distracted, no_previous, ins_premium, ins_losses  \n   Color legend on the right side ranges from 0.0 to 1.0, with darker red indicating higher correlation values.  \n3. Numbers/labels in the figure:  \n   - Diagonal values (correlation of each variable with itself): all 1.00  \n   - Off-diagonal correlation values:  \n     total-speeding: 0.61  \n     total-alcohol: 0.85  \n     total-not_distracted: 0.83  \n     total-no_previous: 0.96  \n     total-ins_premium: -0.20  \n     total-ins_losses: -0.04  \n     speeding-alcohol: 0.67  \n     speeding-not_distracted: 0.59  \n     speeding-no_previous: 0.57  \n     speeding-ins_premium: -0.08  \n     speeding-ins_losses: -0.07  \n     alcohol-not_distracted: 0.73  \n     alcohol-no_previous: 0.78  \n     alcohol-ins_premium: -0.17  \n     alcohol-ins_losses: -0.11  \n     not_distracted-no_previous: 0.75  \n     not_distracted-ins_premium: -0.17  \n     not_distracted-ins_losses: -0.08  \n     no_previous-ins_premium: -0.16  \n     no_previous-ins_losses: -0.01  \n     ins_premium-ins_losses: 0.62  \n4. Key observations:  \n   - The diagonal shows perfect correlation (1.00) for each variable with itself, indicated by dark red squares.  \n   - Variables total, alcohol, not_distracted, and no_previous show strong positive correlations with each other (values mostly above 0.7).  \n   - Variables ins_premium and ins_losses are positively correlated with each other (0.62) but negatively correlated with most other variables (values around -0.1 to -0.2).  \n   - Speeding has moderate positive correlations with total (0.61), alcohol (0.67), not_distracted (0.59), and no_previous (0.57).  \n   - The heatmap uses a red color scale where darker red indicates higher positive correlation coefficients up to 1.0.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1566,
+  "completion_tokens": 550,
+  "cost_usd": 0.0015064000000000002,
+  "latency_s": 6.2
+ },
+ "p466_fig0": {
+  "description": "1. Type: 3D scatterplot.\n\n2. Title: \"3D Scatterplot of Iris Dataset by Species\".\n   Axis labels with units:\n   - X-axis: \"Sepal Length (cm)\", range approximately 4.5 to 8.0, tick values at 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0.\n   - Y-axis: \"Sepal Width (cm)\", range approximately 2.0 to 4.5, tick values at 2.0, 2.5, 3.0, 3.5, 4.0, 4.5.\n   - Z-axis: \"Petal Length (cm)\", range approximately 1 to 7, tick values at 1, 2, 3, 4, 5, 6, 7.\n   Legend entries / series names and colors:\n   - \"setosa\" in purple.\n   - \"versicolor\" in teal.\n   - \"virginica\" in yellow.\n   There is also a vertical color bar labeled \"Species\" with numeric values 0 (purple), 1 (teal), and 2 (yellow).\n\n3. Numbers or labels printed in the figure:\n   - Axis tick values as above.\n   - Legend species names: setosa, versicolor, virginica.\n   - Color bar numeric values: 0, 1, 2.\n\n4. Key values and trends:\n   - Setosa points (purple) cluster at lower Sepal Length values around 4.5 to 6.0 cm, Sepal Width around 2.0 to 4.0 cm, and Petal Length around 1 to 2 cm.\n   - Versicolor points (teal) are mostly in the middle ranges: Sepal Length approximately 5.5 to 7.0 cm, Sepal Width about 2.0 to 3.5 cm, Petal Length about 3 to 5 cm.\n   - Virginica points (yellow) occupy higher ranges: Sepal Length roughly 6.0 to 7.8 cm, Sepal Width about 2.5 to 4.0 cm, Petal Length about 4.5 to 7 cm.\n   - The three species form somewhat distinct clusters in 3D space, with some overlap between versicolor and virginica.\n   - Petal Length increases from setosa to virginica.\n   - Sepal Length and Sepal Width show moderate variation across species.\n   - Overall, the plot shows a positive correlation between Sepal Length and Petal Length across species.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1527,
+  "completion_tokens": 564,
+  "cost_usd": 0.0015132000000000004,
+  "latency_s": 7.1
+ },
+ "p241_tab0": {
+  "description": "```markdown\n| **Term n** | **S&P Index Term x_n** | **n^th Term of Δ(x_n)**           |\n|------------|------------------------|----------------------------------|\n| 1          | 1848.36                | N/A                              |\n| 2          | 2058.9                 | 2058.9 − 1848.36 = 210.54        |\n| 3          | 2043.94                | 2043.94 − 2058.9 = −14.96         |\n| 4          | 2238.83                | 2238.83 − 2043.94 = 194.89        |\n| 5          | 2673.61                | 2673.61 − 2238.84 = 434.78        |\n| 6          | 2506.85                | 2506.85 − 2673.61 = −166.76       |\n| 7          | 3230.78                | 3230.78 − 2506.85 = 723.93        |\n| 8          | 3756.07                | 3756.07 − 3230.78 = 525.29        |\n| 9          | 4766.18                | 4766.18 − 3756.07 = 1010.11       |\n```",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "table-v1",
+  "prompt_tokens": 779,
+  "completion_tokens": 297,
+  "cost_usd": 0.0007868,
+  "latency_s": 14.7
+ },
+ "p242_tab0": {
+  "description": "```markdown\n| **S&P Index Term x_n** | **n^th Term of Δ(x_n)**               |\n|-----------------------|-------------------------------------|\n| 3839.5                | 3839.5 - 4766.18 = -926.68          |\n| 4769.83               | 4769.83 - 3839.5 = 930.33           |\n```",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "table-v1",
+  "prompt_tokens": 334,
+  "completion_tokens": 85,
+  "cost_usd": 0.00026960000000000005,
+  "latency_s": 2.5
+ },
+ "p256_tab0": {
+  "description": "```markdown\n| **Year** | **S&P Index at Year-End** | **Exponentially Weighted α = 1/2**       | **Exponentially Weighted α = 0.7**       |\n|----------|---------------------------|------------------------------------------|------------------------------------------|\n| 2013     | 1848.36                   | ≈ 0                                     | ≈ 0                                     |\n| 2014     | 2058.9                    | ≈ 0                                     | ≈ 0                                     |\n| 2015     | 2043.94                   | (1/512) * 2043.94 = 3.99                 | ≈ 0                                     |\n| 2016     | 2238.83                   | (1/256) * 2238.83 = 8.75                 | ≈ 0                                     |\n| 2017     | 2673.61                   | (1/128) * 2673.61 = 20.89                | ≈ 0                                     |\n| 2018     | 2506.85                   | (1/64) * 2506.85 = 39.17                 | 0.00567 * 2506.9 = 4.26                  |\n| 2019     | 3230.78                   | (1/32) * 3230.78 = 100.96                | 0.00567 * 3230.78 = 18.32                 |\n| 2020     | 3756.07                   | (1/16) * 3756.07 = 234.75                | 0.0189 * 3756.07 = 70.99                  |\n| 2021     | 4766.18                   | (1/8) * 4766.18 = 595.77                  | 0.063 * 4766.18 = 300.27                   |\n| 2022     | 3839.5                    | (1/4) * 3839.5 = 959.88                   | 0.21 * 3839.5 = 806.30                     |\n| 2023     | 4769.83                   | (1/2) * 4769.83 = 2384.92                 | 0.7 * 4769.83 = 3338.88                    |\n| 2024     |                           | SUM = 4349                               | SUM = 4541                               |\n```",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "table-v1",
+  "prompt_tokens": 1590,
+  "completion_tokens": 532,
+  "cost_usd": 0.0014872000000000002,
+  "latency_s": 6.0
+ },
+ "p257_tab0": {
+  "description": "```markdown\n| Year | S&P Index at Year-End       | EMA Estimate                                                                                   |\n|------|----------------------------|-----------------------------------------------------------------------------------------------|\n| 2013 | x_1 = 1848.36              | x_hat_1 = x_1 = 1848.36                                                                       |\n| 2014 | x_2 = 2058.9               | x_hat_2 = 0.75*x_1 + 0.25*x_hat_1 = 0.75(1848.36) + 0.25(1848.36) = 1848.36                   |\n| 2015 | x_3 = 2043.94              | x_hat_3 = 0.75*x_2 + 0.25*x_hat_2 = 0.75(2058.9) + 0.25(1848.36) = 2006.27                    |\n| 2016 | x_4 = 2238.83              | x_hat_4 = 0.75*x_3 + 0.25*x_hat_3 = 0.75(2043.94) + 0.25(2006.27) = 2034.52                   |\n| 2017 | x_5 = 2673.61              | x_hat_5 = 0.75*x_4 + 0.25*x_hat_4 = 0.75(2238.83) + 0.25(2034.52) = 2187.75                   |\n| 2018 | x_6 = 2506.85              | x_hat_6 = 0.75*x_5 + 0.25*x_hat_5 = 0.75(2673.61) + 0.25(2187.75) = 2552.15                   |\n| 2019 | x_7 = 3230.78              | x_hat_7 = 0.75*x_6 + 0.25*x_hat_6 = 0.75(2506.85) + 0.25(2552.15) = 2518.17                   |\n| 2020 | x_8 = 3756.07              | x_hat_8 = 0.75*x_7 + 0.25*x_hat_7 = 0.75(3230.78) + 0.25(2518.17) = 3052.63                   |\n| 2021 | x_9 = 4766.18              | x_hat_9 = 0.75*x_8 + 0.25*x_hat_8 = 0.75(3756.07) + 0.25(3052.63) = 3580.21                   |\n| 2022 | x_10 = 3839.5              | x_hat_10 = 0.75*x_9 + 0.25*x_hat_9 = 0.75(4766.18) + 0.25(3580.21) = 4469.69                 |\n| 2023 | x_11 = 4769.83             | x_hat_11 = 0.75*x_10 + 0.25*x_hat_10 = 0.75(3839.5) + 0.25(4469.69) = 3997.05                |\n| 2024 | N/A                        | x_hat_12 = 0.75*x_11 + 0.25*x_hat_11 = 0.75(4769.83) + 0.25(3997.05) = 4576.63               |\n```",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "table-v1",
+  "prompt_tokens": 1442,
+  "completion_tokens": 791,
+  "cost_usd": 0.0018424000000000001,
+  "latency_s": 8.0
+ },
+ "p280_tab0": {
+  "description": "```markdown\n| Prediction               | Actual Value | Difference (Error) |\n|--------------------------|--------------|--------------------|\n| 1.7 + 7.1 (2.3) = 38.03  | 30.9         | -7.13              |\n| 1.7 + 7.1 (9.5) = 89.15  | 94.4         | 5.25               |\n```",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "table-v1",
+  "prompt_tokens": 309,
+  "completion_tokens": 93,
+  "cost_usd": 0.0002724,
+  "latency_s": 1.9
+ },
+ "p430_fig0": {
+  "description": "1. Type: Histogram.\n\n2. Title: None visible on the figure itself (caption outside the figure states \"Figure 9.2 Histogram Displaying the Distribution of Heights (in inches to the nearest half-inch) of 100 Male Semiprofessional Soccer Players\").\n\n   X-axis label: Heights\n\n   X-axis units: inches (to the nearest half-inch, implied by caption)\n\n   X-axis tick values: 59.95, 61.95, 63.95, 65.95, 67.95, 69.95, 71.95, 73.95, 75.95\n\n   Y-axis label: Relative Frequency\n\n   Y-axis units: none (relative frequency is unitless)\n\n   Y-axis range: 0 to 0.4\n\n   Y-axis tick values: 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4\n\n   Legend: None\n\n3. Numbers or labels printed in the figure:\n\n   On top of each bar, the relative frequency values are printed:\n\n   - 59.95-61.95: 0.05\n\n   - 61.95-63.95: 0.03\n\n   - 63.95-65.95: 0.15\n\n   - 65.95-67.95: 0.4\n\n   - 67.95-69.95: 0.17\n\n   - 69.95-71.95: 0.12\n\n   - 71.95-73.95: 0.07\n\n   - 73.95-75.95: 0.01\n\n4. Key values and trends:\n\n   - The histogram bins are continuous intervals between the x-axis tick values, each bin spanning approximately 2 inches (e.g., 59.95 to 61.95).\n\n   - The highest relative frequency is 0.4 in the bin 65.95-67.95.\n\n   - The lowest relative frequency is 0.01 in the bin 73.95-75.95.\n\n   - The distribution is roughly unimodal and centered around the 65.95-67.95 bin.\n\n   - Relative frequency rises from 0.05 at the lowest bin to a peak at 0.4, then gradually decreases toward the higher bins.\n\n   - Bars are adjacent with no gaps, consistent with a histogram.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": 2,
+  "prompt_tokens": 887,
+  "completion_tokens": 526,
+  "cost_usd": 0.0011964,
+  "latency_s": 5.0
+ },
+ "p431_fig0": {
+  "description": "1. Type: Histogram\n2. Title: Bell-Shaped Histogram\n   Axis labels: None visible\n   Axis ranges and tick values:\n     - Horizontal axis: ticks at 4, 5, 6, 7, 8, 9, 10, 11\n     - Vertical axis: no numbers visible, grid lines present\n   Legend entries / series names and colors: None\n3. Numbers or labels printed in the figure: 4, 5, 6, 7, 8, 9, 10, 11 on horizontal axis\n4. Bars with bin intervals and approximate heights:\n   - 3.5 to 4.5: approximately 1 unit high\n   - 4.5 to 5.5: approximately 1 unit high\n   - 5.5 to 6.5: approximately 3 units high\n   - 6.5 to 7.5: approximately 6 units high (highest bar)\n   - 7.5 to 8.5: approximately 3 units high\n   - 8.5 to 9.5: approximately 1 unit high\n   - 9.5 to 10.5: approximately 1 unit high\nThe histogram is symmetric and bell-shaped, centered around the bin 6.5 to 7.5.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": 2,
+  "prompt_tokens": 787,
+  "completion_tokens": 282,
+  "cost_usd": 0.000766,
+  "latency_s": 2.8
+ },
+ "p431_fig1": {
+  "description": "1. Type: Histogram.\n2. Title: Not visible in the figure itself, but caption indicates \"Skewed Left Histogram\".\n   Axis labels: Not visible.\n   Axis ranges and tick values:\n   - X-axis ticks approximately at 3.5, 4.5, 5.5, 6.5, 7.5, 8.5.\n   - Y-axis ticks not labeled with numbers, but there are horizontal grid lines.\n3. Numbers or labels printed in the figure: None visible.\n4. Bars in the histogram with approximate bin intervals and heights:\n   - Bin 3.5 to 4.5: height approximately 1 unit.\n   - Bin 4.5 to 5.5: height approximately 1 unit.\n   - Bin 5.5 to 6.5: height approximately 3 units.\n   - Bin 6.5 to 7.5: height approximately 4 units (highest bar).\n   - Bin 7.5 to 8.5: height approximately 1 unit.\n   \nThe histogram shows a distribution with a longer tail on the left side (skewed left), with the highest frequency in the 6.5 to 7.5 bin.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": 2,
+  "prompt_tokens": 691,
+  "completion_tokens": 256,
+  "cost_usd": 0.000686,
+  "latency_s": 3.0
+ },
+ "p431_fig2": {
+  "description": "1. Type: Histogram.\n2. Title: Skewed Right Histogram. No axis labels or units visible. The x-axis ranges approximately from 5.5 to 10.5 with tick values at 6, 7, 8, 9, and 10. The y-axis has no visible labels or units, with horizontal grid lines but no tick values shown.\n3. Numbers or labels printed in the figure: x-axis tick values 6, 7, 8, 9, 10. No other numbers or labels visible.\n4. Bars in the histogram:\n- Bin interval approximately 5.5 to 6.5: bar height about 1 unit.\n- Bin interval approximately 6.5 to 7.5: bar height about 3 units (highest bar).\n- Bin interval approximately 7.5 to 8.5: bar height about 2 units.\n- Bin interval approximately 8.5 to 9.5: bar height about 0.5 units.\n- Bin interval approximately 9.5 to 10.5: bar height about 0.5 units.\nThe histogram shows a distribution with the highest frequency in the 6.5 to 7.5 bin, with frequencies decreasing as values increase, indicating a right skew.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": 2,
+  "prompt_tokens": 691,
+  "completion_tokens": 267,
+  "cost_usd": 0.0007036000000000002,
+  "latency_s": 3.0
+ },
+ "p433_fig0": {
+  "description": "1. Type: Histogram\n2. Title: Histogram of Sales\n   X-axis label: Sales Amounts ($)\n   X-axis range: approximately 2000 to 7500\n   X-axis tick values: 2000, 3000, 4000, 5000, 6000, 7000, 7500\n   Y-axis label: Frequency\n   Y-axis range: 0 to 10\n   Y-axis tick values: 0, 2, 4, 6, 8, 10\n   Bar color: Blue with black edges\n3. Numbers/labels in figure: Title and axis labels as above; tick values as above.\n4. Bars (bin intervals and frequencies):\n   - Approximately 2000 to 3200: frequency 4\n   - Approximately 3200 to 4400: frequency 6\n   - Approximately 4400 to 5600: frequency 10 (highest bar)\n   - Approximately 5600 to 6800: frequency 6\n   - Approximately 6800 to 7500: frequency 4\nThe histogram is bell-shaped and symmetric, with the tallest bar in the center and frequencies decreasing symmetrically to the left and right.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": 2,
+  "prompt_tokens": 1529,
+  "completion_tokens": 257,
+  "cost_usd": 0.0010228000000000001,
+  "latency_s": 3.3
+ },
+ "p436_fig0": {
+  "description": "1. Type: Pareto chart (a combination of a bar chart and a line chart).\n2. Title: \"Pareto Chart of Smartphone Manufacturing Defects\"\n   Left y-axis label: \"Frequency\"\n   Left y-axis range: 0 to 1600, with tick values at 0, 200, 400, 600, 800, 1000, 1200, 1400, 1600\n   Right y-axis label: \"Cumulative Percentage (%)\"\n   Right y-axis range: 0 to 100, with tick values at 0, 20, 40, 60, 80, 100\n   x-axis categories (rotated diagonally): \"Scratches,\" \"Does Not Charge,\" \"Cracked Screen,\" \"Power Button,\" \"Volume Controls\"\n3. Numbers/labels printed in the figure:\n   - Bar heights (frequency values approximately):\n     Scratches: 1550\n     Does Not Charge: 1410\n     Cracked Screen: 1350\n     Power Button: 750\n     Volume Controls: 600\n   - Cumulative percentage points on the line chart (approximate):\n     Scratches: ~28%\n     Does Not Charge: ~55%\n     Cracked Screen: ~75%\n     Power Button: ~90%\n     Volume Controls: 100%\n4. Key values and trends:\n   - The highest frequency defect is \"Scratches\" (~1550).\n   - The next highest are \"Does Not Charge\" (~1410) and \"Cracked Screen\" (~1350).\n   - \"Power Button\" and \"Volume Controls\" have noticeably lower frequencies (~750 and ~600 respectively).\n   - The cumulative percentage line rises steeply at first, reaching about 75% after the first three defect categories, then gradually approaches 100% after all five categories.\n   - The chart shows that the first three defect categories contribute the majority of defects.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": 2,
+  "prompt_tokens": 1702,
+  "completion_tokens": 399,
+  "cost_usd": 0.0013192000000000002,
+  "latency_s": 4.8
+ },
+ "p444_fig0": {
+  "description": "1. Type: Bar chart (histogram style)  \n2. Title: \"Binomial Distribution (n = 20, p = 0.1)\"  \n   X-axis label: \"Number of Successes\"  \n   X-axis range: 0 to 20, with tick values at 0, 5, 10, 15, 20  \n   Y-axis label: \"Probability\"  \n   Y-axis range: 0.00 to approximately 0.30, with tick values at 0.00, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30  \n   Legend: None visible  \n3. Numbers/labels printed in the figure:  \n   X-axis ticks: 0, 5, 10, 15, 20  \n   Y-axis ticks: 0.00, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30  \n4. Bars (Number of Successes: Probability):  \n   0: approximately 0.12  \n   1: approximately 0.27  \n   2: approximately 0.29 (highest bar)  \n   3: approximately 0.19  \n   4: approximately 0.09  \n   5: approximately 0.03  \n   6: approximately 0.01  \n   7: approximately 0.002  \n   8 to 20: 0.00 (no visible bars)  \nTrends: The probability peaks at 2 successes and then decreases sharply as the number of successes increases beyond 2. The distribution is right-skewed with most probability mass concentrated between 0 and 5 successes.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": 2,
+  "prompt_tokens": 1414,
+  "completion_tokens": 374,
+  "cost_usd": 0.001164,
+  "latency_s": 3.8
+ },
+ "p444_fig1": {
+  "description": "1. Type: Bar chart (histogram style).\n2. Title: \"Binomial Distribution (n = 20, p = 0.5)\".\n   X-axis label: \"Number of Successes\".\n   X-axis range: 0 to 20, with tick values at every integer from 0 to 20.\n   Y-axis label: \"Probability\".\n   Y-axis range: 0.000 to 0.175, with tick values approximately at 0.000, 0.025, 0.050, 0.075, 0.100, 0.125, 0.150, 0.175.\n   No legend entries or series names visible.\n3. Numbers/labels printed in the figure: \n   - X-axis: integers 0 through 20.\n   - Y-axis: 0.000, 0.025, 0.050, 0.075, 0.100, 0.125, 0.150, 0.175.\n4. Bars (Number of Successes: Probability approximately):\n   0: ~0.000\n   1: ~0.000\n   2: ~0.001\n   3: ~0.004\n   4: ~0.013\n   5: ~0.037\n   6: ~0.074\n   7: ~0.120\n   8: ~0.160\n   9: ~0.175\n   10: ~0.176 (highest point)\n   11: ~0.160\n   12: ~0.120\n   13: ~0.075\n   14: ~0.037\n   15: ~0.013\n   16: ~0.004\n   17: ~0.001\n   18: ~0.000\n   19: ~0.000\n   20: ~0.000\n\nThe distribution is symmetric and unimodal, peaking at 10 successes with the highest probability around 0.176. The probabilities decrease symmetrically as the number of successes moves away from 10 in either direction.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": 2,
+  "prompt_tokens": 1453,
+  "completion_tokens": 461,
+  "cost_usd": 0.0013188000000000002,
+  "latency_s": 4.5
+ },
+ "p445_fig0": {
+  "description": "1. Type: Bar chart (histogram style).\n2. Title: \"Binomial Distribution (n = 20, p = 0.85)\". \n   X-axis label: \"Number of Successes\".\n   Y-axis label: \"Probability\".\n   X-axis range: 0 to 20, with tick values at 0, 5, 10, 15, 20.\n   Y-axis range: 0.00 to 0.25, with tick values at 0.00, 0.05, 0.10, 0.15, 0.20, 0.25.\n3. Numbers or labels printed in the figure: The x-axis numbers 0, 5, 10, 15, 20; y-axis numbers 0.00, 0.05, 0.10, 0.15, 0.20, 0.25.\n4. Bars and approximate heights:\n   - 10: approximately 0.001\n   - 11: approximately 0.005\n   - 12: approximately 0.015\n   - 13: approximately 0.045\n   - 14: approximately 0.105\n   - 15: approximately 0.18\n   - 16: approximately 0.24 (highest bar)\n   - 17: approximately 0.23\n   - 18: approximately 0.14\n   - 19: approximately 0.04\n   - 20: approximately 0.00 (very small)\n   \nThe distribution is right-skewed with the highest probabilities clustered around 16 and 17 successes. The probability rises sharply from 10 to 16 successes, peaks at 16, then declines gradually towards 20.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": 2,
+  "prompt_tokens": 1519,
+  "completion_tokens": 373,
+  "cost_usd": 0.0012044,
+  "latency_s": 4.0
+ },
+ "p447_fig0": {
+  "description": "1. Type: Bar chart (histogram style).\n2. Title: \"Poisson Distribution (μ = 3)\". \n   X-axis label: \"Number of Occurrences\".\n   Y-axis label: \"Probability\".\n   X-axis range: 0 to 11 (ticks at every integer from 0 to 11).\n   Y-axis range: 0.00 to 0.25 (ticks at 0.00, 0.05, 0.10, 0.15, 0.20, 0.25).\n   No legend entries or series names.\n3. Numbers/labels printed in the figure: \n   Title: \"Poisson Distribution (μ = 3)\".\n   X-axis ticks: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11.\n   Y-axis ticks: 0.00, 0.05, 0.10, 0.15, 0.20, 0.25.\n4. Bars (Number of Occurrences: Probability):\n   0: approximately 0.05\n   1: approximately 0.15\n   2: approximately 0.22\n   3: approximately 0.22\n   4: approximately 0.17\n   5: approximately 0.10\n   6: approximately 0.05\n   7: approximately 0.02\n   8: approximately 0.01\n   9: approximately 0.005\n   10: approximately 0.002\n   11: approximately 0.001 or near zero\n\nThe highest bars are at 2 and 3 occurrences with probabilities around 0.22. The probabilities decrease as the number of occurrences increases beyond 3. The trend shows a peak at 2-3 occurrences and then a steady decline.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": 2,
+  "prompt_tokens": 1510,
+  "completion_tokens": 407,
+  "cost_usd": 0.0012552000000000002,
+  "latency_s": 4.2
+ },
+ "p454_fig0": {
+  "description": "1. Type: Choropleth map.\n2. Title: Not visible on the figure itself, but caption states \"Figure 9.8 Choropleth Graph Showing Cases of COVID-19\".\n   Axis labels: None (map of world countries).\n   Legend entries/colors: Gradient color scale from light peach to dark red.\n   Legend values: \"No data\" indicated by gray diagonal stripes; then numeric values 0, 50, 100, 500, 1,000, 5,000, 10,000, 50,000 shown along the color gradient from light to dark.\n3. Numbers/labels on figure: Country borders outlined; no country names or numeric values printed on the map.\n4. Key values/trends:\n   - United States is colored dark red, indicating the highest range of COVID-19 cases (close to or above 50,000).\n   - Russia and China are colored medium orange, indicating cases in the range of approximately 1,000 to 10,000.\n   - Most other countries are colored light peach, indicating fewer than 100 cases.\n   - Some countries in Europe and Africa are shaded gray with diagonal stripes, indicating no data available.\n   - The color gradient clearly shows higher case counts concentrated in the US, with moderate counts in parts of Asia, and low counts or no data elsewhere.",
+  "model": "gpt-4.1-mini",
+  "prompt_tokens": 1538,
+  "completion_tokens": 277,
+  "cost_usd": 0.0010584000000000001,
+  "latency_s": 4.0
+ }
+}
