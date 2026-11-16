@@ -53,6 +53,7 @@ formulas are drawn as images: write them in plain text (e.g. d = 2, q = 0, x_hat
 ARIMA(12, 2, 0)). Do not add, explain or compute anything."""
 # genuine transcriptions add only math words (hat, alpha, sum, epsilon, logit: 0-4 on this book); 11+ = invented text
 MATH_MAX_ADDED = 6
+AFTER_CHARS = 800  # text kept after each table/figure (metadata "after"; agent --neighbours)
 SPARSE = 0.15  # tables with more empty cells than this lost math cells in the PDF text layer -> transcribe image
 
 
@@ -155,6 +156,7 @@ def extract() -> None:
     cache_path = OUT / "figures.json"
     cache = json.loads(cache_path.read_text()) if cache_path.exists() else {}
     chunks, excluded, failures, per_type = [], [], [], {"text": 0, "table": 0, "figure": 0}
+    page_text, after = {}, []  # page -> math-fixed body block texts; (region chunk, texts below it on its page)
     for chapter, (first, last, end) in CHAPTERS.items():
         excluded += [{"page": p, "chapter": chapter, "reason": "end-of-chapter material (Key Terms onward)"}
                      for p in range(last + 1, end + 1)]
@@ -198,6 +200,7 @@ def extract() -> None:
                                             "caption": cap, "bbox": [round(x, 1) for x in t.bbox],
                                             "rows": t.row_count, "cols": t.col_count,
                                             "transcribed_by": transcribed}})
+                after.append((chunks[-1], pymupdf.Rect(t.bbox)))
                 per_type["table"] += 1
             for k, r in enumerate(figs):
                 key = f"p{pno}_fig{k}"
@@ -220,8 +223,12 @@ def extract() -> None:
                                "metadata": {"chapter": chapter, "sections": secs[pno], "type": "figure",
                                             "caption": cap, "bbox": [round(x, 1) for x in r],
                                             "crop": str(crop.relative_to(ROOT)), "generated_by": d["model"]}})
+                after.append((chunks[-1], r))
                 per_type["figure"] += 1
             body, fixed = fix_math(page, pno, body, cache, cache_path, failures)
+            page_text[pno] = [" ".join(b[4].split()) for b in body]
+            after = [(c, [" ".join(b[4].split()) for b in body if b[1] >= r.y1 - 1]) if isinstance(r, pymupdf.Rect)
+                     else (c, r) for c, r in after]
             tc = text_chunks(body, pno, chapter, secs[pno])
             for c in tc:
                 if any(f in c["text"] for f in fixed):
@@ -231,6 +238,14 @@ def extract() -> None:
             if not (body or tables or figs):
                 failures.append({"page": pno, "error": "no content extracted"})
         print(f"chapter {chapter}: done", flush=True)
+    # the paragraph after a table/figure often states its result, sometimes across the page break (p300 -> p301)
+    for c, below in after:
+        taken = []
+        for t in below + page_text.get(c["page"] + 1, []):
+            if len(" ".join(taken)) >= AFTER_CHARS:
+                break
+            taken.append(t)
+        c["metadata"]["after"] = " ".join(taken)
     ids = [c["id"] for c in chunks]
     assert len(ids) == len(set(ids)), "duplicate chunk id"
     (OUT / "chunks.json").write_text(json.dumps(chunks, ensure_ascii=False, indent=1) + "\n")

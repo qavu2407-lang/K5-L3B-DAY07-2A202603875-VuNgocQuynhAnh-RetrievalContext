@@ -1,0 +1,45 @@
+{
+ "config": "F5b",
+ "corpus": "advanced",
+ "split": "dev",
+ "model": "gpt-4.1-mini",
+ "temperature": 0.01,
+ "retriever": "hybrid",
+ "max_searches": 3,
+ "top_k": 3,
+ "budget_chars": 9600,
+ "distinct_queries": true,
+ "skip_seen": true,
+ "prompt": "v7",
+ "typed_search": true,
+ "calculator": true,
+ "verify": true,
+ "verify_model": "gpt-4.1-mini",
+ "append_citations": true,
+ "neighbours": true,
+ "read_figure": true,
+ "figure_model": "gpt-6.1-terra",
+ "figure_nudge": true,
+ "figure_reads": 10,
+ "questions": 18,
+ "repairs": 20,
+ "status": {
+  "answered": 17,
+  "abstain": 1
+ },
+ "final_tool": {
+  "answer": 17,
+  "abstain": 1
+ },
+ "searches_distribution": {
+  "1": 12,
+  "2": 4,
+  "3": 2
+ },
+ "model_calls": 100,
+ "llm_tokens": 226223,
+ "llm_cost_usd": 0.102952,
+ "embedding_cost_usd": 0.0,
+ "median_s_per_question": 7.98,
+ "total_s": 149.7
+}

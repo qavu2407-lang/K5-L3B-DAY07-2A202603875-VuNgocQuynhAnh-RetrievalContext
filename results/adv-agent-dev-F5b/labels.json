@@ -1,0 +1,97 @@
+{
+ "config": "F5b",
+ "split": "dev",
+ "passed": "17/18",
+ "labels": [
+  {
+   "query_id": "AD01",
+   "pass": true,
+   "reason": "2023 Summer, $3849 (p235 tab0)."
+  },
+  {
+   "query_id": "AD02",
+   "pass": true,
+   "reason": "2.6 hours (p283 tab0)."
+  },
+  {
+   "query_id": "AD03",
+   "pass": true,
+   "reason": "5.2 (p464 tab0)."
+  },
+  {
+   "query_id": "AD04",
+   "pass": true,
+   "reason": "All five Trendline options from read_figure on p234 fig1."
+  },
+  {
+   "query_id": "AD05",
+   "pass": true,
+   "reason": "Rock from read_figure on p317 fig0."
+  },
+  {
+   "query_id": "AD06",
+   "pass": true,
+   "reason": "BORDERLINE: darker = more cases, legend max 50,000 correct; extra sentence 'darkest red ... near or above 50,000' is a hedged restatement, not a new value. You verify."
+  },
+  {
+   "query_id": "AD07",
+   "pass": true,
+   "reason": "2022, negative, about -900 (true -927) from read_figure p242 fig0."
+  },
+  {
+   "query_id": "AD08",
+   "pass": true,
+   "reason": "0.17 from read_figure p430 fig0."
+  },
+  {
+   "query_id": "AD09",
+   "pass": true,
+   "reason": "BORDERLINE: 2 and 3, ~0.22 each correct; extra 'much lower for 7 or more' not in the reading ('not shown'), true by the chart. You verify."
+  },
+  {
+   "query_id": "AD10",
+   "pass": true,
+   "reason": "Recursive EMA 4576.63 highest vs 4541 / 4349; cites p256 tab0 (Table 5.5) and p257 tab0 (Table 5.6)."
+  },
+  {
+   "query_id": "AD11",
+   "pass": true,
+   "reason": "76% computed from p434 tab0 (4301/5635); book's ~75% also given."
+  },
+  {
+   "query_id": "AD12",
+   "pass": true,
+   "reason": "(3.5, 10.2) Blue -> Red; accuracy 2/3 (66.6%) -> 100% (p323, p325 tab0)."
+  },
+  {
+   "query_id": "AD13",
+   "pass": true,
+   "reason": "Low- vs high-quality photos, reason correct."
+  },
+  {
+   "query_id": "AD14",
+   "pass": true,
+   "reason": "ADF reason + p-value 7.852 x 10^-14 (p260-262)."
+  },
+  {
+   "query_id": "AD15",
+   "pass": true,
+   "reason": "Square-root rule, ~22 bins (p430 t1); extra sentence is in the cited chunk."
+  },
+  {
+   "query_id": "AD16",
+   "pass": true,
+   "reason": "BORDERLINE: answer (not abstain) saying the table has no 2012 value; 2013 = 1848.36 supported by p225 tab0. You verify."
+  },
+  {
+   "query_id": "AD17",
+   "pass": false,
+   "reason": "Trap: claims 0.77 for the 19-point example; read_figure said 'Not shown', verify still accepted."
+  },
+  {
+   "query_id": "AD18",
+   "pass": true,
+   "reason": "Abstained."
+  }
+ ]
+}

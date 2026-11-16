@@ -19,7 +19,8 @@
     246.5
    ],
    "crop": "data/advanced/crops/p223_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.1 Time series analysis involves the examination of data points collected at specific time intervals; it is crucial for identifying trends and patterns that inform predictions and strategic decisions. (credit: modification of work \"Bitcoin steigend\" by Tim Reckmann/Flickr, CC BY 2.0) Chapter Outline 5.1 Introduction to Time Series Analysis 5.2 Components of Time Series Analysis 5.3 Time Series Forecasting Methods 5.4 Forecast Evaluation Methods Introduction The future can be very unpredictable. Wouldn’t it be wonderful to know whether a given stock price will rise or fall in value over the next year, which baseball team will win the next World Series, or if it might rain on the particular day that you happen to be planning to go to the beach? A manufacturer may want to know how the demand for their products changes over time. Politicians would like to know how high their favorability with voters will be on election day. While we cannot see the future, there may be patterns that point to certain outcomes as being more likely than others. In this chapter we explore the concept of time series and develop the necessary tools to discover trends and repeating patterns hidden within time series data to forecast future values of the series and quantify the uncertainty of those predictions."
   }
  },
  {
@@ -155,7 +156,8 @@
    ],
    "rows": 12,
    "cols": 2,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 5.1 S&P Index Values from 2013 through 2023 (source: https://www.nasdaq.com/market-activity/ index/spx/historical) While the table is informative, it is not particularly easy to use to find trends or make predictions. A visualization would be better. Figure 5.2 displays the time series data using a time series chart (essentially a line chart). Notice that while the general trend is increasing, there are also dips in the years 2018 and 2022. Figure 5.2 Line Chart (or Time Series Chart) of the S&P 500 Index. The chart makes it easier to spot the general upward trend over the past decade. (data source: adapted from S&P 500 [SPX] Historical Data) The example shown in Figure 5.3 is a simple time series with only a single measure (S&P 500 index value) tracked over time. As long as we keep in mind that this data represents yearly values of the S&P 500 index starting in the year 2013, it is more efficient to consider the values alone as an ordered list."
   }
  },
  {
@@ -178,7 +180,8 @@
     572.4
    ],
    "crop": "data/advanced/crops/p225_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.2 Line Chart (or Time Series Chart) of the S&P 500 Index. The chart makes it easier to spot the general upward trend over the past decade. (data source: adapted from S&P 500 [SPX] Historical Data) The example shown in Figure 5.3 is a simple time series with only a single measure (S&P 500 index value) tracked over time. As long as we keep in mind that this data represents yearly values of the S&P 500 index starting in the year 2013, it is more efficient to consider the values alone as an ordered list. 1848.36, 2058.9, 2043.94, 2238.83, 2673.61, 2506.85, 3230.78, 3756.07, 4766.18, 3839.5, 4769.83 In mathematics, an ordered list of numbers is called a sequence. The individual values of the sequence are called terms. An abstract sequence may be denoted by (x_n) or (x_n) 1 ≤ n ≤ N. In both notations, n represents the"
   }
  },
  {
@@ -303,7 +306,8 @@
     582.0
    ],
    "crop": "data/advanced/crops/p227_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.3 Line Chart of the S&P 500 Index with the Linear Regression (data source: adapted from S&P 500 [SPX] Historical Data) The forecast for the end of year 2024 is y_hat = 304.437(2024) - 611,288 = 4,892.5. Similarly, the prediction for 2025 is y_hat = 304.437(2025) - 611,288 = 5,196.9. In this chapter, we will develop more sophisticated tools that can detect patterns that averages or linear models simply cannot find, including autoregressive models, moving averages, and the autoregressive integrated moving average (ARIMA) model. However, creating a fancy model for time series data is only part of the process. An essential part of the process is testing and evaluating your model. Thus, we will also explore measures of error and uncertainty that can determine how good the model is and how accurate its forecasts"
   }
  },
  {
@@ -426,7 +430,8 @@
     339.4
    ],
    "crop": "data/advanced/crops/p229_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.4 Using Excel to Create a Line Chart. Instead of using “Recommended Charts,” you could also choose line chart from the panel of choices located on the same tab. (Used with permission from Microsoft) Working with and Visualizing Time Series Data in Python In Python, the pandas library (https://openstax.org/r/pydata) is incredibly useful for reading in CSV files and managing them as data structures called DataFrames. It also includes a simple command for visualizing the time series, plot(). Here is how to create a line chart of the daily values of the S & P 500 Index from 2014 through 2024 from the dataset SP500.csv (https://openstax.org/r/SP500). import pandas as pd import matplotlib.pyplot as plt import matplotlib.ticker as ticker # Read the CSV file into a Pandas DataFrame df = pd.read_csv('SP500.csv')"
   }
  },
  {
@@ -477,7 +482,8 @@
     403.4
    ],
    "crop": "data/advanced/crops/p230_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Notice that the simple plot feature did not label the x or y axes. Moreover, the x-axis does not show actual dates, but instead the number of time steps. For simple visualizations that you do not intend to share with a wider audience, this may be ok, but if you want to create better-looking and more informative graphs, use a library such as matplotlib.pyplot (https://openstax.org/r/matplotlib). In the next set of Python code, you will see the same dataset visualized using matplotlib. (Note that there is a line of code that uses the to_datatime() command. Dates and times are notoriously inconsistent from dataset to dataset, and software packages may not interpret them correctly without a little help.) # Import libraries import pandas as pd ## for dataset management import matplotlib.pyplot as plt ## for visualizations from matplotlib.ticker import FuncFormatter ## formatting Y-axis values"
   }
  },
  {
@@ -529,7 +535,8 @@
     618.0
    ],
    "crop": "data/advanced/crops/p231_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "5.2 Components of Time Series Analysis Learning Outcomes By the end of this section, you should be able to: • 5.2.1 Define the trend curve of a time series. • 5.2.2 Define and identify seasonal and cyclic variations in time series data. • 5.2.3 Discuss how noise and error affect a time series. Time series data may be decomposed, or broken up into several key components. There may be an overall direction (up or down) that the data seems to be following, also known as the trend. Cycles and seasonal patterns may be present. Finally, noise or random variation can often be separated from the rest of the data. Time series analysis begins with identifying and extracting the components that contribute to the structure of the data. Summarizing, the four main components of a time series are defined as follows:"
   }
  },
  {
@@ -624,7 +631,8 @@
     677.4
    ],
    "crop": "data/advanced/crops/p233_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.5 Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022, in 1000s of Tons (data source: https://www.statista.com/statistics/1170053/monthly-coal-energy-consumption-in-the-us/) Although there are numerous ups and downs, there is clearly an overall trajectory of the data. If you were given the task to draw a curve that best captures the underlying trend, you might draw something like the curve shown in Figure 5.6. (This is what we refer to as a trendline or trend curve.) Figure 5.6 Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022, in 1000s of Tons with Trend Curve Shown (data source: https://www.statista.com/statistics/1170053/monthly-coal-energy-consumption-in-the-us/) Trendline in Excel Excel has some built-in features that make it easy to include trend curves directly onto the graph of a time series. First, make a line graph of the data in the same way as shown in Introduction to Time Series Analysis. (Note: If “Recommended Charts” does not display the type of chart that you want, you can click on the “All Charts” tab and choose another. For Figure 5.7, we chose the line chart rather than the default column chart.) Next, you can click on “Add Chart Element” in the “Chart Design” area of Excel. One of the options is “Trendline” (see Figure 5.7). To get a trendline like the one in Figure 5.6, select “More Options” and adjust the period of the trendline to 12. After adding the trendline, you can change its color and design if you wish."
   }
  },
  {
@@ -689,7 +697,8 @@
     366.1
    ],
    "crop": "data/advanced/crops/p234_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.6 Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022, in 1000s of Tons with Trend Curve Shown (data source: https://www.statista.com/statistics/1170053/monthly-coal-energy-consumption-in-the-us/) Trendline in Excel Excel has some built-in features that make it easy to include trend curves directly onto the graph of a time series. First, make a line graph of the data in the same way as shown in Introduction to Time Series Analysis. (Note: If “Recommended Charts” does not display the type of chart that you want, you can click on the “All Charts” tab and choose another. For Figure 5.7, we chose the line chart rather than the default column chart.) Next, you can click on “Add Chart Element” in the “Chart Design” area of Excel. One of the options is “Trendline” (see Figure 5.7). To get a trendline like the one in Figure 5.6, select “More Options” and adjust the period of the trendline to 12. After adding the trendline, you can change its color and design if you wish."
   }
  },
  {
@@ -712,7 +721,8 @@
     692.7
    ],
    "crop": "data/advanced/crops/p234_fig1.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.7 Adding a Trendline to a Line Chart in Excel (Used with permission from Microsoft) Seasonal Variations We’ve seen that seasonality, or seasonal variations, are predictable changes in the data occurring at regular intervals. The smallest interval of time at which the pattern seems to repeat (at least approximately so) is called its period. For example, suppose you live in a temperate climate in the northern hemisphere and you record the temperature every day for a period of multiple years. You will find that temperatures are warmer in the summer months and colder in the winter months. There is a natural and predicatable pattern of rise and fall on a time scale that repeats every year. This is a classic example of seasonal variation with period 1 year. However, the period of seasonal variation may be much longer or much shorter than a year. Suppose that you record temperatures near your home every hour for a week or so. Then you will notice a clear repeating cycle of rising and falling temperatures each day—warmer in the daytime and colder each night. This daily cycle of rising and falling temperatures is also a seasonal variation in the time series of period 24 hours. Indeed, any given time series may have multiple seasonal variation patterns at different periods."
   }
  },
  {
@@ -764,7 +774,8 @@
    ],
    "rows": 13,
    "cols": 2,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 5.2 Quarterly Revenues for Kayak and Canoe Rentals Solution The period is 1 year, or 4 quarters, with high values occurring in summer of each year and low values occurring in winter of each year as shown in Figure 5.8. Figure 5.8 Quarterly Revenues for Kayak and Canoe Rentals Noise and Random Variation All data is noisy. There are often complex factors that affect data in ways that are difficult or impossible to predict. Even if all factors could be accounted for, there will inevitably be some error in the data due to mistakes, imprecise measurements, or even how the values are rounded. Noise shows up in time series data as small random ups and downs without an identifiable pattern. When visualizing the time series, noise is the component of the data that makes the line graph look jagged. In the absence of noise or random variation, the plot of a time series would look fairly smooth."
   }
  },
  {
@@ -829,7 +840,8 @@
     330.7
    ],
    "crop": "data/advanced/crops/p236_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.8 Quarterly Revenues for Kayak and Canoe Rentals Noise and Random Variation All data is noisy. There are often complex factors that affect data in ways that are difficult or impossible to predict. Even if all factors could be accounted for, there will inevitably be some error in the data due to mistakes, imprecise measurements, or even how the values are rounded. Noise shows up in time series data as small random ups and downs without an identifiable pattern. When visualizing the time series, noise is the component of the data that makes the line graph look jagged. In the absence of noise or random variation, the plot of a time series would look fairly smooth. In a time series, once the trend, cyclic variation, and seasonal variation are all quantified, whatever is \"left over\" in the data will generally be noise or random fluctuations. In other words, once the trend (or trend-cycle component) t_n and seasonal variation s_n are accounted for, then the noise component is just the remaining component:"
   }
  },
  {
@@ -896,7 +908,8 @@
     435.3
    ],
    "crop": "data/advanced/crops/p237_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.9 White Noise. White noise is a type of random noise. The mean is constantly near zero. Variance is pretty constant everywhere in the series, close to a value of 1. There are no observable patterns that repeat. 5.3 Time Series Forecasting Methods Learning Outcomes By the end of this section, you should be able to: • 5.3.1 Analyze a time series by decomposing it into its components, including trend, seasonal and cyclic variation, and residual noise. • 5.3.2 Compute various kinds of moving averages, weighted moving averages, and related smoothing techniques. • 5.3.3 Describe the ARIMA procedure and how autocorrelation functions can be used to find appropriate parameters. • 5.3.4 Use ARIMA to make forecasts, with the aid of Python. This section focuses on analysis of a time series into its components for the purpose of building a robust model for forecasting. Although much of the analysis can be done by hand, numerous computer software applications have been developed to handle this task. Ultimately, we will see how Python can be used to decompose a time series and create a general-purpose model called the autoregressive integrated moving average model (commonly known as ARIMA) to make forecasts."
   }
  },
  {
@@ -1052,7 +1065,8 @@
     289.8
    ],
    "crop": "data/advanced/crops/p240_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.10 Line Chart of the S&P 500 Index Together with the Simple Moving Average of Length 3 (data source: adapted from S&P 500 [SPX] Historical Data) Simple moving averages provide an easy way to identify a trend-cycle curve in the time series. In effect, the SMA can serve as an estimate of the t_n component of the time series. In practice, when using SMA to isolate the trend-cycle component, the terms of the SMA are centered, which means that when computing the terms of the SMA, y_k, the x_k term shows up right in the middle of the window, with the same number of terms to the left and to the right. For example, the SMA found in Example 5.3 may be shifted so that y_k = (x_(k-1) + x_k + x_(k+1)) / 3. This has the effect of shifting the index of the SMA terms back 1 so that the SMA begins at index k = 2."
   }
  },
  {
@@ -1106,7 +1120,8 @@
    ],
    "rows": 10,
    "cols": 3,
-   "transcribed_by": "gpt-4.1-mini"
+   "transcribed_by": "gpt-4.1-mini",
+   "after": "Table 5.3 First-Order Difference Time Series for the Data in Table 5.1 (source: Table 5.3 First-Order Difference Time Series for the Data in Table 5.1 (source: adapted from https://www.nasdaq.com/market-activity/index/spx/historical) Figure 5.11 shows the graph of the original data together with its difference series. Figure 5.11 Comparison of S&P Index Values and Their Difference Series (data source: adapted from S&P 500 [SPX] Historical Data) The average value of Δ(x_n) is: Comparing with the slope of the linear regression, which is about 304 (recall Example 5.1), we find the two values are relatively close to each other. Differencing can be used to check whether a time series trend curve is essentially linear, quadratic, or polynomial of higher order. First, we need to recall a definition from algebra that is typically applied to polynomial functions but can also be applied to sequences. If a sequence (x_n) is given by a polynomial formula of the form"
   }
  },
  {
@@ -1160,7 +1175,8 @@
    ],
    "rows": 3,
    "cols": 2,
-   "transcribed_by": "gpt-4.1-mini"
+   "transcribed_by": "gpt-4.1-mini",
+   "after": "Table 5.3 First-Order Difference Time Series for the Data in Table 5.1 (source: adapted from https://www.nasdaq.com/market-activity/index/spx/historical) Figure 5.11 shows the graph of the original data together with its difference series. Figure 5.11 Comparison of S&P Index Values and Their Difference Series (data source: adapted from S&P 500 [SPX] Historical Data) The average value of Δ(x_n) is: Comparing with the slope of the linear regression, which is about 304 (recall Example 5.1), we find the two values are relatively close to each other. Differencing can be used to check whether a time series trend curve is essentially linear, quadratic, or polynomial of higher order. First, we need to recall a definition from algebra that is typically applied to polynomial functions but can also be applied to sequences. If a sequence (x_n) is given by a polynomial formula of the form"
   }
  },
  {
@@ -1183,7 +1199,8 @@
     376.9
    ],
    "crop": "data/advanced/crops/p242_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.11 Comparison of S&P Index Values and Their Difference Series (data source: adapted from S&P 500 [SPX] Historical Data) The average value of Δ(x_n) is: Comparing with the slope of the linear regression, which is about 304 (recall Example 5.1), we find the two values are relatively close to each other. Differencing can be used to check whether a time series trend curve is essentially linear, quadratic, or polynomial of higher order. First, we need to recall a definition from algebra that is typically applied to polynomial functions but can also be applied to sequences. If a sequence (x_n) is given by a polynomial formula of the form where r is a whole number, each of the coefficients a_k (for k = 1, 2, 3, ..., n) is a constant, and the leading term is nonzero (a_r ≠ 0), then the sequence has order or degree r. (Order or degree refers to the number of terms or lags used in a model to describe the time series.)"
   }
  },
  {
@@ -1280,7 +1297,8 @@
     341.1
    ],
    "crop": "data/advanced/crops/p244_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.12 Screenshot of a 13-term Excel Window SMA (Used with permission from Microsoft) Next, click on the square in the lower right corner of cell C8 and drag it all the way down to cell C173, which is 6 rows before the final data value. Column C now contains the SMA time series for your data, as shown in Figure 5.13. Figure 5.13 Screenshot Showing the SMA Time Series in Column C (Used with permission from Microsoft) You can generate the graph of the time series and the SMA together, which is shown in Figure 5.14. Compare your computed SMA with the trendline created by Excel in Figure 5.7. Figure 5.14 Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022. The SMA of window length 13 has been added to the graph in orange. (data source: https://www.statista.com/statistics/1170053/monthly-coal-energy- consumption-in-the-us/)"
   }
  },
  {
@@ -1303,7 +1321,8 @@
     704.8
    ],
    "crop": "data/advanced/crops/p244_fig1.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.13 Screenshot Showing the SMA Time Series in Column C (Used with permission from Microsoft) You can generate the graph of the time series and the SMA together, which is shown in Figure 5.14. Compare your computed SMA with the trendline created by Excel in Figure 5.7. Figure 5.14 Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022. The SMA of window length 13 has been added to the graph in orange. (data source: https://www.statista.com/statistics/1170053/monthly-coal-energy- consumption-in-the-us/) Let’s now work out the first-order difference. The idea is very similar. Put the formula for the difference, which is nothing more than “=B3-B2,” into cell D3, as in Figure 5.15. Figure 5.15 Screenshot of Excel Showing Formula for Difference in Column D (Used with permission from Microsoft)"
   }
  },
  {
@@ -1340,7 +1359,8 @@
     271.1
    ],
    "crop": "data/advanced/crops/p245_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.14 Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022. The SMA of window length 13 has been added to the graph in orange. (data source: https://www.statista.com/statistics/1170053/monthly-coal-energy- consumption-in-the-us/) Let’s now work out the first-order difference. The idea is very similar. Put the formula for the difference, which is nothing more than “=B3-B2,” into cell D3, as in Figure 5.15. Figure 5.15 Screenshot of Excel Showing Formula for Difference in Column D (Used with permission from Microsoft) Then drag the formula down to the end of the column. The result is shown in Figure 5.16. Figure 5.16 Screenshot of Excel Showing Difference in Column D (Used with permission from Microsoft) If you need to compute the second-order differences, just do the same procedure to find the difference of column D. Higher-order differences can easily be computed in the analogous way."
   }
  },
  {
@@ -1363,7 +1383,8 @@
     492.0
    ],
    "crop": "data/advanced/crops/p245_fig1.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.15 Screenshot of Excel Showing Formula for Difference in Column D (Used with permission from Microsoft) Then drag the formula down to the end of the column. The result is shown in Figure 5.16. Figure 5.16 Screenshot of Excel Showing Difference in Column D (Used with permission from Microsoft) If you need to compute the second-order differences, just do the same procedure to find the difference of column D. Higher-order differences can easily be computed in the analogous way. SMA and Differencing in Python Computing an SMA in Python takes only a single line of code. Here is how it works on the Coal Consumption dataset (found in MonthlyCoalConsumption.xlsx (https://openstax.org/r/spreadsheetsd1j)), using a window size of 12. (Before, we used a window of 13 because odd-length windows are easier to work with than even- length ones. However, Python easily handles all cases automatically.) The key here is the function rolling()"
   }
  },
  {
@@ -1400,7 +1421,8 @@
     362.5
    ],
    "crop": "data/advanced/crops/p246_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.16 Screenshot of Excel Showing Difference in Column D (Used with permission from Microsoft) If you need to compute the second-order differences, just do the same procedure to find the difference of column D. Higher-order differences can easily be computed in the analogous way. SMA and Differencing in Python Computing an SMA in Python takes only a single line of code. Here is how it works on the Coal Consumption dataset (found in MonthlyCoalConsumption.xlsx (https://openstax.org/r/spreadsheetsd1j)), using a window size of 12. (Before, we used a window of 13 because odd-length windows are easier to work with than even- length ones. However, Python easily handles all cases automatically.) The key here is the function rolling() that creates a DataFrame of rolling windows of specified length. Then the mean() command computes the"
   }
  },
  {
@@ -1479,7 +1501,8 @@
     354.1
    ],
    "crop": "data/advanced/crops/p248_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Analyzing Seasonality Once the time series has been detrended using one of the methods already discussed (or other, more sophisticated methods), what is left over should represent only the seasonality, or seasonal variation, s_n, and error term, ε_n. How could we analyze and model s_n? Suppose there were no error term at all (ε_n = 0) and so we are looking at a time series with pure seasonal variation and no other factors. In this case, the component s_n would look like a repeating pattern, such as the pattern shown in Figure 5.17. As mentioned in Components of Time Series Analysis, the time interval that it takes before the pattern completes once and begins to repeat is called the period. In a purely seasonal component, we would expect s_(n+P) = s_n, where P is the period, for all values of n."
   }
  },
  {
@@ -1502,7 +1525,8 @@
     663.1
    ],
    "crop": "data/advanced/crops/p248_fig1.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.17 Pure Seasonal Variation. The same pattern repeats after 64 time steps, and so the period is 64. While it is easy to spot the repeating pattern in a time series that does not have noise, the same cannot be said for the general case. There are several tools available for isolating the seasonal component of a detrended time series. Identifying the Period First we need to identify the period of the seasonal data. The simplest method is to use prior knowledge about the time series data, along with a visual inspection. Often, a seasonal pattern is exactly that—a pattern that repeats over the course of one year. Thus, the period would be P = 1 year (or 12 months, 52 weeks, 365 days, etc., depending on the time steps of your time series). For example, even without detrending the data, it was easy to identify a period of 4 quarters (1 year) in the data in Example 5.2."
   }
  },
  {
@@ -1628,7 +1652,8 @@
    ],
    "rows": 7,
    "cols": 6,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 5.4 Quarterly Revenues for Kayak and Canoe Rentals (all columns in $). Columns for detrended data, seasonal Table 5.4 Quarterly Revenues for Kayak and Canoe Rentals (all columns in $). Columns for detrended data, seasonal component estimate, and seasonally adjusted data are included. Figure 5.18 shows the data along with the seasonal component and seasonally adjusted data. Figure 5.18 Quarterly Revenues for Kayak and Canoe Rentals. Seasonal component and seasonally adjusted time series are included on the graph. Decomposing a Time Series into Components Using Python There is a powerful Python library known as statsmodels (https://openstax.org/r/statsmodels) that collects many useful statistical functions together. We will use the STL module to decompose the time series MonthlyCoalConsumption.xlsx (https://openstax.org/r/spreadsheetsd1j) into its components. First, we plot an ACF (autocorrelation function) to determine the best value for periodicity."
   }
  },
  {
@@ -1696,7 +1721,8 @@
    ],
    "rows": 7,
    "cols": 6,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 5.4 Quarterly Revenues for Kayak and Canoe Rentals (all columns in $). Columns for detrended data, seasonal component estimate, and seasonally adjusted data are included. Figure 5.18 shows the data along with the seasonal component and seasonally adjusted data. Figure 5.18 Quarterly Revenues for Kayak and Canoe Rentals. Seasonal component and seasonally adjusted time series are included on the graph. Decomposing a Time Series into Components Using Python There is a powerful Python library known as statsmodels (https://openstax.org/r/statsmodels) that collects many useful statistical functions together. We will use the STL module to decompose the time series MonthlyCoalConsumption.xlsx (https://openstax.org/r/spreadsheetsd1j) into its components. First, we plot an ACF (autocorrelation function) to determine the best value for periodicity."
   }
  },
  {
@@ -1719,7 +1745,8 @@
     541.6
    ],
    "crop": "data/advanced/crops/p251_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.18 Quarterly Revenues for Kayak and Canoe Rentals. Seasonal component and seasonally adjusted time series are included on the graph. Decomposing a Time Series into Components Using Python There is a powerful Python library known as statsmodels (https://openstax.org/r/statsmodels) that collects many useful statistical functions together. We will use the STL module to decompose the time series MonthlyCoalConsumption.xlsx (https://openstax.org/r/spreadsheetsd1j) into its components. First, we plot an ACF (autocorrelation function) to determine the best value for periodicity. # Import libraries from statsmodels.graphics.tsaplots import plot_acf # Read the Excel file into a Pandas Dataframe df = pd.read_excel('MonthlyCoalConsumption.xlsx') # Plot the ACF plot_acf(df['Value'], lags=20, title='ACF');"
   }
  },
  {
@@ -1756,7 +1783,8 @@
     544.1
    ],
    "crop": "data/advanced/crops/p252_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Points that are within the blue shaded area correspond to lags at which the autocorrelation is statistically insignificant. The lags that show the most significance are at 0, 1, 6, and 12. Lag = 0 always gives 100% autocorrelation because we are comparing the unshifted series to itself. At lag = 1, a high autocorrelation corresponds to the fact that consecutive data points are relatively close to each other (which is also to be expected in most datasets). Of special note are lags at 6 and 12, corresponding to a possible seasonal period of 6 or 12 in the data. We will use period 12 in our STL decomposition. # Import libraries from statsmodels.tsa.seasonal import STL import matplotlib.pyplot as plt ## for data visualization # Perform seasonal decomposition using STL stl = STL(df['Value'], period=12) result = stl.fit()"
   }
  },
  {
@@ -1794,7 +1822,8 @@
     593.4
    ],
    "crop": "data/advanced/crops/p253_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "The trend, seasonal variation, and residual (noise) components are all graphed in separate plots. To see them all on the same set of axes, we can use matplotlib (noise omitted). import matplotlib.pyplot as plt ## for data visualization # Extract the trend and seasonal components trend = result.trend seasonal = result.seasonal # Plot the original data, trend, and seasonally adjusted data plt.plot(df['Value'], label='Original Data') plt.plot(trend, label='Trend') plt.plot(seasonal, label='Seasonal') plt.legend() # Apply the formatter to the Y-axis plt.gca().yaxis.set_major_formatter(FuncFormatter(y_format)) plt.show() The resulting output will look like this: Weighted Moving Averages and Exponential Moving Averages Simple moving averages were discussed in detail at the beginning of this section. Now we expand the discussion to include more sophisticated weighted moving averages and their uses in smoothing data and forecasting. Recall from our discussion in Time Series Forecasting Methods that weighted moving averages are moving averages in which terms are given weights according to some formula or rule."
   }
  },
  {
@@ -1831,7 +1860,8 @@
     578.9
    ],
    "crop": "data/advanced/crops/p254_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Weighted Moving Averages and Exponential Moving Averages Simple moving averages were discussed in detail at the beginning of this section. Now we expand the discussion to include more sophisticated weighted moving averages and their uses in smoothing data and forecasting. Recall from our discussion in Time Series Forecasting Methods that weighted moving averages are moving averages in which terms are given weights according to some formula or rule. Suppose that a time series (x_n) has no significant seasonal component (or the seasonal component has been removed so that remaining series is seasonally adjusted). Thus, the series has only trend-cycle and noise components: As already discussed, a simple moving average (SMA) has the effect of smoothing out the data and providing an easy method for predicting the next term of the sequence. For reference, here is the SMA prediction model, with a window of T terms:"
   }
  },
  {
@@ -1928,7 +1958,8 @@
    ],
    "rows": 13,
    "cols": 4,
-   "transcribed_by": "gpt-4.1-mini"
+   "transcribed_by": "gpt-4.1-mini",
+   "after": "Table 5.5 EMA Models (source: adapted from https://www.nasdaq.com/market-activity/index/spx/historical) Therefore, we find estimates of 4,349 and 4,541 for the S&P value at the end of 2024, by EMA models with and alpha = 0.7, respectively. Note that larger values of alpha emphasize the most recent data, while smaller values allow more of the past data points to influence the average. If the time series trend experiences more variability (due to external factors that we have no control over), then an EMA with a relatively large α-value would be more appropriate than one with a small α-value. EMA models may also serve as smoothing techniques, isolating the trend-cycle component. In this context, it’s better to use an equivalent form of the EMA model: In this form, we build a series of estimates (x_hat_n) recursively by incorporating the terms of the original time series one at a time. The idea is that the next estimate, x_hat_(n+1), is found by weighted average of the current data point, x_n, and the current estimate, x_hat_n. Note, we may set x_hat_1 = x_1 since we need to begin the process somewhere. It can be shown mathematically that this procedure is essentially the same as working out the sum of exponentially weight terms directly and is much more efficient."
   }
  },
  {
@@ -1982,7 +2013,8 @@
    ],
    "rows": 13,
    "cols": 3,
-   "transcribed_by": "gpt-4.1-mini"
+   "transcribed_by": "gpt-4.1-mini",
+   "after": "Table 5.6 EMA Smoothing for the S&P Index Time Series (source: adapted from https://www.nasdaq.com/market-activity/index/ spx/historical) According to this model, the S&P Index will be about 4577 at the end of 2024. Figure 5.19 shows the time series together with the exponential smoothing model. Figure 5.19 Exponential Smoothing Model for the S&P Index (data source: adapted from S&P 500 [SPX] Historical Data) Note, EMA smoothing can be done very easily in Excel. Simply type in the formulas =B2 into cell C2 and =0.75*B2+0.25*C2 into cell C3. Then drag cell C3 down to the end of the data to compute the EMA. You can also do EMA smoothing in Python using the ewm() function applied to a dataset. Note, the “span” value should be set to 2/α - 1, as shown in this code. # Import libraries import pandas as pd ## for dataset management"
   }
  },
  {
@@ -2005,7 +2037,8 @@
     696.1
    ],
    "crop": "data/advanced/crops/p257_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 5.19 Exponential Smoothing Model for the S&P Index (data source: adapted from S&P 500 [SPX] Historical Data) Note, EMA smoothing can be done very easily in Excel. Simply type in the formulas =B2 into cell C2 and =0.75*B2+0.25*C2 into cell C3. Then drag cell C3 down to the end of the data to compute the EMA. You can also do EMA smoothing in Python using the ewm() function applied to a dataset. Note, the “span” value should be set to 2/α - 1, as shown in this code. # Import libraries import pandas as pd ## for dataset management # Creating a dictionary with the given data data = { 'Year': [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], 'SP500': [1848.36, 2058.9, 2043.94, 2238.83, 2673.61, 2506.85, 3230.78, 3756.07, 4766.18, 3839.5, 4769.83] } # Creating DataFrame df = pd.DataFrame(data)"
   }
  },
  {
@@ -2174,7 +2207,8 @@
     723.3
    ],
    "crop": "data/advanced/crops/p261_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "We see a peak at lag 12, corresponding to the expected yearly seasonal variation, so we will set p = 12 in the ARIMA model. For this time series, positive values of q did not change the accuracy of the model at all, so we set q = 0 (MA model component unnecessary). The model was used to forecast 24 time steps (2 years) into the future. We are using the Python library statsmodels.tsa.arima.model (https://openstax.org/r/statsmodel) to create the ARIMA model. # Import ARIMA model from statsmodels.tsa library from statsmodels.tsa.arima.model import ARIMA import matplotlib.pyplot as plt ## for plotting graphs from matplotlib.ticker import MaxNLocator ## for graph formatting from matplotlib.ticker import FuncFormatter ## for formatting y-axis # Fit an ARIMA model p = 12; d = 2; q = 0 # ARIMA component orders model = ARIMA(df['Value'], order=(p, d, q)) results = model.fit()"
   }
  },
  {
@@ -2241,7 +2275,8 @@
     362.5
    ],
    "crop": "data/advanced/crops/p263_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Here, the blue curve is the original time series, and the red curve represents the ARIMA model, with forecasted values indicated by the dashed part of the curve. Although there is considerable error near the beginning of the time period, the model seems to fit the known values of the data fairly well, and so we expect that the future forecasts are reasonable. 5.4 Forecast Evaluation Methods Learning Outcomes By the end of this section, you should be able to: • 5.4.1 Explain the nature of error in forecasting a time series. • 5.4.2 Compute common error measures for time series models. • 5.4.3 Produce prediction intervals in a forecasting example. A time series forecast essentially predicts the middle of the road values for future terms of the series. For the purposes of prediction, the model considers only the trend and any cyclical or seasonal variation that could be detected within the known data. Although noise and random variation certainly do influence future values of the time series, their precise effects cannot be predicted (by their very nature). Thus, a forecasted value is the best guess of the model in the absence of an error term. On the other hand, error does affect how certain we can be of the model’s forecasts. In this section, we focus on quantifying the error in forecasting using statistical tools such as prediction intervals."
   }
  },
  {
@@ -2369,7 +2404,8 @@
    ],
    "rows": 13,
    "cols": 7,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 5.7 Data Needed to Compute the MAE, RMSE, MAPE, and SMAPE for EMA Smoothing Model . (Predicted values are [on average] about 450 units away from true values.) . (The errors between predicted and average values have a standard deviation of about 580 from the ideal error of 0.) . (Predicted values are [on average] within about 13% of their true values.) sMAPE = 0.137, or 13.7%. (When looking at both predicted values and true values, their differences are on average about 14% from one another.) These results may be used to compare the EMA estimate to some other estimation/prediction method to find out which one is more accurate. The lower the errors, the more accurate the method. Prediction Intervals A forecast is often accompanied by a prediction interval giving a range of values the variable could take with some level of probability. For example, if the prediction interval of a forecast is indicated to be 80%, then the prediction interval contains a range of values that should include the actual future value with a probability of 0.8. Prediction intervals were introduced in Analysis of Variance (ANOVA) in the context of linear regression, so we won’t get into the details of the mathematics here. The key point is that we want a measure of margin of error, E_n (depending on n), such that future observations of the data will be within the interval x_hat_n ± E_n with probability α, where α is a chosen level of confidence."
   }
  },
  {
@@ -2464,7 +2500,8 @@
     342.7
    ],
    "crop": "data/advanced/crops/p267_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "The forecast data (dashed curve) is now surrounded by a shaded region. With 80% probability, all future observations should fit into the shaded region. Of course, the further into the future we try to go, the more uncertain our forecasts will be, which is indicated by the wider and wider confidence interval region. Datasets Note: The primary datasets referenced in the chapter code may also be downloaded here (https://openstax.org/r/drive1)."
   }
  },
  {
@@ -2501,7 +2538,8 @@
     246.5
    ],
    "crop": "data/advanced/crops/p275_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.1 Machine learning may be used to classify all kinds of data. Facial recognition technology relies heavily on machine learning algorithms, such as random forest models. (credit: modification of work \"Humanoid Robot Uprising\" by Steve Jurvetson/ Flickr, CC BY 2.0) Chapter Outline 6.1 What Is Machine Learning? 6.2 Classification Using Machine Learning 6.3 Machine Learning in Regression Analysis 6.4 Decision Trees 6.5 Other Machine Learning Techniques Introduction Imagine a world in which your face is your passport. No need for keys, cards, or passwords; your identity is simply your unique appearance. In this world, machine learning plays the role of gatekeeper, using the visible features of your face to identify you and grant you access. Machine learning has a broad range of applications that go beyond facial recognition, transforming the way we interact with technology. As we’ll see in this chapter and Deep Learning and AI Basics, machine learning is also used in medical image analysis, satellite image interpretation, and augmented reality (e.g., in gaming, education/training, and architecture/design). It is used to power recommendation systems and for predictive analytics. In this chapter, we explore the fundamentals of classification, clustering, and regression algorithms that allow machines to learn how to label data accurately and make useful decisions that can be put to use in these many applications."
   }
  },
  {
@@ -2636,7 +2674,8 @@
     669.5
    ],
    "crop": "data/advanced/crops/p277_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.2 The Supervised Learning Cycle. The supervised learning cycle consists of gathering data, training on some part of the data, testing on another part of the data, and deployment to solve problems about new data. Examples of supervised learning models include linear regression (discussed in Correlation and Linear Regression Analysis), logistic regression, naïve Bayes classification, decision trees, random forests, and many kinds of neural networks. Linear regression may not seem like a machine learning algorithm because there are no correction steps. A formula simply produces the line of best fit. However, the regression formula itself represents an optimization that reduces the error in the values predicted by the regression line versus the actual data. If the linear regression model is not accurate enough, additional data could be collected to improve the accuracy of the model, and once the regression line is found, it may then be used to predict values that were not in the initial dataset. Linear regression has been developed in previous chapters, and you will see logistic regression, Bayes methods, decision trees, and random forests later in this chapter."
   }
  },
  {
@@ -2903,7 +2942,8 @@
    ],
    "rows": 3,
    "cols": 3,
-   "transcribed_by": "gpt-4.1-mini"
+   "transcribed_by": "gpt-4.1-mini",
+   "after": "Table 6.1 Test Set • • MAPE = 1/2 (| -7.13 / 30.9 | + | 5.25 / 94.4 |) = 0.143, or 14.3% • MSE for cubic model: • RMSE for cubic model: The MAE and RMSE both show that the model’s predictions are off by an average of about 6.2 points from actual values. The MAPE suggests that the model has an error of about 14.3% on average. Overfitting and Underfitting Can 100% accuracy be attained from a machine learning algorithm? In all but the most trivial exercises, the answer is a resounding no. Real-world data is noisy, often incomplete, and rarely amenable to a simple model. (Recall from Collecting and Preparing Data that we defined noisy data as data that contains errors, inconsistencies, or random fluctuations that can negatively impact the accuracy and reliability of data analysis and interpretation.) Two of the most common issues with machine learning algorithms are overfitting and underfitting."
   }
  },
  {
@@ -2957,7 +2997,8 @@
    ],
    "rows": 3,
    "cols": 3,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 6.2 Cubic Model Predictions The linear model (linear regression) that represents a best fit for the first four data points is y_hat = -0.6x + 11. Figure 6.3 shows the data points along with the two models. Figure 6.3 Data Points along a Cubic Model and a Linear Model. The four data points in S_train can be fitted onto a cubic curve (0% error), but it does poorly on additional data from the testing data, S_test. The cubic curve overfits the training data. The regression line does not fit the training data exactly; however, it does a better job predicting additional data. To get a good sense of how much better the linear model is compared to the cubic model in this example, we will compute the MAPE and RMSE for each model, as shown in Table 6.3. Table 6.3 MAPE and RMSE Calculated for Each Model"
   }
  },
  {
@@ -3025,7 +3066,8 @@
    ],
    "rows": 7,
    "cols": 6,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 6.3 MAPE and RMSE Calculated for Each Model • MAPE for cubic model: 1/6 (0/10 + 0/9 + 0/6 + 0/7 + 14/4 + 40/5) = 1.917, or 191.7%. • RMSE for cubic model: • MAPE for linear model: (1/6)(0.2/10 + 0.4/9 + 1.4/6 + 0.8/7 + 1/4 + 1.2/5) = 0.15, or 15%. • RMSE for linear model: The MAPE and RMSE values for the linear model are much lower than their respective values for the cubic model even though the latter predicts four values with 100% accuracy. Underfitting A model that is underfit may perform well on some input data and poorly on other data. This is because an underfit model fails to detect some important feature(s) of the dataset. EXAMPLE 6.3 Problem A student recorded their time spent on each homework set in their statistics course. Each HW set was roughly similar in length, but the student noticed that they spent less and less time completing them as the semester went along. Find the linear regression model for the data in Table 6.4 and discuss its effectiveness in making further predictions."
   }
  },
  {
@@ -3048,7 +3090,8 @@
     250.1
    ],
    "crop": "data/advanced/crops/p282_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.3 Data Points along a Cubic Model and a Linear Model. The four data points in S_train can be fitted onto a cubic curve (0% error), but it does poorly on additional data from the testing data, S_test. The cubic curve overfits the training data. The regression line does not fit the training data exactly; however, it does a better job predicting additional data. To get a good sense of how much better the linear model is compared to the cubic model in this example, we will compute the MAPE and RMSE for each model, as shown in Table 6.3. Table 6.3 MAPE and RMSE Calculated for Each Model • MAPE for cubic model: 1/6 (0/10 + 0/9 + 0/6 + 0/7 + 14/4 + 40/5) = 1.917, or 191.7%. • RMSE for cubic model: • MAPE for linear model: (1/6)(0.2/10 + 0.4/9 + 1.4/6 + 0.8/7 + 1/4 + 1.2/5) = 0.15, or 15%."
   }
  },
  {
@@ -3101,7 +3144,8 @@
    ],
    "rows": 2,
    "cols": 7,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 6.4 Homework Set Completion Times Solution There is a definitive downward trend in the data. A simple linear regression model for this data is: However, the line of best fit does not seem to fit the data all that well. There is no way that a linear function can bend the way the data points seem to do in this example (see Figure 6.4). Figure 6.4 Linear Model That Best Fits the Data in Example 6.3. This graph contains a scatterplot of the six data points together with the linear model that best fits the data. This is a clear case of underfitting. Another issue with using the linear model for the data in Table 6.4 is that eventually the values of y-hat become negative! According to this model, it will take about −1 hours to complete the 7th homework set, which is absurd. Perhaps a decreasing exponential model, shown in Figure 6.5, would work better here. Proper model selection is the most effective way of dealing with underfitting."
   }
  },
  {
@@ -3124,7 +3168,8 @@
     535.8
    ],
    "crop": "data/advanced/crops/p283_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.4 Linear Model That Best Fits the Data in Example 6.3. This graph contains a scatterplot of the six data points together with the linear model that best fits the data. This is a clear case of underfitting. Another issue with using the linear model for the data in Table 6.4 is that eventually the values of y-hat become negative! According to this model, it will take about −1 hours to complete the 7th homework set, which is absurd. Perhaps a decreasing exponential model, shown in Figure 6.5, would work better here. Proper model selection is the most effective way of dealing with underfitting. Figure 6.5 Exponential Model That Best Fits the Data in Example 6.3. This graph contains a scatterplot of the six data points together with the exponential model that best fits the data. Under this model, the prediction of y_hat = 1 when x = 7 seems much more reasonable."
   }
  },
  {
@@ -3176,7 +3221,8 @@
     243.1
    ],
    "crop": "data/advanced/crops/p284_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.5 Exponential Model That Best Fits the Data in Example 6.3. This graph contains a scatterplot of the six data points together with the exponential model that best fits the data. Under this model, the prediction of y_hat = 1 when x = 7 seems much more reasonable. 6.2 Classification Using Machine Learning Learning Outcomes By the end of this section, you should be able to: • 6.2.1 Perform logistic regression on datasets and interpret the results. • 6.2.2 Perform k-means clustering on datasets. • 6.2.3 Define the concept of density-based clustering and use DBScan on datasets. • 6.2.4 Interpret the confusion matrix in clustering or classifying data. Classification problems come in many flavors. For example, suppose you are tasked with creating an algorithm that diagnoses heart disease. The input features may include biological sex, age, blood pressure data, and cholesterol levels. The output would be either: yes (diagnose heart disease) or no (do not diagnose heart disease). That is, your algorithm should classify patients as “yes” or “no” based on an array of features, or symptoms in medical terminology. Logistic regression is one tool for classification when there are only two possible outputs. This is often called a binary (binomial) classification problem. If the goal is to classify data into more than two classes or categories, then the problem is referred to as multiclass (multinomial) classification."
   }
  },
  {
@@ -3257,7 +3303,8 @@
     313.7
    ],
    "crop": "data/advanced/crops/p285_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.6 Graph of a Typical Sigmoid Function One advantage of the sigmoid over a linear function is that the values of the sigmoid stay close to 0 when x is negative and close to 1 when x is positive. This makes it ideal for classifying arbitrary inputs x into one of two classes, \"yes\" (1) or \"no\" (0). In fact, we can interpret the y-axis as probability that an event occurs. The sigmoid function can be shifted right or left and compressed or expanded horizontally as necessary to fit the data. In the following formula, the parameters a and b control the position and shape of the sigmoid function, respectively. As complicated as this formula may seem at first, it is built up from simple elements. The presence of a + bx suggests that there may be a linear regression y = a + bx lurking in the background. Indeed, if we solve to find the inverse function of sigma(x), we can use it to isolate a + bx, which in turns allows us to use standard linear regression techniques to build the logistic regression. Recall that the natural logarithm function, ln n, is the inverse function for the exponential, e^x. In what follows, let p stand for sigma(x)."
   }
  },
  {
@@ -3371,7 +3418,8 @@
    ],
    "rows": 3,
    "cols": 2,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 6.5 GPA vs. College Completion Data Table 6.5 GPA vs. College Completion Data Figure 6.7 shows the data in graphical form. Figure 6.7 Graph of GPA (x-axis) and College Completion (y-axis). This uses values 0 for non-completion and 1 for completion. The graph suggests that higher GPAs tend to predict completion of a degree. The logistics model (found using computer software) that maximizes the likelihood is: The logistics regression model that best fits the data is shown in Figure 6.8 along with the data points colored green for predicted completion and red for predicted non-completion. Figure 6.8 Logistic Regression Model Fitting the Data in Table 6.5 Logistic Regression in Python A sample of Python code for logistic regression, using the data from Table 6.5, appears next. We use the LogisticRegression function found in the Python library sklearn.linear_model (https://openstax.org/r/"
   }
  },
  {
@@ -3439,7 +3487,8 @@
    ],
    "rows": 11,
    "cols": 2,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 6.5 GPA vs. College Completion Data Figure 6.7 shows the data in graphical form. Figure 6.7 Graph of GPA (x-axis) and College Completion (y-axis). This uses values 0 for non-completion and 1 for completion. The graph suggests that higher GPAs tend to predict completion of a degree. The logistics model (found using computer software) that maximizes the likelihood is: The logistics regression model that best fits the data is shown in Figure 6.8 along with the data points colored green for predicted completion and red for predicted non-completion. Figure 6.8 Logistic Regression Model Fitting the Data in Table 6.5 Logistic Regression in Python A sample of Python code for logistic regression, using the data from Table 6.5, appears next. We use the LogisticRegression function found in the Python library sklearn.linear_model (https://openstax.org/r/"
   }
  },
  {
@@ -3462,7 +3511,8 @@
     407.1
    ],
    "crop": "data/advanced/crops/p288_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.7 Graph of GPA (x-axis) and College Completion (y-axis). This uses values 0 for non-completion and 1 for completion. The graph suggests that higher GPAs tend to predict completion of a degree. The logistics model (found using computer software) that maximizes the likelihood is: The logistics regression model that best fits the data is shown in Figure 6.8 along with the data points colored green for predicted completion and red for predicted non-completion. Figure 6.8 Logistic Regression Model Fitting the Data in Table 6.5 Logistic Regression in Python A sample of Python code for logistic regression, using the data from Table 6.5, appears next. We use the LogisticRegression function found in the Python library sklearn.linear_model (https://openstax.org/r/ scikit). # Import libraries from sklearn.linear_model import LogisticRegression"
   }
  },
  {
@@ -3485,7 +3535,8 @@
     602.7
    ],
    "crop": "data/advanced/crops/p288_fig1.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.8 Logistic Regression Model Fitting the Data in Table 6.5 Logistic Regression in Python A sample of Python code for logistic regression, using the data from Table 6.5, appears next. We use the LogisticRegression function found in the Python library sklearn.linear_model (https://openstax.org/r/ scikit). # Import libraries from sklearn.linear_model import LogisticRegression # Define input and output data data = [[1.5, 0], [2.4, 1], [3.4, 1 ], [2.1, 0 ], [2.5, 1 ], [0.8, 0 ], [2.9, 0 ], [4.0, 1], [2.3, 1], [2.1, 0], [3.6, 1 ], [0.5, 0]] # Separate features (X) and labels (y) X = [[row[0]] for row in data] # Feature y = [row[1] for row in data] # Label # Build the logistic model Lmodel = LogisticRegression() Lmodel.fit(X,y) # Display the coefficients of the logistic regression (a,b) = (Lmodel.intercept_[0], Lmodel.coef_[0,0]) print(\"Coefficients: \", (round(a,3),round(b,3)))"
   }
  },
  {
@@ -3610,7 +3661,8 @@
     333.7
    ],
    "crop": "data/advanced/crops/p291_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.9 The Locations of Mushrooms in a Garden. There are three apparent clusters. Solution The location data consists of 19 points indicating position in feet east and north of a fixed point. (101.7, 51.1), (109.2, 66.7), (33.2, 54.1), (39.6, 53.6), (66.8, 70.5), (119.9, 42.4), (26.9, 33.1), (55.5, 71.7), (75, 82.4), (108.6, 71.4), (62.1, 83.5), (119.8, 69.1), (25.9, 30.2), (37.5, 46.4), (24, 49.1), (75.5, 77.8), (101.5, 51), (110.5, 72), (39.5, 55.8) First, choose three potential centroids. To make things simple, we will just pick the first three data points (101.7, 51.1), (109.2, 66.7), and (33.2, 54.1), which we will color red, green, and blue, respectively. Now color all the data points red, green, and blue according to which of these three points it lies closest to. The initial grouping is not perfect, as you can see in Figure 6.10."
   }
  },
  {
@@ -3647,7 +3699,8 @@
     333.7
    ],
    "crop": "data/advanced/crops/p292_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.10 Graph with Large Dots Indicating the Initial Choices of Centroids. Data points are colored according to which centroid they are closest to. Next, we find the centroids of each of the colored groups. In practice, this is all done automatically by software, but we will work out one of the centroids explicitly here. Let’s work out the green centroid. Current green points: (75, 82.4), (75.5, 77.8), (108.6, 71.4), (109.2, 66.7), (110.5, 72), (119.8, 69.1). Green centroid x-value: Green centroid y-value: Thus, the green centroid is located at (99.8, 73.2). Now plot all the centroids. You might imagine the previous potential centroids have moved to positions that are closer to the true centroids of the visible groups. The red point moves to (107.7, 48.2); the green point moves to (99.8, 73.2); and the blue point moves to (41.1, 54.8). Note that (aside from the initial choices) the centroids are not typically points in the dataset. Recolor the points of the dataset with respect to these new centroids, as shown in Figure 6.11."
   }
  },
  {
@@ -3698,7 +3751,8 @@
     333.4
    ],
    "crop": "data/advanced/crops/p293_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.11 Graph with New Centroids. After the second iteration of the k-means algorithm, the centroids have moved closer to the centers of the main clusters. However, no points changed location, so the algorithm stabilizes at this step. Run the algorithm a number of times until the coloring stabilizes. In this case, the next iteration is stable. Are the clusters where you thought they might end up? This example highlights the fact that k-means may be quite sensitive to initial choice of centroids. Running the algorithm again with different initial centroids may produce different clusters, as Figure 6.12 shows. Figure 6.12 Graph with Different Initial Centroids. Using initial centroids of (110, 70), (60, 80), and (40, 40), the k-means algorithm produces a different clustering. The final position of the centroids are (110.2, 60.5), (67.0, 77.2), and (32.4, 46.0)."
   }
  },
  {
@@ -3735,7 +3789,8 @@
     333.4
    ],
    "crop": "data/advanced/crops/p294_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.12 Graph with Different Initial Centroids. Using initial centroids of (110, 70), (60, 80), and (40, 40), the k-means algorithm produces a different clustering. The final position of the centroids are (110.2, 60.5), (67.0, 77.2), and (32.4, 46.0). Clustering algorithms such as k-means also allow one to make predictions about new data. For example, suppose a new mushroom sprouted up at location (90, 50). To classify this point as red, green, or blue, simply find out which centroid is closest to the point. Recall that the distance between two points (x1, y1) and (x2, y2) is found using the formula Distance to red centroid: Distance to green centroid: Distance to blue: Thus, the new mushroom should be included in the red group. Among clustering algorithms, k-means is rather simple, easy to implement, and very fast. However, it suffers from many drawbacks, including sensitivity to initial choice of centroids. Furthermore, k-means does detect clusters that are not simply “blobs.” In the next section, we will discuss another clustering algorithm that generally performs better on a wider range of data."
   }
  },
  {
@@ -3801,7 +3856,8 @@
     346.6
    ],
    "crop": "data/advanced/crops/p296_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "With a silhouette score of about 0.77, the separation of data points into three clusters seems appropriate. EXPLORING FURTHER Centroids versus Other Means Instead of using centroids (which are computed using arithmetic means, or averages), other means may be employed, including medians, trimmed averages, geometric or harmonic means, and many others. These algorithms may have different names such as k-medians, k-medoids, etc. More information can be found at Neptune (https://openstax.org/r/neptune) and Tidymodels articles (https://openstax.org/r/tidymodels).. Density-Based Clustering (DBScan) Suppose you need to classify the data in Figure 6.13 into two clusters. Figure 6.13 Dataset with an Inner and Outer Ring How might you do this? There seems to be a clear distinction between points on the inner ring and points on the outer ring. While k-means clustering would not do well on this dataset, a density-based clustering algorithm such as DBScan might perform better."
   }
  },
  {
@@ -3838,7 +3894,8 @@
     246.8
    ],
    "crop": "data/advanced/crops/p297_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.13 Dataset with an Inner and Outer Ring How might you do this? There seems to be a clear distinction between points on the inner ring and points on the outer ring. While k-means clustering would not do well on this dataset, a density-based clustering algorithm such as DBScan might perform better. DBScan Fundamentals The DBScan algorithm (DBScan is an acronym that stands for density-based spatial clustering of applications with noise) works by locating core data points that are part of dense regions of the dataset and expanding from those cores by adding neighboring points according to certain closeness criteria. First, we define two parameters: K, and r. A point in the dataset is called a core point if it has at least K neighbors, counting itself, within a distance of r from itself."
   }
  },
  {
@@ -3906,7 +3963,8 @@
     210.3
    ],
    "crop": "data/advanced/crops/p298_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.14 Original Dataset with 11 Unlabeled Points. The core points are those that have at least K neighbors (or K - 1, not counting the point itself) within a distance of r. The easiest way to determine core points would be to draw circles of radius 2.1 centered at each point, as shown in Figure 6.15, and then count the number of points within each circle. Figure 6.15 Circles of Radius Centered at Each Point. Drawing circles of radius r around each data point, it is easier to see which points are core and which are not core. Based on Figure 6.15, point A has only two neighbors, A and C, so A is not a core point. On the other hand, point B has three neighbors, B, C, and E, so B is core. The full list of core points is B, C, D, E, F, H, J, and K. So B may be chosen to start the first cluster. Then, building from B, points C and E are added next. Next, D, E, and F are added to the growing first cluster. Neither A nor G are added at this stage since they are not core points. Having found all core points that are in the first cluster, let H start a second cluster. The only core points left are close enough to H that the second cluster is H, J, and K."
   }
  },
  {
@@ -3929,7 +3987,8 @@
     428.9
    ],
    "crop": "data/advanced/crops/p298_fig1.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.15 Circles of Radius Centered at Each Point. Drawing circles of radius r around each data point, it is easier to see which points are core and which are not core. Based on Figure 6.15, point A has only two neighbors, A and C, so A is not a core point. On the other hand, point B has three neighbors, B, C, and E, so B is core. The full list of core points is B, C, D, E, F, H, J, and K. So B may be chosen to start the first cluster. Then, building from B, points C and E are added next. Next, D, E, and F are added to the growing first cluster. Neither A nor G are added at this stage since they are not core points. Having found all core points that are in the first cluster, let H start a second cluster. The only core points left are close enough to H that the second cluster is H, J, and K."
   }
  },
  {
@@ -3995,7 +4054,8 @@
     210.3
    ],
    "crop": "data/advanced/crops/p299_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.16 Graph Showing Results of DBScan Clustering. Cluster 1 is in blue and Cluster 2 is in red. DBScan in Python The Python library sklearn.cluster (https://openstax.org/r/stable) has a module named DBSCAN. Here is how it works on the dataset DBScanExample.csv (https://openstax.org/r/DBScanExample). # Import libraries import pandas as pd ## for dataset management from sklearn.cluster import DBSCAN # Read data data = pd.read_csv('DBScanExample.csv').dropna() # Run DBScan db = DBSCAN(eps=1.3, min_samples=5).fit(data) labels = db.labels_ # Find the number of clusters and points of noise n_clusters = len(set(labels)) - (1 if -1 in labels else 0) n_noise = list(labels).count(-1) print(\"Number of clusters: \", n_clusters) print(\"Points of noise:\", n_noise) The resulting output will look like this:"
   }
  },
  {
@@ -4033,7 +4093,8 @@
    ],
    "rows": 4,
    "cols": 4,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 6.6 A Confusion Matrix for Flowers, Trees, and Grasses Thus, we can see that 23 flowers, 32 trees, and 18 grasses were identified correctly, giving the model an accuracy of (23 + 32 + 18) / 100 = 0.73, or 73%. Note: The terms TP, TN, FP, and FN introduced in What Is Machine Learning? and defined again in the next example do not apply when classifying data into three or more categories; however, the confusion matrix gives more detailed information about the mistakes. Where there are relatively low numbers off the main diagonal, the model performed well. Conversely, higher numbers off the main diagonal indicated greater rates of misidentification, or confusion. In this example, when presented with a picture of a flower, the model did a pretty good job of identifying it as a flower but would mistake flowers for grasses at a higher rate than mistaking them for trees. The model did very well identifying trees as trees, never mistaking them for grasses and only twice mistaking them for flowers. On the other hand, the model did not do so well identifying grasses. Almost 40% of the images of grasses were mistaken for flowers! With this information in hand, you could go back to your model and adjust parameters in a way that may address these specific issues. There may be a way to tweak the model that helps with identifying grasses in particular. Or you may decide to take extra steps whenever an image is identified as a flower, perhaps running the image through additional analysis to be sure that it truly is a flower and not just a mislabeled grass."
   }
  },
  {
@@ -4056,7 +4117,8 @@
     430.4
    ],
    "crop": "data/advanced/crops/p300_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "The Confusion Matrix When training and testing any algorithm that performs classification, such as logistic regression models, k- means clustering, or DBScan, it is important to measure accuracy and identify error. The confusion matrix is one way of quantifying and visualizing the effectiveness of a classification model. This concept will be illustrated by the following example. Suppose you have trained a model that classifies images of plants into one of three categories: flowers, trees, and grasses. When you test the model on 100 additional images of plants, you discover that it correctly identified flowers, trees, and grasses the majority of the time, but there were also quite a few mistakes. Table 6.6 displays the results in a confusion matrix: Table 6.6 A Confusion Matrix for Flowers, Trees, and Grasses"
   }
  },
  {
@@ -4108,7 +4170,8 @@
    ],
    "rows": 3,
    "cols": 3,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 6.7 Terminology Summarizing the Four Possibilities from a Confusion Matrix Adjustments to a model that reduce one type of error generally increases the rate of the other type of error. That is, if you want your model to have a very low rate of false negatives, then it may become positively biased (more sensitive), predicting more positives whether they are true or false positives. On the other hand, if the rate of false positives needs to be reduced, then the model may become negative biased (less sensitive) and yield more negative predictions overall, both true and false negatives. Visualizing Confusion Matrices Confusion matrices are often shaded or colored in a way to show contrast of high and low values, which is helpful in locating any abnormal behavior in the model, often called a heatmap. Figure 6.17 provides a heatmap for the flower/tree/grass example."
   }
  },
  {
@@ -4131,7 +4194,8 @@
     694.2
    ],
    "crop": "data/advanced/crops/p301_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.17 Heatmap for Flower/Tree/Grass Example The darker shades indicate higher values. The main diagonal stands out with darker cells. This is to be expected if our classifier is doing its job. However, darker shades in cells that are off the main diagonal indicate higher rates of misclassification. The numbers 12 in the lower left and 9 in the upper right are prominent. The model clearly has more trouble with flowers and grasses than it does with trees. Generating a Confusion Matrix in Python The dataset CollegeCompletionData.csv (https://openstax.org/r/CollegeCompletionData) contains 62 data points (from which only 12 points of data were used in Table 6.6). The following code produces a logistic regression based on all 62 points. Then, the confusion matrix is generated. Finally, a visual display of the confusion matrix as a heatmap is generated using another visualization library called seaborn (https://openstax.org/r/seaborn). If you do not need the heatmap, then just type print(cf) directly after finding the confusion matrix to print a text version of the matrix."
   }
  },
  {
@@ -4253,7 +4317,8 @@
     346.6
    ],
    "crop": "data/advanced/crops/p303_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "From the preceding analysis, we find 20 true positives and 24 true negatives, representing an accuracy of . There were 10 false negatives and 8 false positives. 6.3 Machine Learning in Regression Analysis Learning Outcomes By the end of this section, you should be able to: • 6.3.1 Use bootstrapping to analyze variation in linear regression. • 6.3.2 Outline assumptions relevant to a multiple linear regression. • 6.3.3 Perform multiple linear regressions and analyze significance of coefficients. Regression is a term that applies to many different techniques in data analysis and machine learning. The main idea is to model a relationship between one or more input (or independent) variables X and an output (or dependent) variable y by creating an explicit functional equation y = f(X). Once the equation is found, new inputs can be plugged into it and the results would serve as predictions. The types of regressions are based on the form of the equations that are generated: linear, polynomial, logistic, exponential, etc. Most of these types of regression analyses may be done on single inputs or using multiple input variables. Some of these topics have already been discussed in this textbook, and so in this chapter, we delve into a more advanced analysis. First we explore bootstrapping as a way to find more information about the reliability and variability of the parameters of a linear regression. Then we discuss multiple linear and logistic regressions, including how to perform these tasks in Python."
   }
  },
  {
@@ -4378,7 +4443,8 @@
     582.3
    ],
    "crop": "data/advanced/crops/p305_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Linear model: y = 4.820 + 14.682 x Then, the set is resampled 50 times, using 100 data points each time. A linear regression is run each time, producing a set of 50 values of a and 50 values of b. All 50 regression lines are shown on the same graph. from sklearn.utils import resample data.plot.scatter(x='BARTHAG', y='W') # Build arrays for slopes and intercepts slopes = [] intercepts = [] # Resampling 100 points 50 times for i in range(50): data1 = resample(data, n_samples=100, replace=True) x = data1['BARTHAG'].values.reshape(-1,1) y = data1['W'].values.reshape(-1,1) model.fit(x,y) y_pred = model.predict(x) slopes.append(model.coef_[0][0]) intercepts.append(model.intercept_[0]) plt.plot(x, y_pred, color='red') plt.show() The resulting output will look like this (results for bootstrapping models may slightly vary):"
   }
  },
  {
@@ -4430,7 +4496,8 @@
     346.6
    ],
    "crop": "data/advanced/crops/p307_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Note how all the lines are very close to one another, but there is some variation. The mean and standard deviation of intercepts and slopes may be found using the statistics (https://openstax.org/r/docspython1) library in Python. import statistics as stats # for mean and standard deviation a_bar = stats.mean(intercepts) a_std = stats.stdev(intercepts) b_bar = stats.mean(slopes) b_std = stats.stdev(slopes) print(\"Intercept: Mean = %1.3f, St.Dev. = %1.3f \" % (a_bar, a_std) ) print(\"Slope: Mean = %1.3f, St.Dev. = %1.3f \" % (b_bar, b_std) ) The resulting output will look like this: Intercept: Mean = 4.947, St.Dev. = 0.645 Slope: Mean = 14.489, St.Dev. = 1.267 Recall that, before bootstrapping, we obtained a linear model with intercept 4.82 and slope 14.682. These are very close to the intercept and slope obtained from the bootstrapping method. The advantage to bootstrapping, though, is that we now have measures of spread (standard deviation), and so we can produce a"
   }
  },
  {
@@ -4584,7 +4651,8 @@
     346.6
    ],
    "crop": "data/advanced/crops/p311_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Next, let’s take a look at the predicted values found by plugging BARTHAG and WAB into the multiple regression formula discussed previously in the chapter. We also include the regression plane. The Python code required to create the regression plane is somewhat involved, requiring another package, numpy (https://openstax.org/r/numpy), to help create a mesh grid of (x, y) points, so don’t worry too much if you don’t understand that part of the code. import numpy as np # Create a 3D figure fig = plt.figure(figsize=(10, 6)) ax = fig.add_subplot(111, projection='3d') # Generate prediction values using the model y_pred = model.predict(X) # Create a grid of points for the regression plane X1min = min(X1.values)[0] X1max = max(X1.values)[0] X2min = min(X2.values)[0] X2max = max(X2.values)[0] X1_space = np.linspace(X1min, X1max, 100)"
   }
  },
  {
@@ -4622,7 +4690,8 @@
     565.4
    ],
    "crop": "data/advanced/crops/p312_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "It may not be entirely clear from the graph, but each red “x” is a point on the regression plane. To see how well the regression formula does at modeling the actual data, we will remove the predicted values and put in the actual values together with line segments showing how close those values are to the plane. # Create a 3D figure fig = plt.figure(figsize=(10, 6)) ax = fig.add_subplot(111, projection='3d') # Add line segments from actual data points to predicted points for i in range(len(X1)): ax.plot([X1.values[i,0], X1.values[i,0]], [X2.values[i,0], X2.values[i,0]], [y.values[i,0], y_pred[i,0]], c='g', linewidth=1) # Plot the regression plane ax.set_xlabel('BARTHAG') ax.set_ylabel('WAB', rotation=45) ax.set_zlabel('W') ax.set_title('Multiple Linear Regression') ax.set_box_aspect(aspect=None, zoom=0.85) ax.scatter(X1, X2, y, c='b', marker='o') ax.plot_surface(x1, x2, z, alpha=0.3, cmap='plasma')"
   }
  },
  {
@@ -4659,7 +4728,8 @@
     605.9
    ],
    "crop": "data/advanced/crops/p313_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Now, let’s see if we can improve the model by adding more features. Let’s add TOR (turnover percentage), 2P_O (two-pointer shooting percentage), and 3P_O (three-pointer shooting percentage). X = data[['BARTHAG', 'WAB', 'TOR']] # Feature list y = data[['W']] # Response variable # Create the multiple linear regression model model = LinearRegression() model.fit(X, y) b = model.intercept_[0] a1, a2, a3 = model.coef_[0] print(\"Intercept: \", round(b,3)) print(\"Coefficients: \", [round(a1,3), round(a2,3), round(a3,3)]) print(\"Score: \", round(model.score(X,y),2)) The resulting output will look like this: Intercept: 16.116 Coefficients: [4.502, 0.526, -0.169] Score: 0.59 The formula now expands to: The R-squared measure has increased slightly to 0.59, meaning that the new model explains a bit more of the variance. However, the small increase in prediction accuracy comes at a cost of adding complexity to the model. Simpler models tend to do better at avoiding overfitting in practice, so we will stick to the original two feature variables for this example."
   }
  },
  {
@@ -4753,7 +4823,8 @@
     346.6
    ],
    "crop": "data/advanced/crops/p316_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Recall that the rows of the confusion matrix are labeled by actual values while the columns are labeled by predicted values. Thus, there are 25 true positives (TP) and 23 true negatives (TN), increasing the accuracy to 48/62 = 77%. The number of false negatives (FN) dropped from 10 down to 5, but the number of false positives (FP) increased by 1, which is not a bad trade-off. 6.4 Decision Trees Learning Outcomes By the end of this section, you should be able to: • 6.4.1 Measure information using entropy. • 6.4.2 Understand how entropy can be used to classify data. • 6.4.3 Build a top-down decision tree classifier. • 6.4.4 Use decision trees to classify data and make predictions. How do you make decisions? Often, we choose one product over another based on a combination of features. For instance, imagine you are considering purchasing a new smartphone. You might compare different models based on criteria such as camera quality, battery life, processing speed, and price. If there are many options available, you might organize your decision process into a flow chart or tree."
   }
  },
  {
@@ -4805,7 +4876,8 @@
     274.6
    ],
    "crop": "data/advanced/crops/p317_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.18 A Simple Decision Tree In machine learning, a decision tree is an algorithm used for both classification and regression tasks, offering a visual and intuitive approach to solving complex problems using treelike structures to keep track of decisions based on the features of the dataset. Decision trees combine simplicity and flexibility in data analysis. They are simple structures to understand and create, inspired by the way our minds make choices. Decision trees break down decisions into a series of straightforward choices, much like following a trail of breadcrumbs through a dense forest. Their flexibility lies mainly in their nonlinear nature. Instead of trying to fit data to a linear model or some other rigid structure, the decision tree classifies data using a series of choices that depend on other choices, which may in turn depend on other choices, etc."
   }
  },
  {
@@ -4931,7 +5003,8 @@
     425.3
    ],
    "crop": "data/advanced/crops/p319_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.19 Labeled Scatterplot of Dataset S. Note the pattern of red and blue that would be impossible to predict from a typical linear or logistic regression. Notice in Figure 6.19 that the red points fall into roughly two clusters that are bordered by blue points. In order to capture this feature, you will need a more flexible tool than linear or logistic regression. We will set up a decision tree! As discussed earlier, a decision tree is a classification algorithm that builds a hierarchical structure where each internal node represents a decision based on a feature of the data and each leaf node represents a final decision, label, or prediction. The potential number of decision trees for any given dataset is vast, and so part of the process is to create the tree in such a way so that each choice provides the greatest information gain."
   }
  },
  {
@@ -5071,7 +5144,8 @@
     354.3
    ],
    "crop": "data/advanced/crops/p321_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.20 Flowchart for a Decision Tree. The root node is at the top. Each internal node asks a question about the data and routes accordingly. Leaf nodes indicate the label for the data. Figure 6.21 Regions of the Plane Corresponding to Pure Nodes. The dataset is completely categorized into red and blue regions separated by lines that are defined by inequalities. In the preceding example, the maximum number of comparisons, or decisions, that could be made on any input data would be the length of the longest branch of the tree, which is 7 nodes. The number of levels, or length of the longest branch in a decision tree, is known as its depth. So this tree has a depth of 7. However, the last few levels of the tree may in fact be overfitting on the training data. In the next section we will find out how to test and use decision trees and explore ways to reduce their overfitting variance by pruning and other methods."
   }
  },
  {
@@ -5094,7 +5168,8 @@
     651.7
    ],
    "crop": "data/advanced/crops/p321_fig1.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.21 Regions of the Plane Corresponding to Pure Nodes. The dataset is completely categorized into red and blue regions separated by lines that are defined by inequalities. In the preceding example, the maximum number of comparisons, or decisions, that could be made on any input data would be the length of the longest branch of the tree, which is 7 nodes. The number of levels, or length of the longest branch in a decision tree, is known as its depth. So this tree has a depth of 7. However, the last few levels of the tree may in fact be overfitting on the training data. In the next section we will find out how to test and use decision trees and explore ways to reduce their overfitting variance by pruning and other methods. Using a Decision Tree to Predict Once you have created a decision tree model, it can be used to classify new data. Simply follow the flowchart to find out which leaf node your data points falls into."
   }
  },
  {
@@ -5176,7 +5251,8 @@
    ],
    "rows": 4,
    "cols": 4,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 6.8 Test Points Solution According to this table, M was correct 2 out of 3 times, so the accuracy is 2/3 = 66.6%. Pruning, Depth-Limiting, and Other Methods for Reducing Variance Decision trees often suffer from overfitting (high variance), which adversely affects their accuracy. Fortunately, there are a number of methods that can be used to reduce overfitting. A decision tree that has a lot of internal nodes is prone to overfitting because it may be making decisions based on only a very small amount of data or very small difference in the data’s features. “Splitting hairs” is a common term for emphasizing small differences that may not actually matter much. We generally do not want our models to split hairs. Pruning is the process of reducing the size of a decision tree by removing branches that split the data too finely."
   }
  },
  {
@@ -5258,7 +5334,8 @@
     259.3
    ],
    "crop": "data/advanced/crops/p324_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.22 Flowchart for Pruned Decision Tree from Example 6.10 Figure 6.23 Regions of the Plane Corresponding to Pure Nodes for the Pruned Tree. The pruned model divides the plane into fewer regions than the original model did, which likely captures the true underlying pattern better without overfitting. Now let’s reclassify the points (9.9, 2.5), (15.1, 12.6), and (3.5, 10.2) as in Table 6.9. b). Starting at the root node, branch left (Y = 2.5 ≤ 13.75). Branch left again (Y = 2.5 ≤ 8.45), which is a blue leaf. 6). Starting at the root node, branch left (Y = 12.6 ≤ 13.75). Then branch right ), which is a red leaf. 2). Starting at the root node, branch left (Y = 10.2 ≤ 13.75). Branch left again ). Then branch right (Y = 10.2 > 8.45), which is now a red leaf. Table 6.9 Reclassified Test Points"
   }
  },
  {
@@ -5281,7 +5358,8 @@
     539.9
    ],
    "crop": "data/advanced/crops/p324_fig1.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 6.23 Regions of the Plane Corresponding to Pure Nodes for the Pruned Tree. The pruned model divides the plane into fewer regions than the original model did, which likely captures the true underlying pattern better without overfitting. Now let’s reclassify the points (9.9, 2.5), (15.1, 12.6), and (3.5, 10.2) as in Table 6.9. b). Starting at the root node, branch left (Y = 2.5 ≤ 13.75). Branch left again (Y = 2.5 ≤ 8.45), which is a blue leaf. 6). Starting at the root node, branch left (Y = 12.6 ≤ 13.75). Then branch right ), which is a red leaf. 2). Starting at the root node, branch left (Y = 10.2 ≤ 13.75). Branch left again ). Then branch right (Y = 10.2 > 8.45), which is now a red leaf. Table 6.9 Reclassified Test Points Now we find the model to be 100% accurate on the testing data. (Of course, a model trained on real-world data with many more data points cannot possibly attain 100% accuracy, but this is possible on very small datasets.) Note that the model’s accuracy on the original training set S is no longer 100%. On S, the pruned tree misclassifies two points, (3.2, 11), and (9.4, 12.8) as red when they are in fact blue, and so the accuracy on the training set is now 17/19 = 89.5%. That’s still pretty good!"
   }
  },
  {
@@ -5320,7 +5398,8 @@
    ],
    "rows": 4,
    "cols": 4,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 6.9 Reclassified Test Points Now we find the model to be 100% accurate on the testing data. (Of course, a model trained on real-world data with many more data points cannot possibly attain 100% accuracy, but this is possible on very small datasets.) Note that the model’s accuracy on the original training set S is no longer 100%. On S, the pruned tree misclassifies two points, (3.2, 11), and (9.4, 12.8) as red when they are in fact blue, and so the accuracy on the training set is now 17/19 = 89.5%. That’s still pretty good! Other methods exist for pruning a decision tree. There are two main types: pre-pruning and post-pruning. Pre- pruning refers to setting parameters or criteria for the complexity of the decision tree at the outset. New branches would be added only if the criteria are met. Post-pruning happens after the entire tree is created without restriction. In post-pruning, branches and nodes are removed according to user-defined rules, turning the previously internal nodes into leaf nodes. Error-based pruning may be implemented as either a pre- or post-pruning algorithm."
   }
  },
  {
@@ -5400,7 +5479,8 @@
     565.3
    ],
    "crop": "data/advanced/crops/p326_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "6.5 Other Machine Learning Techniques Learning Outcomes By the end of this section, you should be able to: • 6.5.1 Discuss the concept of a random forest as a bootstrapping method for decision trees. • 6.5.2 Create a random forest model and use it to classify data. • 6.5.3 Define conditional probability and explain prior probabilities for training datasets. • 6.5.4 Produce a (multinomial) naïve Bayes classifier and use it to classify data. • 6.5.5 Discuss the concept of a Gaussian naïve Bayes classifier. • 6.5.6 Describe some methods for working with big data efficiently and effectively. So far, we have encountered a number of different machine learning algorithms suited to particular tasks. Naturally, the realm of machine learning extends well beyond this small survey of methods. This section describes several more machine learning techniques, though in less detail. Methods such as random forests, naïve Bayes classifiers, and a refinement of the latter called Gaussian naïve Bayes, offer distinctive approaches to solving complex problems. Additionally, this section provides insights into strategies for handling vast datasets, presenting a comprehensive survey of methods tailored for the unique challenges posed by Big Data."
   }
  },
  {
@@ -5879,7 +5959,8 @@
     246.5
    ],
    "crop": "data/advanced/crops/p421_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 9.1 Data visualization techniques can involve collecting and analyzing geospatial data, such as measurements collected by the National Park Service during the High-Efficiency Trail Assessment Process (HETAP). (credit: modification of work \"Trail Accessibility Assessments\" by GlacierNPS/Flickr, Public Domain) Chapter Outline 9.1 Encoding Univariate Data 9.2 Encoding Data That Change Over Time 9.3 Graphing Probability Distributions 9.4 Geospatial and Heatmap Data Visualization Using Python 9.5 Multivariate and Network Data Visualization Using Python Introduction Data visualization serves as an effective strategy for detecting patterns, trends, and relationships within complex datasets. By representing data graphically, analysts can deduce relationships, dependencies, and outlier behaviors that might otherwise remain hidden in the raw numbers or tables. This visual exploration not only aids in understanding the underlying structure of the data but also helps to detect trends and correlations and leads data scientists to more informed decision-making processes."
   }
  },
  {
@@ -6155,7 +6236,8 @@
     695.9
    ],
    "crop": "data/advanced/crops/p425_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Notice in the boxplot above the left edge and right edge of the rectangle represent the first quartile and third quartile, respectively. Recall from Measurements of Position that the interquartile range (IQR) is calculated as the third quartile less the first quartile, and thus the IQR is represented by the width of the rectangle shown in the boxplot. In this example, the first quartile is $54,000 and the third quartile is $92,000, and the IQR is thus $92,000 - $54,000, which is $38,000. The vertical line shown within the rectangle indicates the median, and in this example, the median salary is $65,000. Finally, the whisker on the left side of the boxplot indicates the minimum of the dataset and the whisker on the right side of the boxplot represents the maximum of the dataset. In this example, the minimum salary at the company is $42,000 and the maximum salary is $140,000."
   }
  },
  {
@@ -6193,7 +6275,8 @@
    ],
    "rows": 13,
    "cols": 6,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 9.1 Baseball Player Dataset (SOCR-small.csv) source: http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_MLB_HeightsWeights Solution Here is the Python code to generate a vertical boxplot for the ages of a sample of baseball players. (Note: In order to generate a boxplot using a vertical format, set the parameter vert to be TRUE.) import matplotlib.pyplot as plt # Sample data ages = [26.01, 29.95, 28.12, 32.87, 31.2, 34.14, 36.11, 26.31, 27.5, 27.77, 40.88, 25.75] # Creating the boxplot plt.boxplot(ages, vert=\"TRUE\") # Adding title and labels plt.title('Vertical Boxplot for Ages of Major League Baseball Players') plt.ylabel('Ages') # Display the plot plt.show() The resulting output will look like this: Notice in the boxplot, the horizontal line representing the median is not centered within the rectangle, which indicates the distribution is not symmetric. Also, notice the whisker running vertically from the top of the rectangle is longer than the whisker running vertically from the bottom of the rectangle, and this gives an indication of a skewed distribution (right-skew)."
   }
  },
  {
@@ -6260,7 +6343,8 @@
     599.2
    ],
    "crop": "data/advanced/crops/p427_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Notice in the boxplot, the horizontal line representing the median is not centered within the rectangle, which indicates the distribution is not symmetric. Also, notice the whisker running vertically from the top of the rectangle is longer than the whisker running vertically from the bottom of the rectangle, and this gives an indication of a skewed distribution (right-skew). The following example illustrates the generation of a side-by-side boxplot using Python. EXAMPLE 9.2 Problem A real estate agent would like to compare the distribution of home prices in San Francisco, California, versus San Jose, California. The agent collects data for a sample of recently sold homes as follows (housing prices are in U.S. $1000s). San Francisco Housing Prices: 1250, 1050, 972, 1479, 1550, 1000, 1499, 1140, 1388, 1050, 1465"
   }
  },
  {
@@ -6325,7 +6409,8 @@
     461.1
    ],
    "crop": "data/advanced/crops/p429_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Notice in the boxplot for San Franscico housing prices, the distribution appears symmetric, and the median housing price appears to be approximately $1,250. The median home price for San Jose appears to be approximately $1,200. The boxplot for San Jose home prices indicates more dispersion as compared to the boxplot for San Francisco home prices. Histograms A histogram is a graphical representation of the distribution of numerical data. Histograms are particularly useful for displaying the distribution of continuous data; they provide the visualization of a frequency (or relative frequency) distribution table. For example, Figure 9.2 displays the distribution of heights (in inches to the nearest half-inch) of 100 semiprofessional male soccer players. In this histogram, heights are plotted on the horizontal axis and relative frequency of occurrence is posted on the vertical axis. Notice the tallest bar in the histogram corresponds to heights between 65.95 and 67.95 inches."
   }
  },
  {
@@ -6376,7 +6461,8 @@
     221.3
    ],
    "crop": "data/advanced/crops/p430_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 9.2 Histogram Displaying the Distribution of Heights (in inches to the nearest half-inch) of 100 Male Semiprofessional Soccer Players Histograms are widely used in exploratory data analysis and descriptive statistics to gain insights into the distribution of numerical data, identify patterns, detect outliers, and make comparisons between different datasets. A histogram is similar to a bar chart except that a histogram will not have any gaps between the bars whereas a bar chart typically has gaps between the bars. A histogram is constructed as a series of continuous intervals where the height of each bar represents a frequency or count of the number of data points falling within each interval. The vertical axis in a histogram is typically frequency (count) or relative frequency. and the horizontal axis is based on specific intervals for the data (called bins)."
   }
  },
  {
@@ -6455,7 +6541,8 @@
     185.2
    ],
    "crop": "data/advanced/crops/p431_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 9.3 Bell-Shaped Histogram Figure 9.4 Skewed Left Histogram Figure 9.5 Skewed Right Histogram EXPLORING FURTHER Determining a Skewed or Symmetric Distribution with the Mean and Median Another method to determine skewed versus bell-shaped (symmetric) distributions is through the use of the mean and median. In a symmetric distribution, we expect the mean and median to be approximately the same. In a right skewed distribution, the mean is typically greater than the median. In a left skewed distribution, the mean is typically less than the median. This Briefed by Data website (https://openstax.org/ r/briefedbydata) provides animations and more detail on shapes of distributions, including examples of skewed distributions. A histogram with multiple peaks is indicative of a bimodal or multimodal distribution—which indicates the possibility of subpopulations within the dataset."
   }
  },
  {
@@ -6478,7 +6565,8 @@
     332.0
    ],
    "crop": "data/advanced/crops/p431_fig1.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 9.4 Skewed Left Histogram Figure 9.5 Skewed Right Histogram EXPLORING FURTHER Determining a Skewed or Symmetric Distribution with the Mean and Median Another method to determine skewed versus bell-shaped (symmetric) distributions is through the use of the mean and median. In a symmetric distribution, we expect the mean and median to be approximately the same. In a right skewed distribution, the mean is typically greater than the median. In a left skewed distribution, the mean is typically less than the median. This Briefed by Data website (https://openstax.org/ r/briefedbydata) provides animations and more detail on shapes of distributions, including examples of skewed distributions. A histogram with multiple peaks is indicative of a bimodal or multimodal distribution—which indicates the possibility of subpopulations within the dataset."
   }
  },
  {
@@ -6501,7 +6589,8 @@
     478.8
    ],
    "crop": "data/advanced/crops/p431_fig2.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 9.5 Skewed Right Histogram EXPLORING FURTHER Determining a Skewed or Symmetric Distribution with the Mean and Median Another method to determine skewed versus bell-shaped (symmetric) distributions is through the use of the mean and median. In a symmetric distribution, we expect the mean and median to be approximately the same. In a right skewed distribution, the mean is typically greater than the median. In a left skewed distribution, the mean is typically less than the median. This Briefed by Data website (https://openstax.org/ r/briefedbydata) provides animations and more detail on shapes of distributions, including examples of skewed distributions. A histogram with multiple peaks is indicative of a bimodal or multimodal distribution—which indicates the possibility of subpopulations within the dataset."
   }
  },
  {
@@ -6580,7 +6669,8 @@
     523.3
    ],
    "crop": "data/advanced/crops/p433_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Notice that the shape of the histogram appears bell-shaped and symmetric, in that the tallest bar is in the center of the histogram and the bars decrease in height to the left and right of center. Pareto Charts A Pareto chart is a bar graph for categorical data where the taller bars are on the left side of the chart and the bars are placed in a descending height from the left side of the chart to the right side of the chart. A Pareto chart is unique in that it combines both bar and line graphs to represent data in descending order of frequency or importance, along with the cumulative percentage of the total. The chart is named after Vilfredo Pareto, an Italian economist who identified the 80/20 rule, which states that roughly 80% of effects come from 20% of causes. This type of chart is commonly used in quality improvement efforts where a researcher would like to quickly identify the major contributors to a problem."
   }
  },
  {
@@ -6632,7 +6722,8 @@
    ],
    "rows": 6,
    "cols": 2,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 9.2 Smartphone Defect Data Create a Pareto chart for these failure categories using Python. Solution We can use pandas (https://openstax.org/r/pydata1) to create a DataFrame to store the failure categories and number of defects. Then we will calculate the cumulative frequency percentages for display on the Pareto chart. The DataFrame is sorted in descending order of number of defects. The cumulative percentage is calculated using the Python cusum() function. The reference to ax1 is the primary y-axis for frequency (i.e., left-hand y-axis). The reference to ax2 is the y-axis, which will plot the cumulative frequency (right-hand y-axis). The reference to the twinx function is a method in matplotlib that allows the two y-axis scales to share the same x-axis. import pandas as pd import matplotlib.pyplot as plt"
   }
  },
  {
@@ -6711,7 +6802,8 @@
     352.9
    ],
    "crop": "data/advanced/crops/p436_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Notice in the Pareto output chart that the leftmost three bars account for approximately 75% of the overall defect level, so a quality engineer can quickly determine that the three categories of “Scratches,” “Does Not Charge,” and “Cracked Screen” account for the majority of the defects and would then be the defects to focus on for quality improvement efforts. According to the Pareto chart that is created, the three defect categories of “Scratches,” “Does Not Charge,” and “Cracked Screen” are major contributors to the defect level and should be investigated with higher priority. The two defect categories of “Power Button” and “Volume Controls” are not major contributors and should be investigated with lower priority. 9.2 Encoding Data That Change Over Time Learning Outcomes By the end of this section, you should be able to:"
   }
  },
  {
@@ -6763,7 +6855,8 @@
    ],
    "rows": 9,
    "cols": 2,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 9.3 Community College Enrollment Solution To create a time series graph for this dataset, start off by creating the horizontal axis by plotting the time increments, from years 1 to 8. For the vertical axis, used a numeric scale extending from 4,000 to 12,000 since this covers the span of the numeric enrollment data. Then for each row in the table, plot the corresponding (x, y) point on the graph. By doing this, we make each point on the graph correspond to a point in time and a measured quantity. For example, the first row in the table shows the (x, y) datapoint of (1, 8641). To plot this point, identify the location that corresponds to Year 1 on the horizontal axis and an enrollment value of 8641 on the vertical axis. At the intersection of the horizontal location and vertical location, plot a single point to represent this (x, y) data value. Repeat this process for each row in the table. Since there are eight rows in the table, we expect to see eight points on the time series graph. Finally, the points on the graph are typically connected by straight lines in the"
   }
  },
  {
@@ -6872,7 +6965,8 @@
     550.3
    ],
    "crop": "data/advanced/crops/p439_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "The graph indicates that the enrollment gradually increased over years 1 to 4 but then began to decrease from years 4 to 8. Guidelines for Creating Effective Visualizations You have likely come across poorly constructed graphs that are difficult to interpret or possibly misleading in some way. However, if you follow certain guidelines when creating your visualizations, you will be sure your visualizations are effective and represent the data fairly. The first rule is to ensure your graph or chart is clear and easy to understand. You may be familiar with the type of data collected, but your audience may not be. Provide a title and label each axis, including units where appropriate. Provide a data source where appropriate. Use scales for the axes and avoid distortion (i.e., don’t intentionally adjust the scale to produce a desired effect in the graph)."
   }
  },
  {
@@ -6994,7 +7088,8 @@
    ],
    "rows": 5,
    "cols": 3,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 9.4 Summary of Visualization Methods Based on Goals and Data 9.3 Graphing Probability Distributions Learning Outcomes By the end of this section, you should be able to: • 9.3.1 Create graphs to visualize the shape of various types of probability distributions. • 9.3.2 Interpret probabilities as areas under probability distributions. • 9.3.3 Use Python to generate various data visualizations for probability distributions We introduced probability distributions in Discrete and Continuous Probability Distributions. Recall that the binomial distribution and the Poisson distribution are examples of discrete probability distributions, and the normal distribution is an example of a continuous probability distribution. In addition, a discrete random variable is a random variable where there is only a finite or countable infinite number of values that the variable can take on. A continuous random variable is a random variable where there is an infinite number of values that the variable can take on."
   }
  },
  {
@@ -7145,7 +7240,8 @@
     335.0
    ],
    "crop": "data/advanced/crops/p444_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Here is the graph for n = 20 and p = 0.50. Here is the graph for n = 20 and p = 0.85. Notice the impact of p on the shape of the graph: for p = 0.1, the graph is right skewed, for p = 0.5, the graph resembles a bell-shaped distribution, and for p = 0.85, the graph is left skewed. Graphing the Poisson Distribution The Poisson distribution is used when counting the number of occurrences in a certain interval. The random variable then counts the number of occurrences in that interval. The Poisson distribution is used in the types of situations where the interest is in a specific certain number of occurrences for a random variable in a certain interval such as time or area. Recall from Discrete and Continuous Probability Distributions that the Poisson distribution is used where the following conditions are met:"
   }
  },
  {
@@ -7168,7 +7264,8 @@
     629.5
    ],
    "crop": "data/advanced/crops/p444_fig1.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Here is the graph for n = 20 and p = 0.85. Notice the impact of p on the shape of the graph: for p = 0.1, the graph is right skewed, for p = 0.5, the graph resembles a bell-shaped distribution, and for p = 0.85, the graph is left skewed. Graphing the Poisson Distribution The Poisson distribution is used when counting the number of occurrences in a certain interval. The random variable then counts the number of occurrences in that interval. The Poisson distribution is used in the types of situations where the interest is in a specific certain number of occurrences for a random variable in a certain interval such as time or area. Recall from Discrete and Continuous Probability Distributions that the Poisson distribution is used where the following conditions are met: • The experiment is based on counting the number of occurrences in a specific interval where the interval could represent time, area, volume, etc. • The number of occurrences in one specific interval is independent of the number of occurrences in a different interval."
   }
  },
  {
@@ -7206,7 +7303,8 @@
     335.0
    ],
    "crop": "data/advanced/crops/p445_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Notice the impact of p on the shape of the graph: for p = 0.1, the graph is right skewed, for p = 0.5, the graph resembles a bell-shaped distribution, and for p = 0.85, the graph is left skewed. Graphing the Poisson Distribution The Poisson distribution is used when counting the number of occurrences in a certain interval. The random variable then counts the number of occurrences in that interval. The Poisson distribution is used in the types of situations where the interest is in a specific certain number of occurrences for a random variable in a certain interval such as time or area. Recall from Discrete and Continuous Probability Distributions that the Poisson distribution is used where the following conditions are met: • The experiment is based on counting the number of occurrences in a specific interval where the interval could represent time, area, volume, etc. • The number of occurrences in one specific interval is independent of the number of occurrences in a different interval."
   }
  },
  {
@@ -7288,7 +7386,8 @@
     388.3
    ],
    "crop": "data/advanced/crops/p447_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "From the graph, there are lower probabilities for x = 7 and larger. So there is not much of a chance that 7 or more ships will arrive in a one-hour time period. The administrators for the Port of Miami should plan for 6 or fewer ships arriving per hour to cover the most likely scenarios. Graphing the Normal Distribution The normal distribution discussed in Discrete and Continuous Probability Distributions is one of the more important distributions in data science and statistical analysis. This continuous distribution is especially important in statistical analysis in that many measurements in nature, science, engineering, medicine, and business follow a normal distribution. The normal distribution also forms the basis for more advanced statistical analysis such as confidence intervals and hypothesis testing discussed in Hypothesis Testing."
   }
  },
  {
@@ -7399,7 +7498,8 @@
     523.3
    ],
    "crop": "data/advanced/crops/p449_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "9.4 Geospatial and Heatmap Data Visualization Using Python Learning Outcomes By the end of this section, you should be able to: • 9.4.1 Describe the insights produced by spatial heatmaps based on geospatial data. • 9.4.2 Discuss the common features of GIS mapping. • 9.4.3 Use a GIS mapper to produce a visualization of geospatial data. Geospatial data refers to data that describes the geographic location, shape, size, and other attributes relative to a location on the Earth's surface. Geospatial data can be captured, stored, manipulated, analyzed, and visualized using various technologies and tools. Geospatial data visualization using Python involves the representation and analysis of data that has a geographic component, such as latitude and longitude coordinates. Python offers several libraries and utilities for geospatial data visualization and analysis, including the Pandas library discussed in What Are Data and"
   }
  },
  {
@@ -7436,7 +7536,8 @@
     578.7
    ],
    "crop": "data/advanced/crops/p450_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 9.6 Example of Heatmap Showing Differences from Average Temperature for January 2024 by Colors (data source: NOAA Climate.gov maps based on data from NOAA National Centers for Environmental Information. [NCEI] https://www.climate.gov/media/15930, accessed June 23, 2024.) Spatial heatmaps are generated by condensing the spatial coordinates of individual data points into a grid or a set of bins covering the geographic area of interest. The density of data points within each grid cell or bin is then calculated, and these density results are then mapped to specific colors using a color gradient map. Geographic areas with higher density values are assigned colors that represent higher intensity, while areas with lower density values are assigned colors that represent lower intensity. Finally, the colored grid cells can be overlaid on a map, and the result is a visual representation of the spatial distribution of data points."
   }
  },
  {
@@ -7515,7 +7616,8 @@
     447.4
    ],
    "crop": "data/advanced/crops/p451_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 9.7 Grid Heatmap Showing Color Density for Crop Harvest by Local Farmer and Type of Crop (source: created by author using Matplotlib by D. Hunter, \"Matplotlib: A 2D Graphics Environment\", Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, 2007. DOI: https://zenodo.org/records/13308876) EXPLORING FURTHER Interactive Heatmaps Various interactive heatmaps are available that allow the user to preselect variables of interest and then view the corresponding geospatial map or heatmap. For example, see these interactive heatmaps utilizing crash and demographic data as well as traffic safety improvement activities in California: https://catsip.berkeley.edu/resources/crash-data/crash-data-tools-and-resources (https://openstax.org/r/ berkeley) https://safetyheatmap.berkeley.edu/map/// (https://openstax.org/r/safetyheatmap)"
   }
  },
  {
@@ -7622,7 +7724,8 @@
     509.8
    ],
    "crop": "data/advanced/crops/p453_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "By examining the heatmap the viewer can conclude that the number of passengers has increased year to year, and that the summer months of July and August tend to have a higher number of passengers. Introduction to Geospatial Information System (GIS) Mapping Geospatial Information System (GIS) mapping is a tool for visualizing, analyzing, and interpreting spatial data that makes use of various types of geographical data, such as maps and satellite images. The goal is to allow the user to visualize patterns and trends based on geographic attributes. It is likely that you have already come across a heatmap overlaid on a geographic map in a news article or website. Heatmaps such as these are often referred to as a choropleth graph, which refers to the graphing of data according to geographic boundaries such as states, counties, etc. A choropleth graph is created by overlaying a grid on a geographic map and then typically coloring the map based on density or some other measurement for a specific grid location on the map. Choropleth graphs are commonly used to plot data overlaid on geographic maps for economic data, population data, housing data, medical-related data, etc."
   }
  },
  {
@@ -7673,7 +7776,8 @@
     623.9
    ],
    "crop": "data/advanced/crops/p454_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Figure 9.8 Choropleth Graph Showing Cases of COVID-19 (data source: Data from WHO COVID-19 Dashboard. Geneva: World Health Organization, 2020. Available online: https://data.who.int/dashboards/covid19/\" via OurWorldinData.org. Retrieved from: https://ourworldindata.org/grapher/weekly- covid-deaths [Online Resource].) Using Python for Geographic Mapping As mentioned earlier, Python provides a number of libraries and tools to facilitate the generation of geographic mapping. There are several steps involved in the process: 1. Establish and collect geospatial data: The first step is to collect the geospatial data of interest. This type of data is readily available from a number of sources such as open data repositories, government agencies such as the Census Bureau, for example, etc. The data can be found in various formats such as shapefiles, GeoJSON files, etc. (a shapefile is a data format used for geospatial data that represents geographic data in a vector format). 2. Data processing: Once the data is collected, data processing or transformation may be needed, as discussed in Collecting and Preparing Data. For example, some form of coding might be needed to transform addresses into geographic coordinates such as latitude and longitude to facilitate the geographic mapping. Additional data processing might be needed to estimate or interpolate missing data to generate continuous temperature maps, for example. 3. Generate the map to visualize the geographic data using libraries such as matplotlib and geopandas."
   }
  },
  {
@@ -7837,7 +7941,8 @@
     328.5
    ],
    "crop": "data/advanced/crops/p457_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "We can augment this scatterplot by adding color to indicate the revenue level (y-value). To do this, use the c parameter in the plt.scatter function to specify that the color of the points will be based on the y-value of the data point. The parameter cmap allows the user to specify the color palette to be used such as “hot,” coolwarm,” etc. In addition, a color bar can be added to the scatterplot so the user can interpret the color scale. Here is a revised Python code and scatterplot that includes the color enhancement for the data points: import matplotlib.pyplot as plt import matplotlib.ticker as ticker # Define the x-data, which is the amount spent on advertising x = [49, 145, 57, 153, 92, 83, 117, 142, 69, 106, 109, 121] # Define the y-data, which is revenue y = [12210, 17590, 13215, 19200, 14600, 14100, 17100, 18400, 14100, 15500, 16300, 17020]"
   }
  },
  {
@@ -7902,7 +8007,8 @@
     328.5
    ],
    "crop": "data/advanced/crops/p459_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "A typical application for this capability is to plot the color of the datapoint on a scatterplot based on the value of a third variable. For example, a real estate professional may be interested in the correlation between home price, square footage of the home, and location in terms of distance in miles from the center of a city. The scatterplot can be created based on (x, y) data, where x is the square footage of the home, y is the price of the home, and z is the distance from center of the city, represented by the color of the point. # import the matplotlib library import matplotlib.pyplot as plt # define the x-data, which is square footage of a home x = [2100, 2378, 1983, 1422, 2764, 1901, 1198, 1785, 1556, 2931, 3071, 1688] # define the y-data, which is the corresponding home price in 000 y = [390, 427, 350, 285, 479, 299, 250, 310, 290, 495, 515, 284]"
   }
  },
  {
@@ -7954,7 +8060,8 @@
     574.4
    ],
    "crop": "data/advanced/crops/p460_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Correlation Heatmaps Recall from Correlation and Linear Regression Analysis that correlation analysis is used to determine if one quantity is related to or correlates with another quantity. For example, you know that the value of a car is correlated with the age of the car where, in general, the older the car, the less its value. A numeric correlation coefficient (r) was calculated that provided information on both the strength and direction of the correlation. The value of r gives us this information: - The value of r is always between -1 and +1. The size of the correlation r indicates the strength of the linear relationship between the two variables. Values of r close to -1 or to +1 indicate a stronger linear relationship. Values of r close to zero indicate weak correlation. The sign of r gives us this information:"
   }
  },
  {
@@ -8007,7 +8114,8 @@
    ],
    "rows": 9,
    "cols": 2,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 9.5 Fields and Descriptions for the “Car_Crashes” Dataset from the Seaborn Library There are 50 records in the dataset (one record per state). The first five lines of the dataset appear in Table 9.6. Table 9.6 “Car_Crashes” Dataset Excerpt The short Python program that follows can be used to generate a correlation heatmap for the variables in the dataset; it makes use of the heatmap function available in the Seaborn library (see also Decision-Making Using Machine Learning Basics). import seaborn as sns import matplotlib.pyplot as plt # Load the car_crashes dataset from seaborn library dataset = sns.load_dataset(\"car_crashes\") # Select only numeric columns numeric_columns = dataset.select_dtypes(include=['number']) # Calculate the correlation matrix correlation_matrix = numeric_columns.corr()"
   }
  },
  {
@@ -8031,7 +8139,8 @@
    ],
    "rows": 6,
    "cols": 8,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 9.6 “Car_Crashes” Dataset Excerpt The short Python program that follows can be used to generate a correlation heatmap for the variables in the dataset; it makes use of the heatmap function available in the Seaborn library (see also Decision-Making Using Machine Learning Basics). import seaborn as sns import matplotlib.pyplot as plt # Load the car_crashes dataset from seaborn library dataset = sns.load_dataset(\"car_crashes\") # Select only numeric columns numeric_columns = dataset.select_dtypes(include=['number']) # Calculate the correlation matrix correlation_matrix = numeric_columns.corr() # Generate the correlation heatmap using the Reds color palette sns.heatmap(correlation_matrix, cmap='Reds', annot=True, fmt=\".2f\") # Add a Title to the plot plt.title('Correlation Heatmap for Variables in Car Crashes Dataset')"
   }
  },
  {
@@ -8096,7 +8205,8 @@
     346.6
    ],
    "crop": "data/advanced/crops/p463_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Notice in the correlation heatmap that dark-red coloring is visible on the diagonal from the upper left to the lower right corner of the matrix. This dark shading represents a correlation coefficient of 1.0 since any variable is considered to be perfectly correlated with itself. Visualizing Three-Dimensional Data Let’s say you are taking an anatomy class, and an instructor attempts to verbally describe the human nervous system. Compare this to an interactive 3D model of the human nervous system, where a student can view the nervous system in three dimensions, rotate the 3D image, and view the nervous system from various angles and perspectives. Let’s say an auto mechanic needs to repair a transmission on a car and attempts to read the written technical service manual to understand how to start the repair. Compare this to an interactive 3D model of the car’s transmission where the mechanic can visualize the exact location for the repair and interact with the 3D model."
   }
  },
  {
@@ -8162,7 +8272,8 @@
    ],
    "rows": 5,
    "cols": 5,
-   "transcribed_by": null
+   "transcribed_by": null,
+   "after": "Table 9.7 “Iris” Dataset Excerpt We will use the mpl_toolkits.mplot3d() function to generate the three-dimensional scatterplot. First, we will read in the “iris” dataset from the Seaborn library (https://openstax.org/r/seabornpydata). Next, the 3D scatterplot is created using the fig.add.subplot() function. The ax.scatter() function is then used to plot the data points. Here is the Python code: import matplotlib.pyplot as plt from mpl_toolkits.mplot3d import Axes3D import seaborn as sns import matplotlib.cm as cm import matplotlib.colors as mcolors from matplotlib.patches import Rectangle # Load the iris dataset from Seaborn data repository flower = sns.load_dataset('iris') # Create a blank figure with a white background fig = plt.figure(figsize=(9, 8), facecolor='white') # Add a subplot to the figure ax = fig.add_subplot(111, projection='3d')"
   }
  },
  {
@@ -8241,7 +8352,8 @@
     361.0
    ],
    "crop": "data/advanced/crops/p466_fig0.png",
-   "generated_by": "gpt-4.1-mini"
+   "generated_by": "gpt-4.1-mini",
+   "after": "Datasets Note: The primary datasets referenced in the chapter code may also be downloaded here (https://openstax.org/r/folders14a)."
   }
  },
  {

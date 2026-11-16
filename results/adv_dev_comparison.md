@@ -18,9 +18,10 @@ Index thay đổi trong quá trình thử, nên kết quả chỉ so sánh trự
 | v1 | + 5 bảng mất ô công thức được chép lại từ ảnh; mô tả biểu đồ cột/histogram viết lại (liệt kê từng cột) | I6–I8, F1 |
 | v1-OCR | Như v1 nhưng hình đọc bằng Tesseract 5.5.2; chỉ dùng mô tả vision khi OCR thất bại (57/86 hình dùng OCR) | O1 |
 | v2 | v1 + chú thích thay thế cho 35 hình không có caption (đoạn văn ngay trước và sau hình) | F2, F2b, F3, F3b |
-| v3 | v2 + 254 đoạn văn có công thức (vẽ bằng vector, mất ký hiệu trong lớp text) được chép lại từ ảnh; 9 bản chép bị loại vì thêm nội dung không có trong sách | F4, F4b (index hiện tại) |
+| v3 | v2 + 254 đoạn văn có công thức (vẽ bằng vector, mất ký hiệu trong lớp text) được chép lại từ ảnh; 9 bản chép bị loại vì thêm nội dung không có trong sách | F4, F4b |
+| v4 | v3 + mỗi bảng/hình lưu thêm đoạn văn ngay sau nó trong sách (metadata `after`, khoảng 800 ký tự, nối sang trang sau nếu cần). Text được embed không đổi, không embed lại | F5, F5b, F6, F6b (index hiện tại) |
 
-Chỉ F4/F4b chạy lại được trên index hiện tại; các lần chạy trước vẫn giữ nguyên trace làm bằng chứng.
+F4/F4b và F5–F6b chạy lại được trên index hiện tại (v4 chỉ thêm metadata, F4 không dùng đến); các lần chạy trước vẫn giữ nguyên trace làm bằng chứng.
 
 ## Kết quả
 
@@ -40,6 +41,10 @@ Chỉ F4/F4b chạy lại được trên index hiện tại; các lần chạy t
 | F3b | Chạy lại F3 | v2 | 16 | AD14, AD17 | 0,084 | 7,9 |
 | F4 | Cấu hình F3 trên index v3 (công thức được chép lại) | v3 | 16 | AD11, AD17 | 0,083 | 8,2 |
 | F4b | Chạy lại F4 | v3 | 17 | AD17 | 0,084 | 8,4 |
+| F5 | + đoạn văn sau bảng/hình gắn vào kết quả tìm kiếm (`--neighbours`); prompt v7 (trả lời đủ mọi phần, giá trị do vision tự tính không phải bằng chứng); prompt đọc hình v2 (chỉ báo giá trị in trên hình); verify bỏ mô tả lưu sẵn của hình đã đọc | v4 | 17 | AD17 | 0,094 | 7,7 |
+| F5b | Chạy lại F5 | v4 | 17 | AD17 | 0,103 | 8,0 |
+| F6 | F5 + verify bằng `gpt-6.1-terra` (`--verify-model`) | v4 | 18 | — | 0,110 | 9,0 |
+| F6b | Chạy lại F6 | v4 | 17 | AD17 | 0,112 | 8,1 |
 
 Không có lỗi hệ thống ở các lần chạy trên. Chi phí gồm model agent, verify và vision của `read_figure`; giá `gpt-4.1-mini` $0,40 / $1,60 và `gpt-6.1-terra` $1 / $5 mỗi 1M token input / output. Chi phí xây index: vision $0,166 (91 mô tả hình/bảng + 263 đoạn công thức), embedding dưới $0,01.
 
@@ -49,7 +54,9 @@ Không có lỗi hệ thống ở các lần chạy trên. Chi phí gồm model 
 - **OCR không thay được vision (O1).** Tesseract đọc đúng chữ in nhưng mất thông tin đồ họa (cột cao nhất, hình dạng đường, nhánh cây quyết định); độ tin cậy OCR cao ngay cả khi kết quả vô dụng. Nhóm câu hình giảm còn 1/6.
 - **Lỗi do ký hiệu toán bị mất (AD14)** chỉ hết khi sửa ở index (v3); các quy tắc trong prompt không đủ.
 - **Biến động giữa các lần chạy:** cùng thiết lập, kết quả lệch khoảng 1 câu (F2/F2b, F4/F4b).
-- **Lỗi còn lại:** AD17 (câu bẫy: điểm silhouette 0,77 thuộc lần chạy Python trên 115 điểm, không phải ví dụ 19 điểm) sai ở mọi cấu hình.
+- **Lỗi còn lại:** AD17 (câu bẫy: điểm silhouette 0,77 thuộc lần chạy Python trên 115 điểm, không phải ví dụ 19 điểm) sai ở mọi cấu hình đến F5b; verify bằng `gpt-6.1-terra` bắt được một lần (F6: "0,77 thuộc FungusLocations.csv"), F6b vẫn sai.
+- **Đoạn văn sau bảng/hình (F5–F6b):** AD11 đạt ở cả 4 lần chạy (F4 không đạt); F6b trích đúng câu "khoảng 75%" của sách nằm ngay sau biểu đồ Pareto. Đổi lại số token tăng 18–29% so với F4.
+- **Tác dụng phụ của prompt v7:** quy tắc "nói rõ phần nào sách không có" khiến F5/F5b *trả lời* AD16 ("bảng không có năm 2012") thay vì từ chối; vẫn đạt theo `ADVANCED.md` (nêu rõ không đủ bằng chứng, không thêm khẳng định thiếu căn cứ) nhưng là nhãn sát ranh giới.
 - **Nhãn sát ranh giới:** AD11 ở F3, F3b, F4b được chấm đạt — đúng ba nhóm lỗi và tỷ lệ khoảng 76% (đúng: 76,3%), nhưng dựa vào giá trị đọc gần đúng từ biểu đồ hoặc cách diễn đạt "khoảng 75%" của sách thay vì phép tính từ bảng.
 
-Trace từng câu: `results/adv-agent-dev-<cấu hình>/traces.json` (O1: `results/adv-ocr-agent-dev-O1/`). Cấu hình được chọn và tiêu chí chọn sẽ ghi riêng trước khi chạy test.
+Trace từng câu: `results/adv-agent-dev-<cấu hình>/traces.json` (O1: `results/adv-ocr-agent-dev-O1/`). Cấu hình được chọn và tiêu chí chọn: `results/adv_selection_criteria.md`.

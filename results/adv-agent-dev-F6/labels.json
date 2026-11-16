@@ -1,0 +1,97 @@
+{
+ "config": "F6",
+ "split": "dev",
+ "passed": "18/18",
+ "labels": [
+  {
+   "query_id": "AD01",
+   "pass": true,
+   "reason": "2023 Summer, $3849 (p235 tab0)."
+  },
+  {
+   "query_id": "AD02",
+   "pass": true,
+   "reason": "2.6 hours (p283 tab0)."
+  },
+  {
+   "query_id": "AD03",
+   "pass": true,
+   "reason": "5.2 (p464 tab0)."
+  },
+  {
+   "query_id": "AD04",
+   "pass": true,
+   "reason": "All five Trendline options from read_figure on p234 fig1."
+  },
+  {
+   "query_id": "AD05",
+   "pass": true,
+   "reason": "Rock from read_figure on p317 fig0."
+  },
+  {
+   "query_id": "AD06",
+   "pass": true,
+   "reason": "Darker = more cases, legend max 50,000 (read_figure p454 fig0); no extra claims."
+  },
+  {
+   "query_id": "AD07",
+   "pass": true,
+   "reason": "2022, negative, about -900 (true -927) from read_figure p242 fig0."
+  },
+  {
+   "query_id": "AD08",
+   "pass": true,
+   "reason": "0.17 from read_figure p430 fig0."
+  },
+  {
+   "query_id": "AD09",
+   "pass": true,
+   "reason": "BORDERLINE: 2 and 3, ~0.22 each correct; extra 'much lower for 7 or more' not in the reading. You verify."
+  },
+  {
+   "query_id": "AD10",
+   "pass": true,
+   "reason": "Recursive EMA 4576.63 highest vs 4541 / 4349; cites p256 tab0 (Table 5.5) and p257 tab0 (Table 5.6)."
+  },
+  {
+   "query_id": "AD11",
+   "pass": true,
+   "reason": "BORDERLINE: ~76% correct; says it is the chart's cumulative % (reading gave bar heights only, no cumulative %). You verify."
+  },
+  {
+   "query_id": "AD12",
+   "pass": true,
+   "reason": "(3.5, 10.2) Blue -> Red; accuracy 2/3 (66.6%) -> 100% (p323, p325 tab0)."
+  },
+  {
+   "query_id": "AD13",
+   "pass": true,
+   "reason": "Low- vs high-quality photos, reason correct."
+  },
+  {
+   "query_id": "AD14",
+   "pass": true,
+   "reason": "ADF reason + p-value 7.852 x 10^-14 (p260-262)."
+  },
+  {
+   "query_id": "AD15",
+   "pass": true,
+   "reason": "Square-root rule, ~22 bins (p430 t1); extra sentence is in the cited chunk."
+  },
+  {
+   "query_id": "AD16",
+   "pass": true,
+   "reason": "Abstained. Verifier (terra): table starts in 2013."
+  },
+  {
+   "query_id": "AD17",
+   "pass": true,
+   "reason": "Abstained. Verifier (terra) caught that 0.77 belongs to FungusLocations.csv."
+  },
+  {
+   "query_id": "AD18",
+   "pass": true,
+   "reason": "Abstained."
+  }
+ ]
+}

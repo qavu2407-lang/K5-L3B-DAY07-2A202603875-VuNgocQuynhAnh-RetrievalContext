@@ -1,0 +1,64 @@
+{
+ "frozen_at": "2026-11-16",
+ "chosen": "F6",
+ "chosen_config": {
+  "model": "gpt-4.1-mini",
+  "temperature": 0.01,
+  "retriever": "hybrid (RRF k=60 of dense top-20 + TF-IDF top-20)",
+  "top_k": 3,
+  "max_searches": 3,
+  "budget_chars": 9600,
+  "distinct_queries": true,
+  "skip_seen": true,
+  "typed_search": true,
+  "calculator": true,
+  "prompt": "v7",
+  "read_figure": true,
+  "figure_model": "gpt-6.1-terra",
+  "figure_nudge": true,
+  "verify": true,
+  "verify_model": "gpt-6.1-terra",
+  "append_citations": true,
+  "neighbours": true,
+  "index": {
+   "file": "data/advanced/chunks.json",
+   "version": "v4",
+   "sha256": "f6c59c4919c28bee4f2c9c4559f8804c8d1e9b9feadee1e518797890c6678071",
+   "pgvector_strategy": "ADV"
+  },
+  "command": ".venv/bin/python src/agent.py --corpus advanced --split test --retriever hybrid --max-searches 3 --top-k 3 --budget 9600 --distinct-queries --skip-seen --typed-search --calculator --verify --append-citations --read-figure --figure-nudge --prompt v7 --neighbours --verify-model gpt-6.1-terra --name F6 --confirm-frozen"
+ },
+ "selection": {
+  "criteria": "results/adv_selection_criteria.md (appendix: F6 chosen after F5/F6 dev runs, before test)",
+  "dev_pass": {
+   "F4": [
+    16,
+    17
+   ],
+   "F5": [
+    17,
+    17
+   ],
+   "F6": [
+    18,
+    17
+   ]
+  },
+  "dev_cost_usd": {
+   "F4": [
+    0.083,
+    0.084
+   ],
+   "F5": [
+    0.094,
+    0.103
+   ],
+   "F6": [
+    0.11,
+    0.112
+   ]
+  },
+  "deviation": "F6 exceeds the pre-written $0.10 per 18 questions cost cap in both runs; under the original criteria F4 is the only eligible config"
+ },
+ "commit": "see git log: commit that adds this file"
+}
