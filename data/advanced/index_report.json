@@ -34,9 +34,9 @@
  },
  "content_pages": 152,
  "document_pages": 168,
- "chunks": 502,
+ "chunks": 506,
  "by_type": {
-  "text": 390,
+  "text": 394,
   "table": 26,
   "figure": 86
  },
@@ -122,9 +122,56 @@
    "reason": "end-of-chapter material (Key Terms onward)"
   }
  ],
- "failures": [],
- "vision_calls": 91,
- "vision_cost_usd": 0.103,
+ "failures": [
+  {
+   "page": 239,
+   "math_block": "p239_m1",
+   "error": "transcription rejected: adds 34 words not in the text layer (e.g. ['the', 'model', 'arima', 'with', 'drift']); text layer kept"
+  },
+  {
+   "page": 267,
+   "math_block": "p267_m1",
+   "error": "transcription rejected: adds 99 words not in the text layer (e.g. ['dataset', 'collection', 'data', 'data', 'science']); text layer kept"
+  },
+  {
+   "page": 279,
+   "math_block": "p279_m7",
+   "error": "transcription rejected: adds 38 words not in the text layer (e.g. ['value', 'the', 'probability', 'observing', 'test']); text layer kept"
+  },
+  {
+   "page": 280,
+   "math_block": "p280_m6",
+   "error": "transcription rejected: adds 11 words not in the text layer (e.g. ['this', 'means', 'that', 'the', 'time']); text layer kept"
+  },
+  {
+   "page": 280,
+   "math_block": "p280_m8",
+   "error": "transcription rejected: adds 16 words not in the text layer (e.g. ['this', 'means', 'that', 'the', 'model']); text layer kept"
+  },
+  {
+   "page": 286,
+   "math_block": "p286_m5",
+   "error": "transcription rejected: adds 39 words not in the text layer (e.g. ['does', 'not', 'occur', 'this', 'conditional']); text layer kept"
+  },
+  {
+   "page": 320,
+   "math_block": "p320_m10",
+   "error": "transcription rejected: adds 11 words not in the text layer (e.g. ['the', 'misclassification', 'error', 'the', 'misclassification']); text layer kept"
+  },
+  {
+   "page": 335,
+   "math_block": "p335_m2",
+   "error": "transcription rejected: adds 51 words not in the text layer (e.g. ['are', 'collections', 'data', 'they', 'can']); text layer kept"
+  },
+  {
+   "page": 466,
+   "math_block": "p466_m0",
+   "error": "transcription rejected: adds 68 words not in the text layer (e.g. ['the', 'data', 'used', 'this', 'book']); text layer kept"
+  }
+ ],
+ "vision_calls": 354,
+ "vision_cost_usd": 0.1659,
+ "math_blocks_transcribed": 263,
  "min_figure_size_pt": 60,
  "text_chunk_max_chars": 1000
 }

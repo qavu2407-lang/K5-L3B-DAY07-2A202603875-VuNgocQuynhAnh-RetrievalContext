@@ -741,5 +741,2372 @@
   "completion_tokens": 277,
   "cost_usd": 0.0010584000000000001,
   "latency_s": 4.0
+ },
+ "p225_m6": {
+  "description": "In mathematics, an ordered list of numbers is called a sequence. The individual values of the sequence are called terms. An abstract sequence may be denoted by (x_n) or (x_n) 1 ≤ n ≤ N. In both notations, n represents the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 55,
+  "cost_usd": 0.00020280000000000002,
+  "latency_s": 4.0
+ },
+ "p225_m7": {
+  "description": "_x_t = index of each value of the sequence, while the latter notation also specifies the range of index values for the sequence (n takes on all index values from 1 to N). That is,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 41,
+  "cost_usd": 0.00018040000000000002,
+  "latency_s": 4.2
+ },
+ "p226_m6": {
+  "description": "However, in all but the most ideal situations, a function that predicts the next value of the time series with perfect accuracy does not exist. Random variation and other factors not accounted for in the model will produce error, which is defined as the extent to which predictions differ from actual observations. Thus, we should always incorporate an error term (often denoted by the Greek letter ε, called \"epsilon\") into the model. Moreover, instead of expecting the model to produce the next term exactly, the model generates predicted values. Often, the predicted values of a times series are denoted by (x_hat_n) to distinguish them from the actual values (x_n). Thus,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 685,
+  "completion_tokens": 135,
+  "cost_usd": 0.00049,
+  "latency_s": 3.7
+ },
+ "p226_m11": {
+  "description": "Depending on the situation and the nature of the data, there are many different ways to forecast future data. The simplest of all methods, which is known as the naïve or flat forecasting method, is to use the most recent value as the best guess for the next value. For example, since the S&P 500 had a value of 3,839.5 at the end of 2022, it is reasonable to assume that the value will be relatively close to 3,839.5 at the end of 2023. Note, this would correspond to the time series model, x_hat_(n+1) = x_n. The naïve method has only limited use in practice.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 619,
+  "completion_tokens": 142,
+  "cost_usd": 0.00047480000000000005,
+  "latency_s": 2.7
+ },
+ "p226_m12": {
+  "description": "Instead of using only the last observed value to predict the next one, a better approach might be to take into consideration a number of values, x_n, x_(n-1), x_(n-2), ..., to find the estimate x_hat_(n+1). One might average the last T values together (for some predefined value of T). This is known as a simple moving average, which will be",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 83,
+  "cost_usd": 0.000274,
+  "latency_s": 2.0
+ },
+ "p227_m0": {
+  "description": "defined explicitly in Components of Time Series Analysis. For now, let’s illustrate the idea intuitively. Suppose we used the average of the most recent T = 3 terms to estimate the next term. The time series model would be:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 47,
+  "cost_usd": 0.00021640000000000003,
+  "latency_s": 1.7
+ },
+ "p227_m7": {
+  "description": "Using standard statistical software, the linear regression is found to be y-hat = 304.437t - 611,288, where t is the year. Alternatively, in Excel, the regression line can be added to the line graph using the \"Trendline\" feature, with option \"Linear.\" A graph of the regression line is shown in Figure 5.3.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 76,
+  "cost_usd": 0.00026040000000000004,
+  "latency_s": 2.1
+ },
+ "p227_m9": {
+  "description": "The forecast for the end of year 2024 is y_hat = 304.437(2024) - 611,288 = 4,892.5.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 188,
+  "completion_tokens": 35,
+  "cost_usd": 0.0001312,
+  "latency_s": 1.4
+ },
+ "p227_m10": {
+  "description": "Similarly, the prediction for 2025 is y_hat = 304.437(2025) - 611,288 = 5,196.9.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 181,
+  "completion_tokens": 33,
+  "cost_usd": 0.0001252,
+  "latency_s": 1.2
+ },
+ "p230_m2": {
+  "description": "Notice that the simple plot feature did not label the x or y axes. Moreover, the x-axis does not show actual dates, but instead the number of time steps. For simple visualizations that you do not intend to share with a wider audience, this may be ok, but if you want to create better-looking and more informative graphs, use a library such as matplotlib.pyplot (https://openstax.org/r/matplotlib). In the next set of Python code, you will see the same dataset visualized using matplotlib. (Note that there is a line of code that uses the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 118,
+  "cost_usd": 0.00040960000000000004,
+  "latency_s": 2.4
+ },
+ "p232_m7": {
+  "description": "In practice, the cyclic component is often included with the trend, which is known as the **trend-cycle component**, since the cyclic component cannot be predicted in the same way that a seasonal component might be. Thus, time series data may be considered to be made up of three components: the trend (or trend-cycle) component, the seasonal component (or components), and noise or random error. Indeed, you might consider that trend, seasonal, and noise components are three separate time series that all contribute to the time series data. Although we still want to think of each component as a sequence of values, it is customary to drop the parentheses in the notation. Thus, the time series will be denoted simply by x_n rather than (x_n), and the three components will be denoted in a similar way.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 752,
+  "completion_tokens": 164,
+  "cost_usd": 0.0005632,
+  "latency_s": 3.1
+ },
+ "p232_m9": {
+  "description": "In a simple **additive decomposition**, the time series is decomposed into the sum of its three components, l for the trend, s_n for the seasonal variation, and e_n for the error term, as shown:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 45,
+  "cost_usd": 0.00018480000000000002,
+  "latency_s": 1.4
+ },
+ "p236_m4": {
+  "description": "In a time series, once the trend, cyclic variation, and seasonal variation are all quantified, whatever is \"left over\" in the data will generally be noise or random fluctuations. In other words, once the trend (or trend-cycle component) t_n and seasonal variation s_n are accounted for, then the noise component is just the remaining component:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 420,
+  "completion_tokens": 70,
+  "cost_usd": 0.00028,
+  "latency_s": 2.1
+ },
+ "p236_m5": {
+  "description": "In the real world, we rarely have access to the actual t_n or s_n series directly. Instead, almost all time series forecast methods produce a model (x_hat_n) that tries to capture the trend-cycle curve and seasonal variation. The **residuals**, which are the time series of differences between the given time series (x_n) and the model, provide a measure of the error of the model with respect to the original series. If the model is good, in the sense that it captures as much of the predictable aspects of the time series as possible, then the residuals should give an estimate of the noise component of the time series. Therefore, it is customary to use the same notation for residuals as for the noise term. Thus,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 700,
+  "completion_tokens": 153,
+  "cost_usd": 0.0005248,
+  "latency_s": 2.9
+ },
+ "p237_m1": {
+  "description": "In the definitions given, the phrase anywhere in the series refers to a sample of consecutive terms taken from the series (x_k, x_k+1, x_k+2, x_k+3, ..., x_k+r), which is also called a window. How many terms are included in a",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 60,
+  "cost_usd": 0.0002108,
+  "latency_s": 1.8
+ },
+ "p237_m9": {
+  "description": "**Detrending** a time series refers to the process of separating the underlying trend component t_n from the time",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 224,
+  "completion_tokens": 23,
+  "cost_usd": 0.0001264,
+  "latency_s": 1.3
+ },
+ "p238_m0": {
+  "description": "series as a whole through one of two complementary operations: isolating the trend and then removing it or smoothing out the trend leaving only the seasonal and error components. Methods that reduce the error term and flatten out seasonal variations result in a trend-cycle component t_n that still closely follows the long-term ups and downs in the time series. In this case, the other components of the time series can be found by removing the trend component:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 564,
+  "completion_tokens": 86,
+  "cost_usd": 0.00036320000000000005,
+  "latency_s": 2.1
+ },
+ "p238_m1": {
+  "description": "On the other hand, there are detrending methods that transform the data into a new time series with a trendline closer to a constant line at the level of 0. In other words, after applying such a transformation, the new time series, z_n, would consist of only the seasonal and noise components:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 63,
+  "cost_usd": 0.00023960000000000002,
+  "latency_s": 1.8
+ },
+ "p238_m3": {
+  "description": "1. Simple moving average (SMA). The simple moving average (SMA) is found by taking the average (arithmetic mean) of a fixed number of consecutive data points. This has the effect of smoothing out short-term variations in the data and isolating the trend. If the data has seasonal variation, then an SMA of the same length can effectively remove the seasonal component completely—there is more about this in Time Series Forecasting Methods.\n2. Weighted moving average (WMA). There are several variations on the moving average idea, in which previous terms of the series are given different weights, thus termed weighted moving average (WMA). One of the most common weighted moving averages is the exponential moving average (EMA), in which the weights follow exponential decay, giving more recent data points much more weight than those further away in time. These techniques are more often used in forecasting as discussed later in this section, but they may also be employed as a smoothing method to isolate a trend in the data.\n3. Differencing. The (first-order) difference of a time series is found by differencing, or taking differences of consecutive terms—that is, the nth term of the difference would be x_(n+1) - x_n. If the original time series had a linear trend, then the difference would display a relatively constant trend with only noise and seasonal variation present. Similarly, the difference of the difference, or second-order difference, can transform a quadratic trend into a constant trend. Higher-order polynomial trends can be identified using higher-order differences. Thus, we can use differencing to check for the overall trend of a certain type (linear, quadratic, etc.) while at the same time removing the original trend from the time series.\n4. Regression. As mentioned in Example 5.1, linear regression may be applied to a time series that seems to display a uniform upward or downward trend. Using differencing to identify whether there is a trend of some particular order, then linear, quadratic, or higher-order polynomial regression could be used to find that trend.\n5. Seasonal-Trend decomposition using LOESS (STL). Seasonal-Trend decomposition using LOESS (STL) is",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 1947,
+  "completion_tokens": 441,
+  "cost_usd": 0.0014844,
+  "latency_s": 5.9
+ },
+ "p238_m7": {
+  "description": "Recall that we use the term window to refer to consecutive terms of a time series. In what follows, assume that the size of the window is a constant, T. Given a time series with values (x_n), that is, a sequence (x_1, x_2, x_3, x_4, ..., x_N), the simple moving average with window size T is defined as a new series (y_n) with values given by the formula",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 428,
+  "completion_tokens": 94,
+  "cost_usd": 0.0003216,
+  "latency_s": 2.1
+ },
+ "p239_m0": {
+  "description": "This formula is not as difficult as it looks. Just think of it as the average of the last T terms. For example, given the sequence (5, 4, 2, 6, 2, 3, 1, 7), the SMA of length 4 would be found by averaging 4 consecutive terms at a time. Note that the first term of the SMA is y_4 because at least 4 terms are needed in the average.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 96,
+  "cost_usd": 0.00029480000000000006,
+  "latency_s": 2.0
+ },
+ "p239_m1": {
+  "description": "Term k = 4: The model is ARIMA(12, 2, 0) with drift. The AIC is 1027.7, which is lower than the AIC of the ARIMA(12, 2, 0) model without drift (AIC = 1030.3). The p-value of the Ljung-Box test for the residuals is 0.12, indicating that the residuals are white noise.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 104,
+  "completion_tokens": 95,
+  "cost_usd": 0.0001936,
+  "latency_s": 1.7
+ },
+ "p239_m2": {
+  "description": "Term k = 5:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 104,
+  "completion_tokens": 6,
+  "cost_usd": 5.1200000000000004e-05,
+  "latency_s": 1.2
+ },
+ "p239_m3": {
+  "description": "Term k = 6:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 104,
+  "completion_tokens": 6,
+  "cost_usd": 5.1200000000000004e-05,
+  "latency_s": 1.0
+ },
+ "p239_m4": {
+  "description": "Term k = 7:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 104,
+  "completion_tokens": 6,
+  "cost_usd": 5.1200000000000004e-05,
+  "latency_s": 0.9
+ },
+ "p239_m5": {
+  "description": "Term k = 8:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 104,
+  "completion_tokens": 6,
+  "cost_usd": 5.1200000000000004e-05,
+  "latency_s": 1.0
+ },
+ "p239_m12": {
+  "description": "The SMA will begin at index k = 3.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 133,
+  "completion_tokens": 11,
+  "cost_usd": 7.080000000000001e-05,
+  "latency_s": 0.9
+ },
+ "p240_m2": {
+  "description": "Simple moving averages provide an easy way to identify a trend-cycle curve in the time series. In effect, the SMA can serve as an estimate of the t_n component of the time series. In practice, when using SMA to isolate the trend-cycle component, the terms of the SMA are centered, which means that when computing the terms of the SMA, y_k, the x_k term shows up right in the middle of the window, with the same number of terms to the left and to the right.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 564,
+  "completion_tokens": 101,
+  "cost_usd": 0.00038720000000000003,
+  "latency_s": 3.4
+ },
+ "p240_m3": {
+  "description": "For example, the SMA found in Example 5.3 may be shifted so that y_k = (x_(k-1) + x_k + x_(k+1)) / 3. This has the effect of",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 46,
+  "cost_usd": 0.00016160000000000002,
+  "latency_s": 1.4
+ },
+ "p240_m4": {
+  "description": "shifting the index of the SMA terms back 1 so that the SMA begins at index k = 2.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 188,
+  "completion_tokens": 23,
+  "cost_usd": 0.000112,
+  "latency_s": 1.2
+ },
+ "p240_m5": {
+  "description": "This procedure works well when the window size is odd, but when it is even, a common practice is to compute two SMAs in which x_k is very nearly in the middle of the sequence and then average their results. For example, using the same data as in Example 5.3, if we wanted to compute a centered SMA of length 4, then the first term would be y_3, and we would find two averages.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 428,
+  "completion_tokens": 90,
+  "cost_usd": 0.00031520000000000007,
+  "latency_s": 2.2
+ },
+ "p240_m7": {
+  "description": "This suggests a general pattern for even window sizes. In summary, we have two closely related formulas for centered SMA, depending on whether T is even or odd.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 32,
+  "cost_usd": 0.000166,
+  "latency_s": 1.4
+ },
+ "p241_m2": {
+  "description": "In mathematics, the first-order difference of a sequence (x_n) = (x_1, x_2, x_3, x_4, ..., x_N) is another sequence, denoted Δ(x_k), consisting of the differences of consecutive terms. That is,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 57,
+  "cost_usd": 0.000206,
+  "latency_s": 1.6
+ },
+ "p241_m3": {
+  "description": "Note that there is one fewer term in the difference Δ(x_n) compared to the original time series (x_n). Differencing has the effect of leveling out a uniform upward or downward trend without affecting other factors such as seasonal variation and noise.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 360,
+  "completion_tokens": 49,
+  "cost_usd": 0.0002224,
+  "latency_s": 1.7
+ },
+ "p241_m9": {
+  "description": "Since the original time series from Table 5.1 has N = 10 terms, the difference will have only 9 terms, as shown in Table 5.3.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 277,
+  "completion_tokens": 36,
+  "cost_usd": 0.0001684,
+  "latency_s": 1.3
+ },
+ "p242_m3": {
+  "description": "The average value of Δ(x_n) is:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 126,
+  "completion_tokens": 10,
+  "cost_usd": 6.64e-05,
+  "latency_s": 1.0
+ },
+ "p242_m5": {
+  "description": "Differencing can be used to check whether a time series trend curve is essentially linear, quadratic, or polynomial of higher order. First, we need to recall a definition from algebra that is typically applied to polynomial functions but can also be applied to sequences. If a sequence (x_n) is given by a polynomial formula of the form",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 428,
+  "completion_tokens": 66,
+  "cost_usd": 0.0002768,
+  "latency_s": 1.8
+ },
+ "p242_m6": {
+  "description": "where r is a whole number, each of the coefficients a_k (for k = 1, 2, 3, ..., n) is a constant, and the leading term is nonzero (a_r ≠ 0), then the sequence has order or degree r. (Order or degree refers to the number of terms or lags used in a model to describe the time series.)",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 80,
+  "cost_usd": 0.00026920000000000004,
+  "latency_s": 2.1
+ },
+ "p242_m7": {
+  "description": "For example, any sequence of the form x_n = an + b has order 1 (and may be called linear). A sequence of the form x_n = an^2 + bn + c has order 2 (and may be called quadratic).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 51,
+  "cost_usd": 0.00016960000000000003,
+  "latency_s": 1.5
+ },
+ "p242_m8": {
+  "description": "form x_n = an^2 + bn + c has order 2 (and is called quadratic). Quadratic data fits well to a parabola, which would indicate a curving trend in the data.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 42,
+  "cost_usd": 0.00018,
+  "latency_s": 1.4
+ },
+ "p242_m9": {
+  "description": "If a sequence (x_n) has order r > 0, then the difference sequence Δ(x_n) has order r - 1. If the original sequence already is of order 0, which means the sequence is a constant sequence (all terms being the same constant), then the difference sequence simply produces another constant sequence (order 0) in which every",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 73,
+  "cost_usd": 0.000258,
+  "latency_s": 1.7
+ },
+ "p243_m1": {
+  "description": "As an example, consider the sequence (x_n) = (2, 5, 8, 11, 14, 17, 20), which has order 1, since you can find the values using the formula x_n = 3n - 1. The difference sequence is Δ(x_n) = (3, 3, 3, 3, 3, 3), which is a constant sequence, so it has order 0. Notice that taking the difference one more time yields the constant 0 sequence,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 113,
+  "cost_usd": 0.000322,
+  "latency_s": 2.2
+ },
+ "p243_m2": {
+  "description": "Δ(Δ(x_n)) = (0, 0, 0, 0, 0), and taking further differences would only reduce the number of terms, but each term would remain at the value 0. (For simplicity, we will assume that there are always enough terms in a sequence so that the difference is also a non-empty sequence.)",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 72,
+  "cost_usd": 0.000254,
+  "latency_s": 2.0
+ },
+ "p243_m3": {
+  "description": "The second-order difference, Δ²(x_n) = Δ(Δ(x_n)), or difference of the difference, would reduce the order of",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 28,
+  "cost_usd": 0.0001328,
+  "latency_s": 1.3
+ },
+ "p243_m4": {
+  "description": "an r-order sequence twice to r - 2 if r ≥ 2 or to the constant zero sequence if r ≤ 1. In general, a d-order",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 33,
+  "cost_usd": 0.00013960000000000003,
+  "latency_s": 1.2
+ },
+ "p243_m5": {
+  "description": "difference, defined by Δ^d (x_n) = Δ(Δ^(d-1) (x_n)), reduces the order of an r-order sequence to r - d if r ≥ d or to",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 224,
+  "completion_tokens": 42,
+  "cost_usd": 0.00015680000000000002,
+  "latency_s": 1.5
+ },
+ "p243_m6": {
+  "description": "order 0 otherwise. With a little thought, you may realize that we now have a simple procedure to determine the order of a sequence that does not require us to have the formula for x_n in hand.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 42,
+  "cost_usd": 0.00018,
+  "latency_s": 1.6
+ },
+ "p243_m7": {
+  "description": "If a sequence (x_n) has a well-defined order (in other words, there is a polynomial formula that is a good model for the terms of the sequence, even if we do not know what that formula is yet), then the order r is the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 292,
+  "completion_tokens": 52,
+  "cost_usd": 0.0002,
+  "latency_s": 1.5
+ },
+ "p243_m8": {
+  "description": "smallest whole number such that the r-order difference, Δ^(r+1) (x_n), is equal to either a constant 0 sequence or",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 31,
+  "cost_usd": 0.00013759999999999998,
+  "latency_s": 1.2
+ },
+ "p243_m14": {
+  "description": "Let (x_n) stand for the given sequence.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 136,
+  "completion_tokens": 11,
+  "cost_usd": 7.2e-05,
+  "latency_s": 1.1
+ },
+ "p243_m19": {
+  "description": "The given sequence has order 3 since the (3 + 1)-order difference resulted in all zeros.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 194,
+  "completion_tokens": 22,
+  "cost_usd": 0.00011280000000000002,
+  "latency_s": 1.3
+ },
+ "p248_m3": {
+  "description": "Once the time series has been detrended using one of the methods already discussed (or other, more sophisticated methods), what is left over should represent only the seasonality, or seasonal variation, s_n, and error term, ε_n.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 48,
+  "cost_usd": 0.00021800000000000004,
+  "latency_s": 1.7
+ },
+ "p248_m4": {
+  "description": "How could we analyze and model s_n? Suppose there were no error term at all (ε_n = 0) and so we are looking at a time series with pure seasonal variation and no other factors. In this case, the component s_n would look like a repeating pattern, such as the pattern shown in Figure 5.17. As mentioned in Components of Time Series Analysis, the time interval that it takes before the pattern completes once and begins to repeat is called the period. In a purely seasonal component, we would expect s_(n+P) = s_n, where P is the period, for all values of n.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 564,
+  "completion_tokens": 129,
+  "cost_usd": 0.000432,
+  "latency_s": 2.5
+ },
+ "p249_m1": {
+  "description": "First we need to identify the period of the seasonal data. The simplest method is to use prior knowledge about the time series data, along with a visual inspection. Often, a seasonal pattern is exactly that—a pattern that repeats over the course of one year. Thus, the period would be P = 1 year (or 12 months, 52 weeks, 365 days, etc., depending on the time steps of your time series). For example, even without detrending the data, it was easy to identify a period of 4 quarters (1 year) in the data in Example 5.2.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 123,
+  "cost_usd": 0.0004176,
+  "latency_s": 2.8
+ },
+ "p249_m6": {
+  "description": "Once you have determined the period of the seasonal component, you can then extract s_n from the time series. As usual, there are a number of different ways to proceed.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 277,
+  "completion_tokens": 35,
+  "cost_usd": 0.00016680000000000002,
+  "latency_s": 1.2
+ },
+ "p249_m8": {
+  "description": "Moreover, suppose that the period of s_n is P. Of course, with the noise term still present in the time series, we cannot expect that s_(n+P) = s_n holds, but it should be the case that s_(n+P) ≈ s_n for every n. In other words, the data should look approximately the same when shifted by P time steps. Our job now is to isolate one complete period of data that models the seasonal variation throughout the time series. In other words, we want to produce an estimate s_hat_n that is exactly periodic (s_hat_(n+P) = s_hat_n, for all n) and models the underlying seasonal component as closely as possible.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 632,
+  "completion_tokens": 146,
+  "cost_usd": 0.00048640000000000006,
+  "latency_s": 2.6
+ },
+ "p249_m9": {
+  "description": "For any given index n < P, we expect the data points (z_n, z_n+P, z_n+2P, z_n+3P, ...) to hover around the same",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 40,
+  "cost_usd": 0.000152,
+  "latency_s": 1.3
+ },
+ "p249_m10": {
+  "description": "value or, in statistical language, to have rather low variance (much lower than the time series as a whole, that is). So it seems reasonable to use the mean of this slice of data to define the value of s_hat_n. For simplicity, assume that the time series has exactly M · P data points (if not, then the data can be padded in an appropriate way). Then the estimate for the seasonal component would be defined for 1 ≤ n < P by the formula",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 428,
+  "completion_tokens": 98,
+  "cost_usd": 0.000328,
+  "latency_s": 2.5
+ },
+ "p249_m11": {
+  "description": "As usual, the formula looks more intimidating than the concept that it’s based upon. As previously mentioned, this represents nothing more than the average of all the values of the time series that occur every P time steps.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 43,
+  "cost_usd": 0.00021,
+  "latency_s": 1.7
+ },
+ "p249_m12": {
+  "description": "Once s_hat_n is computed in the range 1 ≤ n < P, extend it by repeating the same values in each period until you",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 28,
+  "cost_usd": 0.0001328,
+  "latency_s": 1.1
+ },
+ "p250_m0": {
+  "description": "reach the last index of the original series (n = MP). (Note: The noise term may now be estimated as the series of residuals, ε_n ≈ s_n - x_hat_n, which will occupy our interest in Forecast Evaluation Methods.)",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 292,
+  "completion_tokens": 51,
+  "cost_usd": 0.00019840000000000002,
+  "latency_s": 1.5
+ },
+ "p250_m1": {
+  "description": "Finally, the estimate s_hat_n can then be used in conjunction with the original time series (x_n) to smooth out the seasonal variation. Note that s_hat_n essentially measures the fluctuations of observed data x_n above or below the trend. We expect the mean of s_hat_n to be close to zero in any window of time. Define the seasonally adjusted data as the time series",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 420,
+  "completion_tokens": 78,
+  "cost_usd": 0.0002928,
+  "latency_s": 1.9
+ },
+ "p250_m2": {
+  "description": "A seasonally adjusted time series is closely related to the underlying trend-cycle curve, t_n, though generally it contains the noise and other random factors that t_n does not generally include.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 37,
+  "cost_usd": 0.000174,
+  "latency_s": 1.5
+ },
+ "p250_m5": {
+  "description": "The revenue data from Walt’s Water Adventures (see Table 5.2) seems to display seasonality of period 4. Using the level as the trend, detrend the data, compute the seasonal component s_hat_n, and find the seasonally adjusted time series.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 340,
+  "completion_tokens": 55,
+  "cost_usd": 0.000224,
+  "latency_s": 1.7
+ },
+ "p250_m7": {
+  "description": "First, we need to detrend the data. The level is the average of all 12 observations. Using a calculator or software, the level is found to be L = 2,275.42. Subtract x_n - L to detrend the data (see Table 5.4). For example, the first term of the detrended data would be z_1 = x_1 - L = 1,799 - 2,275.42 = -476.42.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 340,
+  "completion_tokens": 101,
+  "cost_usd": 0.0002976,
+  "latency_s": 2.5
+ },
+ "p250_m8": {
+  "description": "There are a total of 12 observations, so there will be M = 12/4 = 3 periods of size P = 4. Using the values of z_n in the formula for s_hat_n, we find:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 47,
+  "cost_usd": 0.000188,
+  "latency_s": 1.9
+ },
+ "p252_m4": {
+  "description": "Points that are within the blue shaded area correspond to lags at which the autocorrelation is statistically insignificant. The lags that show the most significance are at 0, 1, 6, and 12. Lag = 0 always gives 100% autocorrelation because we are comparing the unshifted series to itself. At lag = 1, a high autocorrelation corresponds to the fact that consecutive data points are relatively close to each other (which is also to be expected in most datasets). Of special note are lags at 6 and 12, corresponding to a possible seasonal period of 6 or 12 in the data. We will use period 12 in our STL decomposition.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 619,
+  "completion_tokens": 142,
+  "cost_usd": 0.00047480000000000005,
+  "latency_s": 3.0
+ },
+ "p254_m7": {
+  "description": "Suppose that a time series (x_n) has no significant seasonal component (or the seasonal component has been removed so that remaining series is seasonally adjusted). Thus, the series has only trend-cycle and noise components:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 44,
+  "cost_usd": 0.00021160000000000002,
+  "latency_s": 1.5
+ },
+ "p255_m0": {
+  "description": "As already discussed, a simple moving average (SMA) has the effect of smoothing out the data and providing an easy method for predicting the next term of the sequence. For reference, here is the SMA prediction model, with a window of T terms:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 51,
+  "cost_usd": 0.00022280000000000002,
+  "latency_s": 1.5
+ },
+ "p255_m2": {
+  "description": "recent T terms are all equal to 1/T, while all other weights are set to 0. For example, in an SMA model with",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 29,
+  "cost_usd": 0.0001332,
+  "latency_s": 1.2
+ },
+ "p255_m4": {
+  "description": "Even the naïve model, x_hat_(n+1) = x_n, counts as a WMA, with weights 1, 0, 0, ...",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 178,
+  "completion_tokens": 35,
+  "cost_usd": 0.0001272,
+  "latency_s": 1.1
+ },
+ "p255_m9": {
+  "description": "choose to give greater weight to more recent terms. For example, one might use powers of 1/2 as weights.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 25,
+  "cost_usd": 0.00012680000000000002,
+  "latency_s": 1.2
+ },
+ "p255_m11": {
+  "description": "much in turn. (Note: The sequence 1/2, 1/4, 1/8, 1/16, ... would be a normalized sequence if infinitely many terms",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 39,
+  "cost_usd": 0.00014920000000000002,
+  "latency_s": 1.3
+ },
+ "p255_m14": {
+  "description": "is shown. (Note that the previous example corresponds to an EMA model with α = 1/2).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 191,
+  "completion_tokens": 22,
+  "cost_usd": 0.0001116,
+  "latency_s": 1.1
+ },
+ "p255_m17": {
+  "description": "Use EMA models with α = 1/2 (equivalently, 0.5) and α = 0.7 for the S&P Index data from Table 5.1 to",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 207,
+  "completion_tokens": 40,
+  "cost_usd": 0.00014680000000000002,
+  "latency_s": 1.2
+ },
+ "p255_m20": {
+  "description": "First, for alpha = 1/2, the model is:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 126,
+  "completion_tokens": 14,
+  "cost_usd": 7.280000000000001e-05,
+  "latency_s": 1.0
+ },
+ "p256_m1": {
+  "description": "For α = 0.7, use the formula for weights,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 139,
+  "completion_tokens": 14,
+  "cost_usd": 7.8e-05,
+  "latency_s": 1.1
+ },
+ "p256_m2": {
+  "description": "7, alpha(1 - alpha) = 0.7(1 - 0.7) = 0.7(0.3) = 0.21, alpha(1 - alpha)^2 = 0.7(0.3)^2 = 0.063, etc. This time, the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 204,
+  "completion_tokens": 67,
+  "cost_usd": 0.0001888,
+  "latency_s": 1.5
+ },
+ "p256_m3": {
+  "description": "coefficients decrease quicker than in the case alpha = 1/2, so only 5 terms are significant. Table 5.5 shows the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 214,
+  "completion_tokens": 30,
+  "cost_usd": 0.00013360000000000002,
+  "latency_s": 1.3
+ },
+ "p256_m7": {
+  "description": "and alpha = 0.7, respectively. Note that larger values of alpha emphasize the most recent data, while smaller",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 211,
+  "completion_tokens": 24,
+  "cost_usd": 0.0001228,
+  "latency_s": 1.2
+ },
+ "p256_m8": {
+  "description": "values allow more of the past data points to influence the average. If the time series trend experiences more variability (due to external factors that we have no control over), then an EMA with a relatively large α-value would be more appropriate than one with a small α-value.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 54,
+  "cost_usd": 0.00022520000000000003,
+  "latency_s": 1.9
+ },
+ "p256_m10": {
+  "description": "In this form, we build a series of estimates (x_hat_n) recursively by incorporating the terms of the original time series one at a time. The idea is that the next estimate, x_hat_(n+1), is found by weighted average of the current data point, x_n, and the current estimate, x_hat_n. Note, we may set x_hat_1 = x_1 since we need to begin the process somewhere. It can be shown mathematically that this procedure is essentially the same as working out the sum of exponentially weight terms directly and is much more efficient.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 119,
+  "cost_usd": 0.0004112,
+  "latency_s": 2.4
+ },
+ "p257_m2": {
+  "description": "Use the recursive EMA formula with α = 0.75 to smooth the S&P Index time series (Table 5.1), and then use the EMA model to estimate the value of the S&P Index at the end of the 2024. Plot the EMA together with the original time series.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 61,
+  "cost_usd": 0.00023640000000000003,
+  "latency_s": 1.8
+ },
+ "p257_m4": {
+  "description": "With alpha = 0.75, the recursive EMA formula becomes: x_hat_(n+1) = 0.75 x_n + 0.25 x_hat_n. Table 5.6 shows the results of the computation.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 49,
+  "cost_usd": 0.0001932,
+  "latency_s": 1.4
+ },
+ "p258_m1": {
+  "description": "should be set to 2/α - 1, as shown in this code.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 146,
+  "completion_tokens": 18,
+  "cost_usd": 8.72e-05,
+  "latency_s": 1.1
+ },
+ "p259_m5": {
+  "description": "Suppose we want to model a time series, (x_n), using an AR model. First, we should pick a value p, called the order of the model, which specifies how many previous terms to include in the model. Then we may call the model an AR (p) model. If there is a strong seasonal component of period p, then it makes sense to choose that value as the order.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 412,
+  "completion_tokens": 83,
+  "cost_usd": 0.0002976,
+  "latency_s": 1.7
+ },
+ "p259_m6": {
+  "description": "An AR (p) model is a recursive formula of the form",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 152,
+  "completion_tokens": 13,
+  "cost_usd": 8.16e-05,
+  "latency_s": 1.1
+ },
+ "p259_m7": {
+  "description": "Here, the parameters or weights, w_1, w_2, w_3, ..., w_p, are constants that must be chosen so that the values of",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 34,
+  "cost_usd": 0.00014240000000000002,
+  "latency_s": 1.4
+ },
+ "p259_m8": {
+  "description": "the time series (y_n) fit the known data as closely as possible (i.e., y_n ≈ x_n for all known observations). There are also certain restrictions on the possible values of each weight c, but we do not need to delve into those specifics in this text as we will rely on software to do the work of finding the parameters for us.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 74,
+  "cost_usd": 0.0002596,
+  "latency_s": 1.7
+ },
+ "p259_m11": {
+  "description": "Rather than producing another component of the time series, the integrative component of ARIMA represents the procedure of taking differences, Δ^d (x_n) (up to some specific order d), until the time series becomes stationary. Often, only the first-order difference is needed, and you can check for stationarity visually. A more sophisticated method, called the **Augmented Dickey-Fuller (ADF) test**, sets up a test statistic that measures the presence of non-stationarity in a time series. Using ADF, a p-value is computed. If the p-value is below a set threshold (such as p < 0.01), then the null hypothesis of non-stationarity can be rejected. Next, we will show how to run the ADF test on a time series and its differences Δ^d (x_n) to find out the best value for d in ARIMA.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 700,
+  "completion_tokens": 183,
+  "cost_usd": 0.0005727999999999999,
+  "latency_s": 2.6
+ },
+ "p260_m0": {
+  "description": "opposite of differencing) builds the model back up so that it can ultimately be used to predict values of the original time series (x_n).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 30,
+  "cost_usd": 0.0001608,
+  "latency_s": 1.4
+ },
+ "p260_m2": {
+  "description": "An MA model of order q, or MA(q), takes the form",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 152,
+  "completion_tokens": 14,
+  "cost_usd": 8.32e-05,
+  "latency_s": 1.0
+ },
+ "p260_m3": {
+  "description": "Here, the ε_n terms are residuals (forecast errors), and L is the level of the time series (mean value of all the terms). Again, there are a multitude of parameters that need to be chosen in order for the model to make sense. We will rely on software to handle this in general.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 63,
+  "cost_usd": 0.00023960000000000002,
+  "latency_s": 1.6
+ },
+ "p260_m5": {
+  "description": "The full ARIMA model, ARIMA (p, d, q), incorporates all three components—autoregressive of order p, integrative with d-order differencing, and moving average of order q. For the time series MonthlyCoalConsumption.xlsx (https://openstax.org/r/spreadsheetsd1j), it turns out that the second-order difference is stationary, as shown by a series of ADF tests.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 412,
+  "completion_tokens": 85,
+  "cost_usd": 0.0003008,
+  "latency_s": 1.6
+ },
+ "p261_m3": {
+  "description": "Here, a p-value of 7.852 x 10^-14 indicates that the second-order difference is stationary, so we will set d = 2 in the ARIMA model. An ACF plot of the second difference can be used to determine p.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 292,
+  "completion_tokens": 53,
+  "cost_usd": 0.00020160000000000002,
+  "latency_s": 1.6
+ },
+ "p262_m0": {
+  "description": "We see a peak at lag 12, corresponding to the expected yearly seasonal variation, so we will set p = 12 in the ARIMA model. For this time series, positive values of q did not change the accuracy of the model at all, so we set q = 0 (MA model component unnecessary). The model was used to forecast 24 time steps (2 years) into the future. We are using the Python library statsmodels.tsa.arima.model (https://openstax.org/r/statsmodel) to create the ARIMA model.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 114,
+  "cost_usd": 0.00040320000000000004,
+  "latency_s": 2.0
+ },
+ "p263_m7": {
+  "description": "Suppose that you have a model (x_hat_n) for a given time series (x_n). Recall from Components of Time Series Analysis that the residuals quantify the error between the time series the model and serve as an estimate of the noise or random variation.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 53,
+  "cost_usd": 0.00022600000000000002,
+  "latency_s": 1.2
+ },
+ "p264_m0": {
+  "description": "The better the fit of the model to the observed data, the smaller the values of ε_n will be. However, even very good models can turn out to be poor predictors of future values of the time series. Ironically, the better a model does at fitting to known data, the worse it may be at predicting future data. There is a danger of overfitting. (This term is defined in detail in Decision-Making Using Machine Learning Basics, but for now we do not need to go deeply into this topic.) A common technique to avoid overfitting is to build the model using only a portion of the known data, and then the model’s accuracy can be tested on the remaining data that was held out.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 685,
+  "completion_tokens": 146,
+  "cost_usd": 0.0005076,
+  "latency_s": 2.1
+ },
+ "p264_m2": {
+  "description": "formula, x_i refers to the i^th term of the time series, and ε_i is the error between the actual i^th term and the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 31,
+  "cost_usd": 0.0001364,
+  "latency_s": 1.4
+ },
+ "p264_m3": {
+  "description": "predicted i^th term of the series.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 130,
+  "completion_tokens": 10,
+  "cost_usd": 6.8e-05,
+  "latency_s": 0.9
+ },
+ "p264_m4": {
+  "description": "a. Mean absolute error (MAE): (1/n) * sum from i=1 to n of |e_i|. A measure of the average magnitude of errors.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 201,
+  "completion_tokens": 36,
+  "cost_usd": 0.000138,
+  "latency_s": 1.2
+ },
+ "p264_m5": {
+  "description": "b. Root mean squared error (RMSE): square root of (1/n sum from i=1 to n of (epsilon_i squared)). A measure of the standard deviation of errors,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 214,
+  "completion_tokens": 38,
+  "cost_usd": 0.0001464,
+  "latency_s": 1.2
+ },
+ "p264_m7": {
+  "description": "c. Mean absolute percentage error (MAPE): (1/n) sum from i=1 to n of |(epsilon_i / x_i)|. A measure of the average relative errors—that is,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 41,
+  "cost_usd": 0.00015360000000000002,
+  "latency_s": 1.1
+ },
+ "p264_m9": {
+  "description": "d. Symmetric mean absolute percentage error (sMAPE): (1/n) * sum from i=1 to n of (2 * |ε_i| / (|x_i| + |x_hat_i|)). Similar to MAPE, a measure of",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 54,
+  "cost_usd": 0.0001744,
+  "latency_s": 1.5
+ },
+ "p264_m11": {
+  "description": "Of these error measures, MAE and RMSE are scale-dependent, meaning that the error is in direct proportion to the data itself. In other words, if all terms of the time series and the model were scaled by a factor of k, then the MAE and RMSE would both be multiplied by k as well. On the other hand, MAPE and sMAPE are not scale-dependent. These measures of errors are often expressed as percentages (by multiplying the result of the formula by 100%). However, neither MAPE nor sMAPE should be used for data that is measured on a scale containing 0 and negative numbers. For example, it would not be wise to use MAPE or sMAPE as a measure of error for a time series model of Celsius temperature readings. For all of these measures of error, lower values indicate less error and hence more accuracy of the model. This is useful when comparing two or more models.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 768,
+  "completion_tokens": 191,
+  "cost_usd": 0.0006128,
+  "latency_s": 3.6
+ },
+ "p264_m16": {
+  "description": "The first step is to find the residuals, ε_n, and take their absolute values. For RMSE, we will need the squared residuals.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 31,
+  "cost_usd": 0.0001364,
+  "latency_s": 1.1
+ },
+ "p264_m17": {
+  "description": "residuals, included in Table 5.7. We also include the terms |ε_i / x_i| and |2|ε_i| / |x_i| + |x_hat_i||, which are used for computing",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 48,
+  "cost_usd": 0.00016360000000000002,
+  "latency_s": 1.5
+ },
+ "p265_m5": {
+  "description": "sMAPE = 0.137, or 13.7%. (When looking at both predicted values and true values, their differences are on average about 14% from one another.)",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 39,
+  "cost_usd": 0.00017720000000000002,
+  "latency_s": 1.2
+ },
+ "p265_m8": {
+  "description": "A forecast is often accompanied by a prediction interval giving a range of values the variable could take with some level of probability. For example, if the prediction interval of a forecast is indicated to be 80%, then the prediction interval contains a range of values that should include the actual future value with a probability of 0.8. Prediction intervals were introduced in Analysis of Variance (ANOVA) in the context of linear regression, so we won’t get into the details of the mathematics here. The key point is that we want a measure of margin of error, E_n (depending on n), such that future observations of the data will be within the interval x_hat_n ± E_n with probability α, where α is a chosen level of confidence.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 685,
+  "completion_tokens": 151,
+  "cost_usd": 0.0005156000000000001,
+  "latency_s": 2.2
+ },
+ "p267_m1": {
+  "description": "Datasets\n\nA dataset is a collection of data. In data science, datasets are often represented as tables, where each row corresponds to an observation and each column corresponds to a variable or feature. For example, a dataset might contain information about customers, with columns for age, income, and purchase history. Datasets can be structured, semi-structured, or unstructured, depending on the format and organization of the data. Structured data is organized in a fixed schema, such as a relational database table. Semi-structured data has some organizational properties but does not conform to a rigid schema, such as JSON or XML files. Unstructured data lacks a predefined format, such as text documents, images, or videos. Understanding the type and structure of a dataset is crucial for selecting appropriate data processing and analysis techniques.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 100,
+  "completion_tokens": 162,
+  "cost_usd": 0.0002992,
+  "latency_s": 2.5
+ },
+ "p277_m6": {
+  "description": "The goal of supervised learning is to produce a model that gives a mapping from the set of inputs or features to a set of output values or labels (see Figure 6.2). The model is function y = f(X), where X is the input array and y is the output value or label. The way that it does this is through training and testing. When training, the algorithm creates a correspondence between input features and the output value or label, often going through many iterations of trial and error until a desired level of accuracy is achieved. The model is then tested on additional data, and if the accuracy remains high enough, then the model may be deployed for use in real-world applications. Otherwise, the model may need to be adjusted substantially or abandoned altogether.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 700,
+  "completion_tokens": 153,
+  "cost_usd": 0.0005248,
+  "latency_s": 2.3
+ },
+ "p278_m12": {
+  "description": "Suppose we are given a dataset with inputs or features X and labels or values y. Our goal is to produce a function that maps y = f(X). In practice, we do not expect that our model can capture the function f with",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 48,
+  "cost_usd": 0.00018960000000000003,
+  "latency_s": 1.5
+ },
+ "p279_m0": {
+  "description": "100% accuracy. Instead, we should find a model f-hat such that predicted values y-hat = f-hat(X) are close enough to",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 224,
+  "completion_tokens": 31,
+  "cost_usd": 0.00013920000000000002,
+  "latency_s": 1.2
+ },
+ "p279_m1": {
+  "description": "y. In most cases, the metric we use to determine the fitness of our model f-hat is some measure of error between y-hat and y (e.g., see the calculation of residuals of a linear regression in Correlation and Linear Regression Analysis). The way that error is measured is specific to the type of model that we are building and the nature of the outputs. When the outputs are labels, we may use a count or percentage of misclassifications. When the outputs are numerical, we may find the total distances (absolute, squared, etc.) between predicted and actual output values.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 619,
+  "completion_tokens": 121,
+  "cost_usd": 0.00044120000000000004,
+  "latency_s": 2.5
+ },
+ "p279_m3": {
+  "description": "error: The result of the training phase will be the model f-hat. Then, the model is tested on the testing set and error computed between predicted values and known outputs. If the model meets some predefined threshold of accuracy (low enough error), then the model can be used with some confidence to make predictions about new data.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 420,
+  "completion_tokens": 66,
+  "cost_usd": 0.00027360000000000004,
+  "latency_s": 1.5
+ },
+ "p279_m6": {
+  "description": "1. Classification\n- Accuracy is the ratio of correct predictions to the total number of predictions.\n- Precision (p) is the ratio of true positive predictions (TP) to the total number of positive (true positive plus false positive) predictions (TP + FP). This is useful when the response variable is true/false and",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 420,
+  "completion_tokens": 65,
+  "cost_usd": 0.000272,
+  "latency_s": 1.4
+ },
+ "p279_m7": {
+  "description": "we want to minimize false positives. p-value is the probability of observing a test statistic at least as extreme as the one observed, assuming the null hypothesis is true. If the p-value is less than a predetermined significance level (usually 0.05), we reject the null hypothesis. For example, a p-value of 7.852 x 10^-14 indicates strong evidence against the null hypothesis.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 133,
+  "completion_tokens": 81,
+  "cost_usd": 0.0001828,
+  "latency_s": 1.6
+ },
+ "p279_m8": {
+  "description": "Recall (r) is the ratio of true positive predictions (TP) to the total number of actual positives (true positive plus false negative (TP + FN) predictions. This is useful when the response variable is true/",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 277,
+  "completion_tokens": 44,
+  "cost_usd": 0.0001812,
+  "latency_s": 1.2
+ },
+ "p279_m10": {
+  "description": "- F1 Score is a combination of precision (p) and recall (r).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 162,
+  "completion_tokens": 17,
+  "cost_usd": 9.2e-05,
+  "latency_s": 0.9
+ },
+ "p279_m11": {
+  "description": "2. Regression (comparison of the predicted values, y_hat_i, and the actual values, y_i)",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 188,
+  "completion_tokens": 22,
+  "cost_usd": 0.0001104,
+  "latency_s": 1.2
+ },
+ "p280_m5": {
+  "description": "predictions, for a total of TP + TN = 900. So the accuracy is 900/1,000 = 0.9 (90%).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 185,
+  "completion_tokens": 32,
+  "cost_usd": 0.0001252,
+  "latency_s": 1.1
+ },
+ "p280_m6": {
+  "description": "For precision, we use TP = 198 and FP (false positives) = 37, and we have: precision = TP / (TP + FP) = 198 / (198 + 37) = 0.842. This means that 84.2% of the time, when the model predicts a positive, it is correct.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 181,
+  "completion_tokens": 71,
+  "cost_usd": 0.000186,
+  "latency_s": 1.7
+ },
+ "p280_m8": {
+  "description": "For recall, we use TP = 198 and FN (false negatives) = 63, and we have: recall = TP / (TP + FN) = 198 / (198 + 63) = 0.76. This means that the model correctly identifies 76% of the positive cases. Recall is also known as sensitivity or true positive rate.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 178,
+  "completion_tokens": 74,
+  "cost_usd": 0.00018960000000000003,
+  "latency_s": 1.6
+ },
+ "p280_m10": {
+  "description": "Finally, F1 = (2(p)(r)) / (p + r) = (2(0.843)(0.759)) / (0.843 + 0.759) = 0.799 (79.9%).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 156,
+  "completion_tokens": 50,
+  "cost_usd": 0.00014240000000000002,
+  "latency_s": 1.4
+ },
+ "p280_m19": {
+  "description": "The linear regression model that best fits the training data is y = 21.7 + 7.1x. (See Correlation and Linear Regression Analysis for details on linear regression.) We will compute MAE, MAPE, MSE, and RMSE for the remaining two data points (test set) as in Table 6.1.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 71,
+  "cost_usd": 0.0002524,
+  "latency_s": 1.6
+ },
+ "p281_m0": {
+  "description": "• MAPE = 1/2 (| -7.13 / 30.9 | + | 5.25 / 94.4 |) = 0.143, or 14.3%",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 152,
+  "completion_tokens": 45,
+  "cost_usd": 0.0001328,
+  "latency_s": 1.2
+ },
+ "p281_m13": {
+  "description": ", and testing set, S_test = {(10, 4), (12, 5)}. It can be shown that the cubic",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 178,
+  "completion_tokens": 28,
+  "cost_usd": 0.000116,
+  "latency_s": 1.4
+ },
+ "p281_m14": {
+  "description": "equation, y_hat = (1/8) x^3 - (7/4) x^2 + (13/2) x + 3, fits the training data perfectly. However, there is no reason to expect",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 48,
+  "cost_usd": 0.00016360000000000002,
+  "latency_s": 1.4
+ },
+ "p281_m15": {
+  "description": "that the relationship between x and y is truly cubic. Indeed, the predictions of the cubic model on S_test are terrible! See Table 6.2.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 32,
+  "cost_usd": 0.000164,
+  "latency_s": 1.6
+ },
+ "p281_m17": {
+  "description": "The linear model (linear regression) that represents a best fit for the first four data points is y_hat = -0.6x + 11. Figure 6.3 shows the data points along with the two models.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 46,
+  "cost_usd": 0.00018840000000000003,
+  "latency_s": 1.3
+ },
+ "p282_m0": {
+  "description": "Figure 6.3 Data Points along a Cubic Model and a Linear Model. The four data points in S_train can be fitted onto a cubic curve (0% error), but it does poorly on additional data from the testing data, S_test. The cubic curve overfits the training data. The regression line does not fit the training data exactly; however, it does a better job predicting additional data.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 360,
+  "completion_tokens": 82,
+  "cost_usd": 0.0002752,
+  "latency_s": 2.0
+ },
+ "p282_m3": {
+  "description": "• MAPE for cubic model: 1/6 (0/10 + 0/9 + 0/6 + 0/7 + 14/4 + 40/5) = 1.917, or 191.7%.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 185,
+  "completion_tokens": 53,
+  "cost_usd": 0.0001588,
+  "latency_s": 1.2
+ },
+ "p282_m5": {
+  "description": "• MAPE for linear model: (1/6)(0.2/10 + 0.4/9 + 1.4/6 + 0.8/7 + 1/4 + 1.2/5) = 0.15, or 15%.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 191,
+  "completion_tokens": 61,
+  "cost_usd": 0.000174,
+  "latency_s": 1.3
+ },
+ "p283_m8": {
+  "description": "Another issue with using the linear model for the data in Table 6.4 is that eventually the values of y-hat become negative! According to this model, it will take about −1 hours to complete the 7th homework set, which is absurd. Perhaps a decreasing exponential model, shown in Figure 6.5, would work better here. Proper model selection is the most effective way of dealing with underfitting.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 412,
+  "completion_tokens": 87,
+  "cost_usd": 0.000304,
+  "latency_s": 1.9
+ },
+ "p284_m0": {
+  "description": "Figure 6.5 Exponential Model That Best Fits the Data in Example 6.3. This graph contains a scatterplot of the six data points together with the exponential model that best fits the data. Under this model, the prediction of y_hat = 1 when x = 7 seems much more reasonable.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 64,
+  "cost_usd": 0.0002412,
+  "latency_s": 1.4
+ },
+ "p284_m8": {
+  "description": "A logistic regression model L(X) takes input vectors X (features) and produces an output of \"yes\" or \"no.\" Much like linear regression, the logistic regression model first fits a continuous function based on known,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 44,
+  "cost_usd": 0.0001832,
+  "latency_s": 1.4
+ },
+ "p285_m0": {
+  "description": "labeled data. However, instead of fitting a line to the data, a sigmoid function is used. A sigmoid function is a specific type of function that maps any real-valued number to a value between 0 and 1. The term sigmoid comes from the fact that the graph has a characteristic \"S\" shape (as shown in Figure 6.6), and sigma (σ) is the Greek letter that corresponds to our letter S. We often use the notation σ(x) to denote a sigmoid function. The basic formula for the sigmoid is:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 112,
+  "cost_usd": 0.0004,
+  "latency_s": 1.9
+ },
+ "p285_m2": {
+  "description": "One advantage of the sigmoid over a linear function is that the values of the sigmoid stay close to 0 when x is negative and close to 1 when x is positive. This makes it ideal for classifying arbitrary inputs x into one of two classes, \"yes\" (1) or \"no\" (0). In fact, we can interpret the y-axis as probability that an event occurs. The sigmoid function can be shifted right or left and compressed or expanded horizontally as necessary to fit the data. In the following formula, the parameters a and b control the position and shape of the sigmoid function, respectively.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 619,
+  "completion_tokens": 123,
+  "cost_usd": 0.0004444,
+  "latency_s": 1.9
+ },
+ "p285_m3": {
+  "description": "As complicated as this formula may seem at first, it is built up from simple elements. The presence of a + bx suggests that there may be a linear regression y = a + bx lurking in the background. Indeed, if we solve to find the inverse function of sigma(x), we can use it to isolate a + bx, which in turns allows us to use standard linear regression techniques to build the logistic regression. Recall that the natural logarithm function, ln n, is the inverse function for the exponential, e^x. In what follows, let p stand for sigma(x).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 117,
+  "cost_usd": 0.000408,
+  "latency_s": 1.8
+ },
+ "p285_m4": {
+  "description": "In the final line, we used the power property of logarithms, ln A^n = n ln A, with power n = -1. The function we’ve just obtained is called the logit function.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 43,
+  "cost_usd": 0.00018360000000000002,
+  "latency_s": 1.4
+ },
+ "p286_m0": {
+  "description": "The key property of the logit function is that it is the inverse function of σ(x). Recall from algebra, if g(x) is the inverse function of f(x), then we have g(f(x)) = x for all x. In our case, that means logit(σ(x)) = x, for all x. Now applying the logit function to the general sigmoid function, we can write:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 360,
+  "completion_tokens": 83,
+  "cost_usd": 0.0002768,
+  "latency_s": 1.7
+ },
+ "p286_m3": {
+  "description": "Logistic regression is a prediction model based on the idea of odds. The odds that an event E occurs is the ratio of the probability of E occurring over the probability of E not occurring. Let p = P(E).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 44,
+  "cost_usd": 0.0001832,
+  "latency_s": 1.3
+ },
+ "p286_m4": {
+  "description": "Thus, the logit function is simply the logarithm of the odds of an event with a given probability p. This is why logit is often called log-odds. While probabilities (p) range from 0 to 1, log-odds will range from −∞ (minus infinity) to ∞ (infinity).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 69,
+  "cost_usd": 0.00025160000000000004,
+  "latency_s": 1.4
+ },
+ "p286_m5": {
+  "description": "Suppose we would like to predict the likelihood of an event A, given that another event B either occurs or does not occur. This is the conditional probability of A given B, denoted P(A|B). It is defined as the probability of both A and B occurring, divided by the probability of B occurring: P(A|B) = P(A and B) / P(B). This formula is fundamental in probability theory and is used extensively in data science for tasks such as Bayesian inference, where we update our beliefs about an event based on new evidence.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 113,
+  "cost_usd": 0.0002676,
+  "latency_s": 1.8
+ },
+ "p286_m6": {
+  "description": "does not occur. We will create a logistic regression model, f(x) = 1 / (1 + e^-(a + bx)), such that:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 194,
+  "completion_tokens": 32,
+  "cost_usd": 0.00012880000000000001,
+  "latency_s": 1.1
+ },
+ "p286_m7": {
+  "description": "- f(0) is the likelihood that A occurs when B does not occur, and\n- f(1) is the likelihood that A occurs when B does occur.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 209,
+  "completion_tokens": 35,
+  "cost_usd": 0.00013960000000000003,
+  "latency_s": 1.7
+ },
+ "p286_m8": {
+  "description": "We obtain a and b using the logit function. If p1 is the probability that A occurs given that B does not occur (i.e., p1 = P(A|B')), using the notation of conditional probability (see Normal Continuous Probability Distributions), and if p2 is the probability that A occurs given that B does occur (i.e., p2 = P(A|B)), then",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 80,
+  "cost_usd": 0.00026680000000000003,
+  "latency_s": 1.6
+ },
+ "p286_m10": {
+  "description": "This model is called a discrete logistic regression because the feature variable is either 1 or 0 (whether or not event B occurred).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 27,
+  "cost_usd": 0.000158,
+  "latency_s": 1.2
+ },
+ "p286_m15": {
+  "description": "Let p_1 = 0.3, which is the probability of graduating if the variable \"in-state\" is false, or 0. Let p_2 = 0.75, which is the probability of graduating if the variable \"in-state\" is true, or 1.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 277,
+  "completion_tokens": 60,
+  "cost_usd": 0.0002068,
+  "latency_s": 1.4
+ },
+ "p286_m16": {
+  "description": "So a = logit(p_1) = -0.847, and b = logit(p_2) - logit(p_1) = 1.099 - (-0.847) = 1.946. Therefore, the model is:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 272,
+  "completion_tokens": 54,
+  "cost_usd": 0.00019520000000000003,
+  "latency_s": 1.1
+ },
+ "p287_m0": {
+  "description": "You can verify that f(0) = 0.3 and f(1) = 0.75.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 146,
+  "completion_tokens": 24,
+  "cost_usd": 9.680000000000001e-05,
+  "latency_s": 1.1
+ },
+ "p287_m3": {
+  "description": "The method of logistic regression can also be used to predict a yes/no response based on continuous input. Building the model requires finding values for the parameters of the sigmoid function that produce the most accurate results. To explain how this works, let’s first talk about likelihood. The likelihood for a model f(x) is computed as follows. For each data point x_k, if the label of x_k is 1 (or yes), then calculate f(x_k); if the label is 0 (or no), then calculate 1 - f(x_k). The product of these individual results is the likelihood score for the model.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 564,
+  "completion_tokens": 125,
+  "cost_usd": 0.00042560000000000005,
+  "latency_s": 2.0
+ },
+ "p287_m8": {
+  "description": "Suppose there are four data points, A = 1, B = 2, C = 3, D = 4, and both A and B are known to have label 0, while C and D have label 1. Find the likelihood scores of each model and determine which model is a better fit for the given data.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 70,
+  "cost_usd": 0.0002508,
+  "latency_s": 1.5
+ },
+ "p287_m10": {
+  "description": "For model f, the predicted likelihoods are f(1) = 0.378, f(2) = 0.646, f(3) = 0.846, and f(4) = 0.943. Since x = 1 and 2 have label 0, while x = 3 and 4 have label 1, we compute:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 277,
+  "completion_tokens": 79,
+  "cost_usd": 0.00023720000000000002,
+  "latency_s": 1.6
+ },
+ "p287_m11": {
+  "description": "For model g, the predicted likelihoods are g(1) = 0.214, g(2) = 0.378, g(3) = 0.574, and g(4) = 0.75.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 211,
+  "completion_tokens": 50,
+  "cost_usd": 0.0001644,
+  "latency_s": 1.2
+ },
+ "p287_m12": {
+  "description": "Thus, model g is the better of the two models on this data.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 159,
+  "completion_tokens": 15,
+  "cost_usd": 8.759999999999999e-05,
+  "latency_s": 1.0
+ },
+ "p287_m13": {
+  "description": "How does one find the model that has maximum likelihood? The exact method for finding the coefficients a and b for the model σ(a + bx) falls outside the scope of this text. Fortunately, there are software packages available that can be used to do the work for you.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 55,
+  "cost_usd": 0.0002268,
+  "latency_s": 1.4
+ },
+ "p289_m9": {
+  "description": "The code produces the coefficients that can be plugged in for a and b in the model:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 188,
+  "completion_tokens": 18,
+  "cost_usd": 0.000104,
+  "latency_s": 1.1
+ },
+ "p289_m12": {
+  "description": "The k-means clustering algorithm can classify or group similar data points into clusters or categories without prior knowledge of what those categories might be (i.e., unsupervised learning). However, the user must provide a guess as to the value of k, the number of clusters to expect. (Note: You may get around this issue by iterating the algorithm through many values of k and evaluating which k-value produced the best results. The trade-off is the time it takes to run the algorithm using multiple values of k and interpreting the results using. The so-called elbow method is often used to find the best value of k, but it is beyond the scope of this text to explain this method.) The user must also provide initial guesses as to where the centroids would be. We shall see by example how these choices may affect the algorithm.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 752,
+  "completion_tokens": 168,
+  "cost_usd": 0.0005696000000000001,
+  "latency_s": 2.9
+ },
+ "p290_m3": {
+  "description": "1. Guess the locations of k cluster centers.  \n2. Compute distances from each data point to each cluster center. Data points are assigned to the cluster whose center is closest to them.  \n3. Find the centroid of each cluster.  \n4. Repeat steps 2 and 3 until the centroids stabilize—that is, the new centroids are the same (or approximately the same, within some given tolerance) as the centroids from the previous iteration.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 606,
+  "completion_tokens": 93,
+  "cost_usd": 0.0003912,
+  "latency_s": 1.9
+ },
+ "p290_m5": {
+  "description": "Let a(i) be the mean distance between point i and all other data points in the same cluster as point i.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 211,
+  "completion_tokens": 24,
+  "cost_usd": 0.0001228,
+  "latency_s": 0.9
+ },
+ "p290_m6": {
+  "description": "For each cluster J not containing point i, let b_J(i) be the mean distance between point i and all data points in cluster J. Then, let b(i) be the minimum of all the values of b_J(i).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 47,
+  "cost_usd": 0.00019,
+  "latency_s": 1.3
+ },
+ "p290_m8": {
+  "description": "Values of S lie between -1 and 1, with values close to 1 indicating well-separated clusters, values close to 0 indicating clusters are ambiguous, and values close to -1 indicating poor clustering with points assigned to clusters arbitrarily. Fortunately, statistical software packages that can do k-means clustering will be able to compute the silhouette score for you.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 412,
+  "completion_tokens": 72,
+  "cost_usd": 0.00028,
+  "latency_s": 1.6
+ },
+ "p294_m2": {
+  "description": "Recall that the distance between two points (x1, y1) and (x2, y2) is found using the formula",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 201,
+  "completion_tokens": 27,
+  "cost_usd": 0.0001236,
+  "latency_s": 1.1
+ },
+ "p297_m4": {
+  "description": "First, we define two parameters: K, and r. A point in the dataset is called a core point if it has at least K neighbors, counting itself, within a distance of r from itself.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 272,
+  "completion_tokens": 41,
+  "cost_usd": 0.00017440000000000004,
+  "latency_s": 1.2
+ },
+ "p297_m6": {
+  "description": "1. Choose a starting point that is a core point and assign it to a cluster. (Note: If there are no core points in the dataset at all, then the parameters K and r will need to be adjusted.)\n2. Add all core points that are close (less than a distance of r) to the first point into the first cluster. Keep adding to the cluster in this way until there are no more core points close enough to the first cluster.\n3. If there are any core points not assigned to a cluster, choose one to start a new cluster and repeat step 2 until all core points are assigned to clusters.\n4. For each non-core point, check to see if it is close to any core points. If so, then add it to the cluster of the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 685,
+  "completion_tokens": 159,
+  "cost_usd": 0.0005283999999999999,
+  "latency_s": 2.5
+ },
+ "p297_m8": {
+  "description": "Since the values of K and r are so important to the performance of DBScan, the algorithm is typically run multiple times on the same dataset using a range of K values and r values. If there are a large number of outliers and/or very few clusters, then the model may be underfitting. Conversely, a very small number of outliers (or zero outliers) and/or many clusters present in the model may be a sign of overfitting.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 412,
+  "completion_tokens": 94,
+  "cost_usd": 0.00031520000000000007,
+  "latency_s": 1.9
+ },
+ "p297_m9": {
+  "description": "Let’s work through a small example using DBScan with K = 3 and r = 2.1 to classify the following dataset into clusters. (Points are labeled by letters for convenience.)",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 287,
+  "completion_tokens": 39,
+  "cost_usd": 0.00017720000000000002,
+  "latency_s": 1.1
+ },
+ "p298_m1": {
+  "description": "The core points are those that have at least K neighbors (or K - 1, not counting the point itself) within a distance of r. The easiest way to determine core points would be to draw circles of radius 2.1 centered at each point, as shown in Figure 6.15, and then count the number of points within each circle.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 73,
+  "cost_usd": 0.000258,
+  "latency_s": 1.9
+ },
+ "p298_m2": {
+  "description": "Figure 6.15 Circles of Radius Centered at Each Point. Drawing circles of radius r around each data point, it is easier to see which points are core and which are not core.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 40,
+  "cost_usd": 0.00017680000000000001,
+  "latency_s": 1.4
+ },
+ "p301_m0": {
+  "description": "accuracy of (23 + 32 + 18) / 100 = 0.73, or 73%. Note: The terms TP, TN, FP, and FN introduced in What Is Machine",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 214,
+  "completion_tokens": 41,
+  "cost_usd": 0.00015120000000000002,
+  "latency_s": 1.7
+ },
+ "p303_m5": {
+  "description": "Regression is a term that applies to many different techniques in data analysis and machine learning. The main idea is to model a relationship between one or more input (or independent) variables X and an output (or dependent) variable y by creating an explicit functional equation y = f(X). Once the equation is found, new inputs can be plugged into it and the results would serve as predictions. The types of regressions are based on the form of the equations that are generated: linear, polynomial, logistic, exponential, etc. Most of these types of regression analyses may be done on single inputs or using multiple input variables. Some of these topics have already been discussed in this textbook, and so in this chapter, we delve into a more advanced analysis. First we explore bootstrapping as a way to find more information about the reliability and variability of the parameters of a linear regression. Then we discuss multiple linear and logistic regressions, including how to perform these tasks in Python.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 885,
+  "completion_tokens": 194,
+  "cost_usd": 0.0006644000000000001,
+  "latency_s": 2.7
+ },
+ "p304_m2": {
+  "description": "Recall, for a set of bivariate data—that is, a set of points X = {(x_i, y_i)} in the plane—the linear regression or line of best fit is a line with equation y = a + bx, in which the values of a and b are chosen to minimize the squared vertical distance from each y_i to the predicted value, y_hat_i = a + bx_i. The values of a and b clearly depend on the points of the dataset X, and so these parameters are just our best guess estimates for the “true” values of a and b. Perhaps a different sampling of X would yield slightly different values of a and b. We may not have the luxury of resampling from the population, and so we do the next best thing: Resample from the set X itself! This process is called bootstrapping because you are attempting to “pull yourself up by your own bootstraps,” as the old saying goes. Here is an outline of the process.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 752,
+  "completion_tokens": 201,
+  "cost_usd": 0.0006224000000000001,
+  "latency_s": 2.5
+ },
+ "p304_m3": {
+  "description": "1. Choose a large number N of samples taken from the dataset X, with replacement (so repetitions of data are allowed).\n2. Find the linear regression for this set of N samples. Record the a (intercept) and b (slope) values into lists A and B, respectively.\n3. Repeat steps 1 and 2 many times.\n4. The sets A and B represent distributions of possible values of the parameters a and b for the true linear fit, y = a + bx.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 685,
+  "completion_tokens": 102,
+  "cost_usd": 0.00043720000000000006,
+  "latency_s": 1.6
+ },
+ "p304_m4": {
+  "description": "5. Let ā = MEAN(A) and b̄ = MEAN(B). These are the parameters we will chose for our (bootstrapped)",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 34,
+  "cost_usd": 0.00014240000000000002,
+  "latency_s": 1.2
+ },
+ "p304_m5": {
+  "description": "linear regression, y = ā + b̄x.\n6. Find the standard deviation of A and B as well in order to produce a confidence interval for each parameter.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 334,
+  "completion_tokens": 37,
+  "cost_usd": 0.00019280000000000002,
+  "latency_s": 1.0
+ },
+ "p304_m8": {
+  "description": "In NCAA Division I basketball, a statistic called BARTHAG provides a measure of many different factors that affect a team’s chances of winning against an average team in the same division. This statistic (along with many others) can be found in the dataset NCAA-2021-stats.csv (https://openstax.org/r/NCAA). Let X be the dataset consisting of pairs (BARTHAG, W), where W stands for the number of wins in 2021. There are 346 data points in this set. Here is the code that produces the scatterplot and regression line.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 119,
+  "cost_usd": 0.0004112,
+  "latency_s": 2.6
+ },
+ "p305_m5": {
+  "description": "Then, the set is resampled 50 times, using 100 data points each time. A linear regression is run each time, producing a set of 50 values of a and 50 values of b. All 50 regression lines are shown on the same graph.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 55,
+  "cost_usd": 0.0002008,
+  "latency_s": 1.4
+ },
+ "p308_m1": {
+  "description": "Ī, where σ is the standard deviation (See Bootstrapping Methods). This can be done in Python",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 201,
+  "completion_tokens": 23,
+  "cost_usd": 0.00011720000000000002,
+  "latency_s": 2.9
+ },
+ "p308_m10": {
+  "description": "In a simple linear regression, one variable (x) serves as the predictor for the output variable (y). Many problems in data science, however, go well beyond a single predictor. There may be dozens of features in the data that work together to predict the output. In this context, we may use multiple regression techniques, which use more than one input variable. In this section, we focus on two main concepts: multiple linear",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 420,
+  "completion_tokens": 86,
+  "cost_usd": 0.0003056,
+  "latency_s": 2.0
+ },
+ "p308_m14": {
+  "description": "X_1, X_2, ... X_r. Here, we are using capital letters to distinguish these feature variables from data values like x_i. The multiple regression model takes the form",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 292,
+  "completion_tokens": 38,
+  "cost_usd": 0.00017760000000000003,
+  "latency_s": 1.2
+ },
+ "p308_m15": {
+  "description": "In the equation, a is the intercept (value of y when all X_k = 0), and the values of b_k are the coefficients of the predictors, which function much like the slope b in the simple linear regression model. A positive b_k indicates that the feature measured by X_k has a positive correlation on values of y, while a negative b_k indicates a negative correlation. More sophisticated models also introduce an error term, E, to account for unexplained variability in y.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 98,
+  "cost_usd": 0.0003776,
+  "latency_s": 2.5
+ },
+ "p308_m16": {
+  "description": "The goal of multiple linear regression is to determine (or estimate) values of the parameters a and b_k (for k = 1, 2, ..., r) that minimize the squared vertical distance between the actual and predicted outputs. There are well-known formulas for this task, and typically the regression is handled by a computer.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 66,
+  "cost_usd": 0.00024440000000000003,
+  "latency_s": 1.3
+ },
+ "p309_m1": {
+  "description": "1. The output y should be continuous, not discrete. However, regression could still be used if the output is a discrete variable with a very large, regular range of values (such as the number of people who live in a given country, which could be any positive integer).\n2. The input variables, X_k, should be continuous, not discrete. However, the same comment as in (1) applies here: If the variable has a very large, regular range of possible values, then regression should work fine.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 105,
+  "cost_usd": 0.0003888,
+  "latency_s": 2.2
+ },
+ "p309_m3": {
+  "description": "3. There should be a linear relationship between X_k and for each k, regarding the other variables as constant. This can be checked by running simple linear regressions on the pair (X_k, y) for each k and verifying linearity.\n4. The data should not have multicollinearity. Multicollinearity means that at least two of the input variables X_j, X_k are highly correlated with one another, in which case one (or more) of the variables can be",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 100,
+  "cost_usd": 0.0003808,
+  "latency_s": 1.8
+ },
+ "p311_m0": {
+  "description": "Next, let’s take a look at the predicted values found by plugging BARTHAG and WAB into the multiple regression formula discussed previously in the chapter. We also include the regression plane. The Python code required to create the regression plane is somewhat involved, requiring another package, numpy (https://openstax.org/r/numpy), to help create a mesh grid of (x, y) points, so don’t worry too much if you don’t understand that part of the code.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 98,
+  "cost_usd": 0.0003776,
+  "latency_s": 1.7
+ },
+ "p314_m10": {
+  "description": "As the name suggests, multiple logistic regression is an extension of the single-variable logistic regression method to two or more input variables. The model estimates the probability of the dependent variable (y) taking on a particular category such as yes or no. Thus, the model is a binary classifier with multiple independent inputs. The standard multiple logistic regression model takes the form:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 412,
+  "completion_tokens": 71,
+  "cost_usd": 0.00027840000000000005,
+  "latency_s": 1.4
+ },
+ "p316_m1": {
+  "description": "48/62 = 77%. The number of false negatives (FN) dropped from 10 down to 5, but the number of false positives (FP) increased by 1, which is not a bad trade-off.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 272,
+  "completion_tokens": 46,
+  "cost_usd": 0.00018240000000000004,
+  "latency_s": 1.2
+ },
+ "p317_m6": {
+  "description": "Consider an event that has a certain probability p. The higher p is, the more likely the event is, and hence there is not much information (or uncertainty) contained in the occurrence of the event. For example, the event that my car starts when I get into it in the morning has a fairly low amount of information because my car is reliable, and I expect it to start. If, on the other hand, it does not start one morning, then that low-probability event would be surprising and would contain much more information.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 564,
+  "completion_tokens": 109,
+  "cost_usd": 0.0004,
+  "latency_s": 1.8
+ },
+ "p317_m7": {
+  "description": "Information is typically measured in bits, where one bit represents the amount of information needed to distinguish between two equally likely events or messages. For example, when you flip a fair coin, you gain one bit of information because you go from being uncertain about the outcome (heads or tails) to knowing the outcome (heads, for instance). To measure the number of bits of a whole number, you would use the base-2 logarithm (log2 x), so it may not come as a surprise to learn that the base-2 logarithm plays a huge role in",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 564,
+  "completion_tokens": 113,
+  "cost_usd": 0.0004064,
+  "latency_s": 1.9
+ },
+ "p318_m1": {
+  "description": "The information of an event with probability p is -log2 p. Recall that probabilities p are always between 0 and",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 24,
+  "cost_usd": 0.0001264,
+  "latency_s": 1.0
+ },
+ "p318_m2": {
+  "description": "1, and if 0 < p < 1, then by properties of logarithms, we would have log_2 p < 0. This explains the negative sign",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 35,
+  "cost_usd": 0.000144,
+  "latency_s": 1.3
+ },
+ "p318_m4": {
+  "description": "Note that the information contained in an event that is certain to occur (p = 1) is −log2 1 = 0, while the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 214,
+  "completion_tokens": 31,
+  "cost_usd": 0.0001352,
+  "latency_s": 1.3
+ },
+ "p318_m5": {
+  "description": "information contained in knowing that a coin was flipped and heads came up (p = 1/2), would be",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 207,
+  "completion_tokens": 23,
+  "cost_usd": 0.00011960000000000002,
+  "latency_s": 1.0
+ },
+ "p318_m7": {
+  "description": "Let's say the probability that my car will start on any given day is p = 255/256, and so the probability that it will not start on any given day is 1 - p = 1/256.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 224,
+  "completion_tokens": 45,
+  "cost_usd": 0.00016160000000000002,
+  "latency_s": 1.3
+ },
+ "p318_m8": {
+  "description": "not start is 1 - p = 1/256. The information of the event that it starts is -log_2 (255/256) = 0.0056, whereas the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 40,
+  "cost_usd": 0.0001508,
+  "latency_s": 1.2
+ },
+ "p318_m9": {
+  "description": "information of the event that it does not start is -log2(1/256) = 8. Essentially, there are 8 bits of information",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 31,
+  "cost_usd": 0.0001364,
+  "latency_s": 1.1
+ },
+ "p318_m11": {
+  "description": "every 2^8 = 256 days.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 117,
+  "completion_tokens": 10,
+  "cost_usd": 6.280000000000001e-05,
+  "latency_s": 1.0
+ },
+ "p318_m14": {
+  "description": "For a discrete random variable X, with n values x_i and associated probabilities p_i the entropy of X is:",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 211,
+  "completion_tokens": 23,
+  "cost_usd": 0.00012120000000000002,
+  "latency_s": 1.1
+ },
+ "p318_m19": {
+  "description": "Recall, the probabilities are: 255/256 for \"car starts\" and 1/256 for \"car does not start.\"",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 185,
+  "completion_tokens": 27,
+  "cost_usd": 0.0001172,
+  "latency_s": 1.0
+ },
+ "p318_m21": {
+  "description": "sense since the probability of the car starting is 255/256 = 0.996, or 99.6%, which implies that we could predict",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 31,
+  "cost_usd": 0.0001364,
+  "latency_s": 1.3
+ },
+ "p318_m25": {
+  "description": "Suppose that you wish to classify data into some number of categories based on values of its features (inputs). We will assume that you have plenty of labeled data to train on. For the purposes of illustration, let’s say that your data consists of a set S of points in the plane with labels Red and Blue. The format of each point is (X, Y, Label). Here is your training set.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 428,
+  "completion_tokens": 83,
+  "cost_usd": 0.000304,
+  "latency_s": 1.7
+ },
+ "p319_m5": {
+  "description": "Figure 6.19 Labeled Scatterplot of Dataset S. Note the pattern of red and blue that would be impossible to predict from a typical linear or logistic regression.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 34,
+  "cost_usd": 0.00016720000000000003,
+  "latency_s": 1.4
+ },
+ "p320_m1": {
+  "description": ") or Blue (b) points. The probabilities of each case are P(r) = 9/19 = 0.47 and P(b) = 10/19 = 0.53. The total",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 214,
+  "completion_tokens": 44,
+  "cost_usd": 0.000156,
+  "latency_s": 1.2
+ },
+ "p320_m3": {
+  "description": "This is very close to the entropy of a coin toss. We need to separate points based on some feature of the dataset. We will use an inequality such as X ≤ a or Y ≤ a, where a is an appropriately chosen constant. The choice is based on maximizing information gain, which will be defined later in the chapter.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 66,
+  "cost_usd": 0.00024440000000000003,
+  "latency_s": 1.5
+ },
+ "p320_m4": {
+  "description": "The type of decision tree that we are building is also called a regression tree, as the features are numeric, and we are going to use number comparisons to make decisions. Let’s start with an arbitrary choice, say X ≤ 7.75. (This point is halfway between two adjacent values of X, 7.6 and 7.9. This provides a bit of a buffer between points, which often produces better predictions on noisy data.) The inequality splits the data into two subsets: Left = L = {3 Red, 2 Blue} and Right = R = {6 Red, 8 Blue}. Note that L has 5 points, so its weight with respect",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 564,
+  "completion_tokens": 138,
+  "cost_usd": 0.0004464,
+  "latency_s": 2.0
+ },
+ "p320_m5": {
+  "description": "to its parent node is w_L = 5/19. Similarly, the weight of R is w_L = 14/19. The information gain, or IG, of a split is",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 39,
+  "cost_usd": 0.0001504,
+  "latency_s": 1.3
+ },
+ "p320_m7": {
+  "description": "Let’s first find the entropy measures of L and R.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 149,
+  "completion_tokens": 12,
+  "cost_usd": 7.880000000000002e-05,
+  "latency_s": 0.9
+ },
+ "p320_m8": {
+  "description": "Thus, the information gain of this split is IG = 0.9974 - (5/19)(0.9710) - (14/19)(0.9852) = 0.016. The information",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 46,
+  "cost_usd": 0.00016160000000000002,
+  "latency_s": 1.1
+ },
+ "p320_m9": {
+  "description": "gain is positive, which is a good thing. It is possible to have negative information gain if the split is chosen in such a way that raises the total entropy. But how good is this split? Intuitively, we could have done better by splitting in a way that groups more of the red or more of the blue into one of the two subsets. However, if we want the absolute best split, then we would need to try every possibility and pick the one that has the greatest IG. This is not difficult for a computer to do, as there are only finitely many points, hence only finitely many ways to split into subsets. For comparison, we will do one more, using the other feature (Y).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 619,
+  "completion_tokens": 146,
+  "cost_usd": 0.00048120000000000004,
+  "latency_s": 2.2
+ },
+ "p320_m10": {
+  "description": "Split on Y ≤ 13.75 (which is halfway between two adjacent Y values, 13 and 14.5). Now L = {9 Red, 6 Blue}, and R = {5 Red, 10 Blue}. The misclassification error of L is 6/15, and the misclassification error of R is 5/15. The weighted average misclassification error is (15/30)(6/15) + (15/30)(5/15) = 0.3667.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 106,
+  "cost_usd": 0.00025760000000000003,
+  "latency_s": 1.5
+ },
+ "p320_m11": {
+  "description": "R = {0 Red, 4 Blue}. The entropy of L is - [ (9/15) log2 (9/15) + (6/15) log2 (6/15) ] = 0.9710. Note that R is a pure node,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 58,
+  "cost_usd": 0.0001808,
+  "latency_s": 1.5
+ },
+ "p320_m13": {
+  "description": "Since the value of IG is greater for this split compared to the previous one, it is better to split on Y ≤ 13.75. It turns out that this is indeed the split with the greatest information gain, so we will use it to start building our decision tree. Each new node has the potential to become a new parent node, or if it is a pure node, then we do not branch from it.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 420,
+  "completion_tokens": 85,
+  "cost_usd": 0.000304,
+  "latency_s": 1.6
+ },
+ "p322_m7": {
+  "description": "(X, Y) = (9.9, 2.5). Starting at the root node, branch left (Y = 2.5 ≤ 13.75). Branch left again (X = 9.9 ≤ 14.55). Branch left once again (Y = 2.5 ≤ 8.45). This puts us into a leaf node marked Blue. So (9.9, 2.5) should be labeled Blue.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 95,
+  "cost_usd": 0.0002908,
+  "latency_s": 1.5
+ },
+ "p322_m8": {
+  "description": "6). Starting at the root node, branch left (Y = 12.6 ≤ 13.75). Then branch right (). This is a Red leaf node, and so the point (15.1, 12.6) gets the label Red.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 233,
+  "completion_tokens": 53,
+  "cost_usd": 0.000178,
+  "latency_s": 1.2
+ },
+ "p322_m9": {
+  "description": "(X, Y) = (3.5, 10.2). Starting at the root node, branch left (Y = 10.2 ≤ 13.75). Branch left again (X = 3.5 ≤ 14.55). Then branch right (Y = 10.2 > 8.45), then left (X = 3.5 ≤ 8.65), and then left again (X = 3.5 ≤ 4.2). Finally, take the right branch (X = 3.5 > 2.55), which gives the label Blue to the point (3.5, 10.2).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 412,
+  "completion_tokens": 137,
+  "cost_usd": 0.000384,
+  "latency_s": 2.5
+ },
+ "p323_m2": {
+  "description": "According to this table, M was correct 2 out of 3 times, so the accuracy is 2/3 = 66.6%.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 194,
+  "completion_tokens": 30,
+  "cost_usd": 0.00012560000000000002,
+  "latency_s": 1.1
+ },
+ "p323_m7": {
+  "description": "Y ≤ 13.75, X ≤ 14.55, and Y > 8.45—consists of the points (7.6, 10.2, Red), (7.9, 10.6, Red), (3.2, 11, Blue), (5.2, 12.2, Red), (9.4, 12.8, Blue), and (1.9, 13, Red). As you can see in Figure 6.20, it takes three additional inequalities to separate the four red and two blue points into regions of the same color. At the end of the process, each of the two blue points and one of the red points became the sole members of their subsets.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 412,
+  "completion_tokens": 155,
+  "cost_usd": 0.0004128,
+  "latency_s": 2.2
+ },
+ "p323_m13": {
+  "description": "From the node whose pathway is Y ≤ 13.75, X ≤ 14.55, Y > 8.45, the model M branched on the inequality X ≤ 8.65. This splits the set into L = {(7.6, 10.2, Red), (7.9, 10.6, Red), (3.2, 11, Blue), (5.2, 12.2, Red), (1.9, 13, Red)} and R = {(9.4, 12.8, Blue)}. Because the split would produce a singleton, we simply make this node a leaf and prune away all branches and nodes underneath it. Now the node is a leaf with four red and two blue data points, and so this leaf is labeled Red. The flowchart and corresponding regions of the plane are",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 541,
+  "completion_tokens": 179,
+  "cost_usd": 0.0005028000000000001,
+  "latency_s": 2.6
+ },
+ "p324_m4": {
+  "description": "b). Starting at the root node, branch left (Y = 2.5 ≤ 13.75). Branch left again (Y = 2.5 ≤ 8.45), which is a blue leaf.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 224,
+  "completion_tokens": 45,
+  "cost_usd": 0.00016160000000000002,
+  "latency_s": 1.5
+ },
+ "p324_m5": {
+  "description": "6). Starting at the root node, branch left (Y = 12.6 ≤ 13.75). Then branch right ), which is a red leaf.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 233,
+  "completion_tokens": 33,
+  "cost_usd": 0.000146,
+  "latency_s": 1.1
+ },
+ "p324_m6": {
+  "description": "2). Starting at the root node, branch left (Y = 10.2 ≤ 13.75). Branch left again ). Then branch right (Y = 10.2 > 8.45), which is now a red leaf.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 228,
+  "completion_tokens": 50,
+  "cost_usd": 0.0001712,
+  "latency_s": 1.3
+ },
+ "p325_m1": {
+  "description": "Now we find the model to be 100% accurate on the testing data. (Of course, a model trained on real-world data with many more data points cannot possibly attain 100% accuracy, but this is possible on very small datasets.) Note that the model’s accuracy on the original training set S is no longer 100%. On S, the pruned tree misclassifies two points, (3.2, 11), and (9.4, 12.8) as red when they are in fact blue, and so the accuracy on the training set is now 17/19 = 89.5%. That’s still pretty good!",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 541,
+  "completion_tokens": 134,
+  "cost_usd": 0.0004308,
+  "latency_s": 2.0
+ },
+ "p330_m7": {
+  "description": "The multinomial naïve Bayes classification algorithm is based on Bayes’ Theorem, making use of prior probabilities and Bayes’ Theorem to predict the class or label of new data. (See Normal Continuous Probability Distributions for more details.) The naïve Bayes classifier algorithm is a powerful tool for working out probabilities of events based on prior knowledge. Recall, the notation P(A|B) stands for the conditional probability that event A occurs given that event B is known to occur (or has already occurred or is presumed to occur). In the simplest version, Bayes’ Theorem takes the form",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 619,
+  "completion_tokens": 122,
+  "cost_usd": 0.0004428000000000001,
+  "latency_s": 2.0
+ },
+ "p330_m8": {
+  "description": "Here, we regard A as an event that we would like to predict and B as information that has been given to us (perhaps as a feature of a dataset). The conditional probability P(B|A) represents the known likelihood of seeing event B in the case that A occurs, which is typically found using the training data. The value of P(A) would be computed or estimated from training data as well and is known as the prior probability.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 412,
+  "completion_tokens": 89,
+  "cost_usd": 0.00030720000000000004,
+  "latency_s": 2.0
+ },
+ "p331_m4": {
+  "description": "First, we find the probability that a delivered battery is defective. Let A, B, and C stand for the proportions of batteries from each of the companies, Acme Electronics, Batteries 'R' Us, and Current Trends, respectively. Then P(A) = 0.25, P(B) = 0.36, P(C) = 0.39. We also have the probabilities of receiving a defective battery (event d) from each company, P(d|A) = 0.023, P(d|B) = 0.017, P(d|C) = 0.021. Now, the probability of receiving a defective battery from any of the companies is the sum",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 541,
+  "completion_tokens": 144,
+  "cost_usd": 0.0004468,
+  "latency_s": 2.6
+ },
+ "p331_m6": {
+  "description": "In practice, there are often a multitude of features, B1, B2, B3, ..., Bn, where each feature could be the event that a particular word occurs in a message, and we would like to classify the message into some type or another based on those events. In other words, we would like to know something about",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 69,
+  "cost_usd": 0.00025160000000000004,
+  "latency_s": 1.6
+ },
+ "p331_m7": {
+  "description": "P(A | B1, B2, B3, ..., Bn), the probability of A occurring if we know that events B1, B2, B3, ..., Bn occurred. In fact, we are just interested in distinguishing event A from A' rather than precise computations of probabilities, and so we will do simple comparisons to find out this information. The process is best illustrated by example.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 360,
+  "completion_tokens": 82,
+  "cost_usd": 0.0002752,
+  "latency_s": 1.5
+ },
+ "p331_m13": {
+  "description": "the training set. P(Real) = 600/1,000 = 0.6 and P(Fake) = 400/1,000 = 0.4. Next, using the word counts found in",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 46,
+  "cost_usd": 0.00016040000000000002,
+  "latency_s": 1.3
+ },
+ "p331_m15": {
+  "description": "2, P(disaster | Real) = 87/600 = 0.145,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 133,
+  "completion_tokens": 19,
+  "cost_usd": 8.360000000000001e-05,
+  "latency_s": 0.9
+ },
+ "p331_m16": {
+  "description": "l, P(disaster | Fake) = 320/400 = 0.8, ",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 130,
+  "completion_tokens": 20,
+  "cost_usd": 8.4e-05,
+  "latency_s": 1.2
+ },
+ "p332_m11": {
+  "description": "In this example, we will work with a large dataset, cirrhosis.csv (https://openstax.org/r/cirrhosis), that has many features, both categorical and numerical. This dataset (along with many more!) is available for free download from Kaggle.com. We will only use four of the numerical columns as features. The response variables is \"Status,\" which may take the values D for death, C for censored (meaning that the patient did not die during the observation period), and CL for censored due to liver transplantation.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 113,
+  "cost_usd": 0.0004016,
+  "latency_s": 1.8
+ },
+ "p333_m8": {
+  "description": "The accuracy score of 0.71 means that correct labels were assigned 71% of the time. We can see that 10 deaths (D) and 30 non-deaths (C or CL) were corrected predicted. However, 16 predictions of death were ultimately non-deaths. This is a much more desirable error than the reverse (prediction of non-death when in fact the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 360,
+  "completion_tokens": 79,
+  "cost_usd": 0.00027039999999999996,
+  "latency_s": 1.6
+ },
+ "p333_m12": {
+  "description": "• Volume: Big data involves massive amounts of data, often ranging from terabytes (2^40 ≈ 10^12 bytes) to as much as exabytes (2^60 ≈ 10^18 bytes).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 46,
+  "cost_usd": 0.00016160000000000002,
+  "latency_s": 1.3
+ },
+ "p333_m13": {
+  "description": "large as petabytes (2^50 ≈ 10^15 bytes) and beyond. Where does such vast amounts of data originate? One example is the Common Crawl dataset (https://openstax.org/r/commoncrawl), which contains petabytes of data consisting of the raw web page data, metadata, and other information available from the internet. It",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 71,
+  "cost_usd": 0.0002524,
+  "latency_s": 1.4
+ },
+ "p333_m14": {
+  "description": "is likely that there will be datasets containing exabytes (2^60 ≈ 10^18 bytes) of information in the near future.\n• Velocity: In some important real-world applications, data is generated and collected at an incredibly high speed. This continuous flow of data may be streamed in real time or stored in huge databases for later analysis. One example is in the area of very high-definition video, which can be captured, stored, and",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 552,
+  "completion_tokens": 90,
+  "cost_usd": 0.00036480000000000003,
+  "latency_s": 2.0
+ },
+ "p335_m2": {
+  "description": "Datasets\n\nDatasets are collections of data. They can be as simple as a list of numbers or as complex as a collection of images, text, or sensor readings. In data science, datasets are the foundation upon which analyses and models are built. They can be structured, like tables in a database, or unstructured, like raw text or images. Understanding the nature of your dataset is crucial for selecting the appropriate analytical techniques and tools.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 100,
+  "completion_tokens": 89,
+  "cost_usd": 0.00018240000000000002,
+  "latency_s": 1.9
+ },
+ "p422_m11": {
+  "description": "A boxplot or box-and-whisker plot is a graph used to display a distribution of a dataset based on the quartiles, minimum, and maximum of the data. This is called the five-number summary, and thus a boxplot displays the minimum, Q1 (first quartile), median, Q3 (third quartile), and the maximum of a dataset. Note that a boxplot can be created using a horizontal format or vertical format. A boxplot can also be created with multiple plots, and this is helpful to compare two or more variables side by side. A boxplot is also useful to identify outliers and investigate skewness of a dataset.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 619,
+  "completion_tokens": 134,
+  "cost_usd": 0.000462,
+  "latency_s": 2.0
+ },
+ "p426_m1": {
+  "description": "$92,000 - $54,000, which is $38,000. The vertical line shown within the rectangle indicates the median, and in this example, the median salary is $65,000. Finally, the whisker on the left side of the boxplot indicates the minimum of the dataset and the whisker on the right side of the boxplot represents the maximum of the dataset. In this example, the minimum salary at the company is $42,000 and the maximum salary is $140,000.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 420,
+  "completion_tokens": 105,
+  "cost_usd": 0.000336,
+  "latency_s": 1.9
+ },
+ "p426_m2": {
+  "description": "Notice from the boxplot that the vertical line within the box is not centered within the rectangle; this indicates that the distribution is not symmetric. Also, notice that the whisker on the right side of the rectangle that extends from Q3 to the maximum is longer than the whisker on the left side of the rectangle that extends from Q1 to the minimum; this gives an indication of a skewed distribution (right-skew).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 420,
+  "completion_tokens": 86,
+  "cost_usd": 0.0003056,
+  "latency_s": 1.6
+ },
+ "p437_m10": {
+  "description": "Then for each row in the table, plot the corresponding (x, y) point on the graph. By doing this, we make each point on the graph correspond to a point in time and a measured quantity. For example, the first row in the table shows the (x, y) datapoint of (1, 8641). To plot this point, identify the location that corresponds to Year 1 on the horizontal axis and an enrollment value of 8641 on the vertical axis. At the intersection of the horizontal location and vertical location, plot a single point to represent this (x, y) data value. Repeat this process for each row in the table. Since there are eight rows in the table, we expect to see eight points on the time series graph. Finally, the points on the graph are typically connected by straight lines in the",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 671,
+  "completion_tokens": 172,
+  "cost_usd": 0.0005436,
+  "latency_s": 2.2
+ },
+ "p438_m5": {
+  "description": "After defining the (x, y) data to be graphed, the Python function plt.plot(x, y) can be used to generate",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 28,
+  "cost_usd": 0.00013160000000000003,
+  "latency_s": 1.4
+ },
+ "p438_m12": {
+  "description": "the various (x, y) points. In addition, plt.ylim specifies the range for the y-axis.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 188,
+  "completion_tokens": 23,
+  "cost_usd": 0.000112,
+  "latency_s": 0.9
+ },
+ "p442_m17": {
+  "description": "Use the Python function binom to graph the binomial distribution for n = 20 and three different values of p,",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 220,
+  "completion_tokens": 24,
+  "cost_usd": 0.0001264,
+  "latency_s": 1.0
+ },
+ "p442_m18": {
+  "description": "namely p = 0.10, 0.50, and 0.85, and comment on the resulting shapes of the distributions.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 198,
+  "completion_tokens": 30,
+  "cost_usd": 0.0001272,
+  "latency_s": 1.3
+ },
+ "p442_m22": {
+  "description": "Here is the Python code and graph for n = 20 and p = 0.10.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 162,
+  "completion_tokens": 20,
+  "cost_usd": 9.68e-05,
+  "latency_s": 1.1
+ },
+ "p442_m23": {
+  "description": "Note: To generate the plots for p = 0.5 and p = 0.85, change the one line of Python code, p = 0.1, as needed.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 272,
+  "completion_tokens": 39,
+  "cost_usd": 0.00017120000000000001,
+  "latency_s": 1.1
+ },
+ "p444_m0": {
+  "description": "Here is the graph for n = 20 and p = 0.50.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 143,
+  "completion_tokens": 17,
+  "cost_usd": 8.44e-05,
+  "latency_s": 0.9
+ },
+ "p444_m1": {
+  "description": "Here is the graph for n = 20 and p = 0.85.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 143,
+  "completion_tokens": 17,
+  "cost_usd": 8.44e-05,
+  "latency_s": 0.9
+ },
+ "p445_m0": {
+  "description": "Notice the impact of p on the shape of the graph: for p = 0.1, the graph is right skewed, for p = 0.5, the graph resembles a bell-shaped distribution, and for p = 0.85, the graph is left skewed.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 277,
+  "completion_tokens": 59,
+  "cost_usd": 0.00020520000000000003,
+  "latency_s": 1.5
+ },
+ "p446_m0": {
+  "description": "mu is the mean of the Poisson distribution (mu refers to the Greek letter μ).",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 181,
+  "completion_tokens": 18,
+  "cost_usd": 0.00010120000000000001,
+  "latency_s": 1.1
+ },
+ "p446_m5": {
+  "description": "Use the Python function poisson to graph the Poisson distribution for n = 12 hours and mean μ of 3 ships",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 217,
+  "completion_tokens": 24,
+  "cost_usd": 0.0001252,
+  "latency_s": 1.2
+ },
+ "p446_m11": {
+  "description": "Here is the Python code and graph for n = 12 and mean (μ) of 3.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 169,
+  "completion_tokens": 21,
+  "cost_usd": 0.00010120000000000002,
+  "latency_s": 1.1
+ },
+ "p447_m2": {
+  "description": "From the graph, there are lower probabilities for x = 7 and larger. So there is not much of a chance that 7 or more ships will arrive in a one-hour time period. The administrators for the Port of Miami should plan for 6 or fewer ships arriving per hour to cover the most likely scenarios.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 347,
+  "completion_tokens": 64,
+  "cost_usd": 0.0002412,
+  "latency_s": 1.5
+ },
+ "p447_m5": {
+  "description": "The normal distribution is bell-shaped and has two parameters: the mean, μ, and the standard deviation, σ. The mean represents the center of the distribution, and the standard deviation measures the spread or dispersion of the distribution. The variable x represents the realization or observed value of the random variable X that follows a normal distribution.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 412,
+  "completion_tokens": 65,
+  "cost_usd": 0.00026880000000000003,
+  "latency_s": 1.5
+ },
+ "p447_m6": {
+  "description": "The graph of the normal curve is symmetric about the mean μ. The shape of the graph of the normal distribution depends only on the mean and the standard deviation. Because the area under the curve must equal 1, a change in the standard deviation, σ, causes a change in the shape of the normal curve; the curve becomes fatter and wider or skinnier and taller depending on the standard deviation μ. A change in the mean",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 420,
+  "completion_tokens": 88,
+  "cost_usd": 0.0003088,
+  "latency_s": 1.6
+ },
+ "p447_m7": {
+  "description": "σ causes the graph to shift to the left or right. To determine probabilities associated with the normal distribution, we find specific areas under the graph of the normal curve within certain intervals of the random variable.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 353,
+  "completion_tokens": 40,
+  "cost_usd": 0.00020520000000000003,
+  "latency_s": 1.1
+ },
+ "p448_m6": {
+  "description": "To create a graph of the normal distribution, we will plot a large number of data points (say 1,000 points), and the values of x will range from μ + 3σ and μ - 3σ. Recall from the discussion in Discrete and Continuous Probability Distributions regarding the empirical rule that about 99.7% of the x-values lie between -3σ and +3σ units from the mean μ (i.e., within three standard deviations of the mean). In Python, we can use the np.linspace function to create evenly spaced points between a lower bound and",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 541,
+  "completion_tokens": 119,
+  "cost_usd": 0.0004068,
+  "latency_s": 2.0
+ },
+ "p448_m7": {
+  "description": "upper bound. Then we can use the plot function to plot the (x, y) points corresponding to the normal",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 214,
+  "completion_tokens": 23,
+  "cost_usd": 0.0001224,
+  "latency_s": 1.0
+ },
+ "p455_m14": {
+  "description": "A scatterplot is a graphing method for bivariate data, which is paired data in which each value of one variable is paired with a value of a second variable, which plots (x, y) data for two numeric quantities, and the goal is to",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 292,
+  "completion_tokens": 52,
+  "cost_usd": 0.0002,
+  "latency_s": 1.3
+ },
+ "p459_m0": {
+  "description": "A typical application for this capability is to plot the color of the datapoint on a scatterplot based on the value of a third variable. For example, a real estate professional may be interested in the correlation between home price, square footage of the home, and location in terms of distance in miles from the center of a city. The scatterplot can be created based on (x, y) data, where x is the square footage of the home, y is the price of the home, and z is the distance from center of the city, represented by the color of the point.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 564,
+  "completion_tokens": 118,
+  "cost_usd": 0.00041440000000000004,
+  "latency_s": 2.1
+ },
+ "p460_m9": {
+  "description": "- The value of r is always between -1 and +1. The size of the correlation r indicates the strength of the linear relationship between the two variables. Values of r close to -1 or to +1 indicate a stronger linear",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 282,
+  "completion_tokens": 47,
+  "cost_usd": 0.000188,
+  "latency_s": 1.3
+ },
+ "p466_m0": {
+  "description": "Datasets\n\nThe data used in this book are available in the datasets package, which is installed automatically with the base R system. The datasets package contains a variety of datasets, including time series data, that are useful for learning and practicing data analysis techniques. To access a dataset, you can use the data() function, which lists all available datasets, or specify the name of the dataset directly. For example, data(AirPassengers) loads the AirPassengers dataset, which contains monthly totals of international airline passengers from 1949 to 1960.",
+  "model": "gpt-4.1-mini",
+  "prompt_version": "math-v1",
+  "prompt_tokens": 100,
+  "completion_tokens": 110,
+  "cost_usd": 0.000216,
+  "latency_s": 1.9
  }
 }
