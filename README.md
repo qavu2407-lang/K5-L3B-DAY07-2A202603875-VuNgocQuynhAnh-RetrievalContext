@@ -31,3 +31,9 @@ Index một tài liệu thực tế từ **100 trang** có bảng, ảnh và bi�
 ![Các bước thử nghiệm trên dev và đánh giá trên test](assets/experiment-loop.svg)
 
 Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/individual/MSSV_HoTen.md). Thời gian ở [checkpoints](CHECKPOINTS.md) là gợi ý, có thể điều chỉnh theo lớp và phạm vi thử nghiệm.
+
+## Bài nộp (2A202603875 · Vũ Ngọc Quỳnh Anh)
+
+- Cách chạy: [src/README.md](src/README.md)
+- Báo cáo: [report/individual/2A202603875_VuNgocQuynhAnh.md](report/individual/2A202603875_VuNgocQuynhAnh.md)
+- Kết quả, trace, nhãn: [results/](results/) · cấu hình đã chốt: [results/frozen_config.json](results/frozen_config.json)
