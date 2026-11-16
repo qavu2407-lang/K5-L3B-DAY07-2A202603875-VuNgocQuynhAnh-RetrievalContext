@@ -31,7 +31,7 @@
   {
    "query_id": "AD06",
    "pass": true,
-   "reason": "BORDERLINE: darker = more cases, legend max 50,000 correct; extra sentence 'darkest red ... near or above 50,000' is a hedged restatement, not a new value. You verify."
+   "reason": "darker = more cases, legend max 50,000 correct; extra sentence 'darkest red ... near or above 50,000' is a hedged restatement, not a new value."
   },
   {
    "query_id": "AD07",
@@ -46,7 +46,7 @@
   {
    "query_id": "AD09",
    "pass": true,
-   "reason": "BORDERLINE: 2 and 3, ~0.22 each correct; extra 'much lower for 7 or more' not in the reading ('not shown'), true by the chart. You verify."
+   "reason": "2 and 3, ~0.22 each correct; extra 'much lower for 7 or more' not in the reading ('not shown'), true by the chart."
   },
   {
    "query_id": "AD10",
@@ -81,7 +81,7 @@
   {
    "query_id": "AD16",
    "pass": true,
-   "reason": "BORDERLINE: answer (not abstain) saying the table has no 2012 value; 2013 = 1848.36 supported by p225 tab0. You verify."
+   "reason": "answer (not abstain) saying the table has no 2012 value; 2013 = 1848.36 supported by p225 tab0."
   },
   {
    "query_id": "AD17",

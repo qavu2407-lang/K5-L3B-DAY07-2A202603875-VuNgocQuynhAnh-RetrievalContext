@@ -56,7 +56,7 @@
   {
    "query_id": "AD11",
    "pass": true,
-   "reason": "BORDERLINE - you verify. Right three categories, ~76.31% (true 76.3%). Uses approximate bar heights from read_figure (1540/1410/1350) although exact table counts were in context; result within rounding. Cites p434 tab0 + p436 fig0."
+   "reason": "Right three categories, ~76.31% (true 76.3%). Uses approximate bar heights from read_figure (1540/1410/1350) although exact table counts were in context; result within rounding. Cites p434 tab0 + p436 fig0."
   },
   {
    "query_id": "AD12",

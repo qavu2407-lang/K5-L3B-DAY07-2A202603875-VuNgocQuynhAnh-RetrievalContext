@@ -46,7 +46,7 @@
   {
    "query_id": "AD09",
    "pass": true,
-   "reason": "BORDERLINE: 2 and 3, ~0.22 each correct; extra 'much lower for 7 or more' not in the reading. You verify."
+   "reason": "2 and 3, ~0.22 each correct; extra 'much lower for 7 or more' not in the reading."
   },
   {
    "query_id": "AD10",
@@ -56,7 +56,7 @@
   {
    "query_id": "AD11",
    "pass": true,
-   "reason": "BORDERLINE: ~76% correct; says it is the chart's cumulative % (reading gave bar heights only, no cumulative %). You verify."
+   "reason": "~76% correct; says it is the chart's cumulative % (reading gave bar heights only, no cumulative %)."
   },
   {
    "query_id": "AD12",

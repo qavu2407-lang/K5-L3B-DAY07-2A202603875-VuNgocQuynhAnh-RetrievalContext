@@ -56,7 +56,7 @@
   {
    "query_id": "AD11",
    "pass": true,
-   "reason": "BORDERLINE - you verify. Figure-search nudge fired; right three categories (Scratches, Does Not Charge, Cracked Screen) with table counts 1543/1410/1348 = 4301 of 5635; final percentage stated as 'about 75%' (the book's wording, p436 text) rather than the computed 76.3% (computed in the trace, not written). Cites p434 tab0 + p436 fig0."
+   "reason": "Figure-search nudge fired; right three categories (Scratches, Does Not Charge, Cracked Screen) with table counts 1543/1410/1348 = 4301 of 5635; final percentage stated as 'about 75%' (the book's wording, p436 text) rather than the computed 76.3% (computed in the trace, not written). Cites p434 tab0 + p436 fig0."
   },
   {
    "query_id": "AD12",

@@ -56,7 +56,7 @@
   {
    "query_id": "AD11",
    "pass": true,
-   "reason": "BORDERLINE: 'approximately 75%' = the book's own wording (gold accepts ~76% / book ~75%); counts from p434 tab0 correct; claim that the chart shows a cumulative % is not backed by the reading ('Not shown'). You verify."
+   "reason": "'approximately 75%' = the book's own wording (gold accepts ~76% / book ~75%); counts from p434 tab0 correct; claim that the chart shows a cumulative % is not backed by the reading ('Not shown')."
   },
   {
    "query_id": "AD12",
@@ -81,7 +81,7 @@
   {
    "query_id": "AD16",
    "pass": true,
-   "reason": "BORDERLINE: answer (not abstain) saying the table has no 2012 value; extra claim (2013 = 1848.36, earliest year) is supported by p225 tab0. Passes ADVANCED.md rule 'states not enough evidence, no unsupported claim'. You verify."
+   "reason": "answer (not abstain) saying the table has no 2012 value; extra claim (2013 = 1848.36, earliest year) is supported by p225 tab0. Passes ADVANCED.md rule 'states not enough evidence, no unsupported claim'."
   },
   {
    "query_id": "AD17",

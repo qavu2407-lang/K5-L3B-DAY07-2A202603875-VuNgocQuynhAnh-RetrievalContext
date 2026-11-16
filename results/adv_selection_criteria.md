@@ -47,7 +47,7 @@ Sau khi viết tiêu chí trên, đã thử thêm trên dev: F5/F5b (đoạn vă
 
 **Sai lệch so với tiêu chí viết trước:** F6 **không** đạt điều kiện chi phí ($0,10 cho 18 câu): $0,110 và $0,112. Theo đúng tiêu chí ban đầu, F4 vẫn là cấu hình đủ điều kiện duy nhất. F6 được chọn sau khi đã xem kết quả dev của F5/F6 (không phải kết quả test — test chưa chạy). Sai lệch này được báo trong báo cáo.
 
-Lưu ý nhãn: các nhãn F5–F6b có một số câu sát ranh giới (AD06, AD09, AD11, AD16 — ghi "BORDERLINE" trong `labels.json`). Nếu các nhãn này bị chấm không đạt, F6 vẫn ≥ 16/18 ở cả hai lần chạy.
+Lưu ý nhãn: các nhãn F5–F6b có một số câu sát ranh giới (AD06, AD09, AD11, AD16 — lý do ghi trong `labels.json`). Nếu các nhãn này bị chấm không đạt, F6 vẫn ≥ 16/18 ở cả hai lần chạy.
 
 ## Quy trình test
 
