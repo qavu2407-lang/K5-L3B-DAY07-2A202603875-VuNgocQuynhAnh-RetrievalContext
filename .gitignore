@@ -9,3 +9,11 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# Excel screenshots "Used with permission from Microsoft" (not CC-licensed); recreate with src/adv_index.py extract
+data/advanced/crops/p229_fig0.png
+data/advanced/crops/p234_fig1.png
+data/advanced/crops/p244_fig0.png
+data/advanced/crops/p244_fig1.png
+data/advanced/crops/p245_fig1.png
+data/advanced/crops/p246_fig0.png
