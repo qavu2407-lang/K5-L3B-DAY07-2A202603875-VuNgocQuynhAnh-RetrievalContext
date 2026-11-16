@@ -6,6 +6,7 @@ Only the question text and the question-supplied filter reach the model and the 
 """
 import argparse
 import ast
+import base64
 import json
 import os
 import re
@@ -20,7 +21,7 @@ from agentic import run_agent  # noqa: E402  (starter)
 
 OPENAI = "https://api.openai.com/v1"
 # USD per 1M tokens (input, output); third-party price lists, Nov 2026 - verify on openai.com/api/pricing
-PRICE = {"gpt-4.1-mini": (0.40, 1.60)}
+PRICE = {"gpt-4.1-mini": (0.40, 1.60), "gpt-6.1-terra": (1.00, 5.00)}
 DEFAULT_MODEL = "gpt-4.1-mini"
 TEMPERATURE = 0.01
 
@@ -56,6 +57,37 @@ SYSTEM_V4 = SYSTEM_V3 + """
 of points, same figure number, same variable)? If not, call `abstain`.
 - Use the `calculate` tool for every sum, difference, ratio, percentage or average; do not do arithmetic in your head."""
 
+# v5 (F1): figures are read for the question by a vision model instead of trusting the index-time description
+SYSTEM_V5 = SYSTEM_V4 + """
+- For any value, colour, shape, label or path shown in a figure, call `read_figure` with that figure's chunk id and \
+a focused question before answering. If its reading disagrees with the stored figure description, trust \
+`read_figure`. Cite the figure chunk id for claims taken from the reading."""
+
+# v6 (F2, from F1 dev failures AD11/AD17/AD14): search every source the question names, tie numbers to the exact
+# example, never fill gaps left by lost math symbols
+SYSTEM_V6 = SYSTEM_V5 + """
+- If the question names both a table and a chart/figure, search for each (content_type 'table' and 'figure') and \
+take from each what it shows: e.g. the order of bars from the chart, exact counts from the table.
+- A number answers the question only if the cited chunk ties it to the exact example the question names (same \
+dataset size, figure, variable). If the chunk gives the number without saying which example it belongs to, or it \
+belongs to a different one, call `abstain`.
+- Extracted text can have gaps where a math symbol was lost (e.g. 'positive values of did not change'). Never fill \
+such a gap with a symbol yourself; leave that statement out."""
+
+FIGURE_PROMPT = """You are reading one figure from a textbook to answer a question. Caption: {caption!r}.
+Question: {question}
+Answer only from what is visible in the image, in at most 4 sentences. Say "approximately" when reading between \
+ticks. If two legend colours could match a shade, name both. If something is not readable, say so."""
+READ_FIGURE = {"type": "function", "function": {
+    "name": "read_figure", "description": "Look at the original image of a figure chunk that is in the context and "
+                                          "answer a focused question about it (values, colours, bars, lines, paths).",
+    "parameters": {"type": "object", "properties": {
+        "chunk_id": {"type": "string", "description": "A figure chunk id from the context, e.g. ADV:p454:fig0"},
+        "question": {"type": "string", "description": "What to read from the figure"}},
+        "required": ["chunk_id", "question"], "additionalProperties": False}}}
+MAX_READS = 2
+FIGURE_WORDS = re.compile(r"\b(chart|figure|plot|graph|heatmap|histogram|diagram|flowchart|map|screenshot|boxplot)s?\b", re.I)
+
 VERIFY_PROMPT = """You check a draft answer to a question about a textbook against the chunks it cites.
 Reply with JSON {"supported": true|false, "problem": "<one sentence or empty>"}.
 supported = false if ANY of these holds:
@@ -63,7 +95,8 @@ supported = false if ANY of these holds:
 - the chunks describe a different example, dataset, figure or condition than the one the question asks about \
 (e.g. a different number of data points, another figure number, another variable);
 - the answer leaves out part of what the question asks.
-Chunks marked as model-generated figure descriptions count as sources. Be strict but do not invent problems."""
+Chunks marked as model-generated figure descriptions count as sources. A "Vision reading" of a figure also counts and \
+overrides that figure's stored description where they differ. Be strict but do not invent problems."""
 
 CALCULATE = {"type": "function", "function": {
     "name": "calculate", "description": "Evaluate an arithmetic expression (+ - * / ** and parentheses only).",
@@ -131,6 +164,8 @@ def to_action(message: dict) -> tuple[dict, str]:
         return {"action": "answer", "answer": args["answer"], "citations": args["citations"]}, name
     if name == "calculate":  # handled inside the controller, never reaches run_agent
         return {"action": "calculate", "expression": args["expression"]}, name
+    if name == "read_figure":  # handled inside the controller, never reaches run_agent
+        return {"action": "read_figure", "chunk_id": args["chunk_id"], "question": args["question"]}, name
     if name == "abstain":  # no citations -> run_agent returns status "abstain"
         return {"action": "answer", "answer": "", "citations": []}, name
     raise ValueError(f"unknown tool {name!r}")
@@ -177,13 +212,19 @@ def repeated(action: dict, previous: list[str]) -> bool:
 class OpenAIController:
     def __init__(self, max_searches: int, model: str, base_url: str = OPENAI, distinct_queries: bool = False,
                  system: str = SYSTEM, typed_search: bool = False, calculator: bool = False,
-                 verify: bool = False, append_citations: bool = False) -> None:
+                 verify: bool = False, append_citations: bool = False,
+                 figures: dict | None = None, figure_model: str = "gpt-6.1-terra", figure_nudge: bool = False) -> None:
+        self.figure_nudge = figure_nudge
         self.verify, self.append_citations = verify, append_citations
+        self.figures, self.figure_model = figures, figure_model  # {chunk id: (crop path, caption)} or None
+        self._context_ids: set[str] = set()
+        self._read: set[str] = set()  # figure chunks read in this question (controller is created per question)
         self.key = os.environ["OPENAI_API_KEY"]
         self.model, self.max_searches, self.base_url = model, max_searches, base_url
         self.distinct_queries = distinct_queries
         self.system = system
-        self.tools = ([TYPED_SEARCH] + TOOLS[1:] if typed_search else TOOLS) + ([CALCULATE] if calculator else [])
+        self.tools = (([TYPED_SEARCH] + TOOLS[1:] if typed_search else TOOLS) + ([CALCULATE] if calculator else [])
+                      + ([READ_FIGURE] if figures is not None else []))
         self.log: list[dict] = []
 
     def _messages(self, question: str, history: list[dict]) -> list[dict]:
@@ -202,10 +243,27 @@ class OpenAIController:
         # no searches left -> only answer/abstain are offered, so the model cannot run into the search limit
         tools = self.tools if self._left(history) > 0 else [t for t in self.tools if t["function"]["name"] != "search"]
         messages = self._messages(question, history)
+        self._context_ids = set(context_blocks(history[-1]["context"])) if history else set()
         action = self._ask(messages, tools)
+        if (self.figure_nudge and action.get("action") == "answer" and FIGURE_WORDS.search(question)
+                and self._left(history) > 0 and not any(q.endswith(TYPE_TAG + "figure") for q in
+                                                        (history[-1]["queries"] if history else []))):
+            # F3: one logged nudge - the question names a chart/figure but no figure search was made
+            messages += [self._last_msg_as_text(action), {"role": "user", "content": (
+                "The question refers to a chart or figure, but you have not searched figures. Call `search` with "
+                "content_type 'figure' for it before answering or abstaining.")}]
+            action = self._ask(messages, tools, repair=True)
+        unread = ([i for i in action.get("citations", []) if i in self.figures and i not in self._read]
+                  if self.figures is not None and action.get("action") == "answer" else [])
+        if unread and any(t["function"]["name"] == "read_figure" for t in tools):
+            # F1: one logged nudge - a figure is cited from its stored description without looking at the image
+            messages += [self._last_msg_as_text(action), {"role": "user", "content": (
+                f"You cite figure chunk(s) {unread} but have not looked at the image. Call `read_figure` on them with "
+                "a focused question, then answer from the reading (or abstain).")}]
+            action = self._ask(messages, tools, repair=True)
         if self.verify and action.get("action") == "answer" and action["citations"] and history:
             problem = self._verify(question, action, history[-1]["context"])
-            if problem:  # I9: one chance to fix or abstain after an independent grounding check
+            if problem:  # I9 (--verify): one chance to fix or abstain after an independent grounding check
                 messages += [self._last_msg_as_text(action), {"role": "user", "content": (
                     f"A checker compared your answer with the cited chunks and found a problem: {problem} "
                     "Fix the answer using only what the chunks state (search again if needed), or call `abstain`.")}]
@@ -230,25 +288,55 @@ class OpenAIController:
         return action
 
     def _ask(self, messages: list[dict], tools: list[dict], repair: bool = False) -> dict:
-        """One model call; `calculate` calls are resolved here (logged) so only search/answer leave decide()."""
-        action, calcs = self._call(messages, tools, repair), 0
-        while action.get("action") == "calculate":
-            calcs += 1
-            try:
-                result = repr(round(safe_eval(action["expression"]), 6))
-            except Exception as e:
-                result = f"error: {e}"
-            self.log[-1]["result"] = result
+        """One model call; `calculate` / `read_figure` calls are resolved here (logged) so only search/answer leave."""
+        action, used = self._call(messages, tools, repair), {"calculate": 0, "read_figure": 0}
+        while action.get("action") in used:
+            kind = action["action"]
+            used[kind] += 1
+            entry = self.log[-1]
+            if kind == "calculate":
+                try:
+                    result = repr(round(safe_eval(action["expression"]), 6))
+                except Exception as e:
+                    result = f"error: {e}"
+            else:
+                result = self._read_figure(action["chunk_id"], action["question"])
+            entry["result"] = result
             messages += [self._last_msg, {"role": "tool", "tool_call_id": self._last_msg["tool_calls"][0]["id"],
                                           "content": result}]
-            action = self._call(messages, tools if calcs < MAX_CALCS else
-                                [t for t in tools if t["function"]["name"] != "calculate"], repair)
-        if self.system in (SYSTEM_V3, SYSTEM_V4) and action.get("action") == "answer":
+            spent = {k for k, n in used.items() if n >= {"calculate": MAX_CALCS, "read_figure": MAX_READS}[k]}
+            action = self._call(messages, [t for t in tools if t["function"]["name"] not in spent], repair)
+        if self.system in (SYSTEM_V3, SYSTEM_V4, SYSTEM_V5, SYSTEM_V6) and action.get("action") == "answer":
             fixed = split_grouped(action)  # '[a, b]' -> '[a][b]' (format only, same ids), logged
             if fixed != action["answer"]:
                 action = {**action, "answer": fixed}
                 self.log[-1]["normalized_grouped_citations"] = True
         return action
+
+    def _read_figure(self, chunk_id: str, question: str) -> str:
+        """F1: send the crop of a figure chunk in the current context + a focused question to the vision model.
+        Invalid ids return an error to the agent (never a made-up reading); the vision call is logged with its cost."""
+        if chunk_id not in self._context_ids:
+            return f"error: {chunk_id} is not in the current context; read only figure chunks you have retrieved"
+        if chunk_id not in self.figures:
+            return f"error: {chunk_id} is not a figure chunk with an image"
+        self._read.add(chunk_id)
+        crop, caption = self.figures[chunk_id]
+        png = base64.b64encode(crop.read_bytes()).decode()
+        body = {"model": self.figure_model, "messages": [{"role": "user", "content": [
+            {"type": "text", "text": FIGURE_PROMPT.format(caption=caption, question=question)},
+            {"type": "image_url", "image_url": {"url": "data:image/png;base64," + png, "detail": "high"}}]}]}
+        t0 = time.perf_counter()
+        resp = self._post(body)
+        u = resp["usage"]; pin, pout = PRICE.get(self.figure_model, (0.0, 0.0))
+        reading = resp["choices"][0]["message"]["content"].strip()
+        self.log.append({"tool": "vision", "repair": False, "model": self.figure_model,
+                         "args": {"chunk_id": chunk_id, "question": question}, "result": reading,
+                         "prompt_tokens": u["prompt_tokens"], "completion_tokens": u["completion_tokens"],
+                         "reasoning_tokens": u.get("completion_tokens_details", {}).get("reasoning_tokens", 0),
+                         "latency_ms": round((time.perf_counter() - t0) * 1000),
+                         "cost_usd": (u["prompt_tokens"] * pin + u["completion_tokens"] * pout) / 1e6})
+        return reading
 
     def _last_msg_as_text(self, action: dict) -> dict:
         return {"role": "assistant", "content": f"Draft answer: {action['answer']}"}
@@ -256,6 +344,10 @@ class OpenAIController:
     def _verify(self, question: str, action: dict, context: str) -> str | None:
         """I9: independent check of the draft against the cited chunks. Returns the problem, or None if supported."""
         cited = "\n\n".join(b for i, b in context_blocks(context).items() if i in action["citations"])
+        readings = [f"[Vision reading of {c['args']['chunk_id']} - question: {c['args']['question']}]\n{c['result']}"
+                    for c in self.log if c["tool"] == "vision" and c["args"]["chunk_id"] in action["citations"]]
+        if readings:
+            cited += "\n\n" + "\n\n".join(readings)
         body = {"model": self.model, "temperature": TEMPERATURE, "response_format": {"type": "json_object"},
                 "messages": [{"role": "system", "content": VERIFY_PROMPT},
                              {"role": "user", "content": f"Question: {question}\n\nDraft answer: {action['answer']}"
@@ -336,9 +428,11 @@ def run_one(q: dict, retriever, a) -> dict:
     if a.skip_seen:
         retriever = UnseenRetriever(retriever)  # fresh per question
     ctrl = OpenAIController(a.max_searches, a.model, distinct_queries=a.distinct_queries,
-                            system={"v2": SYSTEM, "v3": SYSTEM_V3, "v4": SYSTEM_V4}[a.prompt],
+                            system={"v2": SYSTEM, "v3": SYSTEM_V3, "v4": SYSTEM_V4, "v5": SYSTEM_V5, "v6": SYSTEM_V6}[a.prompt],
                             typed_search=a.typed_search, calculator=a.calculator, verify=a.verify,
-                            append_citations=a.append_citations)
+                            append_citations=a.append_citations,
+                            figures=a.figures if a.read_figure else None, figure_model=a.figure_model,
+                            figure_nudge=a.figure_nudge)
     t0 = time.perf_counter()
     try:
         out = run_agent(visible["question"], ctrl, retriever, filters=visible["filter"],
@@ -348,7 +442,7 @@ def run_one(q: dict, retriever, a) -> dict:
         out, status, err = {"answer": "", "citations": [], "events": []}, "error", f"{type(e).__name__}: {e}"
     return {"query_id": q["id"], "split": q["split"], "question": q["question"], "filter": visible["filter"],
             "status": status, "answer": out["answer"], "citations": out["citations"], "events": out["events"],
-            "final_tool": ctrl.log[-1]["tool"] if ctrl.log else None, "controller_calls": ctrl.log, "error": err,
+            "final_tool": next((c["tool"] for c in reversed(ctrl.log) if c["tool"] not in ("verify", "vision")), None), "controller_calls": ctrl.log, "error": err,
             "searches": sum(e.get("event") == "search" for e in out["events"]),
             "elapsed_s": round(time.perf_counter() - t0, 2),
             "tokens": sum(c["prompt_tokens"] + c["completion_tokens"] for c in ctrl.log),
@@ -367,23 +461,32 @@ def main() -> None:
     p.add_argument("--only", nargs="*", help="run only these question ids")
     p.add_argument("--distinct-queries", action="store_true", help="I1: ask once for new wording on a repeated query")
     p.add_argument("--skip-seen", action="store_true", help="I3: later searches return only chunks not yet seen")
-    p.add_argument("--prompt", default="v2", choices=("v2", "v3", "v4"), help="v3/v4: stricter grounding rules (advanced)")
+    p.add_argument("--prompt", default="v2", choices=("v2", "v3", "v4", "v5", "v6"),
+                   help="v3/v4: stricter grounding rules (advanced); v5: + use read_figure; v6: + both sources, same example, symbol gaps")
     p.add_argument("--calculator", action="store_true", help="I6: calculate tool for arithmetic")
     p.add_argument("--verify", action="store_true", help="I9 (not run): independent grounding check of each draft answer")
     p.add_argument("--append-citations", action="store_true",
                    help="I8: if the repair still leaves listed ids out of the text, append them as [id]")
+    p.add_argument("--read-figure", action="store_true",
+                   help="F1: read_figure tool sends a retrieved figure's crop + a question to a vision model")
+    p.add_argument("--figure-nudge", action="store_true",
+                   help="F3: if the question names a chart/figure and no figure search was made, ask once to search figures")
+    p.add_argument("--figure-model", default="gpt-6.1-terra", choices=sorted(PRICE), help="vision model for read_figure")
     p.add_argument("--typed-search", action="store_true", help="I5: search tool can restrict to text/table/figure")
-    p.add_argument("--corpus", default="day6", choices=("day6", "advanced"))
+    p.add_argument("--corpus", default="day6", choices=("day6", "advanced", "advanced-ocr"))
     p.add_argument("--confirm-frozen", action="store_true")
     a = p.parse_args()
     if a.split == "test" and not a.confirm_frozen:
         raise SystemExit("refusing to run test: freeze the config on dev first, then pass --confirm-frozen")
     corpus = {"day6": ("data/day6/chunks.json", "data/day6/questions.json", "B", "agent"),
-              "advanced": ("data/advanced/chunks.json", "data/advanced/benchmark.json", "ADV", "adv-agent")}
+              "advanced": ("data/advanced/chunks.json", "data/advanced/benchmark.json", "ADV", "adv-agent"),
+              "advanced-ocr": ("data/advanced/chunks_ocr.json", "data/advanced/benchmark.json", "ADVOCR", "adv-ocr-agent")}
     chunk_file, question_file, strategy, prefix = corpus[a.corpus]
     chunks = json.loads((ROOT / chunk_file).read_text())
     questions = [q for q in json.loads((ROOT / question_file).read_text())
                  if q["split"] == a.split and (not a.only or q["id"] in a.only)]
+    a.figures = {c["id"]: (ROOT / c["metadata"]["crop"], c["metadata"].get("caption", "")) for c in chunks
+                 if c.get("metadata", {}).get("type") == "figure" and (ROOT / c["metadata"].get("crop", "")).is_file()}
     retriever = make(a.retriever, chunks, strategy)
     traces = []
     for q in questions:
@@ -396,6 +499,9 @@ def main() -> None:
                "temperature": TEMPERATURE,
                "retriever": a.retriever, "max_searches": a.max_searches, "top_k": a.top_k,
                "budget_chars": a.budget, "distinct_queries": a.distinct_queries, "skip_seen": a.skip_seen, "prompt": a.prompt, "typed_search": a.typed_search, "calculator": a.calculator, "verify": a.verify, "append_citations": a.append_citations,
+               "read_figure": a.read_figure, "figure_model": a.figure_model if a.read_figure else None,
+               "figure_nudge": a.figure_nudge,
+               "figure_reads": sum(c["tool"] == "vision" for t in traces for c in t["controller_calls"]),
                "questions": len(traces),
                "repairs": sum(c["repair"] for t in traces for c in t["controller_calls"]),
                "status": dict(Counter(t["status"] for t in traces)),

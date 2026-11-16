@@ -96,3 +96,58 @@ class ContextBlocksTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+@unittest.skipUnless(__import__("shutil").which("tesseract"), "tesseract not installed")
+class TesseractTest(unittest.TestCase):
+    def test_reads_printed_chart_text(self):
+        import sys
+        from pathlib import Path
+        crop = Path(__file__).resolve().parents[1] / "data/advanced/crops/p447_fig0.png"
+        if not crop.exists():
+            self.skipTest("crop not generated")
+        sys.path.insert(0, str(crop.parents[3] / "src"))
+        try:
+            from adv_index import tesseract
+        except Exception as e:  # adv_index needs the Day 6 repo (DAY6_DIR)
+            self.skipTest(f"adv_index not importable: {e}")
+        text, mean, n = tesseract(crop)
+        self.assertIn("Poisson", text)
+        self.assertGreaterEqual(n, 10)
+
+
+class ReadFigureTest(unittest.TestCase):
+    def _ctrl(self, figures):
+        import os
+        from agent import OpenAIController
+        os.environ.setdefault("OPENAI_API_KEY", "test")
+        c = OpenAIController(3, "gpt-4.1-mini", figures=figures)
+        c._context_ids = {"ADV:p1:fig0", "ADV:p1:t0"}
+        return c
+
+    def test_rejects_ids_outside_context_or_not_figures(self):
+        c = self._ctrl({"ADV:p1:fig0": (None, "cap"), "ADV:p9:fig0": (None, "cap")})
+        self.assertIn("not in the current context", c._read_figure("ADV:p9:fig0", "q"))
+        self.assertIn("not a figure chunk", c._read_figure("ADV:p1:t0", "q"))
+        self.assertEqual(c.log, [])  # no vision call was made
+
+    def test_reading_is_logged_with_cost(self):
+        import tempfile
+        from pathlib import Path
+        png = Path(tempfile.mkdtemp()) / "f.png"
+        png.write_bytes(b"\x89PNG")
+        c = self._ctrl({"ADV:p1:fig0": (png, "Figure 1")})
+        c._post = lambda body: {"usage": {"prompt_tokens": 1000, "completion_tokens": 100},
+                                "choices": [{"message": {"content": "2022, about -900"}}]}
+        self.assertEqual(c._read_figure("ADV:p1:fig0", "lowest year?"), "2022, about -900")
+        self.assertEqual(c.log[-1]["tool"], "vision")
+        self.assertAlmostEqual(c.log[-1]["cost_usd"], (1000 * 1.0 + 100 * 5.0) / 1e6)
+
+
+class FigureWordsTest(unittest.TestCase):
+    def test_matches_chart_words_only(self):
+        from agent import FIGURE_WORDS
+        self.assertTrue(FIGURE_WORDS.search("what share of defects ... left of the Pareto chart?"))
+        self.assertTrue(FIGURE_WORDS.search("In the heatmap of passengers"))
+        self.assertFalse(FIGURE_WORDS.search("According to Table 9.3, which year had the highest enrollment?"))
+        self.assertFalse(FIGURE_WORDS.search("Why does the book set d = 2?"))
